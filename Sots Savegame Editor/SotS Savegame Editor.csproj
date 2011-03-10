@@ -57,7 +57,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ionic.Zip">
-      <HintPath>..\..\DotNetZipLib-DevKit-v1.9\DotNetZip-v1.9\Debug\Ionic.Zip.dll</HintPath>
+      <HintPath>..\Ionic.Zip.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -95,11 +95,15 @@
       <DependentUpon>Editor.cs</DependentUpon>
     </Compile>
     <Compile Include="User Controls\Graph\TechTreeGraphNodeBitmap.cs" />
-    <Compile Include="User Controls\Tech Tree\Tech Details.cs" />
+    <Compile Include="User Controls\Tech Tree\Tech Details.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="User Controls\Tech Tree\Tech Details.Designer.cs">
       <DependentUpon>Tech Details.cs</DependentUpon>
     </Compile>
-    <Compile Include="User Controls\Tech Tree\Tech Tree.cs" />
+    <Compile Include="User Controls\Tech Tree\Tech Tree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="User Controls\Tech Tree\Tech Tree.Designer.cs">
       <DependentUpon>Tech Tree.cs</DependentUpon>
     </Compile>
