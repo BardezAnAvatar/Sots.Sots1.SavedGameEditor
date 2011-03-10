@@ -101,6 +101,12 @@
     <Compile Include="User Controls\Tech Tree\Tech Details.Designer.cs">
       <DependentUpon>Tech Details.cs</DependentUpon>
     </Compile>
+    <Compile Include="User Controls\Tech Tree\Tech Tree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Tech Tree\Tech Tree.Designer.cs">
+      <DependentUpon>Tech Tree.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Controls\User Control\DataGridView Utility.cs" />
     <Compile Include="User Controls\User Control\Display User Control.cs">
       <SubType>UserControl</SubType>
@@ -196,12 +202,6 @@
     </Compile>
     <Compile Include="User Controls\Systems\Systems.Designer.cs">
       <DependentUpon>Systems.cs</DependentUpon>
-    </Compile>
-    <Compile Include="User Controls\Tech Tree\Tech Tree.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User Controls\Tech Tree\Tech Tree.Designer.cs">
-      <DependentUpon>Tech Tree.cs</DependentUpon>
     </Compile>
     <Compile Include="IO\Zip File.cs" />
     <EmbeddedResource Include="SotsEditor.resx">
