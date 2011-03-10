@@ -95,6 +95,14 @@
       <DependentUpon>Editor.cs</DependentUpon>
     </Compile>
     <Compile Include="User Controls\Graph\TechTreeGraphNodeBitmap.cs" />
+    <Compile Include="User Controls\Tech Tree\Tech Details.cs" />
+    <Compile Include="User Controls\Tech Tree\Tech Details.Designer.cs">
+      <DependentUpon>Tech Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Tech Tree\Tech Tree.cs" />
+    <Compile Include="User Controls\Tech Tree\Tech Tree.Designer.cs">
+      <DependentUpon>Tech Tree.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Controls\User Control\DataGridView Utility.cs" />
     <Compile Include="User Controls\User Control\Display User Control.cs">
       <SubType>UserControl</SubType>
@@ -249,6 +257,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\Systems\Systems.resx">
       <DependentUpon>Systems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Tech Tree\Tech Details.resx">
+      <DependentUpon>Tech Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Tech Tree\Tech Tree.resx">
+      <DependentUpon>Tech Tree.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config">
       <SubType>Designer</SubType>
