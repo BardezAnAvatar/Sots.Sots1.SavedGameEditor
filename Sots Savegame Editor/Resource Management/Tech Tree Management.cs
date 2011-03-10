@@ -81,7 +81,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor
             lock(this.locker)
             {
                 //doing it below throws an error on dispose
-                Dictionary<String, Bitmap>.KeyCollection keys = this.spriteDictionary.Keys;
+                List<String> keys = this.spriteDictionary.Keys.ToList<String>();
 
                 foreach (String key in keys)
                 {

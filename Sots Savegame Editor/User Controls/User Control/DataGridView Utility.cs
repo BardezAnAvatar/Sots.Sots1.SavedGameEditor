@@ -40,6 +40,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls.User_Control
             comboCol.DisplayMember = DisplayCol;
             comboCol.Name = ColumnName;
             comboCol.HeaderText = ColumnName;
+            comboCol.SortMode = DataGridViewColumnSortMode.Automatic;
             return comboCol;
         }
 
