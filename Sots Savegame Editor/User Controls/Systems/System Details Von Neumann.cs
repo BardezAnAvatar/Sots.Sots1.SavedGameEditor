@@ -66,5 +66,13 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls
             this.checkBoxVnpex3.Enabled =               !ReadOnlyFlag;
             this.checkBoxVonNeumannHomeWorld.Enabled =  !ReadOnlyFlag;
         }
+
+        public void Clear()
+        {
+            this.checkBoxVonNeumannHomeWorld.Checked = false;
+            this.checkBoxVnd.Checked = false;
+            this.checkBoxVnex3.Checked = false;
+            this.checkBoxVnpex3.Checked = false;
+        }
     }
 }

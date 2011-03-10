@@ -94,7 +94,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls
             this.buttonColor.Name = "buttonColor";
             this.buttonColor.Size = new System.Drawing.Size(20, 20);
             this.buttonColor.TabIndex = 5;
-            this.buttonColor.UseVisualStyleBackColor = true;
+            this.buttonColor.UseVisualStyleBackColor = false;
             this.buttonColor.Click += new System.EventHandler(this.buttonColor_Click);
             // 
             // colorDialogColor
@@ -181,7 +181,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls
             this.labelX.TabIndex = 0;
             this.labelX.Text = "X";
             // 
-            // System_Detail_Summary
+            // SystemDetailSummary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -194,7 +194,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.textBoxSystemId);
             this.Controls.Add(this.labelSystemId);
-            this.Name = "System_Detail_Summary";
+            this.Name = "SystemDetailSummary";
             this.Size = new System.Drawing.Size(762, 64);
             this.groupBoxCoords.ResumeLayout(false);
             this.groupBoxCoords.PerformLayout();

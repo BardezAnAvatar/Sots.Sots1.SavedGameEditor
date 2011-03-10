@@ -45,6 +45,8 @@
             // 
             // groupBoxSystems
             // 
+            this.groupBoxSystems.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxSystems.Controls.Add(this.dataGridViewSystems);
             this.groupBoxSystems.Location = new System.Drawing.Point(3, 3);
             this.groupBoxSystems.Name = "groupBoxSystems";
@@ -57,6 +59,8 @@
             // 
             this.dataGridViewSystems.AllowUserToAddRows = false;
             this.dataGridViewSystems.AllowUserToDeleteRows = false;
+            this.dataGridViewSystems.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewSystems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewSystems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSystems.Location = new System.Drawing.Point(7, 20);

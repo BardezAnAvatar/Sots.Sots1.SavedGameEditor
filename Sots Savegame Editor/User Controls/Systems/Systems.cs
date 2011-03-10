@@ -14,12 +14,12 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls
     {
         protected SimSaveStruct simulation;
         protected DataTable adapter;
-        protected Int32 currentRow;
+        protected Int32 currentIndex;
 
         public Systems() : base()
         {
             InitializeComponent();
-            this.currentRow = -1;
+            this.currentIndex = -1;
         }
 
         public void LoadFromStruct(SimSaveStruct Simulation)
@@ -70,35 +70,37 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls
             this.dataGridViewSystems.Columns.Add(DataGridViewUtility.CreateComboColumn("Owner", "Owner ID", playerTable, "Name", "Player ID", false));
         }
 
-        public void UpdateStruct(SimSaveStruct Simulation)
-        {
-        }
-
         protected void dataGridViewSystems_CurrentCellChanged(object sender, System.EventArgs e)
         {
             //persist changes
-            if (this.currentRow > -1 && this.dataGridViewSystems.CurrentRow != null)
+            if (this.currentIndex > -1 && this.dataGridViewSystems.CurrentRow != null)
             {
-                this.PersistDetailsChanges(this.currentRow);
-                this.RefreshGridRow(this.currentRow);
+                this.PersistDetailsChanges(this.currentIndex);
+                this.RefreshGridRow(this.currentIndex);
             }
 
             if (this.dataGridViewSystems.CurrentRow != null)
             {
-                this.currentRow = this.dataGridViewSystems.CurrentRow.Index;
-                this.RefreshDetails(this.currentRow);
+                //2011-03-09 - I encountered an issue when sorting, where I was relying upon row index
+                //  and not the structure array index.
+
+                //this.currentRow = this.dataGridViewSystems.CurrentRow.Index;
+                this.currentIndex = (Int32)this.dataGridViewSystems.CurrentRow.Cells["Index"].Value;
+                this.RefreshDetails(this.currentIndex);
             }
         }
 
         protected void dataGridViewSystems_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
             //persist
-            this.PersistDetailsChanges(e.RowIndex);
-            this.PersistGridChanges(e.RowIndex);
+            this.PersistDetailsChanges(this.currentIndex);
+            this.PersistGridChanges(this.currentIndex);
+
+            this.currentIndex = this.GetIndexFromRow(e.RowIndex);
 
             //refresh
             this.RefreshGridRow(e.RowIndex);
-            this.RefreshDetails(e.RowIndex);
+            this.RefreshDetails(this.currentIndex);
         }
 
         protected override void PercolateReadOnlyFlag(bool ReadOnlyFlag)
@@ -119,22 +121,22 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls
         //        this.simulation.Ndgr2.Paths.Add(new SimNodeGridPath());
         //}
 
-        protected void PersistGridChanges(Int32 Row)
+        protected void PersistGridChanges(Int32 Index)
         {
-            DataGridViewRow row = this.dataGridViewSystems.Rows[Row];
+            DataGridViewRow row = this.GetRowFromIndex(Index);
 
             //persist data changes
-            this.simulation.Systems.Values[Row].SysId.Value = (Int32)(row.Cells["System ID"].Value);
-            this.simulation.Systems.Values[Row].Details.Name.Value.CharacterString = row.Cells["Name"].Value as String;
-            this.simulation.Systems.Values[Row].Details.Size.Value = (Int32)(row.Cells["Size"].Value);
-            this.simulation.Systems.Values[Row].Details.Suit.Value = (Single)(row.Cells["Climate Suitability"].Value);
-            this.simulation.Systems.Values[Row].Details.Res.Value = (Int32)(row.Cells["Resources"].Value);
-            this.simulation.Systems.Values[Row].Details.Infra.Value = (Single)(row.Cells["Infrastructure"].Value);
-            this.simulation.Systems.Values[Row].Details.Ibon.Value = (Single)(row.Cells["Advanced Infrastructure"].Value);
-            this.simulation.Systems.Values[Row].Details.Pop.Value = (Int32)(row.Cells["Imperial Population"].Value);
-            this.simulation.Systems.Values[Row].Details.RepCur.Value = (Single)(row.Cells["Repair Left"].Value);
-            this.simulation.Systems.Values[Row].Details.RepMax.Value = (Single)(row.Cells["Repair per Turn"].Value);
-            this.simulation.Systems.Values[Row].Details.Pid.Value = (Int32)(row.Cells["Owner"].Value);
+            this.simulation.Systems.Values[Index].SysId.Value = (Int32)(row.Cells["System ID"].Value);
+            this.simulation.Systems.Values[Index].Details.Name.Value.CharacterString = row.Cells["Name"].Value as String;
+            this.simulation.Systems.Values[Index].Details.Size.Value = (Int32)(row.Cells["Size"].Value);
+            this.simulation.Systems.Values[Index].Details.Suit.Value = (Single)(row.Cells["Climate Suitability"].Value);
+            this.simulation.Systems.Values[Index].Details.Res.Value = (Int32)(row.Cells["Resources"].Value);
+            this.simulation.Systems.Values[Index].Details.Infra.Value = (Single)(row.Cells["Infrastructure"].Value);
+            this.simulation.Systems.Values[Index].Details.Ibon.Value = (Single)(row.Cells["Advanced Infrastructure"].Value);
+            this.simulation.Systems.Values[Index].Details.Pop.Value = (Int32)(row.Cells["Imperial Population"].Value);
+            this.simulation.Systems.Values[Index].Details.RepCur.Value = (Single)(row.Cells["Repair Left"].Value);
+            this.simulation.Systems.Values[Index].Details.RepMax.Value = (Single)(row.Cells["Repair per Turn"].Value);
+            this.simulation.Systems.Values[Index].Details.Pid.Value = (Int32)(row.Cells["Owner"].Value);
 
             /********************
             *   for added rows  *
@@ -147,23 +149,23 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls
             //    this.simulation.Ndgr2.Paths.Values[Row].Npto.Value = (Int32)(row.Cells["To"].Value);
         }
 
-        protected void PersistDetailsChanges(Int32 Row)
+        protected void PersistDetailsChanges(Int32 Index)
         {
-            this.system_Details.UpdateStruct(this.simulation.Systems.Values[Row]);
+            this.system_Details.UpdateStruct(this.simulation.Systems.Values[Index]);
         }
 
         public void PersistBeforeSave()
         {
-            if (this.currentRow > -1 && this.dataGridViewSystems.CurrentRow != null)
-                this.PersistDetailsChanges(this.currentRow);
+            if (this.currentIndex > -1 && this.dataGridViewSystems.CurrentRow != null)
+                this.PersistDetailsChanges(this.currentIndex);
         }
         #endregion
 
         #region Refresh
         /// <summary>Refreshes the Player Details control from its data source</summary>
-        protected void RefreshDetails(Int32 Row)
+        protected void RefreshDetails(Int32 Index)
         {
-            this.system_Details.LoadFromStruct(this.simulation.Systems.Values[Row]);
+            this.system_Details.LoadFromStruct(this.simulation.Systems.Values[Index]);
         }
 
         /// <summary>Refreshes the entire dataview grid's data source</summary>
@@ -178,47 +180,97 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls
         }
 
         /// <summary>Refreshes a single row's data source</summary>
-        /// <param name="Row">Index of the row to be refreshed</param>
-        protected void RefreshGridRow(Int32 Row)
+        /// <param name="Index">Index of the data structure to be refreshed to form</param>
+        protected void RefreshGridRow(Int32 Index)
         {
-            if (Row < this.adapter.Rows.Count - 1)
+            Int32 rowNumber = this.GetAdapterRowNumberFromIndex(Index);
+
+            if (rowNumber < this.adapter.Rows.Count - 1)
             {
                 //Populate
-                Object[] rowData = GenerateAdapterRow(Row);
+                Object[] rowData = GenerateAdapterRow(Index);
 
-                this.adapter.Rows[Row]["Index"] = rowData[0];
-                this.adapter.Rows[Row]["System ID"] = rowData[1];
-                this.adapter.Rows[Row]["Name"] = rowData[2];
-                this.adapter.Rows[Row]["Size"] = rowData[3];
-                this.adapter.Rows[Row]["Climate Suitability"] = rowData[4];
-                this.adapter.Rows[Row]["Resources"] = rowData[5];
-                this.adapter.Rows[Row]["Infrastructure"] = rowData[6];
-                this.adapter.Rows[Row]["Advanced Infrastructure"] = rowData[7];
-                this.adapter.Rows[Row]["Imperial Population"] = rowData[8];
-                this.adapter.Rows[Row]["Repair Left"] = rowData[9];
-                this.adapter.Rows[Row]["Repair per Turn"] = rowData[10];
-                this.adapter.Rows[Row]["Owner ID"] = rowData[11];
+                this.adapter.Rows[rowNumber]["Index"] = rowData[0];
+                this.adapter.Rows[rowNumber]["System ID"] = rowData[1];
+                this.adapter.Rows[rowNumber]["Name"] = rowData[2];
+                this.adapter.Rows[rowNumber]["Size"] = rowData[3];
+                this.adapter.Rows[rowNumber]["Climate Suitability"] = rowData[4];
+                this.adapter.Rows[rowNumber]["Resources"] = rowData[5];
+                this.adapter.Rows[rowNumber]["Infrastructure"] = rowData[6];
+                this.adapter.Rows[rowNumber]["Advanced Infrastructure"] = rowData[7];
+                this.adapter.Rows[rowNumber]["Imperial Population"] = rowData[8];
+                this.adapter.Rows[rowNumber]["Repair Left"] = rowData[9];
+                this.adapter.Rows[rowNumber]["Repair per Turn"] = rowData[10];
+                this.adapter.Rows[rowNumber]["Owner ID"] = rowData[11];
             }
         }
         #endregion
 
-        protected Object[] GenerateAdapterRow(Int32 Row)
+        protected Object[] GenerateAdapterRow(Int32 Index)
         {
             return new Object[]
                 {
-                    Row,
-                    this.simulation.Systems.Values[Row].SysId.Value,
-                    this.simulation.Systems.Values[Row].Details.Name.Value.CharacterString,
-                    this.simulation.Systems.Values[Row].Details.Size.Value,
-                    this.simulation.Systems.Values[Row].Details.Suit.Value,
-                    this.simulation.Systems.Values[Row].Details.Res.Value,
-                    this.simulation.Systems.Values[Row].Details.Infra.Value,
-                    this.simulation.Systems.Values[Row].Details.Ibon.Value,
-                    this.simulation.Systems.Values[Row].Details.Pop.Value,
-                    this.simulation.Systems.Values[Row].Details.RepCur.Value,
-                    this.simulation.Systems.Values[Row].Details.RepMax.Value,
-                    this.simulation.Systems.Values[Row].Details.Pid.Value
+                    Index,
+                    this.simulation.Systems.Values[Index].SysId.Value,
+                    this.simulation.Systems.Values[Index].Details.Name.Value.CharacterString,
+                    this.simulation.Systems.Values[Index].Details.Size.Value,
+                    this.simulation.Systems.Values[Index].Details.Suit.Value,
+                    this.simulation.Systems.Values[Index].Details.Res.Value,
+                    this.simulation.Systems.Values[Index].Details.Infra.Value,
+                    this.simulation.Systems.Values[Index].Details.Ibon.Value,
+                    this.simulation.Systems.Values[Index].Details.Pop.Value,
+                    this.simulation.Systems.Values[Index].Details.RepCur.Value,
+                    this.simulation.Systems.Values[Index].Details.RepMax.Value,
+                    this.simulation.Systems.Values[Index].Details.Pid.Value
                 };
+        }
+
+        protected Int32 GetIndexFromRow(Int32 Row)
+        {
+            return (Int32)this.dataGridViewSystems.Rows[Row].Cells["Index"].Value;
+        }
+
+        protected DataGridViewRow GetRowFromIndex(Int32 Index)
+        {
+            DataGridViewRow row = null;
+
+            for (Int32 i = 0; i < this.dataGridViewSystems.Rows.Count; ++i)
+            {
+                if ((Int32)(this.dataGridViewSystems.Rows[i].Cells["Index"].Value) == Index)
+                {
+                    row = this.dataGridViewSystems.Rows[i];
+                    break;
+                }
+            }
+
+            return row;
+        }
+
+        protected Int32 GetAdapterRowNumberFromIndex(Int32 Index)
+        {
+            Int32 rowNumber = -1;
+
+            if (this.adapter != null)
+            {
+                for (Int32 i = 0; i < this.adapter.Rows.Count; ++i)
+                {
+                    if ((Int32)(this.adapter.Rows[i]["Index"]) == Index)
+                    {
+                        rowNumber = i;
+                        break;
+                    }
+                }
+            }
+
+            return rowNumber;
+        }
+
+        public void Clear()
+        {
+            if(this.adapter != null)
+                this.adapter.Rows.Clear();
+            this.currentIndex = -1;
+            this.system_Details.Clear();
         }
     }
 }

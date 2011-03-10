@@ -116,5 +116,35 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls
             this.textBoxPbon.Enabled =          !ReadOnlyFlag;
             this.dataGridViewPbon2.ReadOnly =   ReadOnlyFlag;
         }
+
+        public void Clear()
+        {
+            this.textBoxTres.Text = String.Empty;
+            this.textBoxAbandoned.Text = String.Empty;
+            this.checkBoxDestroyed.Checked = false;
+            this.textBoxTnsOh.Text = String.Empty;
+            this.textBoxOutMod.Text = String.Empty;
+            this.textBoxPid.Text = String.Empty;
+            this.textBoxRepCur.Text = String.Empty;
+            this.textBoxRepMax.Text = String.Empty;
+            this.textBoxIbon.Text = String.Empty;
+            this.textBoxPbon.Text = String.Empty;
+            this.dataGridViewPbon2.Rows.Clear();
+            this.textBoxLtis.Text = String.Empty;
+            this.textBoxRbfl.Text = String.Empty;
+            this.textBoxRbtn.Text = String.Empty;
+            this.textBoxRbfr.Text = String.Empty;
+            this.textBoxRbwn.Text = String.Empty;
+            this.textBoxHsrg.Text = String.Empty;
+            this.textBoxBats2.Text = String.Empty;
+            this.textBoxRcex.Text = String.Empty;
+            this.textBoxTerrFl.Text = String.Empty;
+            this.textBoxTacq.Text = String.Empty;
+            this.textBoxTfacq.Text = String.Empty;
+            this.textBoxTdst.Text = String.Empty;
+            this.textBoxDsu.Text = String.Empty;
+            this.textBoxDeff.Text = String.Empty;
+            this.textBoxDefsf.Text = String.Empty;
+        }
     }
 }

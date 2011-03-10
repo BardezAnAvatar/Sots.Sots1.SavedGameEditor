@@ -120,5 +120,17 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls
             this.textBoxPop.Enabled =       !ReadOnlyFlag;
             this.dataGridViewPopG.ReadOnly = ReadOnlyFlag;
         }
+
+        public void Clear()
+        {
+            this.textBoxSuit.Text = String.Empty;
+            this.textBoxRes.Text = String.Empty;
+            this.textBoxARes.Text = String.Empty;
+            this.textBoxMRes.Text = String.Empty;
+            this.checkBoxNoRebAI.Checked = false;
+            this.textBoxInfra.Text = String.Empty;
+            this.textBoxPop.Text = String.Empty;
+            this.dataGridViewPopG.Rows.Clear();
+        }
     }
 }

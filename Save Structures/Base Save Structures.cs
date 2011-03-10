@@ -62,7 +62,7 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
             if (this.length < 0)
                 throw new Exception("Expected string length too short.");
             else if (this.length > 512)
-                throw new Exception("Expected string length (probably) too long. Sanity threshold of 255.");
+                throw new Exception("Expected string length (probably) too long. Sanity threshold of 512.");
             else
             {
                 //stream length check

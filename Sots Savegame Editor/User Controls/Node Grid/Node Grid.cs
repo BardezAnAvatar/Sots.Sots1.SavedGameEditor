@@ -113,16 +113,21 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls.Node_Grid
         {
             DataGridViewRow row = this.dataGridViewNodes.Rows[e.RowIndex];
 
-            //fill in the index and node path id cells, if empty
-            if (row.Cells["Index"].Value == null || row.Cells["Index"].Value == System.DBNull.Value)
-                row.Cells["Index"].Value = e.RowIndex;
-            if (row.Cells["Node Path ID"].Value == null || row.Cells["Node Path ID"].Value == System.DBNull.Value)
-                row.Cells["Node Path ID"].Value = e.RowIndex + 1;
+            //An error is thrown if the check below is not applied. Also, since it makes no sense to
+            //      add a half-finished node (as it would probably break), do not fill in unless both are populated 
+            if (row.Cells["From"].Value != System.DBNull.Value && row.Cells["To"].Value != System.DBNull.Value)
+            {
+                //fill in the index and node path id cells, if empty
+                if (row.Cells["Index"].Value == null || row.Cells["Index"].Value == System.DBNull.Value)
+                    row.Cells["Index"].Value = e.RowIndex;
+                if (row.Cells["Node Path ID"].Value == null || row.Cells["Node Path ID"].Value == System.DBNull.Value)
+                    row.Cells["Node Path ID"].Value = e.RowIndex + 1;
 
-            //Persist
-            this.AddRowAsNecessary(e.RowIndex);
-            this.PersistDetailsChanges(e.RowIndex);
-            this.PersistGridChanges(e.RowIndex);
+                //Persist
+                this.AddRowAsNecessary(e.RowIndex);
+                this.PersistDetailsChanges(e.RowIndex);
+                this.PersistGridChanges(e.RowIndex);
+            }
 
             //Refresh
             this.RefreshDetails(e.RowIndex);
@@ -216,6 +221,10 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls.Node_Grid
         protected Boolean IsNullOrDBNull(Object Target)
         {
             return Target == null || Target == System.DBNull.Value;
+        }
+
+        public void Clear()
+        {
         }
     }
 }

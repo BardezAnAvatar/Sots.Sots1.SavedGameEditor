@@ -44,5 +44,13 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls
             this.system_Details_Misc.ReadOnly = ReadOnlyFlag;
             this.system_Details_Von_Neumann.ReadOnly = ReadOnlyFlag;
         }
+
+        public void Clear()
+        {
+            this.system_Detail_Summary.Clear();
+            this.system_Details_History.Clear();
+            this.system_Details_Von_Neumann.Clear();
+            this.system_Details_Misc.Clear();
+        }
     }
 }

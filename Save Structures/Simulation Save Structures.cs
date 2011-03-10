@@ -119,23 +119,17 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
     public class ResearchSaveStruct : ISotsStructure
     {
         /// <remarks>Should this be a boolean indicating the presence of two optional values, usp & usc?</remarks>
-        protected Int32SaveStruct usnc;
-        protected ResearchOptionalSaveStruct uspc;
+
+        protected NonComplexArraySaveStruct<ResearchOptionalSaveStruct> us;
 
         /// <summary>Name</summary>
         protected StringSaveStruct nm;
         protected StringSaveStruct ntg;
 
-        public Int32SaveStruct Usnc
+        public NonComplexArraySaveStruct<ResearchOptionalSaveStruct> Us
         {
-            get { return usnc; }
-            set { usnc = value; }
-        }
-
-        public ResearchOptionalSaveStruct Uspc
-        {
-            get { return uspc; }
-            set { uspc = value; }
+            get { return us; }
+            set { us = value; }
         }
 
         public StringSaveStruct Nm
@@ -153,8 +147,7 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
         /// <summary>Default constructor</summary>
         public ResearchSaveStruct() : base()
         {
-            this.usnc = new Int32SaveStruct();
-            this.uspc = null;
+            this.us = new NonComplexArraySaveStruct<ResearchOptionalSaveStruct>();
             this.nm = new StringSaveStruct();
             this.ntg = new StringSaveStruct();
         }
@@ -163,14 +156,7 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
         /// <param name="Data">Stream of binary data to read from</param>
         public void ReadFromStream(Stream Data)
         {
-            this.usnc.ReadFromStream(Data);
-
-            if (this.usnc.Value != 0)
-            {
-                this.uspc = new ResearchOptionalSaveStruct();
-                this.uspc.ReadFromStream(Data);
-            }
-
+            this.us.ReadFromStream(Data);
             this.nm.ReadFromStream(Data);
             this.ntg.ReadFromStream(Data);
         }
@@ -179,11 +165,7 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
         /// <param name="Destination">Destination stream to write to. Should be writable.</param>
         public void WriteToStream(Stream Destination)
         {
-            this.usnc.WriteToStream(Destination);
-
-            if (this.usnc.Value != 0)
-                this.uspc.WriteToStream(Destination);
-
+            this.us.WriteToStream(Destination);
             this.nm.WriteToStream(Destination);
             this.ntg.WriteToStream(Destination);
         }
@@ -2956,6 +2938,151 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
         }
     }
 
+    public class SimPlayerComm : ISotsStructure
+    {
+        protected Int32SaveStruct msgt;
+        protected SimPlayerCommMsg msg;
+
+        public Int32SaveStruct Msgt
+        {
+            get { return this.msgt; }
+            set { this.msgt = value; }
+        }
+
+        public SimPlayerCommMsg Msg
+        {
+            get { return msg; }
+            set { msg = value; }
+        }
+
+        /// <summary>Default constructor</summary>
+        public SimPlayerComm()
+        {
+            this.msgt = new Int32SaveStruct();
+            this.msg = new SimPlayerCommMsg();
+        }
+
+        /// <summary>Populates the data structure from the incoming stream by reading expected values.</summary>
+        /// <param name="Data">Stream of binary data to read from</param>
+        public void ReadFromStream(Stream Data)
+        {
+            this.msgt.ReadFromStream(Data);
+            this.msg.ReadFromStream(Data);
+        }
+
+        /// <summary>Writes the structure data to the destination stream.</summary>
+        /// <param name="Destination">Destination stream to write to. Should be writable.</param>
+        public void WriteToStream(Stream Destination)
+        {
+            this.msgt.WriteToStream(Destination);
+            this.msg.WriteToStream(Destination);
+        }
+    }
+
+    public class SimPlayerCommMsg : ComplexSaveStruct
+    {
+        protected Int32SaveStruct cid2;
+        protected Int32SaveStruct snd;      //seen 0 and 5, 5 leaving a "sys" trailing integer
+        protected Int32SaveStruct rcp;
+        protected Int32SaveStruct exp;      //ususally 16-bit, -1
+        protected Int32SaveStruct sent;     //turn sent?
+        protected Int32SaveStruct rcpt;     //usually 2
+        protected Int32SaveStruct sys;     //system ID
+        
+        #region Properties
+        public Int32SaveStruct Cid2
+        {
+            get { return this.cid2; }
+            set { this.cid2 = value; }
+        }
+
+        public Int32SaveStruct Snd
+        {
+            get { return this.snd; }
+            set { this.snd = value; }
+        }
+
+        public Int32SaveStruct Rcp
+        {
+            get { return this.rcp; }
+            set { this.rcp = value; }
+        }
+
+        public Int32SaveStruct Exp
+        {
+            get { return this.exp; }
+            set { this.exp = value; }
+        }
+
+        public Int32SaveStruct Sent
+        {
+            get { return this.sent; }
+            set { this.sent = value; }
+        }
+
+        public Int32SaveStruct Rcpt
+        {
+            get { return this.rcpt; }
+            set { this.rcpt = value; }
+        }
+
+        public Int32SaveStruct Sys
+        {
+            get { return this.sys; }
+            set { this.sys = value; }
+        }
+        #endregion
+
+        /// <summary>Default constructor</summary>
+        public SimPlayerCommMsg() : base()
+        {
+            this.cid2 = new Int32SaveStruct();
+            this.snd = new Int32SaveStruct();
+            this.rcp = new Int32SaveStruct();
+            this.exp = new Int32SaveStruct();
+            this.sent = new Int32SaveStruct();
+            this.rcpt = new Int32SaveStruct();
+            this.sys = null;    //not always present
+        }
+
+        /// <summary>
+        ///     Populates the body (additional members from the base type) of the data structure from the
+        ///     incoming stream by reading expected values.
+        /// </summary>
+        /// <param name="Data">Stream of binary data to read from</param>
+        protected override void ReadBodyFromStream(Stream Data)
+        {
+            this.cid2.ReadFromStream(Data);
+            this.snd.ReadFromStream(Data);
+            this.rcp.ReadFromStream(Data);
+            this.exp.ReadFromStream(Data);
+            this.sent.ReadFromStream(Data);
+            this.rcpt.ReadFromStream(Data);
+
+            if (this.snd.Value != 0)
+            {
+                this.sys = new Int32SaveStruct();
+                this.sys.ReadFromStream(Data);
+            }
+        }
+
+        /// <summary>Writes the body (additional members from the base type) of the data structure to the destination stream.</summary>
+        /// <param name="Destination">Destination stream to write to. Should be writable.</param>
+        protected override void WriteBodyToStream(Stream Destination)
+        {
+            this.cid2.WriteToStream(Destination);
+            this.snd.WriteToStream(Destination);
+            this.rcp.WriteToStream(Destination);
+            this.exp.WriteToStream(Destination);
+            this.sent.WriteToStream(Destination);
+            this.rcpt.WriteToStream(Destination);
+
+            if (this.snd.Value != 0)
+                this.sys.WriteToStream(Destination);
+        }
+    }
+
+
     #region Preps
     public class SimPlayerPrepSaveStruct : ComplexSaveStruct
     {
@@ -3939,8 +4066,8 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
         protected Int32SaveStruct nexp;
         protected Int32SaveStruct nWeapXcl;
         protected ComplexArraySaveStruct<SimPlayerDetailsOjv> ovjs;
-        protected ComplexArraySaveStruct<SimPlayerDipStat> dipStats;   //has to be a struct
-        protected NestedInt32SaveStruct comms;      //has to be a struct
+        protected ComplexArraySaveStruct<SimPlayerDipStat> dipStats;    //has to be a struct, was NestedInt32SaveStruct
+        protected ComplexArraySaveStruct<SimPlayerComm> comms;          //has to be a struct, was NestedInt32SaveStruct
         protected ComplexArraySaveStruct<SimPlayerPrepSaveStruct> preps;
         protected ComplexArraySaveStruct<SimPlayerOdesSaveStruct> odes;
         protected ComplexArraySaveStruct<SimPlayerOwepSaveStruct> owep;
@@ -4527,10 +4654,10 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
             set { dipStats = value; }
         }
 
-        public NestedInt32SaveStruct Comms
+        public ComplexArraySaveStruct<SimPlayerComm> Comms
         {
-            get { return comms; }
-            set { comms = value; }
+            get { return this.comms; }
+            set { this.comms = value; }
         }
 
         public ComplexArraySaveStruct<SimPlayerPrepSaveStruct> Preps
@@ -4681,7 +4808,7 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
             this.nWeapXcl = new Int32SaveStruct();
             this.ovjs = new ComplexArraySaveStruct<SimPlayerDetailsOjv>();
             this.dipStats = new ComplexArraySaveStruct<SimPlayerDipStat>();
-            this.comms = new NestedInt32SaveStruct();
+            this.comms = new ComplexArraySaveStruct<SimPlayerComm>();
             this.preps = new ComplexArraySaveStruct<SimPlayerPrepSaveStruct>();
             this.odes = new ComplexArraySaveStruct<SimPlayerOdesSaveStruct>();
             this.owep = new ComplexArraySaveStruct<SimPlayerOwepSaveStruct>();
@@ -5455,6 +5582,49 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
         /// <param name="Destination">Destination stream to write to. Should be writable.</param>
         protected override void WriteBodyToStream(Stream Destination)
         {
+        }
+    }
+
+    public class SimSystemDetailAdct : ISotsStructure
+    {
+        protected Int32SaveStruct ads;
+        protected Int32SaveStruct adt;
+
+        #region Properties
+        public Int32SaveStruct Ads
+        {
+            get { return this.ads; }
+            set { this.ads = value; }
+        }
+
+        public Int32SaveStruct Adt
+        {
+            get { return this.adt; }
+            set { this.adt = value; }
+        }
+        #endregion
+
+        /// <summary>Default constructor</summary>
+        public SimSystemDetailAdct()
+        {
+            this.ads = new Int32SaveStruct();
+            this.adt = new Int32SaveStruct();
+        }
+
+        /// <summary>Populates the data structure from the incoming stream by reading expected values.</summary>
+        /// <param name="Data">Stream of binary data to read from</param>
+        public void ReadFromStream(Stream Data)
+        {
+            this.ads.ReadFromStream(Data);
+            this.adt.ReadFromStream(Data);
+        }
+
+        /// <summary>Writes the structure data to the destination stream.</summary>
+        /// <param name="Destination">Destination stream to write to. Should be writable.</param>
+        public void WriteToStream(Stream Destination)
+        {
+            this.ads.WriteToStream(Destination);
+            this.adt.WriteToStream(Destination);
         }
     }
 
@@ -6364,8 +6534,8 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
         //bq -- only if an imperial planet?
         protected SimSystemDetailBq bq;
 
-        protected Int32SaveStruct nadct;
-        protected Int32SaveStruct numPls2;
+        protected NonComplexArraySaveStruct<SimSystemDetailAdct> adct;    //a noncomplex array of ... something
+        protected Int32SaveStruct numPlgs2;      //probably a noncomplex array of plauges affecting system.
         protected NonComplexArraySaveStruct<Int32SaveStruct> flts;
         protected NonComplexArraySaveStruct<FloatSaveStruct> gfs;
         protected NonComplexArraySaveStruct<Int32SaveStruct> snF;
@@ -6736,16 +6906,16 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
             set { bq = value; }
         }
 
-        public Int32SaveStruct Nadct
+        public NonComplexArraySaveStruct<SimSystemDetailAdct> Adct
         {
-            get { return nadct; }
-            set { nadct = value; }
+            get { return this.adct; }
+            set { this.adct = value; }
         }
 
-        public Int32SaveStruct NumPls2
+        public Int32SaveStruct NumPlgs2
         {
-            get { return numPls2; }
-            set { numPls2 = value; }
+            get { return numPlgs2; }
+            set { numPlgs2 = value; }
         }
 
         public NonComplexArraySaveStruct<Int32SaveStruct> Flts
@@ -6862,8 +7032,8 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
 
             this.bq = null; //only if imperial
 
-            this.nadct = new Int32SaveStruct();
-            this.numPls2 = new Int32SaveStruct();
+            this.adct = new NonComplexArraySaveStruct<SimSystemDetailAdct>();
+            this.numPlgs2 = new Int32SaveStruct();
             this.flts = new NonComplexArraySaveStruct<Int32SaveStruct>();
             this.gfs = new NonComplexArraySaveStruct<FloatSaveStruct>();
             this.snF = new NonComplexArraySaveStruct<Int32SaveStruct>();
@@ -6948,8 +7118,8 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
             }
 
 
-            this.nadct.ReadFromStream(Data);
-            this.numPls2.ReadFromStream(Data);
+            this.adct.ReadFromStream(Data);
+            this.numPlgs2.ReadFromStream(Data);
             this.flts.ReadFromStream(Data);
             this.gfs.ReadFromStream(Data);
             this.snF.ReadFromStream(Data);
@@ -7029,8 +7199,8 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
                 this.bq.WriteToStream(Destination);
             }
 
-            this.nadct.WriteToStream(Destination);
-            this.numPls2.WriteToStream(Destination);
+            this.adct.WriteToStream(Destination);
+            this.numPlgs2.WriteToStream(Destination);
             this.flts.WriteToStream(Destination);
             this.gfs.WriteToStream(Destination);
             this.snF.WriteToStream(Destination);
@@ -10881,8 +11051,8 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
     
     public class SimScSctObEncObjDetailsEncIni2NstFltBase : ComplexSaveStruct
     {
-        protected Int32SaveStruct siz;      //size
-        protected Int32SaveStruct unknown1;
+        protected Int32SaveStruct siz;          //size
+        protected Int32SaveStruct unknown1;     //not always present?
 
         public Int32SaveStruct Siz
         {
@@ -10900,7 +11070,8 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
         public SimScSctObEncObjDetailsEncIni2NstFltBase() : base()
         {
             this.siz = new Int32SaveStruct();
-            this.unknown1 = new Int32SaveStruct();
+            //this.unknown1 = new Int32SaveStruct();
+            this.unknown1 = null;
         }
 
         /// <summary>
@@ -10911,7 +11082,11 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
         protected override void ReadBodyFromStream(Stream Data)
         {
             this.siz.ReadFromStream(Data);
-            this.unknown1.ReadFromStream(Data);
+            if (this.siz.Value > 0)
+            {
+                this.unknown1 = new Int32SaveStruct();
+                this.unknown1.ReadFromStream(Data);
+            }
         }
 
         /// <summary>Writes the body (additional members from the base type) of the data structure to the destination stream.</summary>
@@ -10919,13 +11094,14 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
         protected override void WriteBodyToStream(Stream Destination)
         {
             this.siz.WriteToStream(Destination);
-            this.unknown1.WriteToStream(Destination);
+            if (this.siz.Value > 0)
+                this.unknown1.WriteToStream(Destination);
         }
     }
 
     public class SimScSctObEncObjDetailsEncIni2Nst : SimScSctObEncObjDetailsEncIni2NstFltBase
     {
-        protected SimScSctObEncObjDetailsEncIni2NstObj nstObj;
+        protected SimScSctObEncObjDetailsEncIni2NstObj nstObj;  //not always there?
 
         public SimScSctObEncObjDetailsEncIni2NstObj NstObj
         {
@@ -10936,7 +11112,8 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
         /// <summary>Default constructor</summary>
         public SimScSctObEncObjDetailsEncIni2Nst() : base()
         {
-            this.nstObj = new SimScSctObEncObjDetailsEncIni2NstObj();
+            this.nstObj = null;
+            //this.nstObj = new SimScSctObEncObjDetailsEncIni2NstObj();
         }
 
         /// <summary>
@@ -10947,7 +11124,12 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
         protected override void ReadBodyFromStream(Stream Data)
         {
             base.ReadBodyFromStream(Data);
-            this.nstObj.ReadFromStream(Data);
+
+            if (this.siz.Value != 0)
+            {
+                this.nstObj = new SimScSctObEncObjDetailsEncIni2NstObj();
+                this.nstObj.ReadFromStream(Data);
+            }
         }
 
         /// <summary>Writes the body (additional members from the base type) of the data structure to the destination stream.</summary>
@@ -10955,13 +11137,15 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
         protected override void WriteBodyToStream(Stream Destination)
         {
             base.WriteBodyToStream(Destination);
-            this.nstObj.WriteToStream(Destination);
+
+            if (this.siz.Value != 0)
+                this.nstObj.WriteToStream(Destination);
         }
     }
 
     public class SimScSctObEncObjDetailsEncIni2Flt : SimScSctObEncObjDetailsEncIni2NstFltBase
     {
-        protected SimScSctObEncObjDetailsEncIni2FltObj fltObj;
+        protected SimScSctObEncObjDetailsEncIni2FltObj fltObj;      //not always there?
 
         public SimScSctObEncObjDetailsEncIni2FltObj FltObj
         {
@@ -10972,7 +11156,8 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
         /// <summary>Default constructor</summary>
         public SimScSctObEncObjDetailsEncIni2Flt() : base()
         {
-            this.fltObj = new SimScSctObEncObjDetailsEncIni2FltObj();
+            //this.fltObj = new SimScSctObEncObjDetailsEncIni2FltObj();
+            this.fltObj = null;
         }
 
         /// <summary>
@@ -10983,7 +11168,12 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
         protected override void ReadBodyFromStream(Stream Data)
         {
             base.ReadBodyFromStream(Data);
-            this.fltObj.ReadFromStream(Data);
+
+            if (this.siz.Value != 0)
+            {
+                this.fltObj = new SimScSctObEncObjDetailsEncIni2FltObj();
+                this.fltObj.ReadFromStream(Data);
+            }
         }
 
         /// <summary>Writes the body (additional members from the base type) of the data structure to the destination stream.</summary>
@@ -10991,7 +11181,9 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
         protected override void WriteBodyToStream(Stream Destination)
         {
             base.WriteBodyToStream(Destination);
-            this.fltObj.WriteToStream(Destination);
+
+            if (this.siz.Value != 0)
+                this.fltObj.WriteToStream(Destination);
         }
     }
 

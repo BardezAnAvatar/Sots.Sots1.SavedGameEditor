@@ -146,6 +146,13 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls.Editor
             this.toolStripStatusLabelMessage.Text = "Loading...";
             if (this.openFileDialogSaveFile.ShowDialog() == DialogResult.OK)
             {
+                //clear so events do not fire later
+                this.systemsControl.Clear();
+                this.speciesDetails.Clear();
+                this.playersControl.Clear();
+                this.nodeGridControl.Clear();
+
+
                 this.toolStripProgressBarLoadSave.Minimum = 0;
                 this.toolStripProgressBarLoadSave.Maximum = 8;
                 this.toolStripProgressBarLoadSave.Step = 1;

@@ -51,6 +51,10 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls.Species
             this.dataGridViewSpecies.ReadOnly = ReadOnlyFlag;
         }
 
+        public void Clear()
+        {
+        }
+
 
         #region Write back to struct
         public void UpdateStruct(Int32 Row)

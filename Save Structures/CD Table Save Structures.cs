@@ -11,14 +11,15 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
     #region First (player?) CD data structure
     public class CdPlayer : ComplexSaveStruct
     {                                           //data observed
-                                                //KTA   SO      WAP2    WAP35
+                                                //KTA   SO      WAP2    WAP35   CNP
         protected Int32SaveStruct unknown1;     //16    16      16      16
         protected BooleanSaveStruct unknown2;   //1     1       1       1
         protected FloatSaveStruct unknown3;     //2.5   9.4     1.7     1.7
 
         //5 Boolean/Bytes
-        protected BooleanSaveStruct unknown4;   //0
-        protected BooleanSaveStruct unknown5;   //0
+        protected BooleanSaveStruct unknown4;   //0                             1
+        protected Int32SaveStruct unknown4p5;   //                              209
+        protected BooleanSaveStruct unknown5;   //0                         
         protected BooleanSaveStruct unknown6;   //0
         protected BooleanSaveStruct unknown7;   //0
         protected BooleanSaveStruct unknown8;   //0
@@ -92,6 +93,12 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
         {
             get { return unknown4; }
             set { unknown4 = value; }
+        }
+
+        public Int32SaveStruct Unknown4p5
+        {
+            get { return this.unknown4p5; }
+            set { this.unknown4p5 = value; }
         }
 
         public BooleanSaveStruct Unknown5
@@ -288,6 +295,7 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
             this.unknown2 = new BooleanSaveStruct();
             this.unknown3 = new FloatSaveStruct();
             this.unknown4 = new BooleanSaveStruct();
+            this.unknown4p5 = null;
             this.unknown5 = new BooleanSaveStruct();
             this.unknown6 = new BooleanSaveStruct();
             this.unknown7 = new BooleanSaveStruct();
@@ -332,6 +340,14 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
             this.unknown2.ReadFromStream(Data);
             this.unknown3.ReadFromStream(Data);
             this.unknown4.ReadFromStream(Data);
+
+            if (this.unknown4.BooleanValue)
+            {
+                this.unknown4p5 = new Int32SaveStruct();
+                this.unknown4p5.ReadFromStream(Data);
+
+            }
+
             this.unknown5.ReadFromStream(Data);
             this.unknown6.ReadFromStream(Data);
             this.unknown7.ReadFromStream(Data);
@@ -373,6 +389,9 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
             this.unknown2.WriteToStream(Destination);
             this.unknown3.WriteToStream(Destination);
             this.unknown4.WriteToStream(Destination);
+            if (this.unknown4.BooleanValue)
+                this.unknown4p5.WriteToStream(Destination);
+
             this.unknown5.WriteToStream(Destination);
             this.unknown6.WriteToStream(Destination);
             this.unknown7.WriteToStream(Destination);
@@ -565,17 +584,17 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
     public class CdAi : ComplexSaveStruct
     {
         protected AttributeSaveStruct aiAttr;
-        protected NestedInt32SaveStruct aiTurnPris;
+        protected NestedInt32SaveStruct aiTurnPris;     //probably a struct array
         protected CdAiSit aiSit;
-        protected NestedInt32SaveStruct aiPlyHat;
-        protected NestedInt32SaveStruct prs2;
+        protected NestedInt32SaveStruct aiPlyHat;       //probably a struct array
+        protected ComplexArraySaveStruct<CdAiPrsUnknown> prs2;
         protected Int32SaveStruct dsh;
         protected Int32SaveStruct nbStab;
         protected Int32SaveStruct nmBlst;
         protected CdAiAidng aidng;
         protected Int32SaveStruct aiHivJ;
         protected Int32SaveStruct sdFlT;
-        protected NestedInt32SaveStruct nalat;
+        protected NestedInt32SaveStruct nalat;          //probably a struct array
         protected Int32SaveStruct lnat;
         protected Int32SaveStruct lat;
         protected NonComplexArraySaveStruct<CdAiSys> aiSys;
@@ -611,7 +630,7 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
             set { aiPlyHat = value; }
         }
 
-        public NestedInt32SaveStruct Prs2
+        public ComplexArraySaveStruct<CdAiPrsUnknown> Prs2
         {
             get { return prs2; }
             set { prs2 = value; }
@@ -721,7 +740,7 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
             this.aiTurnPris = new NestedInt32SaveStruct();
             this.aiSit = new CdAiSit();
             this.aiPlyHat = new NestedInt32SaveStruct();
-            this.prs2 = new NestedInt32SaveStruct();
+            this.prs2 = new ComplexArraySaveStruct<CdAiPrsUnknown>();
             this.dsh = new Int32SaveStruct();
             this.nbStab = new Int32SaveStruct();
             this.nmBlst = new Int32SaveStruct();
@@ -841,6 +860,51 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
             this.aiSitWepFams.WriteToStream(Destination);
         }
     }
+
+    public class CdAiPrsUnknown : ComplexSaveStruct
+    {
+        protected Int32SaveStruct pid;      //player
+        protected Int32SaveStruct trn;      //turn
+
+        public Int32SaveStruct Pid
+        {
+            get { return this.pid; }
+            set { this.pid = value; }
+        }
+
+        public Int32SaveStruct Trn
+        {
+            get { return this.trn; }
+            set { this.trn = value; }
+        }
+
+        /// <summary>Default constructor</summary>
+        public CdAiPrsUnknown() : base()
+        {
+            this.pid = new Int32SaveStruct();
+            this.trn = new Int32SaveStruct();
+        }
+
+        /// <summary>
+        ///     Populates the body (additional members from the base type) of the data structure from the
+        ///     incoming stream by reading expected values.
+        /// </summary>
+        /// <param name="Data">Stream of binary data to read from</param>
+        protected override void ReadBodyFromStream(Stream Data)
+        {
+            this.pid.ReadFromStream(Data);
+            this.trn.ReadFromStream(Data);
+        }
+
+        /// <summary>Writes the body (additional members from the base type) of the data structure to the destination stream.</summary>
+        /// <param name="Destination">Destination stream to write to. Should be writable.</param>
+        protected override void WriteBodyToStream(Stream Destination)
+        {
+            this.pid.WriteToStream(Destination);
+            this.trn.WriteToStream(Destination);
+        }
+    }
+
 
     public class CdAiSys : ISotsStructure
     {

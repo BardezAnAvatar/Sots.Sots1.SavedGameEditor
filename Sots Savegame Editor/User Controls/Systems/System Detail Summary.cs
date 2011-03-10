@@ -80,5 +80,16 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls
             this.textBoxY.Enabled = !ReadOnlyFlag;
             this.textBoxZ.Enabled = !ReadOnlyFlag;
         }
+
+        public void Clear()
+        {
+            this.textBoxSystemId.Text = String.Empty;
+            this.textBoxName.Text = String.Empty;
+            this.textBoxSize.Text = String.Empty;
+            this.textBoxX.Text = String.Empty;
+            this.textBoxY.Text = String.Empty;
+            this.textBoxZ.Text = String.Empty;
+            this.buttonColor.BackColor = System.Drawing.SystemColors.Control;
+        }
     }
 }

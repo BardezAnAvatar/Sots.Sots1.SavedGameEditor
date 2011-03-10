@@ -40,6 +40,10 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls.Players
             this.savegame = null;
         }
 
+        public void Clear()
+        {
+        }
+
 
         public void LoadFromStruct(SaveGameData saveData)
         {
