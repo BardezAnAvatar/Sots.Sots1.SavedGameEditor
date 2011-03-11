@@ -88,12 +88,13 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls.Node_Grid
         protected void dataGridViewNodes_CurrentCellChanged(object sender, EventArgs e)
         {
             //persist changes
+
             if (this.currentRow > -1 && this.dataGridViewNodes.CurrentRow != null)
             {
                 if (!(IsNullOrDBNull(this.dataGridViewNodes.Rows[this.currentRow].Cells["Index"].Value)
-                    && IsNullOrDBNull(this.dataGridViewNodes.Rows[this.currentRow].Cells["Node Path ID"].Value)
-                    && IsNullOrDBNull(this.dataGridViewNodes.Rows[this.currentRow].Cells["From"].Value)
-                    && IsNullOrDBNull(this.dataGridViewNodes.Rows[this.currentRow].Cells["To"].Value)))
+                    || IsNullOrDBNull(this.dataGridViewNodes.Rows[this.currentRow].Cells["Node Path ID"].Value)
+                    || IsNullOrDBNull(this.dataGridViewNodes.Rows[this.currentRow].Cells["From"].Value)
+                    || IsNullOrDBNull(this.dataGridViewNodes.Rows[this.currentRow].Cells["To"].Value)))
                 this.PersistDetailsChanges(this.currentRow);
             }
 
@@ -127,11 +128,13 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls.Node_Grid
                 this.AddRowAsNecessary(e.RowIndex);
                 this.PersistDetailsChanges(e.RowIndex);
                 this.PersistGridChanges(e.RowIndex);
-            }
 
-            //Refresh
-            this.RefreshDetails(e.RowIndex);
-            this.RefreshGridRow(currentRow);
+                //Refresh grid
+                this.RefreshGridRow(currentRow);
+
+                //Refresh
+                this.RefreshDetails(e.RowIndex);
+            }
         }
 
         #region Persist
