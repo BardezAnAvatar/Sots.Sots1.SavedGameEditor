@@ -11,3 +11,4 @@ http://www.bobpowell.net/faqmain.htm
 (check)	Thread: Resources:	load text, load an array of images for the tech tree
 
 
+something seems broken with the SimSystem PopG load/save
