@@ -14,9 +14,26 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configuration Handler", "Configuration Handler\Configuration Handler.csproj", "{6E1496AB-268A-4EA2-99B3-726162F019F1}"
 EndProject
 Global
-	GlobalSection(SubversionScc) = preSolution
-		Svn-Managed = True
-		Manager = AnkhSVN - Subversion Support for Visual Studio
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://bardezserver:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Configuration\u0020Handler\\Configuration\u0020Handler.csproj
+		SccProjectName1 = Configuration\u0020Handler
+		SccLocalPath1 = Configuration\u0020Handler
+		SccProjectUniqueName2 = Exception\u0020Manager\\Exception\u0020Handler.csproj
+		SccProjectName2 = Exception\u0020Manager
+		SccLocalPath2 = Exception\u0020Manager
+		SccProjectUniqueName3 = Save\u0020Structures\\Save\u0020Structures.csproj
+		SccProjectName3 = Save\u0020Structures
+		SccLocalPath3 = Save\u0020Structures
+		SccProjectUniqueName4 = Sots\u0020Savegame\u0020Editor\\SotS\u0020Savegame\u0020Editor.csproj
+		SccProjectName4 = Sots\u0020Savegame\u0020Editor
+		SccLocalPath4 = Sots\u0020Savegame\u0020Editor
+		SccProjectUniqueName5 = TargaImage\\TargaImage.csproj
+		SccProjectName5 = TargaImage
+		SccLocalPath5 = TargaImage
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
