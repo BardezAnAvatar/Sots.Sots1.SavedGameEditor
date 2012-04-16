@@ -9,7 +9,7 @@ using Bardez.Project.SwordOfTheStars.Editor.Resource_Management;
 
 namespace Bardez.Project.SwordOfTheStars.Editor
 {
-    public class Resources
+    public class Resources : IDisposable
     {
         public const String DirectoryResources = "Resources";
         public const String DirectoryResourcesAdd = @"Resources\";
@@ -32,13 +32,22 @@ namespace Bardez.Project.SwordOfTheStars.Editor
         /// <summary>Destructor</summary>
         ~Resources()
         {
+            //CleanZip();
+        }
+
+        public void Dispose()
+        {
             CleanZip();
         }
 
 
         protected void CleanZip()
         {
-            this.zip.Dispose();
+            if (this.zip != null)
+            {
+                this.zip.Dispose();
+                this.zip = null;
+            }
         }
 
 
