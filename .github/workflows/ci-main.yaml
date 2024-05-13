@@ -17,6 +17,12 @@ jobs:
     - uses: actions/checkout@v4
       name: Checkout Source
 
+    - name: Debug
+      run: |
+        github.event.head_commit.message: ${{ github.event.head_commit.message }}
+        github.event.workflow_run.head_commit.message: ${{ github.event.workflow_run.head_commit.message }}
+        github.event.commits[0].message: ${{ github.event.commits[0].message }}
+
     #SemVer calculation
     - name: Get Next Version
       id: semver
