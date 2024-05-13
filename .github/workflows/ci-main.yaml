@@ -1,9 +1,12 @@
 name: "Continous Integration: Releases"
 
 on:
-  push:
-    branches:
-    - main
+  #push:
+  #  branches:
+  #  - main
+  pull_request:
+    types:
+    - synchronize
 
 jobs:
   build:
