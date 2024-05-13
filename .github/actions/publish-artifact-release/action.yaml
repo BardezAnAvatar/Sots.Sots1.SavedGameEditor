@@ -6,11 +6,16 @@ inputs:
     description: 'The expected SemVer value to use in naming'
     required: true
     default: 'v1.0.0'
+outputs:
+  url:
+    description: "URL the artifact was uploaded to"
+    value: ${{ steps.upload-artifact.outputs.artifact-url }}
 
 runs:
   using: "composite"
   steps:
     - name: Upload artifact
+      id: upload-artifact
       uses: actions/upload-artifact@v4
       with:
         name: release_${{ inputs.semver }}
