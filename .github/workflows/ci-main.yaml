@@ -10,6 +10,7 @@ on:
 
 jobs:
   build:
+    name: Build Release
     runs-on: windows-2019
 
     steps:
