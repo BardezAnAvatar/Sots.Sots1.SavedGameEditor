@@ -43,13 +43,13 @@ jobs:
 
     - name: Create Release
       id: create_release
-      uses: actions/create-release@v1
+      uses: ncipollo/release-action@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
       with:
         tag_name: ${{ steps.semver.outputs.next }}
         release_name: Release ${{ steps.semver.outputs.next }}
-        body: ${{ github.event.workflow_run.head_commit.message }}
+        body: ${{ github.event.head_commit.message }}
         draft: false
         prerelease: false
 
