@@ -1,13 +1,9 @@
-name: Continous Integration
+name: Build (.NET Framework)
+description: Build the solution using MSBuild
 
-on:
-  workflow_call
-
-jobs:
-  build:
-    runs-on: windows-2019
-    
-    steps:
+runs:
+  using: "composite"
+  steps:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
 
