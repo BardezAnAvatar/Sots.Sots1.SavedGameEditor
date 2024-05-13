@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    
+
     #SemVer calculation
     - name: Get Next Version
       id: semver
@@ -21,4 +21,31 @@ jobs:
         branch: main
 
     - uses: ./.github/actions/build/
+
     - uses: ./.github/actions/publish-artifact-release/
+      id: publish-artifact-release
+      with:
+        semver: ${{ steps.semver.outputs.next }}
+
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+      with:
+        tag_name: ${{ steps.semver.outputs.next }}
+        release_name: Release ${{ steps.semver.outputs.next }}
+        body: ${{ github.event.workflow_run.head_commit.message }}
+        draft: false
+        prerelease: false
+
+    - name: Upload Release Asset
+      id: upload-release-asset 
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+        asset_path: ${{ steps.publish-artifact-release.outputs.url }}
+        asset_name: release_${{ steps.semver.outputs.next }}.zip
+        asset_content_type: application/zip
