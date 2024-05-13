@@ -14,5 +14,6 @@ jobs:
     runs-on: windows-2019
 
     steps:
+    - uses: actions/checkout@v2
     - uses: ./.github/workflows/build.yaml
     
