@@ -1,0 +1,1230 @@
+results = 
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": true
+    },
+    "targetId": "",
+    "targetDisplayName": ".NET 8.0"
+  },
+  "analysisStartTime": "2024-05-12T23:56:09.4174575Z",
+  "analysisEndTime": "2024-05-12T23:57:09.6742361Z",
+  "stats": {
+    "summary": {
+      "projects": 5,
+      "issues": 5,
+      "incidents": 50,
+      "effort": 50
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 11,
+        "Optional": 34,
+        "Potential": 5,
+        "Information": 0
+      },
+      "category": {
+        "Project": 10,
+        "Api": 40
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Configuration Handler\\Configuration Handler.csproj",
+      "startingProject": true,
+      "issues": 4,
+      "storyPoints": 8,
+      "ruleInstances": [
+        {
+          "incidentId": "dc5e9937-cdb3-4a2b-82e4-baf0dcc96eea",
+          "ruleId": "Project.0001",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Configuration Handler\\Configuration Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Configuration Handler\\Configuration Handler.csproj"
+          }
+        },
+        {
+          "incidentId": "150d34b4-e2f5-45be-92c2-9d8b6ce06101",
+          "ruleId": "Project.0002",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Configuration Handler\\Configuration Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Configuration Handler\\Configuration Handler.csproj",
+            "snippet": "Current: .NETFramework,Version=v4.0\nNew: net8.0"
+          }
+        },
+        {
+          "incidentId": "5333441e-c7c1-4a1b-83e6-d3df09a6bba9",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Configuration.ConfigurationManager, 8.0.0.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Configuration Handler\\Configuration Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Configuration Handler\\Configuration Handler.cs",
+            "snippet": "ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None)",
+            "line": 238,
+            "column": 16,
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.configuration.configurationmanager.openexeconfiguration",
+                "isCustom": false
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "579ff8c7-25ce-4558-84a7-938fdd700378",
+          "ruleId": "Api.0001",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Configuration Handler\\Configuration Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Configuration Handler\\Configuration Handler.cs",
+            "snippet": "WebConfigurationManager.OpenWebConfiguration(webPath)",
+            "line": 232,
+            "column": 20,
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.web.configuration.webconfigurationmanager.openwebconfiguration",
+                "isCustom": false
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "ca7fe3a8-a50a-46c7-ab23-032138e826ed",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Configuration.ConfigurationManager, 8.0.0.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Configuration Handler\\Configuration Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Configuration Handler\\Configuration Handler.cs",
+            "snippet": "ConfigurationManager.OpenMappedExeConfiguration(map, ConfigurationUserLevel.None)",
+            "line": 212,
+            "column": 20,
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.configuration.configurationmanager.openmappedexeconfiguration",
+                "isCustom": false
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "b00972a2-59a9-4f3e-b38a-bce449958397",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Configuration.ConfigurationManager, 8.0.0.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Configuration Handler\\Configuration Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Configuration Handler\\Configuration Handler.cs",
+            "snippet": "ConfigurationManager.OpenMappedExeConfiguration(map, ConfigurationUserLevel.None)",
+            "line": 189,
+            "column": 16,
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.configuration.configurationmanager.openmappedexeconfiguration",
+                "isCustom": false
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "99b89b6c-21bc-435a-a718-cd3bfb50fb84",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Configuration.ConfigurationManager, 8.0.0.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Configuration Handler\\Configuration Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Configuration Handler\\Configuration Handler.cs",
+            "snippet": "collection.Add(tempElement)",
+            "line": 171,
+            "column": 16,
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.configuration.keyvalueconfigurationcollection.add",
+                "isCustom": false
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "f2238168-fc88-4886-b2b7-36dca1daad43",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Configuration.ConfigurationManager, 8.0.0.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Configuration Handler\\Configuration Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Configuration Handler\\Configuration Handler.cs",
+            "snippet": "ConfigurationManager.OpenMachineConfiguration()",
+            "line": 119,
+            "column": 20,
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.configuration.configurationmanager.openmachineconfiguration",
+                "isCustom": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+      "startingProject": true,
+      "issues": 3,
+      "storyPoints": 32,
+      "ruleInstances": [
+        {
+          "incidentId": "39094ad2-5578-4309-b04a-0efa26db3fd2",
+          "ruleId": "Project.0001",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj"
+          }
+        },
+        {
+          "incidentId": "204725e8-7733-41e6-8904-3d84a5c28716",
+          "ruleId": "Project.0002",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+            "snippet": "Current: .NETFramework,Version=v4.0\nNew: net8.0-windows"
+          }
+        },
+        {
+          "incidentId": "d406ab84-a3da-495a-af65-0cd89076a80b",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Void System.Security.Permissions.MediaPermissionAttribute::.ctor(System.Security.Permissions.SecurityAction)\r\n    -\u003E System.Security.Permissions.SecurityAction",
+            "protectedId": "T:System.Security.Permissions.SecurityAction",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.securityaction",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "c8df4b5d-2610-434c-abe5-8c3d1e3d6199",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Security.Permissions.MediaPermissionAttribute\r\n    -\u003E System.Security.Permissions.CodeAccessSecurityAttribute",
+            "protectedId": "T:System.Security.Permissions.CodeAccessSecurityAttribute",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.codeaccesssecurityattribute",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "dee5ed7d-63c7-49c8-8268-50d8f767be29",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Security.IPermission System.Security.Permissions.MediaPermission::Union(System.Security.IPermission)\r\n    -\u003E System.Security.IPermission",
+            "protectedId": "T:System.Security.IPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.ipermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "7057f625-5b3b-40c8-88e6-153f94e2f1d7",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Security.IPermission System.Security.Permissions.MediaPermission::Intersect(System.Security.IPermission)\r\n    -\u003E System.Security.IPermission",
+            "protectedId": "T:System.Security.IPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.ipermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "ae844212-15a4-41a9-8ce9-b1ec6d15fad4",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Boolean System.Security.Permissions.MediaPermission::IsSubsetOf(System.Security.IPermission)\r\n    -\u003E System.Security.IPermission",
+            "protectedId": "T:System.Security.IPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.ipermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "0ced1565-b630-4b77-a1a7-7c59aa7e153d",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Void System.Security.Permissions.MediaPermission::.ctor(System.Security.Permissions.PermissionState)\r\n    -\u003E System.Security.Permissions.PermissionState",
+            "protectedId": "T:System.Security.Permissions.PermissionState",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.permissionstate",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "edf03272-a2ff-4243-a9d9-d9b969676ace",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Security.Permissions.MediaPermission\r\n    -\u003E System.Security.Permissions.IUnrestrictedPermission",
+            "protectedId": "T:System.Security.Permissions.IUnrestrictedPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.iunrestrictedpermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "56192533-2634-4a9a-b52d-0d7b22649194",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Security.Permissions.MediaPermission\r\n    -\u003E System.Security.CodeAccessPermission",
+            "protectedId": "T:System.Security.CodeAccessPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.codeaccesspermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "d6b91d80-0d52-4fca-9edd-ae48f3844883",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Void System.Security.Permissions.WebBrowserPermissionAttribute::.ctor(System.Security.Permissions.SecurityAction)\r\n    -\u003E System.Security.Permissions.SecurityAction",
+            "protectedId": "T:System.Security.Permissions.SecurityAction",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.securityaction",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "d5a3b282-298e-4cc2-b727-f0b53e297aa3",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Security.Permissions.WebBrowserPermissionAttribute\r\n    -\u003E System.Security.Permissions.CodeAccessSecurityAttribute",
+            "protectedId": "T:System.Security.Permissions.CodeAccessSecurityAttribute",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.codeaccesssecurityattribute",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "c2423c39-12bd-4fd6-83cf-881e71f6f3af",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Security.IPermission System.Security.Permissions.WebBrowserPermission::Union(System.Security.IPermission)\r\n    -\u003E System.Security.IPermission",
+            "protectedId": "T:System.Security.IPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.ipermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "2b365deb-2771-4ea4-be14-095e29a9692e",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Security.IPermission System.Security.Permissions.WebBrowserPermission::Intersect(System.Security.IPermission)\r\n    -\u003E System.Security.IPermission",
+            "protectedId": "T:System.Security.IPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.ipermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "be8db604-f3a3-433d-b5d8-c540e8b5a55c",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Boolean System.Security.Permissions.WebBrowserPermission::IsSubsetOf(System.Security.IPermission)\r\n    -\u003E System.Security.IPermission",
+            "protectedId": "T:System.Security.IPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.ipermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "46112ffe-641a-4ebc-a8b2-6cf058c102bc",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Void System.Security.Permissions.WebBrowserPermission::.ctor(System.Security.Permissions.PermissionState)\r\n    -\u003E System.Security.Permissions.PermissionState",
+            "protectedId": "T:System.Security.Permissions.PermissionState",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.permissionstate",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "9a7168ba-04ef-4040-a801-729eab36b60c",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Security.Permissions.WebBrowserPermission\r\n    -\u003E System.Security.Permissions.IUnrestrictedPermission",
+            "protectedId": "T:System.Security.Permissions.IUnrestrictedPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.iunrestrictedpermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "db1c603f-8080-4cb1-80c8-8bfe051aab70",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Security.Permissions.WebBrowserPermission\r\n    -\u003E System.Security.CodeAccessPermission",
+            "protectedId": "T:System.Security.CodeAccessPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.codeaccesspermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "3a933a51-9387-42cb-8261-dd3e62b01f4b",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Void MS.Internal.Permissions.UserInitiatedRoutedEventPermissionAttribute::.ctor(System.Security.Permissions.SecurityAction)\r\n    -\u003E System.Security.Permissions.SecurityAction",
+            "protectedId": "T:System.Security.Permissions.SecurityAction",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.securityaction",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "cad44668-1e79-461e-90bb-066d1ec8f7a7",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "MS.Internal.Permissions.UserInitiatedRoutedEventPermissionAttribute\r\n    -\u003E System.Security.Permissions.CodeAccessSecurityAttribute",
+            "protectedId": "T:System.Security.Permissions.CodeAccessSecurityAttribute",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.codeaccesssecurityattribute",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "e785ced1-3221-4ca8-975a-a72a97ecc774",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Void MS.Internal.Permissions.UserInitiatedRoutedEventPermission::.ctor(System.Security.Permissions.PermissionState)\r\n    -\u003E System.Security.Permissions.PermissionState",
+            "protectedId": "T:System.Security.Permissions.PermissionState",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.permissionstate",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "17c4e9dc-41f8-41db-95b1-c96ceb1a433c",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "MS.Internal.Permissions.UserInitiatedRoutedEventPermission\r\n    -\u003E System.Security.CodeAccessPermission",
+            "protectedId": "T:System.Security.CodeAccessPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.codeaccesspermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "4430f8cf-39a9-4b32-a56d-78e477c0adec",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Void MS.Internal.Permissions.RightsManagementPermission::.ctor(System.Security.Permissions.PermissionState)\r\n    -\u003E System.Security.Permissions.PermissionState",
+            "protectedId": "T:System.Security.Permissions.PermissionState",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.permissionstate",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "b2f5468e-ad2c-4db7-91bc-9edadaece185",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "MS.Internal.Permissions.RightsManagementPermission\r\n    -\u003E System.Security.CodeAccessPermission",
+            "protectedId": "T:System.Security.CodeAccessPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.codeaccesspermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "eecbaabc-bf8e-4519-95a7-1df95f345bfa",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Void MS.Internal.Permissions.CompoundFileIOPermission::.ctor(System.Security.Permissions.PermissionState)\r\n    -\u003E System.Security.Permissions.PermissionState",
+            "protectedId": "T:System.Security.Permissions.PermissionState",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.permissionstate",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "6a0e6abd-a5cd-4f89-b906-143810571cdb",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "MS.Internal.Permissions.CompoundFileIOPermission\r\n    -\u003E System.Security.CodeAccessPermission",
+            "protectedId": "T:System.Security.CodeAccessPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.codeaccesspermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "cd4df414-3491-478e-bdc8-a146b0032989",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Security.IPermission MS.Internal.Permissions.InternalParameterlessPermissionBase::Union(System.Security.IPermission)\r\n    -\u003E System.Security.IPermission",
+            "protectedId": "T:System.Security.IPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.ipermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "1fd022fd-779a-4260-9fc2-424102c15d6f",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Boolean MS.Internal.Permissions.InternalParameterlessPermissionBase::IsSubsetOf(System.Security.IPermission)\r\n    -\u003E System.Security.IPermission",
+            "protectedId": "T:System.Security.IPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.ipermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "bea841e9-73af-4887-ab22-1e0ff482161a",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Security.IPermission MS.Internal.Permissions.InternalParameterlessPermissionBase::Intersect(System.Security.IPermission)\r\n    -\u003E System.Security.IPermission",
+            "protectedId": "T:System.Security.IPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.ipermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "a38f554d-1229-434a-b3c5-8298941195f3",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "System.Void MS.Internal.Permissions.InternalParameterlessPermissionBase::.ctor(System.Security.Permissions.PermissionState)\r\n    -\u003E System.Security.Permissions.PermissionState",
+            "protectedId": "T:System.Security.Permissions.PermissionState",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.permissionstate",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "fe5a16e7-da8a-4473-a42c-85eeff32fa59",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "MS.Internal.Permissions.InternalParameterlessPermissionBase\r\n    -\u003E System.Security.Permissions.IUnrestrictedPermission",
+            "protectedId": "T:System.Security.Permissions.IUnrestrictedPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.iunrestrictedpermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "716c8bc9-e1d6-489f-964b-b8f88028ca0a",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Exception Manager\\Exception Handler.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\WindowsBase.dll",
+            "snippet": "MS.Internal.Permissions.InternalParameterlessPermissionBase\r\n    -\u003E System.Security.CodeAccessPermission",
+            "protectedId": "T:System.Security.CodeAccessPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.codeaccesspermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Save Structures\\Save Structures.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 2,
+      "ruleInstances": [
+        {
+          "incidentId": "d6646f3f-c292-4d7d-af77-2d660716dbd2",
+          "ruleId": "Project.0001",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Save Structures\\Save Structures.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Save Structures\\Save Structures.csproj"
+          }
+        },
+        {
+          "incidentId": "abd8c9c7-450b-496f-841a-21fb76d60bcc",
+          "ruleId": "Project.0002",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Save Structures\\Save Structures.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Save Structures\\Save Structures.csproj",
+            "snippet": "Current: .NETFramework,Version=v4.0,Profile=Client\nNew: net8.0"
+          }
+        }
+      ]
+    },
+    {
+      "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Sots Savegame Editor\\SotS Savegame Editor.csproj",
+      "startingProject": true,
+      "issues": 3,
+      "storyPoints": 6,
+      "ruleInstances": [
+        {
+          "incidentId": "2775ccd8-a8ca-4304-86c6-e6aa917faadd",
+          "ruleId": "Project.0001",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Sots Savegame Editor\\SotS Savegame Editor.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Sots Savegame Editor\\SotS Savegame Editor.csproj"
+          }
+        },
+        {
+          "incidentId": "f71c9c75-af49-4e1c-9823-88d70e5ab734",
+          "ruleId": "Project.0002",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Sots Savegame Editor\\SotS Savegame Editor.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Sots Savegame Editor\\SotS Savegame Editor.csproj",
+            "snippet": "Current: .NETFramework,Version=v4.0\nNew: net8.0-windows"
+          }
+        },
+        {
+          "incidentId": "d30662a7-940d-49b3-ba05-274bd58dca43",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Sots Savegame Editor\\SotS Savegame Editor.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Ionic.Zip.dll",
+            "snippet": "System.Int32 Ionic.Zip.SharedUtilities::ReadWithRetry(System.IO.Stream,System.Byte[],System.Int32,System.Int32,System.String)\r\n    -\u003E System.Security.Permissions.SecurityPermission",
+            "protectedId": "T:System.Security.Permissions.SecurityPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.securitypermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "cbd2016d-be3b-4916-8112-22129267e99a",
+          "ruleId": "Api.0003",
+          "description": "This API supports obsolete formatter-based serialization. It should not be called or extended by application code.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Sots Savegame Editor\\SotS Savegame Editor.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Ionic.Zip.dll",
+            "snippet": "System.Void Ionic.Zip.ZipException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)\r\n    -\u003E System.Void System.Exception::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "protectedId": "M:System.Exception.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.exception.exception",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0051",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0051",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "cf908c6a-743f-4f5b-b48d-e8263da998b9",
+          "ruleId": "Api.0003",
+          "description": "The Rijndael and RijndaelManaged types are obsolete. Use Aes instead.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Sots Savegame Editor\\SotS Savegame Editor.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Ionic.Zip.dll",
+            "snippet": "System.Security.Cryptography.RijndaelManaged Ionic.Zip.WinZipAesCipherStream::_aesCipher\r\n    -\u003E System.Security.Cryptography.RijndaelManaged",
+            "protectedId": "T:System.Security.Cryptography.RijndaelManaged",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.rijndaelmanaged",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0022",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0022",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "95f2812e-300b-4165-94e2-f863d49dc8a5",
+          "ruleId": "Api.0003",
+          "description": "The default hash algorithm and iteration counts in Rfc2898DeriveBytes constructors are outdated and insecure. Use a constructor that accepts the hash algorithm and the number of iterations.",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Sots Savegame Editor\\SotS Savegame Editor.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\Ionic.Zip.dll",
+            "snippet": "System.Void Ionic.Zip.WinZipAesCrypto::_GenerateCryptoBytes()\r\n    -\u003E System.Void System.Security.Cryptography.Rfc2898DeriveBytes::.ctor(System.String,System.Byte[],System.Int32)",
+            "protectedId": "M:System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Byte[],System.Int32)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.rfc2898derivebytes.rfc2898derivebytes",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0041",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0041",
+                "isCustom": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\TargaImage\\TargaImage.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 2,
+      "ruleInstances": [
+        {
+          "incidentId": "95939327-1262-46cb-9ef2-36ff5fc8ca46",
+          "ruleId": "Project.0001",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\TargaImage\\TargaImage.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\TargaImage\\TargaImage.csproj"
+          }
+        },
+        {
+          "incidentId": "186f8d78-4bcf-4a27-992a-5de8f97f0d16",
+          "ruleId": "Project.0002",
+          "projectPath": "C:\\Code\\Sots.Sots1.SavedGameEditor\\TargaImage\\TargaImage.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\Code\\Sots.Sots1.SavedGameEditor\\TargaImage\\TargaImage.csproj",
+            "snippet": "Current: .NETFramework,Version=v2.0\nNew: net8.0-windows"
+          }
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "Project.0001": {
+      "id": "Project.0001",
+      "description": "Project file needs to be converted to SDK style. Modern .NET framework projects require a change in the project file format and use SDK corresponding to project flavor and functionality.",
+      "label": "Project file needs to be converted to SDK style",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0002": {
+      "id": "Project.0002",
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to correspinding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in moderrn .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0002": {
+      "id": "Api.0002",
+      "description": "Some API that lived in older versions of .NET frameworks were moved to standalone NuGet packages that could be added to projects explicitly.",
+      "label": "API available in NuGet package",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0001": {
+      "id": "Api.0001",
+      "description": "API does not exist in the selected version of .NET. See breaking changes documentation for alternative or replacement functionality.",
+      "label": "API does not exist",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0003": {
+      "id": "Api.0003",
+      "description": "API is obsolete.",
+      "label": "API is obsolete",
+      "severity": "Optional",
+      "effort": 1
+    }
+  }
+}
