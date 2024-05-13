@@ -1,0 +1,12 @@
+name: Publish a Release Artifact
+description: Publishes an Artifact that release merge created
+
+runs:
+  using: "composite"
+  steps:
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: release_${{ github.event.number }}
+        path: ${{ github.workspace }}/_build/
+        retention-days: 5
