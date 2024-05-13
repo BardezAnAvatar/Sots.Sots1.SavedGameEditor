@@ -21,7 +21,8 @@ jobs:
       uses: ietf-tools/semver-action@v1
       with:
         token: ${{ github.token }}
-        branch: main
+        branch: feature/NetFramework48
+        #branch: main
 
     - uses: ./.github/actions/build/
 
