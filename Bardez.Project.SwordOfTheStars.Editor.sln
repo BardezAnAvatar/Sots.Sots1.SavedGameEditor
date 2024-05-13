@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TargaImage", "TargaImage\Ta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Save Structures", "Save Structures\Save Structures.csproj", "{0198D9AF-6D3D-47E8-92A9-0752A1BD415E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exception Handler", "Exception Manager\Exception Handler.csproj", "{6EEC2717-FB0D-42D7-BABA-D2C024074B4F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bardez.Project.ExceptionHandler", "Bardez.Project.ExceptionHandler\Bardez.Project.ExceptionHandler.csproj", "{6EEC2717-FB0D-42D7-BABA-D2C024074B4F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bardez.Project.Configuration", "Bardez.Project.Configuration\Bardez.Project.Configuration.csproj", "{6E1496AB-268A-4EA2-99B3-726162F019F1}"
 EndProject

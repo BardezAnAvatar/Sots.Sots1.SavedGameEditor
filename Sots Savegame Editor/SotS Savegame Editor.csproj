@@ -244,7 +244,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bardez.Project.Configuration\Bardez.Project.Configuration.csproj" />
-    <ProjectReference Include="..\Exception Manager\Exception Handler.csproj" />
+    <ProjectReference Include="..\Bardez.Project.ExceptionHandler\Bardez.Project.ExceptionHandler.csproj" />
     <ProjectReference Include="..\Save Structures\Save Structures.csproj" />
     <ProjectReference Include="..\TargaImage\TargaImage.csproj" />
   </ItemGroup>
