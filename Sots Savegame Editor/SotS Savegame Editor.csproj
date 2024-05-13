@@ -245,7 +245,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Bardez.Project.Configuration\Bardez.Project.Configuration.csproj" />
     <ProjectReference Include="..\Bardez.Project.ExceptionHandler\Bardez.Project.ExceptionHandler.csproj" />
-    <ProjectReference Include="..\Save Structures\Save Structures.csproj" />
+    <ProjectReference Include="..\Bardez.Project.SwordOfTheStars.DataStructures\Bardez.Project.SwordOfTheStars.DataStructures.csproj" />
     <ProjectReference Include="..\TargaImage\TargaImage.csproj" />
   </ItemGroup>
   <ItemGroup>
@@ -257,9 +257,5 @@
     </Content>
     <Content Include="Sword of the Stars 1.8.ico" />
     <Content Include="TextFile1.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="obj\x86\Debug\.NETFramework,Version=v4.0.AssemblyAttributes.cs" />
-    <Compile Remove="obj\x86\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
   </ItemGroup>
 </Project>
