@@ -5,10 +5,10 @@ runs:
   using: "composite"
   steps:
     - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v1
+      uses: microsoft/setup-msbuild@v2
 
     - name: Setup NuGet
-      uses: NuGet/setup-nuget@v1.0.2
+      uses: NuGet/setup-nuget@v2
       
     - name: Navigate to Workspace
       shell: PowerShell
@@ -16,7 +16,7 @@ runs:
 
     - name: Create Build Directory
       shell: PowerShell
-      run: mkdir _build
+      run: mkdir ../_build
       
     #- name: Restore Packages
     #  run: nuget restore "SotS Savegame Editor.sln"
