@@ -18,8 +18,8 @@ runs:
       shell: PowerShell
       run: mkdir ../_build
       
-    #- name: Restore Packages
-    #  run: nuget restore "SotS Savegame Editor.sln"
+    - name: Restore Packages
+      run: nuget restore "SotS Savegame Editor.sln"
 
     - name: Build Solution
       shell: PowerShell
