@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SotS Savegame Editor", "Sots Savegame Editor\SotS Savegame Editor.csproj", "{1A4D65E4-62AA-4416-A32B-FDCF25F8A8AF}"
@@ -6,8 +6,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TargaImage", "TargaImage\TargaImage.csproj", "{56F4BD87-2404-4263-80D5-6FA2161EB0A4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Save Structures", "Save Structures\Save Structures.csproj", "{0198D9AF-6D3D-47E8-92A9-0752A1BD415E}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F1245284-AAD7-4B5F-9785-C7BE79BEAE1C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exception Handler", "Exception Manager\Exception Handler.csproj", "{6EEC2717-FB0D-42D7-BABA-D2C024074B4F}"
 EndProject
