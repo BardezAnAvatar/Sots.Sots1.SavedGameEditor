@@ -1,0 +1,12 @@
+name: Build (.NET Framework)
+description: Build the solution using MSBuild
+
+runs:
+  using: "composite"
+  steps:
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: pr_${{ github.event.number }}_release.zip
+        path: ${{ github.workspace }}/_build/
+        retention-days: 5
