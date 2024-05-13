@@ -16,7 +16,7 @@ runs:
 
     - name: Create Build Directory
       shell: PowerShell
-      run: mkdir ../_build
+      run: mkdir ${{ github.workspace }}/_build
       
     - name: Restore Packages
       shell: PowerShell
@@ -33,19 +33,19 @@ runs:
             /p:DeleteExistingFiles=True `
             /p:platform="Any CPU" `
             /p:configuration="Release" `
-            /p:OutputPath="../_build"
+            /p:OutputPath="${{ github.workspace }}/_build"
 
     - name: Create Artifact Directory
       shell: PowerShell
-      run: mkdir ../_pr/${{ github.event.number }} -Force
+      run: mkdir ${{ github.workspace }}/_pr/${{ github.event.number }} -Force
 
     - name: Zip artifact for deployment
       shell: PowerShell
       run: |
         $compress = @{
-          Path = "../_build/*"
+          Path = "${{ github.workspace }}/_build/*"
           CompressionLevel = "Fastest"
-          DestinationPath = "../_pr/${{ github.event.number }}/release.zip"
+          DestinationPath = "${{ github.workspace }}/_pr/${{ github.event.number }}/release.zip"
         }
         Compress-Archive @compress
 
@@ -53,5 +53,5 @@ runs:
       uses: actions/upload-artifact@v4
       with:
         name: release.zip
-        path: _pr/${{ github.event.number }}/release.zip
+        path: ${{ github.workspace }}/_pr/${{ github.event.number }}/release.zip
         retention-days: 5
