@@ -45,7 +45,7 @@ runs:
         $compress = @{
           Path = "../_build/*"
           CompressionLevel = "Fastest"
-          DestinationPath = "_pr/${{ github.event.number }}/release.zip"
+          DestinationPath = "../_pr/${{ github.event.number }}/release.zip"
         }
         Compress-Archive @compress
 
