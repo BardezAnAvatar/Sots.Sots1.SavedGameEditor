@@ -28,18 +28,17 @@ jobs:
     - uses: ./.github/actions/build/
       name: Build Release
 
-    #TODO: just zip it and kill this unnecessary action
-    - uses: ./.github/actions/publish-artifact-release/
-      name: Publish Release Artifact
-      id: publish-artifact-release
-      with:
-        semver: ${{ steps.semver.outputs.next }}
+    - name: Make Release Directory
+      run: mkdir ${{ github.workspace }}/_release
 
-    #shitty hack: download what I already published and uploaded.
-    - uses: actions/download-artifact@v4
-      name: Download Release Artifact
-      with:
-        path: ${{ github.workspace }}/_release/
+    - name: Compress Build
+      run: |
+        $compress = @{
+          Path = "${{ github.workspace }}/_build/"
+          CompressionLevel = "Fastest"
+          DestinationPath = "${{ github.workspace }}/_release/release_${{ steps.semver.outputs.next }}.zip"
+        }
+        Compress-Archive @compress
 
     - name: Create Release
       id: create_release
