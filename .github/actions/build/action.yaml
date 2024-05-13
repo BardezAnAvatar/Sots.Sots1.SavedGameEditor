@@ -11,15 +11,18 @@ runs:
       uses: NuGet/setup-nuget@v1.0.2
       
     - name: Navigate to Workspace
+      shell: PowerShell
       run: cd $GITHUB_WORKSPACE
 
     - name: Create Build Directory
+      shell: PowerShell
       run: mkdir _build
       
     #- name: Restore Packages
     #  run: nuget restore "SotS Savegame Editor.sln"
 
     - name: Build Solution
+      shell: PowerShell
       run: |
         msbuild.exe "SotS Savegame Editor.sln"
         /nologo /nr:false
@@ -32,11 +35,18 @@ runs:
             /p:PublishUrl="../_build"
 
     - name: Zip artifact for deployment
-      run: zip release.zip ../_build/* -r
+      shell: PowerShell
+      run: |
+        $compress = @{
+          Path = "../_build/*"
+          CompressionLevel = "Fastest"
+          DestinationPath = "pr/${{ github.event.number }}/release.zip"
+        }
+        Compress-Archive @compress
 
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
-        name: pr/${{ github.event.number }}/release.zip
+        name: release.zip
         path: pr/${{ github.event.number }}/release.zip
         retention-days: 5
