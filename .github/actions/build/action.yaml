@@ -33,7 +33,7 @@ runs:
             /p:DeleteExistingFiles=True `
             /p:platform="Any CPU" `
             /p:configuration="Release" `
-            /p:PublishUrl="../_build"
+            /p:OutputPath="../_build"
 
     - name: Create Artifact Directory
       shell: PowerShell
