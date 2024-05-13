@@ -1,12 +1,18 @@
 name: Publish a Release Artifact
 description: Publishes an Artifact that release merge created
 
+inputs:
+  semver:
+    description: 'The expected SemVer value to use in naming'
+    required: true
+    default: 'v1.0.0'
+
 runs:
   using: "composite"
   steps:
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
-        name: release_${{ steps.semver.outputs.next }}
+        name: release_${{ inputs.semver }}
         path: ${{ github.workspace }}/_build/
         retention-days: 5
