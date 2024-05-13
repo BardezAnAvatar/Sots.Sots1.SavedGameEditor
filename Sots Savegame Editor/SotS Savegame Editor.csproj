@@ -243,7 +243,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Configuration Handler\Configuration Handler.csproj" />
+    <ProjectReference Include="..\Bardez.Project.Configuration\Bardez.Project.Configuration.csproj" />
     <ProjectReference Include="..\Exception Manager\Exception Handler.csproj" />
     <ProjectReference Include="..\Save Structures\Save Structures.csproj" />
     <ProjectReference Include="..\TargaImage\TargaImage.csproj" />

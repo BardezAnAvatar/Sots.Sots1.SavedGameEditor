@@ -22,6 +22,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Configuration Handler\Configuration Handler.csproj" />
+    <ProjectReference Include="..\Bardez.Project.Configuration\Bardez.Project.Configuration.csproj" />
   </ItemGroup>
 </Project>
