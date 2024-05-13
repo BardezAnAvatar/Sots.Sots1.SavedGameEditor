@@ -12,7 +12,7 @@ runs:
       
     - name: Navigate to Workspace
       shell: PowerShell
-      run: cd $env:GITHUB_WORKSPACE
+      run: cd ${{ github.workspace }}
 
     - name: Create Build Directory
       shell: PowerShell
