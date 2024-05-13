@@ -1,5 +1,5 @@
-name: Build (.NET Framework)
-description: Build the solution using MSBuild
+name: Publish a PR Artifact
+description: Publishes an Artifact that a PR build created
 
 runs:
   using: "composite"
