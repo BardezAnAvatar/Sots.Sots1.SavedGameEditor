@@ -12,29 +12,13 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     
-    - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v1
+    #SemVer calculation
+    - name: Get Next Version
+      id: semver
+      uses: ietf-tools/semver-action@v1
+      with:
+        token: ${{ github.token }}
+        branch: main
 
-    - name: Setup NuGet
-      uses: NuGet/setup-nuget@v1.0.2
-      
-    - name: Navigate to Workspace
-      run: cd $GITHUB_WORKSPACE
-
-    - name: Create Build Directory
-      run: mkdir _build
-      
-    #- name: Restore Packages
-    #  run: nuget restore "SotS Savegame Editor.sln"
-
-    - name: Build Solution
-      run: |
-        msbuild.exe "SotS Savegame Editor.sln"
-        /nologo /nr:false
-            /p:DeployOnBuild=true
-            /p:DeployDefaultTarget=WebPublish
-            /p:WebPublishMethod=FileSystem
-            /p:DeleteExistingFiles=True
-            /p:platform="Any CPU"
-            /p:configuration="Release"
-            /p:PublishUrl="../_build"
+    - uses: ./.github/actions/build/
+    - uses: ./.github/actions/publish-artifact-release/
