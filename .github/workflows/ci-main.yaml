@@ -2,7 +2,8 @@ name: Continous Integration
 
 on:
   push:
-    branches: master
+    branches:
+    - master
 
 jobs:
   build:
