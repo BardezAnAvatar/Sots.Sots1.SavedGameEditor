@@ -1,12 +1,9 @@
 name: "Continous Integration: Releases"
 
 on:
-  #push:
-  #  branches:
-  #  - main
-  pull_request:
-    types:
-    - synchronize
+  push:
+    branches:
+    - main
 
 jobs:
   build:
@@ -17,22 +14,13 @@ jobs:
     - uses: actions/checkout@v4
       name: Checkout Source
 
-    - name: Debug
-      run: |
-        Write-Host "github.event.head_commit.message: ${{ github.event.head_commit.message }}"
-        Write-Host "github.event.workflow_run.head_commit.message: ${{ github.event.workflow_run.head_commit.message }}"
-        Write-Host "github.event.commits[0].message: ${{ github.event.commits[0].message }}"
-        Write-Host "github.event.pull_request.head_commit.message: ${{ github.event.pull_request.head_commit.message }}"
-        Write-Host "github.event.pull_request.head.message: ${{ github.event.pull_request.head.message }}"
-
     #SemVer calculation
     - name: Get Next Version
       id: semver
       uses: ietf-tools/semver-action@v1
       with:
         token: ${{ github.token }}
-        branch: feature/NetFramework48
-        #branch: main
+        branch: main
 
     - uses: ./.github/actions/build/
       name: Build Release
