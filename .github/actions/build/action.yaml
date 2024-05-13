@@ -34,13 +34,17 @@ runs:
             /p:configuration="Release"
             /p:PublishUrl="../_build"
 
+    - name: Create Artifact Directory
+      shell: PowerShell
+      run: mkdir ../_pr/${{ github.event.number }} -Force
+
     - name: Zip artifact for deployment
       shell: PowerShell
       run: |
         $compress = @{
           Path = "../_build/*"
           CompressionLevel = "Fastest"
-          DestinationPath = "pr/${{ github.event.number }}/release.zip"
+          DestinationPath = "_pr/${{ github.event.number }}/release.zip"
         }
         Compress-Archive @compress
 
@@ -48,5 +52,5 @@ runs:
       uses: actions/upload-artifact@v4
       with:
         name: release.zip
-        path: pr/${{ github.event.number }}/release.zip
+        path: _pr/${{ github.event.number }}/release.zip
         retention-days: 5
