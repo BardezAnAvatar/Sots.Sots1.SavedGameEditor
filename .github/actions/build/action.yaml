@@ -20,7 +20,7 @@ runs:
       
     - name: Restore Packages
       shell: PowerShell
-      run: nuget restore "SotS Savegame Editor.sln"
+      run: nuget restore "Bardez.Project.SwordOfTheStars.Editor.sln"
 
     - name: Build Solution
       shell: PowerShell
