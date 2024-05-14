@@ -1,5 +1,6 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <LangVersion>latest</LangVersion>
     <ProductVersion>8.0.30703</ProductVersion>
     <RootNamespace>Bardez.Project.SwordOfTheStars.DataStructures</RootNamespace>
     <TargetFramework>net48</TargetFramework>

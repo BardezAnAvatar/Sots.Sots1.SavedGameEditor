@@ -1,5 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+	  <LangVersion>latest</LangVersion>
     <ProductVersion>8.0.50727</ProductVersion>
     <RootNamespace>Bardez.Project.Configuration</RootNamespace>
     <AssemblyName>Bardez.Project.Configuration</AssemblyName>
