@@ -59,7 +59,7 @@ jobs:
         $compress = @{
           Path = "${{ github.workspace }}/_build/*"
           CompressionLevel = "Fastest"
-          DestinationPath = "${{ github.workspace }}/_release/release_${{ needs.semver.outputs.semver_next }}.zip"
+          DestinationPath = "${{ github.workspace }}/_release/sots-sge_{{ needs.semver.outputs.semver_next }}.zip"
         }
         Compress-Archive @compress
 
