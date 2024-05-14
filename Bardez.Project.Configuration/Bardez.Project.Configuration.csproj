@@ -1,4 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="$(BaseIntermediateOutputPath)$(_TargetAssemblyProjectName)$(MSBuildProjectExtension).nuget.g.props"
+          Condition=" '$(_TargetAssemblyProjectName)' != '' and '$(ImportProjectExtensionProps)' != 'false' and exists('$(BaseIntermediateOutputPath)$(_TargetAssemblyProjectName)$(MSBuildProjectExtension).nuget.g.props')" />
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
     <TargetFramework>net48</TargetFramework>
@@ -39,4 +41,6 @@
       <SourceRevisionId>$(GitBranch) $(GitCommit)</SourceRevisionId>
     </PropertyGroup>
   </Target>
+  <Import Project="$(BaseIntermediateOutputPath)$(_TargetAssemblyProjectName)$(MSBuildProjectExtension).nuget.g.props"
+          Condition=" '$(_TargetAssemblyProjectName)' != '' and '$(ImportProjectExtensionProps)' != 'false' and exists('$(BaseIntermediateOutputPath)$(_TargetAssemblyProjectName)$(MSBuildProjectExtension).nuget.g.props')" />
 </Project>
