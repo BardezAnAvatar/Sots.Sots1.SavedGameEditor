@@ -29,20 +29,24 @@ jobs:
 
   build:
     name: Build Release
-    if: ${{ needs.semver.outputs.semver_current !=  needs.semver.outputs.semver_next }}
+    if: ${{ needs.semver.outputs.semver_current != needs.semver.outputs.semver_next }}
     runs-on: windows-2019
 
     steps:
     - uses: actions/checkout@v4
       name: Checkout Source
 
-    #SemVer calculation
-    - name: Get Next Version
-      id: semver
-      uses: ietf-tools/semver-action@v1
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
       with:
-        token: ${{ github.token }}
-        branch: main
+        tag_name: ${{ needs.semver.outputs.semver_next }}
+        release_name: Release ${{ needs.semver.outputs.semver_next }}
+        body: ${{ github.event.head_commit.message }}
+        draft: false
+        prerelease: false
 
     - uses: ./.github/actions/build/
       name: Build Release
@@ -55,21 +59,9 @@ jobs:
         $compress = @{
           Path = "${{ github.workspace }}/_build/"
           CompressionLevel = "Fastest"
-          DestinationPath = "${{ github.workspace }}/_release/release_${{ steps.semver.outputs.next }}.zip"
+          DestinationPath = "${{ github.workspace }}/_release/release_${{ needs.semver.outputs.semver_next }}.zip"
         }
         Compress-Archive @compress
-
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-      with:
-        tag_name: ${{ steps.semver.outputs.next }}
-        release_name: Release ${{ steps.semver.outputs.next }}
-        body: ${{ github.event.head_commit.message }}
-        draft: false
-        prerelease: false
 
     - name: Upload Release Asset
       id: upload-release-asset 
@@ -78,6 +70,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-        asset_path: ${{ github.workspace }}/_release/release_${{ steps.semver.outputs.next }}.zip
-        asset_name: release_${{ steps.semver.outputs.next }}.zip
+        asset_path: ${{ github.workspace }}/_release/release_${{ needs.semver.outputs.semver_next }}.zip
+        asset_name: release_${{ needs.semver.outputs.semver_next }}.zip
         asset_content_type: application/zip
