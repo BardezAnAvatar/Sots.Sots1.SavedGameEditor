@@ -54,9 +54,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1165, 965);
             this.Name = "SotsEditor";
-            this.Text = "Sword of the Stars - Save Game Editor - Version 0.0.9.0";
+            this.Text = "Sword of the Stars - Save Game Editor - Version [SemVer]";
             this.ResumeLayout(false);
-
         }
 
         #endregion
@@ -64,4 +63,3 @@
         private User_Controls.Editor.Editor editorSaveGame;
     }
 }
-
