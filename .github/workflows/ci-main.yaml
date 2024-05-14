@@ -57,7 +57,7 @@ jobs:
     - name: Compress Build
       run: |
         $compress = @{
-          Path = "${{ github.workspace }}/_build/"
+          Path = "${{ github.workspace }}/_build/*"
           CompressionLevel = "Fastest"
           DestinationPath = "${{ github.workspace }}/_release/release_${{ needs.semver.outputs.semver_next }}.zip"
         }
