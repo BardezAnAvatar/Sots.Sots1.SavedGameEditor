@@ -16,6 +16,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       name: Checkout Source
+      with:
+        fetch-tags: true
 
     #SemVer calculation
     - name: Get Next Version

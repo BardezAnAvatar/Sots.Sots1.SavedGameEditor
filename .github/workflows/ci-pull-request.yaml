@@ -17,6 +17,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       name: Checkout Source
+      with:
+        fetch-tags: true
 
     - uses: ./.github/actions/build/
       name: Build Source
