@@ -31,9 +31,9 @@
     <ProjectReference Include="..\Bardez.Project.Configuration\Bardez.Project.Configuration.csproj" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(_TargetAssemblyProjectName)' != ''">
-    <Compile Include="$(IntermediateOutputPath)$(_TargetAssemblyProjectName).Version.cs" />
-  </ItemGroup>
+  <PropertyGroup>
+    <GitVersion>false</GitVersion>
+  </PropertyGroup>
 
   <Target Name="PopulateInfo" DependsOnTargets="GitVersion" BeforeTargets="GetAssemblyVersion;GenerateNuspec;GetPackageContents">
     <PropertyGroup>

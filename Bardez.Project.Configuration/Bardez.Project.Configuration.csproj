@@ -1,6 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="$(BaseIntermediateOutputPath)$(_TargetAssemblyProjectName)$(MSBuildProjectExtension).nuget.g.props"
-          Condition=" '$(_TargetAssemblyProjectName)' != '' and '$(ImportProjectExtensionProps)' != 'false' and exists('$(BaseIntermediateOutputPath)$(_TargetAssemblyProjectName)$(MSBuildProjectExtension).nuget.g.props')" />
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
     <TargetFramework>net48</TargetFramework>
@@ -32,6 +30,10 @@
     <Compile Include="$(IntermediateOutputPath)$(_TargetAssemblyProjectName).Version.cs" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <GitVersion>false</GitVersion>
+  </PropertyGroup>
+
   <Target Name="PopulateInfo" DependsOnTargets="GitVersion" BeforeTargets="GetAssemblyVersion;GenerateNuspec;GetPackageContents">
     <PropertyGroup>
       <Version>$(GitSemVerMajor).$(GitSemVerMinor).$(GitSemVerPatch)$(GitSemVerDashLabel)+$(GitBranch).$(GitCommit)</Version>
@@ -41,6 +43,4 @@
       <SourceRevisionId>$(GitBranch) $(GitCommit)</SourceRevisionId>
     </PropertyGroup>
   </Target>
-  <Import Project="$(BaseIntermediateOutputPath)$(_TargetAssemblyProjectName)$(MSBuildProjectExtension).nuget.g.props"
-          Condition=" '$(_TargetAssemblyProjectName)' != '' and '$(ImportProjectExtensionProps)' != 'false' and exists('$(BaseIntermediateOutputPath)$(_TargetAssemblyProjectName)$(MSBuildProjectExtension).nuget.g.props')" />
 </Project>
