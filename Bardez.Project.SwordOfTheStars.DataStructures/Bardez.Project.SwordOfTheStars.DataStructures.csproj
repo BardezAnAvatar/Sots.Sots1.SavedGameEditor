@@ -2,8 +2,6 @@
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <RootNamespace>Bardez.Project.SwordOfTheStars.DataStructures</RootNamespace>
     <TargetFramework>net48</TargetFramework>
     <Copyright>Copyright © Bardez 2024</Copyright>
     <OutputPath>bin\$(Configuration)\</OutputPath>
@@ -15,9 +13,4 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
-  <ItemGroup>
-  </ItemGroup>
 </Project>

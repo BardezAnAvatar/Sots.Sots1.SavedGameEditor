@@ -2,7 +2,6 @@
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <ProductVersion>8.0.30703</ProductVersion>
     <RootNamespace>Bardez.Project.ExceptionHandler</RootNamespace>
     <TargetFramework>net48</TargetFramework>
     <AssemblyTitle>Exception Handler</AssemblyTitle>
