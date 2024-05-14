@@ -6,8 +6,29 @@ on:
     - main
 
 jobs:
+  semver:
+    name: Compute SemVer
+    runs-on: ubuntu-latest
+    outputs:
+      semver_current: ${{ steps.semver.outputs.current }}
+      semver_next: ${{ steps.semver.outputs.next }}
+
+    steps:
+    - uses: actions/checkout@v4
+      name: Checkout Source
+
+    #SemVer calculation
+    - name: Get Next Version
+      id: semver
+      uses: ietf-tools/semver-action@v1
+      with:
+        token: ${{ github.token }}
+        branch: main
+
+
   build:
     name: Build Release
+    if: ${{ needs.semver.outputs.semver_current !=  needs.semver.outputs.semver_next }}
     runs-on: windows-2019
 
     steps:

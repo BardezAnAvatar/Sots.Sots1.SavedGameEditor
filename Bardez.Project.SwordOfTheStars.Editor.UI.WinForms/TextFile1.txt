@@ -1,0 +1,14 @@
+﻿http://www.codeproject.com/KB/graphics/TargaImage.aspx
+http://www.bobpowell.net/faqmain.htm
+
+/GUI/SpriteTable.csv
+/TechTree/MasterTechTree.tech
+
+
+
+		Thread: UI:			clickage, disabling/enabling UI
+		Thread: Save:		save/laod lock
+(check)	Thread: Resources:	load text, load an array of images for the tech tree
+
+
+something seems broken with the SimSystem PopG load/save
