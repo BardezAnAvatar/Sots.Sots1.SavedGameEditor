@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using Bardez.Project.SwordOfTheStars.Editor.Resource_Management;
-using Bardez.Project.SwordOfTheStars.Editor.User_Controls;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.Resource_Management;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls;
 using Paloma;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls.Graph
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Graph
 {
     public class TechTreeGraphNodeBitmap
     {

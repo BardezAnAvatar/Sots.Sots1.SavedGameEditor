@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls.User_Control
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.User_Control
 {
 #if false
     public abstract class DisplayUserControl : UserControlBase

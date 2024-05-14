@@ -6,9 +6,9 @@ using System.Data;
 using System.Text;
 using System.Windows.Forms;
 using Bardez.Project.SwordOfTheStars.DataStructures;
-using Bardez.Project.SwordOfTheStars.Editor.User_Controls.User_Control;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.User_Control;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls.Species
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Species
 {
     public partial class Species_Details : DisplayUserControl
     {

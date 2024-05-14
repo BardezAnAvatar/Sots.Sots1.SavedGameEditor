@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using Ionic.Zip;
 
-namespace Bardez.Project.SwordOfTheStars.Editor
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms
 {
     public class Zip_File
     {

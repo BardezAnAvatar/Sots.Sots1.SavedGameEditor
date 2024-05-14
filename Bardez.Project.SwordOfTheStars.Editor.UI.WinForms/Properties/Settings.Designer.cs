@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Bardez.Project.SwordOfTheStars.Editor.Properties {
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

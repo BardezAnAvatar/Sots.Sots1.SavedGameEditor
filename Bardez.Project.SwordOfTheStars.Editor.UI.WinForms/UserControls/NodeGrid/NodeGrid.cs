@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Bardez.Project.SwordOfTheStars.DataStructures;
-using Bardez.Project.SwordOfTheStars.Editor.User_Controls.User_Control;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.User_Control;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls.Node_Grid
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Node_Grid
 {
     public partial class NodeGrid : DisplayUserControl
     {

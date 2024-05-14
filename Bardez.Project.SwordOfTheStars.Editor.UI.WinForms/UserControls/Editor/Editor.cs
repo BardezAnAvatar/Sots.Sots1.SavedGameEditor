@@ -10,11 +10,11 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using Bardez.Project.SwordOfTheStars.DataStructures;
-using Bardez.Project.SwordOfTheStars.Editor;
-using Bardez.Project.SwordOfTheStars.Editor.User_Controls;
-using Bardez.Project.SwordOfTheStars.Editor.User_Controls.User_Control;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.User_Control;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls.Editor
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Editor
 {
     public partial class Editor : DisplayUserControl
     {

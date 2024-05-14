@@ -1,4 +1,4 @@
-﻿namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls
+﻿namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls
 {
     partial class Systems
     {
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.system_Details = new Bardez.Project.SwordOfTheStars.Editor.User_Controls.SystemDetails();
+            this.system_Details = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.SystemDetails();
             this.groupBoxSystems = new System.Windows.Forms.GroupBox();
             this.dataGridViewSystems = new System.Windows.Forms.DataGridView();
             this.groupBoxSystems.SuspendLayout();

@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Bardez.Project.SwordOfTheStars.DataStructures;
-//using Bardez.Project.SwordOfTheStars.Editor.IO;
-using Bardez.Project.SwordOfTheStars.Editor.User_Controls;
+//using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.IO;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls;
 
-namespace Bardez.Project.SwordOfTheStars.Editor
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms
 {
     public partial class SotsEditor : Form
     {

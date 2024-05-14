@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls
 {
     public abstract class UserControlBase : UserControl
     {

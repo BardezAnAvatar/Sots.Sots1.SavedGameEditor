@@ -1,4 +1,4 @@
-namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls.Players
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Players
 {
     partial class Players
     {
@@ -29,12 +29,12 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls.Players
         private void InitializeComponent()
         {
             this.groupBoxDetails = new System.Windows.Forms.GroupBox();
-            this.playerDetailsControl = new Bardez.Project.SwordOfTheStars.Editor.User_Controls.Players.PlayerDetails();
+            this.playerDetailsControl = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Players.PlayerDetails();
             this.dataGridViewPlayers = new System.Windows.Forms.DataGridView();
             this.tabControlPlayer = new System.Windows.Forms.TabControl();
             this.tabPageDetails = new System.Windows.Forms.TabPage();
             this.tabPageTechTree = new System.Windows.Forms.TabPage();
-            this.techTree = new Bardez.Project.SwordOfTheStars.Editor.User_Controls.Tech_Tree.TechTree();
+            this.techTree = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Tech_Tree.TechTree();
             this.groupBoxDetails.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlayers)).BeginInit();
             this.tabControlPlayer.SuspendLayout();

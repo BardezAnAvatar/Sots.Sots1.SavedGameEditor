@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Paloma;
-using Bardez.Project.SwordOfTheStars.Editor.Resource_Management;
-using Bardez.Project.SwordOfTheStars.Editor.User_Controls.User_Control;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.Resource_Management;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.User_Control;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls.Graph
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Graph
 {
     public partial class TechTreeGraphNode : DisplayUserControl
     {

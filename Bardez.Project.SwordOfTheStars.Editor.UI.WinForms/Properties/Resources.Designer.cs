@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Bardez.Project.SwordOfTheStars.Editor.Properties {
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Bardez.Project.SwordOfTheStars.Editor.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

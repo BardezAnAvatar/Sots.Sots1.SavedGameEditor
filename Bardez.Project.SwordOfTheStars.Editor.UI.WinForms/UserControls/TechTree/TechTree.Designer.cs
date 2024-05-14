@@ -1,4 +1,4 @@
-﻿namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls.Tech_Tree
+﻿namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Tech_Tree
 {
     partial class TechTree
     {
@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBoxTechTreeGraph = new System.Windows.Forms.GroupBox();
-            this.graphTechTree = new Bardez.Project.SwordOfTheStars.Editor.User_Controls.Graph.Graph();
+            this.graphTechTree = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Graph.Graph();
             this.groupBoxDetails = new System.Windows.Forms.GroupBox();
             this.buttonEnableTech = new System.Windows.Forms.Button();
-            this.techDetails = new Bardez.Project.SwordOfTheStars.Editor.User_Controls.Tech_Tree.TechDetails();
+            this.techDetails = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Tech_Tree.TechDetails();
             this.tableLayoutPanelLayout = new System.Windows.Forms.TableLayoutPanel();
             this.groupBoxTechTreeGraph.SuspendLayout();
             this.groupBoxDetails.SuspendLayout();
@@ -64,7 +64,7 @@
             this.graphTechTree.ReadOnly = false;
             this.graphTechTree.Size = new System.Drawing.Size(709, 231);
             this.graphTechTree.TabIndex = 0;
-            this.graphTechTree.ClickedTech += new Bardez.Project.SwordOfTheStars.Editor.User_Controls.Graph.Graph.ClickTech(this.graphTechTree_ClickedTech);
+            this.graphTechTree.ClickedTech += new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Graph.Graph.ClickTech(this.graphTechTree_ClickedTech);
             // 
             // groupBoxDetails
             // 

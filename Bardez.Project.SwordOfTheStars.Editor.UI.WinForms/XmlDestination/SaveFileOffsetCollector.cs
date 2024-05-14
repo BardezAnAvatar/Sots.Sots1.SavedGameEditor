@@ -4,7 +4,7 @@ using System.IO;
 using System.Text;
 using System.Xml;
 
-namespace Bardez.Project.SwordOfTheStars.Editor
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms
 {
     public class OffsetNode
     {

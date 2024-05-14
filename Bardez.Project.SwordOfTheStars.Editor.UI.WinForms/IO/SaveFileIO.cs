@@ -3,7 +3,7 @@ using System.IO;
 using System.Text;
 using Bardez.Project.SwordOfTheStars.DataStructures;
 
-namespace Bardez.Project.SwordOfTheStars.Editor
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms
 {
     public static class SaveFileIO
     {

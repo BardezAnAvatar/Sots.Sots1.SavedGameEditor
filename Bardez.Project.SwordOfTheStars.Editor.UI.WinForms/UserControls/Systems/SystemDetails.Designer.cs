@@ -1,4 +1,4 @@
-namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls
 {
     partial class SystemDetails
     {
@@ -28,10 +28,10 @@ namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls
         /// </summary>
         private void InitializeComponent()
         {
-            this.system_Details_Misc = new Bardez.Project.SwordOfTheStars.Editor.User_Controls.SystemDetailsMisc();
-            this.system_Details_Von_Neumann = new Bardez.Project.SwordOfTheStars.Editor.User_Controls.SystemDetailsVonNeumann();
-            this.system_Details_History = new Bardez.Project.SwordOfTheStars.Editor.User_Controls.SystemDetailsHistory();
-            this.system_Detail_Summary = new Bardez.Project.SwordOfTheStars.Editor.User_Controls.SystemDetailSummary();
+            this.system_Details_Misc = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.SystemDetailsMisc();
+            this.system_Details_Von_Neumann = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.SystemDetailsVonNeumann();
+            this.system_Details_History = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.SystemDetailsHistory();
+            this.system_Detail_Summary = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.SystemDetailSummary();
             this.SuspendLayout();
             // 
             // system_Details_Misc1

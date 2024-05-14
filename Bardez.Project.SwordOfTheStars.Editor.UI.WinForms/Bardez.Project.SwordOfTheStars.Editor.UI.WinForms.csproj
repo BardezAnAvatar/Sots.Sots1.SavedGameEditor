@@ -2,7 +2,7 @@
   <PropertyGroup>
     <ProductVersion>8.0.30703</ProductVersion>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Bardez.Project.SwordOfTheStars.Editor</RootNamespace>
+    <RootNamespace>Bardez.Project.SwordOfTheStars.Editor.UI.WinForms</RootNamespace>
     <AssemblyName>SotsSavegameEditor</AssemblyName>
     <TargetFramework>net48</TargetFramework>
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -35,7 +35,7 @@
     <DebugType>pdbonly</DebugType>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Bardez.Project.SwordOfTheStars.Editor.Program</StartupObject>
+    <StartupObject>Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Sword of the Stars 1.8.ico</ApplicationIcon>

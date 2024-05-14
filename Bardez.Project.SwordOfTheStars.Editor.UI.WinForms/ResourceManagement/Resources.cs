@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using Ionic.Zip;
 using Bardez.Project.Configuration;
-using Bardez.Project.SwordOfTheStars.Editor.Resource_Management;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.Resource_Management;
 
-namespace Bardez.Project.SwordOfTheStars.Editor
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms
 {
     public class Resources : IDisposable
     {

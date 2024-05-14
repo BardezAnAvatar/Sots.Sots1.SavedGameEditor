@@ -1,4 +1,4 @@
-namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls.Species
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Species
 {
     partial class Species_Details
     {

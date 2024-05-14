@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.Resource_Management
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.Resource_Management
 {
     public class JoinedTechnology
     {

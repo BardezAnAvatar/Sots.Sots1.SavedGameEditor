@@ -1,4 +1,4 @@
-﻿namespace Bardez.Project.SwordOfTheStars.Editor
+﻿namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms
 {
     partial class SotsEditor
     {
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SotsEditor));
-            this.editorSaveGame = new Bardez.Project.SwordOfTheStars.Editor.User_Controls.Editor.Editor();
+            this.editorSaveGame = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Editor.Editor();
             this.SuspendLayout();
             // 
             // editorSaveGame

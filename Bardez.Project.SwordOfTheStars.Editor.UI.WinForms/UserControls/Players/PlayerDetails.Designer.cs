@@ -1,4 +1,4 @@
-namespace Bardez.Project.SwordOfTheStars.Editor.User_Controls.Players
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Players
 {
     partial class PlayerDetails
     {
