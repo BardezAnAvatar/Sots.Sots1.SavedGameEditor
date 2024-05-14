@@ -248,14 +248,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <Target Name="PopulateInfo" DependsOnTargets="GitVersion" BeforeTargets="GetAssemblyVersion;GenerateNuspec;GetPackageContents">
-    <PropertyGroup>
-      <Version>$(GitSemVerMajor).$(GitSemVerMinor).$(GitSemVerPatch)$(GitSemVerDashLabel)+$(GitCommit)</Version>
-      <PackageVersion>$(Version)</PackageVersion>
-      <RepositoryBranch>$(GitBranch)</RepositoryBranch>
-      <RepositoryCommit>$(GitCommit)</RepositoryCommit>
-      <SourceRevisionId>$(GitBranch) $(GitCommit)</SourceRevisionId>
-    </PropertyGroup>
-  </Target>
-
 </Project>
