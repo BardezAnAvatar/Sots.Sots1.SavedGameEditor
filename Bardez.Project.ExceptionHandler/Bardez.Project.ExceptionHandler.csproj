@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>Bardez.Project.ExceptionHandler</RootNamespace>
     <TargetFramework>net48</TargetFramework>
     <AssemblyTitle>Exception Handler</AssemblyTitle>
@@ -31,4 +30,14 @@
   <ItemGroup>
     <ProjectReference Include="..\Bardez.Project.Configuration\Bardez.Project.Configuration.csproj" />
   </ItemGroup>
+
+  <Target Name="PopulateInfo" DependsOnTargets="GitVersion" BeforeTargets="GetAssemblyVersion;GenerateNuspec;GetPackageContents">
+    <PropertyGroup>
+      <Version>$(GitSemVerMajor).$(GitSemVerMinor).$(GitSemVerPatch)$(GitSemVerDashLabel)+$(GitBranch).$(GitCommit)</Version>
+      <PackageVersion>$(Version)</PackageVersion>
+      <RepositoryBranch>$(GitBranch)</RepositoryBranch>
+      <RepositoryCommit>$(GitCommit)</RepositoryCommit>
+      <SourceRevisionId>$(GitBranch) $(GitCommit)</SourceRevisionId>
+    </PropertyGroup>
+  </Target>
 </Project>
