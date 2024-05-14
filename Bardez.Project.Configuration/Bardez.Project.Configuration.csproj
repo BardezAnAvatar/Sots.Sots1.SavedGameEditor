@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -16,6 +16,12 @@
     <DebugType>pdbonly</DebugType>
     <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="GitInfo" Version="3.3.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web" />
