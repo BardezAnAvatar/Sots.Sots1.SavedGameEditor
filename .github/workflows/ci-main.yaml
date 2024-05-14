@@ -24,6 +24,7 @@ jobs:
       with:
         token: ${{ github.token }}
         branch: main
+        noNewCommitBehavior: warn
 
 
   build:
