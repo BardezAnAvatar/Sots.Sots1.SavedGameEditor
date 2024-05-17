@@ -3,36 +3,43 @@ name: "Continous Integration: Releases"
 on:
   push:
     branches:
-    - main
+    # s-main
+    - tinker
 
 jobs:
-  semver:
-    name: Compute SemVer
+  bump-tag-version:
+    name: Bump and Tag Version
     runs-on: ubuntu-latest
-    outputs:
-      semver_current: ${{ steps.semver.outputs.current }}
-      semver_next: ${{ steps.semver.outputs.next }}
-
     steps:
     - uses: actions/checkout@v4
-      name: Checkout Source
-      with:
-        fetch-tags: true
-
-    #SemVer calculation
-    - name: Get Next Version
+    - uses: jefflinse/pr-semver-bump@v1.6.0
+      name: Bump and Tag Version
       id: semver
-      uses: ietf-tools/semver-action@v1
       with:
-        token: ${{ github.token }}
-        branch: main
-        noNewCommitBehavior: warn
+        mode: bump
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        major-label: SemVer Major
+        minor-label: SemVer Minor
+        patch-label: SemVer Patch
+        noop-labels:
+        - "documentation change"
+        require-release-notes: true
+        release-notes-prefix: -- begin release notes --
+        release-notes-suffix: -- end release notes --
+        with-v: false
+        base-branch: false
+    outputs:
+      semver_old: ${{ steps.semver.outputs.old-version }}
+      semver_next: ${{ steps.semver.outputs.version }}
+      semver_skipped: ${{ steps.semver.outputs.skipped }}
+      semver_release-notes: ${{ steps.semver.outputs.release-notes }}
 
 
   build:
     name: Build Release
-    if: ${{ needs.semver.outputs.semver_current != needs.semver.outputs.semver_next }}
+    if: ${{ needs.bump-tag-version.outputs.semver_skipped != true }}
     runs-on: windows-2019
+    needs: bump-tag-version
 
     steps:
     - uses: actions/checkout@v4
