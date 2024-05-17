@@ -3,8 +3,7 @@ name: "Continous Integration: Releases"
 on:
   push:
     branches:
-    # s-main
-    - tinker
+    - main
 
 jobs:
   bump-tag-version:
