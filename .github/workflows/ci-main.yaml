@@ -22,7 +22,7 @@ jobs:
         major-label: SemVer Major
         minor-label: SemVer Minor
         patch-label: SemVer Patch
-        noop-labels: ''
+        noop-labels: SemVer Skip
         require-release-notes: true
         release-notes-prefix: -- begin release notes --
         release-notes-suffix: -- end release notes --
