@@ -26,6 +26,7 @@ jobs:
         name: Checkout
 
       - uses: jefflinse/pr-semver-bump@v1.6.0
+        id: semver
         name: Validate Pull Request Metadata
         with:
           mode: validate
