@@ -71,7 +71,13 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms
 
         private void SotsEditor_Load(object sender, EventArgs e)
         {
-            this.Text = $"Sword of the Stars - Save Game Editor - v{GitVersionInformation.MajorMinorPatch}+{GitVersionInformation.BuildMetaData}";
+            var displayVersion = GitVersionInformation.MajorMinorPatch;
+            if (int.TryParse(GitVersionInformation.CommitsSinceVersionSource, out var commits) && commits > 0)
+            {
+                displayVersion += $"+{GitVersionInformation.CommitsSinceVersionSource}";
+            }
+
+            this.Text = $"Sword of the Stars - Save Game Editor - v{displayVersion}";
         }
     }
 }
