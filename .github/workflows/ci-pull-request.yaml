@@ -23,7 +23,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        name: Checkouts
+        name: Checkout
+
       - uses: jefflinse/pr-semver-bump@v1.6.0
         name: Validate Pull Request Metadata
         with:
@@ -36,6 +37,13 @@ jobs:
           require-release-notes: true
           release-notes-prefix: -- begin release notes --
           release-notes-suffix: -- end release notes --
+
+      - name: Debug the Output
+        run: |
+          echo ${{ steps.semver.outputs.semver_old }}
+          echo ${{ steps.semver.outputs.semver_next }}
+          echo ${{ steps.semver.outputs.semver_skipped }}
+          echo ${{ steps.semver.outputs.semver_release-notes }}
 
   build:
     name: Build Solution
