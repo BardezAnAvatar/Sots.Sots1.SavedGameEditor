@@ -20,14 +20,14 @@ jobs:
         with:
           mode: validate
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          require-release-notes: true
-          release-notes-prefix: -- begin release notes --
-          release-notes-suffix: -- end release notes --
-          noop-labels:
-            - documentation change
           major-label: SemVer Major
           minor-label: SemVer Minor
           patch-label: SemVer Patch
+          noop-labels:
+            - documentation change
+          require-release-notes: true
+          release-notes-prefix: -- begin release notes --
+          release-notes-suffix: -- end release notes --
 
   build:
     name: Build Solution
