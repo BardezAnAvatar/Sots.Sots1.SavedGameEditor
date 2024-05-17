@@ -5,6 +5,7 @@ on:
     types:
     - labeled
     - unlabeled
+    - edited
     - opened
     - reopened
     - ready_for_review
