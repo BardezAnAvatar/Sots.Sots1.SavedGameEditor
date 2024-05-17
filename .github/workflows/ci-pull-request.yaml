@@ -13,6 +13,10 @@ on:
     - synchronize
     # - edited #updating PR title, body, state or base?
 
+concurrency: 
+  group: ${{ github.head_ref }}
+  cancel-in-progress: true
+
 jobs:
   check-pr:
     name: Validate Release Label and Notes
