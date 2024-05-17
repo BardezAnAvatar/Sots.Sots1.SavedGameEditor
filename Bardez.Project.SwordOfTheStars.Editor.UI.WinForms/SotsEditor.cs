@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using Bardez.Project.SwordOfTheStars.DataStructures;
-using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls;
 
 namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms
 {
@@ -79,7 +71,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms
 
         private void SotsEditor_Load(object sender, EventArgs e)
         {
-            this.Text = $"Sword of the Stars - Save Game Editor - {ThisAssembly.Git.BaseTag}";
+            this.Text = $"Sword of the Stars - Save Game Editor - v{GitVersionInformation.MajorMinorPatch}+{GitVersionInformation.BuildMetaData}";
         }
     }
 }
