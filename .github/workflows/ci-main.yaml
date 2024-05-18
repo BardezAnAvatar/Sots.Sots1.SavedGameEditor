@@ -70,8 +70,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
       with:
-        tag_name: ${{ needs.bump-tag-version.outputs.semver_next }}
-        release_name: Release ${{ needs.bump-tag-version.outputs.semver_next }}
+        tag_name: v${{ needs.bump-tag-version.outputs.semver_next }}
+        release_name: Release v${{ needs.bump-tag-version.outputs.semver_next }}
         body: ${{ github.event.head_commit.message }}
         draft: false
         prerelease: false
