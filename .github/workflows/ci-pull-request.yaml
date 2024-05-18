@@ -41,10 +41,10 @@ jobs:
 
       - name: Debug the Output
         run: |
-          echo ${{ steps.semver.outputs.semver_old }}
-          echo ${{ steps.semver.outputs.semver_next }}
-          echo ${{ steps.semver.outputs.semver_skipped }}
-          echo ${{ steps.semver.outputs.semver_release-notes }}
+          echo old-version          - ${{ steps.semver.outputs.old-version }}
+          echo version              - ${{ steps.semver.outputs.version }}
+          echo skipped              - ${{ steps.semver.outputs.skipped }}
+          echo semver_release-notes - ${{ steps.semver.outputs.semver_release-notes }}
 
   build:
     name: Build Solution
