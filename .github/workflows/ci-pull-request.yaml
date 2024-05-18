@@ -58,7 +58,7 @@ jobs:
         fetch-tags: true
 
     - uses: ./.github/actions/build/
-      name: Build Source
+      name: Build Application
 
     - uses: ./.github/actions/publish-artifact-pr/
       name: Publish Artifact
