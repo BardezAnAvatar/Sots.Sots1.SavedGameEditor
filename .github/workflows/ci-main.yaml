@@ -35,6 +35,7 @@ jobs:
 
     - name: Debug the Output
       run: |
+
         echo old-version          - ${{ steps.semver.outputs.old-version }}
         echo version              - ${{ steps.semver.outputs.version }}
         echo skipped              - ${{ steps.semver.outputs.skipped }}
@@ -59,10 +60,11 @@ jobs:
 
     - name: Debug the Output
       run: |
-        echo ${{ needs.bump-tag-version.outputs.semver_old }}
-        echo ${{ needs.bump-tag-version.outputs.semver_next }}
-        echo ${{ needs.bump-tag-version.outputs.semver_skipped }}
-        echo ${{ needs.bump-tag-version.outputs.semver_release-notes }}
+
+        echo old-version          - ${{ needs.bump-tag-version.outputs.semver_old }}
+        echo version              - ${{ needs.bump-tag-version.outputs.semver_next }}
+        echo skipped              - ${{ needs.bump-tag-version.outputs.semver_skipped }}
+        echo semver_release-notes - ${{ needs.bump-tag-version.outputs.semver_release-notes }}
 
     - name: Create Release
       id: create_release
@@ -87,7 +89,7 @@ jobs:
         $compress = @{
           Path = "${{ github.workspace }}/_build/*"
           CompressionLevel = "Fastest"
-          DestinationPath = "${{ github.workspace }}/_release/sots-sge_{{ needs.bump-tag-version.outputs.semver_next }}.zip"
+          DestinationPath = "${{ github.workspace }}/_release/sots-sge_${{ needs.bump-tag-version.outputs.semver_next }}.zip"
         }
         Compress-Archive @compress
 
