@@ -57,6 +57,10 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       name: Checkout Source
+      with:
+        fetch-depth: 0
+        fetch-tags: true
+
 
     - name: Debug the Output
       run: |
