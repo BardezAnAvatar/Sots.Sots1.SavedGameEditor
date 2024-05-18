@@ -72,7 +72,7 @@ jobs:
       with:
         tag_name: v${{ needs.bump-tag-version.outputs.semver_next }}
         release_name: Release v${{ needs.bump-tag-version.outputs.semver_next }}
-        body: ${{ github.event.head_commit.message }}
+        body: ${{ needs.bump-tag-version.outputs.semver_release-notes }}
         draft: false
         prerelease: false
 
