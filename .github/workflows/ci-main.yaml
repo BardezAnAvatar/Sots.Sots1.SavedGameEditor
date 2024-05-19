@@ -4,6 +4,7 @@ on:
   push:
     branches:
     - main
+    - tinker
 
 concurrency: 
   group: ${{ github.ref_name }}
@@ -50,7 +51,7 @@ jobs:
 
   build:
     name: Build Release
-    if: ${{ needs.bump-tag-version.outputs.semver_skipped != true }}
+    if: ${{ needs.bump-tag-version.outputs.semver_skipped }} != true
     runs-on: windows-2019
     needs: bump-tag-version
 
