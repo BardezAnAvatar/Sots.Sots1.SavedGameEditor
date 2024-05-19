@@ -61,7 +61,6 @@ jobs:
         fetch-depth: 0
         fetch-tags: true
 
-
     - name: Debug the Output
       run: |
 
@@ -69,18 +68,6 @@ jobs:
         echo "version              - ${{ needs.bump-tag-version.outputs.semver_next }}"
         echo "skipped              - ${{ needs.bump-tag-version.outputs.semver_skipped }}"
         echo "semver_release-notes - ${{ needs.bump-tag-version.outputs.semver_release-notes }}"
-
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-      with:
-        tag_name: ${{ needs.bump-tag-version.outputs.semver_next }}
-        release_name: Release ${{ needs.bump-tag-version.outputs.semver_next }}
-        body: ${{ needs.bump-tag-version.outputs.semver_release-notes }}
-        draft: false
-        prerelease: false
 
     - uses: ./.github/actions/build/
       name: Build Release
@@ -97,13 +84,12 @@ jobs:
         }
         Compress-Archive @compress
 
-    - name: Upload Release Asset
-      id: upload-release-asset 
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Create Release
+      id: create_release
+      uses: ncipollo/release-action@v1
       with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-        asset_path: ${{ github.workspace }}/_release/sots-sge_${{ needs.bump-tag-version.outputs.semver_next }}.zip
-        asset_name: sots-sge_${{ needs.bump-tag-version.outputs.semver_next }}.zip
-        asset_content_type: application/zip
+        artifacts: "${{ github.workspace }}/_release/sots-sge_${{ needs.bump-tag-version.outputs.semver_next }}.zip"
+        body: "${{ needs.bump-tag-version.outputs.semver_release-notes }}"
+        makeLatest: true
+        tag: ${{ needs.bump-tag-version.outputs.semver_next }}
+        name: Release ${{ needs.bump-tag-version.outputs.semver_next }}
