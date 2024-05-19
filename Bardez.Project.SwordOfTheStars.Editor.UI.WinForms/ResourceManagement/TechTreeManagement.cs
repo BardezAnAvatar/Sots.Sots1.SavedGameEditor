@@ -4,8 +4,8 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
-using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.Resource_Management;
 using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Graph;
+using Bardez.Project.SwordOfTheStars.ResourceManagement;
 
 namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.ResourceManagement
 {

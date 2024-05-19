@@ -24,9 +24,6 @@
     <ApplicationIcon>Sword of the Stars 1.8.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ionic.Zip">
-      <HintPath>..\Ionic.Zip.dll</HintPath>
-    </Reference>
     <Reference Include="System.Management" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -229,6 +226,8 @@
     <ProjectReference Include="..\Bardez.Project.Configuration\Bardez.Project.Configuration.csproj" />
     <ProjectReference Include="..\Bardez.Project.ExceptionHandler\Bardez.Project.ExceptionHandler.csproj" />
     <ProjectReference Include="..\Bardez.Project.SwordOfTheStars.DataStructures\Bardez.Project.SwordOfTheStars.DataStructures.csproj" />
+    <ProjectReference Include="..\Bardez.Project.SwordOfTheStars.IO\Bardez.Project.SwordOfTheStars.IO.csproj" />
+    <ProjectReference Include="..\Bardez.Project.SwordOfTheStars.ResourceManagement\Bardez.Project.SwordOfTheStars.ResourceManagement.csproj" />
     <ProjectReference Include="..\TargaImage\TargaImage.csproj" />
   </ItemGroup>
   <ItemGroup>
