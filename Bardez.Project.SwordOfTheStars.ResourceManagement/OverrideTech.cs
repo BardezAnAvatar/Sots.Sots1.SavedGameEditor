@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms
+namespace Bardez.Project.SwordOfTheStars.ResourceManagement
 {
     public static class OverrideTechList
     {
