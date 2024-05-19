@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.Resource_Management;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.ResourceManagement;
 using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls;
+using Bardez.Project.SwordOfTheStars.ResourceManagement;
 using Paloma;
 
 namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Graph

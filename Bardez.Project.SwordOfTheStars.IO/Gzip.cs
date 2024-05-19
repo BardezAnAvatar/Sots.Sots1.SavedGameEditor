@@ -4,7 +4,7 @@ using System.IO;
 using System.IO.Compression;
 using System.Text;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms
+namespace Bardez.Project.SwordOfTheStars.IO
 {
     public static class Gzip
     {

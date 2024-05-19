@@ -3,23 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bardez.Project.SwordOfTheStars.Editor.UI.WinForms", "Bardez.Project.SwordOfTheStars.Editor.UI.WinForms\Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.csproj", "{1A4D65E4-62AA-4416-A32B-FDCF25F8A8AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bardez.Project.SwordOfTheStars.Editor.UI.WinForms", "Bardez.Project.SwordOfTheStars.Editor.UI.WinForms\Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.csproj", "{1A4D65E4-62AA-4416-A32B-FDCF25F8A8AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TargaImage", "TargaImage\TargaImage.csproj", "{56F4BD87-2404-4263-80D5-6FA2161EB0A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TargaImage", "TargaImage\TargaImage.csproj", "{56F4BD87-2404-4263-80D5-6FA2161EB0A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bardez.Project.SwordOfTheStars.DataStructures", "Bardez.Project.SwordOfTheStars.DataStructures\Bardez.Project.SwordOfTheStars.DataStructures.csproj", "{0198D9AF-6D3D-47E8-92A9-0752A1BD415E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bardez.Project.SwordOfTheStars.DataStructures", "Bardez.Project.SwordOfTheStars.DataStructures\Bardez.Project.SwordOfTheStars.DataStructures.csproj", "{0198D9AF-6D3D-47E8-92A9-0752A1BD415E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bardez.Project.ExceptionHandler", "Bardez.Project.ExceptionHandler\Bardez.Project.ExceptionHandler.csproj", "{6EEC2717-FB0D-42D7-BABA-D2C024074B4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bardez.Project.ExceptionHandler", "Bardez.Project.ExceptionHandler\Bardez.Project.ExceptionHandler.csproj", "{6EEC2717-FB0D-42D7-BABA-D2C024074B4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bardez.Project.Configuration", "Bardez.Project.Configuration\Bardez.Project.Configuration.csproj", "{6E1496AB-268A-4EA2-99B3-726162F019F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bardez.Project.Configuration", "Bardez.Project.Configuration\Bardez.Project.Configuration.csproj", "{6E1496AB-268A-4EA2-99B3-726162F019F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bardez.Project.SwordOfTheStars.IO", "Bardez.Project.SwordOfTheStars.IO\Bardez.Project.SwordOfTheStars.IO.csproj", "{61476EFB-ABA2-4BEE-8325-555DFE5146A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bardez.Project.SwordOfTheStars.ResourceManagement", "Bardez.Project.SwordOfTheStars.ResourceManagement\Bardez.Project.SwordOfTheStars.ResourceManagement.csproj", "{FCD018D3-21D0-43A6-9E41-DB4929FD4958}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {732690B8-0CB8-4EA3-A41A-73A3FF44012C}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1A4D65E4-62AA-4416-A32B-FDCF25F8A8AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -42,8 +43,19 @@ Global
 		{6E1496AB-268A-4EA2-99B3-726162F019F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E1496AB-268A-4EA2-99B3-726162F019F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E1496AB-268A-4EA2-99B3-726162F019F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61476EFB-ABA2-4BEE-8325-555DFE5146A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61476EFB-ABA2-4BEE-8325-555DFE5146A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61476EFB-ABA2-4BEE-8325-555DFE5146A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61476EFB-ABA2-4BEE-8325-555DFE5146A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCD018D3-21D0-43A6-9E41-DB4929FD4958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD018D3-21D0-43A6-9E41-DB4929FD4958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCD018D3-21D0-43A6-9E41-DB4929FD4958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCD018D3-21D0-43A6-9E41-DB4929FD4958}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {732690B8-0CB8-4EA3-A41A-73A3FF44012C}
 	EndGlobalSection
 EndGlobal
