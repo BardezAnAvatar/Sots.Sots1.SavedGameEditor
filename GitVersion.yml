@@ -1,0 +1,8 @@
+assembly-versioning-scheme: MajorMinorPatchTag
+mode: Mainline
+branches: {}
+ignore:
+  sha: []
+merge-message-formats: {}
+commit-message-incrementing: MergeMessageOnly
+next-version: 1.0.0-alpha.1

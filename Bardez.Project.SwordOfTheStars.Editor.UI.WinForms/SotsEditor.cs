@@ -1,14 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using Bardez.Project.SwordOfTheStars.DataStructures;
-//using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.IO;
-using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls;
 
 namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms
 {
@@ -76,6 +67,17 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms
                 cp.ExStyle |= 0x02000000;
                 return cp;
             }
+        }
+
+        private void SotsEditor_Load(object sender, EventArgs e)
+        {
+            var displayVersion = GitVersionInformation.MajorMinorPatch;
+            if (int.TryParse(GitVersionInformation.CommitsSinceVersionSource, out var commits) && commits > 0)
+            {
+                displayVersion += $"+{GitVersionInformation.CommitsSinceVersionSource}";
+            }
+
+            this.Text = $"Sword of the Stars - Save Game Editor - v{displayVersion}";
         }
     }
 }

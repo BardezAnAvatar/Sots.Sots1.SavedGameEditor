@@ -20,12 +20,12 @@ runs:
       
     - name: Restore Packages
       shell: PowerShell
-      run: nuget restore "SotS Savegame Editor.sln"
+      run: nuget restore "Bardez.Project.SwordOfTheStars.Editor.sln"
 
     - name: Build Solution
       shell: PowerShell
       run: |
-        msbuild.exe "SotS Savegame Editor.sln" `
+        msbuild.exe "Bardez.Project.SwordOfTheStars.Editor.sln" `
             /nologo /nr:false `
             /p:DeployOnBuild=true `
             /p:DeployDefaultTarget=WebPublish `

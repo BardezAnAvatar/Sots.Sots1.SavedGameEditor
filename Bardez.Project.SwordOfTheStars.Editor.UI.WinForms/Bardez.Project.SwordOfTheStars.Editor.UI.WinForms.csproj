@@ -1,25 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <ProductVersion>8.0.30703</ProductVersion>
+    <LangVersion>latest</LangVersion>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Bardez.Project.SwordOfTheStars.Editor.UI.WinForms</RootNamespace>
-    <AssemblyName>SotsSavegameEditor</AssemblyName>
     <TargetFramework>net48</TargetFramework>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
     <AssemblyTitle>Sword of the Stars Save Game Editor</AssemblyTitle>
     <Company>SyNDiCaTED Software</Company>
     <Product>Sword of the Stars Save Game Editor</Product>
@@ -57,112 +40,112 @@
     <Compile Update="SotsEditor.Designer.cs">
       <DependentUpon>SotsEditor.cs</DependentUpon>
     </Compile>
-    <Compile Update="User Controls\Editor\Editor.cs">
+    <Compile Update="UserControls\Editor\Editor.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Controls\Editor\Editor.Designer.cs">
+    <Compile Update="UserControls\Editor\Editor.Designer.cs">
       <DependentUpon>Editor.cs</DependentUpon>
     </Compile>
-    <Compile Update="User Controls\Tech Tree\Tech Details.cs">
+    <Compile Update="UserControls\TechTree\TechDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Controls\Tech Tree\Tech Details.Designer.cs">
-      <DependentUpon>Tech Details.cs</DependentUpon>
+    <Compile Update="UserControls\TechTree\TechDetails.Designer.cs">
+      <DependentUpon>TechDetails.cs</DependentUpon>
     </Compile>
-    <Compile Update="User Controls\Tech Tree\Tech Tree.cs">
+    <Compile Update="UserControls\TechTree\TechTree.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Controls\Tech Tree\Tech Tree.Designer.cs">
-      <DependentUpon>Tech Tree.cs</DependentUpon>
+    <Compile Update="UserControls\TechTree\TechTree.Designer.cs">
+      <DependentUpon>TechTree.cs</DependentUpon>
     </Compile>
-    <Compile Update="User Controls\User Control\Display User Control.cs">
+    <Compile Update="UserControls\UserControl\DisplayUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Controls\User Control\UserControlBase.cs">
+    <Compile Update="UserControls\UserControl\UserControlBase.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Controls\Graph\Graph.cs">
+    <Compile Update="UserControls\Graph\Graph.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Controls\Graph\Graph.Designer.cs">
+    <Compile Update="UserControls\Graph\Graph.Designer.cs">
       <DependentUpon>Graph.cs</DependentUpon>
     </Compile>
-    <Compile Update="User Controls\Graph\TechTreeGraphNode.cs">
+    <Compile Update="UserControls\Graph\TechTreeGraphNode.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Controls\Graph\TechTreeGraphNode.Designer.cs">
+    <Compile Update="UserControls\Graph\TechTreeGraphNode.Designer.cs">
       <DependentUpon>TechTreeGraphNode.cs</DependentUpon>
     </Compile>
-    <Compile Update="User Controls\Node Grid\Node Grid Details.cs">
+    <Compile Update="UserControls\NodeGrid\NodeGridDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Controls\Node Grid\Node Grid Details.Designer.cs">
-      <DependentUpon>Node Grid Details.cs</DependentUpon>
+    <Compile Update="UserControls\NodeGrid\NodeGridDetails.Designer.cs">
+      <DependentUpon>NodeGridDetails.cs</DependentUpon>
     </Compile>
-    <Compile Update="User Controls\Node Grid\Node Grid.cs">
+    <Compile Update="UserControls\NodeGrid\NodeGrid.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Controls\Node Grid\Node Grid.Designer.cs">
-      <DependentUpon>Node Grid.cs</DependentUpon>
+    <Compile Update="UserControls\NodeGrid\NodeGrid.Designer.cs">
+      <DependentUpon>NodeGrid.cs</DependentUpon>
     </Compile>
-    <Compile Update="User Controls\Players\Player Details.cs">
+    <Compile Update="UserControls\Players\PlayerDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Controls\Players\Player Details.Designer.cs">
-      <DependentUpon>Player Details.cs</DependentUpon>
+    <Compile Update="UserControls\Players\PlayerDetails.Designer.cs">
+      <DependentUpon>PlayerDetails.cs</DependentUpon>
     </Compile>
-    <Compile Update="User Controls\Players\Players.cs">
+    <Compile Update="UserControls\Players\Players.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Controls\Players\Players.Designer.cs">
+    <Compile Update="UserControls\Players\Players.Designer.cs">
       <DependentUpon>Players.cs</DependentUpon>
     </Compile>
-    <Compile Update="User Controls\Species\Species Details.cs">
+    <Compile Update="UserControls\Species\SpeciesDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Controls\Species\Species Details.Designer.cs">
-      <DependentUpon>Species Details.cs</DependentUpon>
+    <Compile Update="UserControls\Species\SpeciesDetails.Designer.cs">
+      <DependentUpon>SpeciesDetails.cs</DependentUpon>
     </Compile>
-    <Compile Update="User Controls\Systems\System Detail Summary.cs">
+    <Compile Update="UserControls\Systems\SystemDetailSummary.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Controls\Systems\System Detail Summary.Designer.cs">
-      <DependentUpon>System Detail Summary.cs</DependentUpon>
+    <Compile Update="UserControls\Systems\SystemDetailSummary.Designer.cs">
+      <DependentUpon>SystemDetailSummary.cs</DependentUpon>
     </Compile>
-    <Compile Update="User Controls\Systems\System Details History Data.cs">
+    <Compile Update="UserControls\Systems\SystemDetailsHistoryData.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Controls\Systems\System Details History Data.Designer.cs">
-      <DependentUpon>System Details History Data.cs</DependentUpon>
+    <Compile Update="UserControls\Systems\SystemDetailsHistoryData.Designer.cs">
+      <DependentUpon>SystemDetailsHistoryData.cs</DependentUpon>
     </Compile>
-    <Compile Update="User Controls\Systems\System Details History.cs">
+    <Compile Update="UserControls\Systems\SystemDetailsHistory.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Controls\Systems\System Details History.Designer.cs">
-      <DependentUpon>System Details History.cs</DependentUpon>
+    <Compile Update="UserControls\Systems\SystemDetailsHistory.Designer.cs">
+      <DependentUpon>SystemDetailsHistory.cs</DependentUpon>
     </Compile>
-    <Compile Update="User Controls\Systems\System Details Misc.cs">
+    <Compile Update="UserControls\Systems\SystemDetailsMisc.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Controls\Systems\System Details Misc.Designer.cs">
-      <DependentUpon>System Details Misc.cs</DependentUpon>
+    <Compile Update="UserControls\Systems\SystemDetailsMisc.Designer.cs">
+      <DependentUpon>SystemDetailsMisc.cs</DependentUpon>
     </Compile>
-    <Compile Update="User Controls\Systems\System Details Von Neumann.cs">
+    <Compile Update="UserControls\Systems\SystemDetailsVonNeumann.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Controls\Systems\System Details Von Neumann.Designer.cs">
-      <DependentUpon>System Details Von Neumann.cs</DependentUpon>
+    <Compile Update="UserControls\Systems\SystemDetailsVonNeumann.Designer.cs">
+      <DependentUpon>SystemDetailsVonNeumann.cs</DependentUpon>
     </Compile>
-    <Compile Update="User Controls\Systems\System Details.cs">
+    <Compile Update="UserControls\Systems\SystemDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Controls\Systems\System Details.Designer.cs">
-      <DependentUpon>System Details.cs</DependentUpon>
+    <Compile Update="UserControls\Systems\SystemDetails.Designer.cs">
+      <DependentUpon>SystemDetails.cs</DependentUpon>
     </Compile>
-    <Compile Update="User Controls\Systems\Systems.cs">
+    <Compile Update="UserControls\Systems\Systems.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User Controls\Systems\Systems.Designer.cs">
+    <Compile Update="UserControls\Systems\Systems.Designer.cs">
       <DependentUpon>Systems.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Update="SotsEditor.resx">
@@ -178,56 +161,56 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Update="User Controls\Editor\Editor.resx">
+    <EmbeddedResource Update="UserControls\Editor\Editor.resx">
       <DependentUpon>Editor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="User Controls\Graph\Graph.resx">
+    <EmbeddedResource Update="UserControls\Graph\Graph.resx">
       <DependentUpon>Graph.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="User Controls\Graph\TechTreeGraphNode.resx">
+    <EmbeddedResource Update="UserControls\Graph\TechTreeGraphNode.resx">
       <DependentUpon>TechTreeGraphNode.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="User Controls\Node Grid\Node Grid Details.resx">
-      <DependentUpon>Node Grid Details.cs</DependentUpon>
+    <EmbeddedResource Update="UserControls\NodeGrid\NodeGridDetails.resx">
+      <DependentUpon>NodeGridDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="User Controls\Node Grid\Node Grid.resx">
-      <DependentUpon>Node Grid.cs</DependentUpon>
+    <EmbeddedResource Update="UserControls\NodeGrid\NodeGrid.resx">
+      <DependentUpon>NodeGrid.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="User Controls\Players\Player Details.resx">
-      <DependentUpon>Player Details.cs</DependentUpon>
+    <EmbeddedResource Update="UserControls\Players\PlayerDetails.resx">
+      <DependentUpon>PlayerDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="User Controls\Players\Players.resx">
+    <EmbeddedResource Update="UserControls\Players\Players.resx">
       <DependentUpon>Players.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="User Controls\Species\Species Details.resx">
-      <DependentUpon>Species Details.cs</DependentUpon>
+    <EmbeddedResource Update="UserControls\Species\SpeciesDetails.resx">
+      <DependentUpon>SpeciesDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="User Controls\Systems\System Detail Summary.resx">
-      <DependentUpon>System Detail Summary.cs</DependentUpon>
+    <EmbeddedResource Update="UserControls\Systems\SystemDetailSummary.resx">
+      <DependentUpon>SystemDetailSummary.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="User Controls\Systems\System Details History Data.resx">
-      <DependentUpon>System Details History Data.cs</DependentUpon>
+    <EmbeddedResource Update="UserControls\Systems\SystemDetailsHistoryData.resx">
+      <DependentUpon>SystemDetailsHistoryData.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="User Controls\Systems\System Details History.resx">
-      <DependentUpon>System Details History.cs</DependentUpon>
+    <EmbeddedResource Update="UserControls\Systems\SystemDetailsHistory.resx">
+      <DependentUpon>SystemDetailsHistory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="User Controls\Systems\System Details Misc.resx">
-      <DependentUpon>System Details Misc.cs</DependentUpon>
+    <EmbeddedResource Update="UserControls\Systems\SystemDetailsMisc.resx">
+      <DependentUpon>SystemDetailsMisc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="User Controls\Systems\System Details Von Neumann.resx">
-      <DependentUpon>System Details Von Neumann.cs</DependentUpon>
+    <EmbeddedResource Update="UserControls\Systems\SystemDetailsVonNeumann.resx">
+      <DependentUpon>SystemDetailsVonNeumann.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="User Controls\Systems\System Details.resx">
-      <DependentUpon>System Details.cs</DependentUpon>
+    <EmbeddedResource Update="UserControls\Systems\SystemDetails.resx">
+      <DependentUpon>SystemDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="User Controls\Systems\Systems.resx">
+    <EmbeddedResource Update="UserControls\Systems\Systems.resx">
       <DependentUpon>Systems.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="User Controls\Tech Tree\Tech Details.resx">
-      <DependentUpon>Tech Details.cs</DependentUpon>
+    <EmbeddedResource Update="UserControls\TechTree\TechDetails.resx">
+      <DependentUpon>TechDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="User Controls\Tech Tree\Tech Tree.resx">
-      <DependentUpon>Tech Tree.cs</DependentUpon>
+    <EmbeddedResource Update="UserControls\TechTree\TechTree.resx">
+      <DependentUpon>TechTree.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -257,5 +240,11 @@
     </Content>
     <Content Include="Sword of the Stars 1.8.ico" />
     <Content Include="TextFile1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="GitVersion.MsBuild" Version="5.12.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 </Project>
