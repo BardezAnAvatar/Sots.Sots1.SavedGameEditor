@@ -7,7 +7,7 @@ using System.Text;
 using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.Resource_Management;
 using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Graph;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.ResourceManagement
 {
     public class TechTreeManagement
     {
