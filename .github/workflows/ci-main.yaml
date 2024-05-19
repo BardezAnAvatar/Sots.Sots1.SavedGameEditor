@@ -4,6 +4,7 @@ on:
   push:
     branches:
     - main
+    - tinker
 
 concurrency: 
   group: ${{ github.ref_name }}
