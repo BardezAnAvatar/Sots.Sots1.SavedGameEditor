@@ -3,8 +3,7 @@ name: "Continous Integration: Releases"
 on:
   push:
     branches:
-    # - main
-    - tinker
+    - main
 
 concurrency: 
   group: ${{ github.ref_name }}
