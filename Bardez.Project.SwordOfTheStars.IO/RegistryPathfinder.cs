@@ -6,8 +6,8 @@ namespace Bardez.Project.SwordOfTheStars.IO
 {
     public static class RegistryPathfinder
     {
-        private static String RegPath32 = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Sword of the Stars";
-        private static String RegPath64 = @"SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Sword of the Stars";
+        private const String RegPath32 = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Sword of the Stars";
+        private const String RegPath64 = @"SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Sword of the Stars";
 
         public static RegistryKey GetSotsRegistryKey()
         {
@@ -23,13 +23,16 @@ namespace Bardez.Project.SwordOfTheStars.IO
 
         public static String ReadSotsPath()
         {
-            String path = String.Empty;
+            String path = null;
 
             var key = GetSotsRegistryKey();
 
-            //retrieve the directory from the uninstall string
-            FileInfo fi = new FileInfo(key.GetValue("UninstallString") as String);
-            path = fi.Directory.FullName;
+            if (key != null)
+            {
+                //retrieve the directory from the uninstall string
+                FileInfo fi = new FileInfo(key.GetValue("UninstallString") as String);
+                path = fi.Directory.FullName;
+            }
 
             return path;
         }
