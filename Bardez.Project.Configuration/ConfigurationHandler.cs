@@ -110,15 +110,17 @@ namespace Bardez.Project.Configuration
             try
             {
                 String readMachineConfig = ConfigurationManager.AppSettings["TrustedApplication"];
-                if(readMachineConfig != null)
+                if (readMachineConfig != null)
+                {
                     readMachineConfig = readMachineConfig.ToUpper();
 
-                if (GetBoolValue(readMachineConfig, false))
-                {
-                    //Read the Machine.config file
-                    System.Configuration.Configuration machine;
-                    machine = ConfigurationManager.OpenMachineConfiguration();
-                    CopyKeys(machine, AppSettings, ConnectionStrings);
+                    if (GetBoolValue(readMachineConfig, false))
+                    {
+                        //Read the Machine.config file
+                        System.Configuration.Configuration machine;
+                        machine = ConfigurationManager.OpenMachineConfiguration();
+                        CopyKeys(machine, AppSettings, ConnectionStrings);
+                    }
                 }
 
                 //Read the app.config file or web.config file
