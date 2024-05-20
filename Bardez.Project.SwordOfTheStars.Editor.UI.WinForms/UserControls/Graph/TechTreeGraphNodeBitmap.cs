@@ -110,7 +110,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
         #endregion
 
         #region Constructor(s)
-        public TechTreeGraphNodeBitmap()
+        private TechTreeGraphNodeBitmap()
         {
             this.techName = null;
             this.drawName = "[Tech Name]";
@@ -125,42 +125,42 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
             this.top = 0;
         }
 
-        public TechTreeGraphNodeBitmap(String Name)
+        private TechTreeGraphNodeBitmap(String Name)
             : this()
         {
             this.techName = Name;
         }
 
-        public TechTreeGraphNodeBitmap(String Name, String Tech)
+        private TechTreeGraphNodeBitmap(String Name, String Tech)
             : this(Name)
         {
             this.DrawName = Tech;
             this.CalculateTechNameArea();
         }
 
-        public TechTreeGraphNodeBitmap(String Name, String Tech, String TechImagePath)
+        private TechTreeGraphNodeBitmap(String Name, String Tech, String TechImagePath)
             : this(Name, Tech)
         {
             this.TechImagePath = TechImagePath;
         }
 
-        public TechTreeGraphNodeBitmap(String Name, String Tech, Bitmap TechImage)
+        private TechTreeGraphNodeBitmap(String Name, String Tech, Bitmap TechImage)
             : this(Name, Tech)
         {
             this.InstantiateTechImage(TechImage);
         }
 
-        public TechTreeGraphNodeBitmap(AvailableTechnologyTreeNode Tech)
+        private TechTreeGraphNodeBitmap(AvailableTechnologyTreeNode Tech)
             : this(Tech.Name, Tech.Name)
         {
         }
 
-        public TechTreeGraphNodeBitmap(AvailableTechnologyTreeNode Tech, String ImagePath)
+        private TechTreeGraphNodeBitmap(AvailableTechnologyTreeNode Tech, String ImagePath)
             : this(Tech.Name, Tech.Name, ImagePath)
         {
         }
 
-        public TechTreeGraphNodeBitmap(AvailableTechnologyTreeNode Tech, Bitmap TechImage)
+        private TechTreeGraphNodeBitmap(AvailableTechnologyTreeNode Tech, Bitmap TechImage)
             : this(Tech.Name, Tech.Name, TechImage)
         {
         }
