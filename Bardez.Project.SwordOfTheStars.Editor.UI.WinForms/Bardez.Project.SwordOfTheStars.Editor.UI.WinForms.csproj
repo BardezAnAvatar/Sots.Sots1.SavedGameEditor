@@ -180,9 +180,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Content Include="Resources\Lists\SpriteTable.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bardez.Project.Configuration\Bardez.Project.Configuration.csproj" />
@@ -194,12 +191,6 @@
     <ProjectReference Include="..\TargaImage\TargaImage.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Lists\OverrideTechTree.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TechTree\_placeholder.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Sword of the Stars 1.8.ico" />
     <Content Include="TextFile1.txt" />
   </ItemGroup>

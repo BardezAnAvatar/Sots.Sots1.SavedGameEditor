@@ -5,6 +5,24 @@
 	<LangVersion>latest</LangVersion>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Resources\Lists\OverrideTechTree.txt" />
+    <None Remove="Resources\Lists\SpriteTable.csv" />
+    <None Remove="Resources\TechTree\_placeholder.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Lists\OverrideTechTree.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Lists\SpriteTable.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\TechTree\_placeholder.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 	<ItemGroup>
 		<PackageReference Include="DotNetZip" Version="1.16.0" />
 		<PackageReference Include="GitVersion.MsBuild" Version="5.12.0">
