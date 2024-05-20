@@ -2,7 +2,7 @@
 using System;
 using Microsoft.Win32;
 
-namespace Bardez.Project.SwordOfTheStars.IO.Steam;
+namespace Bardez.Project.SwordOfTheStars.IO.Pathfinding.Steam;
 
 /// <summary>
 ///     Attempts to derive the path to the root directory of the SotS game installation from

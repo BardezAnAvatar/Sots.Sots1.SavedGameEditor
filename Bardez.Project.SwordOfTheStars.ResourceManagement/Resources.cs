@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Bardez.Project.Configuration;
-using Bardez.Project.SwordOfTheStars.IO;
+using Bardez.Project.SwordOfTheStars.IO.Pathfinding.Physical;
 using Ionic.Zip;
 
 namespace Bardez.Project.SwordOfTheStars.ResourceManagement
