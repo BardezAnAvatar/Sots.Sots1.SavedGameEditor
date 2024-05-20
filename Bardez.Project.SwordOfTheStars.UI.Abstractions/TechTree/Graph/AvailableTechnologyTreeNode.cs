@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace Bardez.Project.SwordOfTheStars.ResourceManagement
+namespace Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree.Graph
 {
     public class AvailableTechnologyTreeNode
     {

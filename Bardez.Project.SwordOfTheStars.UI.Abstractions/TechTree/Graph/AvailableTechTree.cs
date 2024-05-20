@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Bardez.Project.SwordOfTheStars.ResourceManagement
+namespace Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree.Graph
 {
     public class AvailableTechnologyTree
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.ResourceManagement
+namespace Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree.Graph
 {
     public class TreeColumn
     {

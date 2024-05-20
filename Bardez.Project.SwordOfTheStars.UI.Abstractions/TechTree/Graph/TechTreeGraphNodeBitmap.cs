@@ -3,7 +3,7 @@ using System.Drawing;
 using Bardez.Project.SwordOfTheStars.ResourceManagement;
 using Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree.Graph;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
+namespace Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree.Graph
 {
     public class TechTreeGraphNodeBitmap
     {

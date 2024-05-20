@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bardez.Project.SwordOfTheStars.ResourceManagement
+namespace Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree.Graph
 {
     public class AvailableTechnologyConnectionSpecies
     {
