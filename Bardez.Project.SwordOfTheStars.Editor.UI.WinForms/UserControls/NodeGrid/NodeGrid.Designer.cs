@@ -1,4 +1,4 @@
-﻿namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Node_Grid
+﻿namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Node_Grid
 {
     partial class NodeGrid
     {
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBoxNodeDetails = new System.Windows.Forms.GroupBox();
-            this.node_Grid_Details = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Node_Grid.NodeGridDetails();
+            this.node_Grid_Details = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Node_Grid.NodeGridDetails();
             this.groupBoxNodeList = new System.Windows.Forms.GroupBox();
             this.dataGridViewNodes = new System.Windows.Forms.DataGridView();
             this.groupBoxNodeDetails.SuspendLayout();

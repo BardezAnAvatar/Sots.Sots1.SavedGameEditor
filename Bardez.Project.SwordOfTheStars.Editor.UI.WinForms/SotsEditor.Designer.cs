@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SotsEditor));
-            this.editorSaveGame = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Editor.Editor();
+            this.editorSaveGame = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Editor.Editor();
             this.SuspendLayout();
             // 
             // editorSaveGame
@@ -63,6 +63,6 @@
 
         #endregion
 
-        private User_Controls.Editor.Editor editorSaveGame;
+        private UserControls.Editor.Editor editorSaveGame;
     }
 }

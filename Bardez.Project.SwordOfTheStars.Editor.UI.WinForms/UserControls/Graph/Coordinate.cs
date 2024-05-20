@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Graph
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
 {
     public class Coordinate
     {

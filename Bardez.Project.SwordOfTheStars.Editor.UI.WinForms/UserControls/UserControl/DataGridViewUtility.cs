@@ -6,7 +6,7 @@ using System.Text;
 using System.Windows.Forms;
 using Bardez.Project.SwordOfTheStars.DataStructures;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.User_Control
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.User_Control
 {
     public static class DataGridViewUtility
     {

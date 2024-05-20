@@ -1,4 +1,4 @@
-﻿namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Tech_Tree
+﻿namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Tech_Tree
 {
     partial class TechDetails
     {

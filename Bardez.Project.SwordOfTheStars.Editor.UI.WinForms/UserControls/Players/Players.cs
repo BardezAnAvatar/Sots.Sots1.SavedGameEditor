@@ -6,10 +6,10 @@ using System.Data;
 using System.Text;
 using System.Windows.Forms;
 using Bardez.Project.SwordOfTheStars.DataStructures;
-using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.User_Control;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.User_Control;
 using Bardez.Project.SwordOfTheStars.ResourceManagement;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Players
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
 {
     public partial class Players : DisplayUserControl
     {

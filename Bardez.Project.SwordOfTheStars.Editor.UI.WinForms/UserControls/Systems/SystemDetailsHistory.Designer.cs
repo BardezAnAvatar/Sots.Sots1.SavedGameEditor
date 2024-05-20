@@ -1,4 +1,4 @@
-namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
 {
     partial class SystemDetailsHistory
     {
@@ -29,9 +29,9 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls
         private void InitializeComponent()
         {
             this.groupBoxCurrent = new System.Windows.Forms.GroupBox();
-            this.system_Details_History_Data_Current = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.SystemDetailsHistoryData();
+            this.system_Details_History_Data_Current = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.SystemDetailsHistoryData();
             this.groupBoxPrevious = new System.Windows.Forms.GroupBox();
-            this.system_Details_History_Data_Previous = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.SystemDetailsHistoryData();
+            this.system_Details_History_Data_Previous = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.SystemDetailsHistoryData();
             this.groupBoxCurrent.SuspendLayout();
             this.groupBoxPrevious.SuspendLayout();
             this.SuspendLayout();
