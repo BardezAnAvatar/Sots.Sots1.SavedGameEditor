@@ -5,7 +5,7 @@ using System.IO;
 using System.Text;
 using System.Xml;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms
+namespace Bardez.Project.SwordOfTheStars.StructureVisualization.XmlDescription
 {
     public class SaveTreeNode
     {
