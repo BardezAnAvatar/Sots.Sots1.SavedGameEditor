@@ -5,7 +5,7 @@ namespace Bardez.Project.SwordOfTheStars.IO.Pathfinding.Steam;
 
 /// <summary>Reads an instance of Valve's ACF files</summary>
 /// <remarks>Sourced from: https://stackoverflow.com/a/42876399/1375931</remarks>
-public class AcfReader
+public class AcfReader : IAcfParser
 {
     public string FileLocation { get; private set; }
 
