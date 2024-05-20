@@ -6,10 +6,16 @@
   </PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="DotNetZip" Version="1.16.0" />
 		<PackageReference Include="GitVersion.MsBuild" Version="5.12.0">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Bardez.Project.Configuration\Bardez.Project.Configuration.csproj" />
+	  <ProjectReference Include="..\Bardez.Project.SwordOfTheStars.IO\Bardez.Project.SwordOfTheStars.IO.csproj" />
 	</ItemGroup>
 
 </Project>
