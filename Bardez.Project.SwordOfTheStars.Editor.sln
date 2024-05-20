@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bardez.Project.SwordOfTheSt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bardez.Project.SwordOfTheStars.StructureVisualization", "Bardez.Project.SwordOfTheStars.StructureVisualization\Bardez.Project.SwordOfTheStars.StructureVisualization.csproj", "{11B2CACF-AB56-4EA9-9085-ADEF9E03C438}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bardez.Project.SwordOfTheStars.UI.Abstractions", "Bardez.Project.SwordOfTheStars.UI.Abstractions\Bardez.Project.SwordOfTheStars.UI.Abstractions.csproj", "{8AAFC256-36FF-4A2E-B75A-9C82B7162B7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{11B2CACF-AB56-4EA9-9085-ADEF9E03C438}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11B2CACF-AB56-4EA9-9085-ADEF9E03C438}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11B2CACF-AB56-4EA9-9085-ADEF9E03C438}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AAFC256-36FF-4A2E-B75A-9C82B7162B7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AAFC256-36FF-4A2E-B75A-9C82B7162B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AAFC256-36FF-4A2E-B75A-9C82B7162B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AAFC256-36FF-4A2E-B75A-9C82B7162B7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
