@@ -1,5 +1,6 @@
-﻿using System.IO;
-using System;
+﻿using System;
+using System.IO;
+using System.Linq;
 using Microsoft.Win32;
 
 namespace Bardez.Project.SwordOfTheStars.IO.Pathfinding.Steam;
@@ -8,7 +9,7 @@ namespace Bardez.Project.SwordOfTheStars.IO.Pathfinding.Steam;
 ///     Attempts to derive the path to the root directory of the SotS game installation from
 ///     Steam metadata.
 /// </summary>
-public class SteamPathfinder
+public class SteamPathfinder(IAcfManifestParserBuilder parserBuilder)
 {
     private const string RegPath32 = @"SOFTWARE\Valve\Steam";
     private const string RegPath64 = @"SOFTWARE\Wow6432Node\Valve\Steam";
@@ -26,7 +27,7 @@ public class SteamPathfinder
         return key;
     }
 
-    public static string FindSteamSotsPath()
+    public string FindSteamSotsPath()
     {
         string path = string.Empty;
 
@@ -36,26 +37,43 @@ public class SteamPathfinder
         {
             //retrieve the directory from the uninstall string
             var steamPath = key.GetValue("InstallPath", null);
-            FileInfo fi = new FileInfo(steamPath as string);
-            var steamRoot = fi.Directory.FullName;
+            var di = new DirectoryInfo(steamPath as string);
+            var steamRoot = di.FullName;
 
-            path = FindSotsPath(steamRoot);
+            path = FindSotsPath(di.FullName);
         }
 
         return path;
     }
 
-    public static string FindSotsPath(string steamRoot)
+    public string FindSotsPath(string steamRoot)
     {
         if (!Directory.Exists(steamRoot))
         {
             throw new InvalidOperationException($"Directory `{steamRoot}` does not exist.");
         }
 
-        var path = Path.Combine(steamRoot, $@"steamapps\appmanifest_{SotsManifestId}.acf");
+        //Read the ACF library file
+        var libraryData = ReadAcfFile(Path.Combine(steamRoot, @"steamapps\libraryfolders.vdf"));
 
-        //TODO: read the ACF file
+        //Read the ACF file
+        var acfStructure = ReadAcfFile(Path.Combine(steamRoot, $@"steamapps\appmanifest_{SotsManifestId}.acf"));
+        var sotsPartialPath = acfStructure.SubACF.First().Value.SubItems["installdir"];
 
-        throw new NotImplementedException("I should read this file eventually.");
+        var libraryDirectories = libraryData.SubACF.Values.Select(si => si.SubACF.First().Value.SubItems["path"].Replace(@"\\", @"\"));
+        var existingDirectories = libraryDirectories
+            .Select(ld => Path.Combine(ld, @"steamapps\common", sotsPartialPath))
+            .Where(Directory.Exists);
+
+        return existingDirectories.SingleOrDefault();
+    }
+
+    private AcfStruct ReadAcfFile(string path)
+    {
+        //read the ACF file
+        var parser = parserBuilder.BuildParser(path);
+        var acfStructure = parser.AcfFileToStruct();
+
+        return acfStructure;
     }
 }
