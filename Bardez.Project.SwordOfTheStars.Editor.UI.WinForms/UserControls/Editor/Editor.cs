@@ -13,8 +13,8 @@ using Bardez.Project.SwordOfTheStars.DataStructures;
 using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms;
 using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls;
 using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.UserControl;
-using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.ResourceManagement;
 using Bardez.Project.SwordOfTheStars.IO;
+using Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree;
 
 namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Editor
 {
