@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
-using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.ResourceManagement;
 using Bardez.Project.SwordOfTheStars.ResourceManagement;
+using Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree.Graph;
 
 namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
 {
@@ -17,6 +17,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
         protected SizeF techNameArea;
         protected Boolean isDirty;
         protected Int32 left, top;
+        protected IBitmapLoader imageLoader;
 
         #region Properties
         public Bitmap Buffer
@@ -61,7 +62,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
             set
             {
                 this.techImagePath = value;
-                this.InstantiateTechImage(TechTreeManagement.LoadBitmap(this.techImagePath));
+                this.InstantiateTechImage(imageLoader.LoadBitmap(this.techImagePath));
                 this.isDirty = true;
             }
         }
@@ -165,9 +166,10 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
         {
         }
 
-        public TechTreeGraphNodeBitmap(JoinedTechnology Tech, Bitmap TechImage)
+        public TechTreeGraphNodeBitmap(IBitmapLoader imageLoader, JoinedTechnology Tech, Bitmap TechImage)
             : this(Tech.Name, Tech.FriendlyName, TechImage)
         {
+            this.imageLoader = imageLoader;
         } 
         #endregion
 
