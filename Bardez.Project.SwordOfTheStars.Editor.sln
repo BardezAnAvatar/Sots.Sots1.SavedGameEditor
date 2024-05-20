@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B86EF94F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bardez.Project.SwordOfTheStars.IO.Tests", "tests\Bardez.Project.SwordOfTheStars.IO.Tests\Bardez.Project.SwordOfTheStars.IO.Tests.csproj", "{B31DB891-6BC5-40B7-B9BF-DB99F5E9DE55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bardez.Project.SwordOfTheStars.ResourceManagement.Tests", "tests\Bardez.Project.SwordOfTheStars.ResourceManagement.Tests\Bardez.Project.SwordOfTheStars.ResourceManagement.Tests.csproj", "{5FC58A05-1DAF-4C6A-98C6-96FCDAAD075E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,12 +61,17 @@ Global
 		{B31DB891-6BC5-40B7-B9BF-DB99F5E9DE55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B31DB891-6BC5-40B7-B9BF-DB99F5E9DE55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B31DB891-6BC5-40B7-B9BF-DB99F5E9DE55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FC58A05-1DAF-4C6A-98C6-96FCDAAD075E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC58A05-1DAF-4C6A-98C6-96FCDAAD075E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC58A05-1DAF-4C6A-98C6-96FCDAAD075E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC58A05-1DAF-4C6A-98C6-96FCDAAD075E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B31DB891-6BC5-40B7-B9BF-DB99F5E9DE55} = {B86EF94F-210F-4066-ACC7-0F5A55C744AB}
+		{5FC58A05-1DAF-4C6A-98C6-96FCDAAD075E} = {B86EF94F-210F-4066-ACC7-0F5A55C744AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {732690B8-0CB8-4EA3-A41A-73A3FF44012C}
