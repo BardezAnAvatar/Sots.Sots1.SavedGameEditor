@@ -148,7 +148,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.ResourceManagement
         }
 
         //Joined Tech List
-        public void PopulateGraph(Graph GraphTechTree)
+        public void PopulateGraph(Graph graphTechTree)
         {
             lock (this.locker)
             {
@@ -175,8 +175,8 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.ResourceManagement
                     currentWidth += (controlWidth * totalWidth + 100);
                 }
 
-                GraphTechTree.Balance();
-                GraphTechTree.AttachNodes();
+                graphTechTree.Balance();
+                graphTechTree.AttachNodes();
             }
         }
 
