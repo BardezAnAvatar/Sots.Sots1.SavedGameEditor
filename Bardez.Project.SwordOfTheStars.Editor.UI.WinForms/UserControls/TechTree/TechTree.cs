@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Bardez.Project.SwordOfTheStars.DataStructures;
-using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.User_Control;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.UserControl;
 using Bardez.Project.SwordOfTheStars.ResourceManagement;
 
 namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Tech_Tree

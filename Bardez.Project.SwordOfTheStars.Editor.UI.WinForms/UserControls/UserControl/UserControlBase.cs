@@ -1,8 +1,9 @@
 ﻿using System.Windows.Forms;
+using UC = System.Windows.Forms.UserControl;
 
 namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
 {
-    public abstract class UserControlBase : UserControl
+    public abstract class UserControlBase : UC
     {
         public UserControlBase()
         {
