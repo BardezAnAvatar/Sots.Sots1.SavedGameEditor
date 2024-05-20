@@ -147,7 +147,7 @@ namespace Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree
         }
 
         //Joined Tech List
-        public void PopulateGraph(Graph graphTechTree)
+        public void PopulateGraph(ITechTreeGraph graphTechTree)
         {
             lock (this.locker)
             {
@@ -196,7 +196,7 @@ namespace Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree
         ///     by PopulateGraph, and that it does need to be locked, but the precondition is that the caller
         ///     needs to already be locked on locker.
         /// </remarks>
-        protected void AttachToGraph(Graph GraphTechTree, List<JoinedTechnology> Parents, String Family, Int32 TreeHeight, Int32 TreeWidth, Int32 CurrentHeight, Int32 CurrentLeftmostX)
+        protected void AttachToGraph(ITechTreeGraph GraphTechTree, List<JoinedTechnology> Parents, String Family, Int32 TreeHeight, Int32 TreeWidth, Int32 CurrentHeight, Int32 CurrentLeftmostX)
         {
             Int32 width = controlWidth * TreeWidth;
 
