@@ -37,7 +37,7 @@ jobs:
           noop-labels: SemVer Skip
           require-release-notes: true
           release-notes-prefix: "# Release Notes:"
-          release-notes-suffix: "-- End Release Notes --"
+          release-notes-suffix: "________________"
 
       - name: Debug the Output
         run: |
