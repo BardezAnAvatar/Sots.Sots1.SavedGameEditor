@@ -13,7 +13,7 @@ namespace Bardez.Project.SwordOfTheStars.IO
             String path = String.Empty;
             Microsoft.Win32.RegistryKey key;
 
-            //try 35-bit first
+            //try 32-bit first
             key = Microsoft.Win32.Registry.LocalMachine.OpenSubKey(RegPath32);
 
             //try 64-bit
