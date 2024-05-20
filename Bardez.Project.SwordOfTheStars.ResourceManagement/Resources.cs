@@ -49,8 +49,6 @@ namespace Bardez.Project.SwordOfTheStars.ResourceManagement
             }
         }
 
-
-        
         public String ResourceGobPath
         {
             get
