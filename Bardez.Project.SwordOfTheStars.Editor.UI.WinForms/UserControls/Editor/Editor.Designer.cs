@@ -1,4 +1,4 @@
-﻿namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Editor
+﻿namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Editor
 {
     partial class Editor
     {
@@ -31,13 +31,13 @@
             this.checkBoxReadOnly = new System.Windows.Forms.CheckBox();
             this.tabControlOptions = new System.Windows.Forms.TabControl();
             this.tabPageSpecies = new System.Windows.Forms.TabPage();
-            this.speciesDetails = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Species.Species_Details();
+            this.speciesDetails = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Species.Species_Details();
             this.tabPagePlayers = new System.Windows.Forms.TabPage();
-            this.playersControl = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Players.Players();
+            this.playersControl = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players.Players();
             this.tabPageSystems = new System.Windows.Forms.TabPage();
-            this.systemsControl = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Systems();
+            this.systemsControl = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Systems();
             this.tabPageNodeLines = new System.Windows.Forms.TabPage();
-            this.nodeGridControl = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Node_Grid.NodeGrid();
+            this.nodeGridControl = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Node_Grid.NodeGrid();
             this.openFileDialogSaveFile = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialogSaveFile = new System.Windows.Forms.SaveFileDialog();
             this.labelSourceFile = new System.Windows.Forms.Label();

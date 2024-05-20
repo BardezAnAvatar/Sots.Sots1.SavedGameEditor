@@ -37,111 +37,73 @@
     <Compile Update="SotsEditor.Designer.cs">
       <DependentUpon>SotsEditor.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\Editor\Editor.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="UserControls\Editor\Editor.cs" />
     <Compile Update="UserControls\Editor\Editor.Designer.cs">
       <DependentUpon>Editor.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\TechTree\TechDetails.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="UserControls\TechTree\TechDetails.cs" />
     <Compile Update="UserControls\TechTree\TechDetails.Designer.cs">
       <DependentUpon>TechDetails.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\TechTree\TechTree.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="UserControls\TechTree\TechTree.cs" />
     <Compile Update="UserControls\TechTree\TechTree.Designer.cs">
       <DependentUpon>TechTree.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\UserControl\DisplayUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="UserControls\UserControl\UserControlBase.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="UserControls\Graph\Graph.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="UserControls\UserControl\DisplayUserControl.cs" />
+    <Compile Update="UserControls\UserControl\UserControlBase.cs" />
+    <Compile Update="UserControls\Graph\Graph.cs" />
     <Compile Update="UserControls\Graph\Graph.Designer.cs">
       <DependentUpon>Graph.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\Graph\TechTreeGraphNode.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="UserControls\Graph\TechTreeGraphNode.cs" />
     <Compile Update="UserControls\Graph\TechTreeGraphNode.Designer.cs">
       <DependentUpon>TechTreeGraphNode.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\NodeGrid\NodeGridDetails.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="UserControls\NodeGrid\NodeGridDetails.cs" />
     <Compile Update="UserControls\NodeGrid\NodeGridDetails.Designer.cs">
       <DependentUpon>NodeGridDetails.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\NodeGrid\NodeGrid.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="UserControls\NodeGrid\NodeGrid.cs" />
     <Compile Update="UserControls\NodeGrid\NodeGrid.Designer.cs">
       <DependentUpon>NodeGrid.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\Players\PlayerDetails.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="UserControls\Players\PlayerDetails.cs" />
     <Compile Update="UserControls\Players\PlayerDetails.Designer.cs">
       <DependentUpon>PlayerDetails.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\Players\Players.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="UserControls\Players\Players.cs" />
     <Compile Update="UserControls\Players\Players.Designer.cs">
       <DependentUpon>Players.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\Species\SpeciesDetails.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="UserControls\Species\SpeciesDetails.cs" />
     <Compile Update="UserControls\Species\SpeciesDetails.Designer.cs">
       <DependentUpon>SpeciesDetails.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\Systems\SystemDetailSummary.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="UserControls\Systems\SystemDetailSummary.cs" />
     <Compile Update="UserControls\Systems\SystemDetailSummary.Designer.cs">
       <DependentUpon>SystemDetailSummary.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\Systems\SystemDetailsHistoryData.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="UserControls\Systems\SystemDetailsHistoryData.cs" />
     <Compile Update="UserControls\Systems\SystemDetailsHistoryData.Designer.cs">
       <DependentUpon>SystemDetailsHistoryData.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\Systems\SystemDetailsHistory.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="UserControls\Systems\SystemDetailsHistory.cs" />
     <Compile Update="UserControls\Systems\SystemDetailsHistory.Designer.cs">
       <DependentUpon>SystemDetailsHistory.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\Systems\SystemDetailsMisc.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="UserControls\Systems\SystemDetailsMisc.cs" />
     <Compile Update="UserControls\Systems\SystemDetailsMisc.Designer.cs">
       <DependentUpon>SystemDetailsMisc.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\Systems\SystemDetailsVonNeumann.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="UserControls\Systems\SystemDetailsVonNeumann.cs" />
     <Compile Update="UserControls\Systems\SystemDetailsVonNeumann.Designer.cs">
       <DependentUpon>SystemDetailsVonNeumann.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\Systems\SystemDetails.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="UserControls\Systems\SystemDetails.cs" />
     <Compile Update="UserControls\Systems\SystemDetails.Designer.cs">
       <DependentUpon>SystemDetails.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\Systems\Systems.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="UserControls\Systems\Systems.cs" />
     <Compile Update="UserControls\Systems\Systems.Designer.cs">
       <DependentUpon>Systems.cs</DependentUpon>
     </Compile>
@@ -218,9 +180,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Content Include="Resources\Lists\SpriteTable.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bardez.Project.Configuration\Bardez.Project.Configuration.csproj" />
@@ -228,20 +187,14 @@
     <ProjectReference Include="..\Bardez.Project.SwordOfTheStars.DataStructures\Bardez.Project.SwordOfTheStars.DataStructures.csproj" />
     <ProjectReference Include="..\Bardez.Project.SwordOfTheStars.IO\Bardez.Project.SwordOfTheStars.IO.csproj" />
     <ProjectReference Include="..\Bardez.Project.SwordOfTheStars.ResourceManagement\Bardez.Project.SwordOfTheStars.ResourceManagement.csproj" />
+    <ProjectReference Include="..\Bardez.Project.SwordOfTheStars.UI.Abstractions\Bardez.Project.SwordOfTheStars.UI.Abstractions.csproj" />
     <ProjectReference Include="..\TargaImage\TargaImage.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Lists\OverrideTechTree.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TechTree\_placeholder.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Sword of the Stars 1.8.ico" />
     <Content Include="TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DotNetZip" Version="1.16.0" />
     <PackageReference Include="GitVersion.MsBuild" Version="5.12.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

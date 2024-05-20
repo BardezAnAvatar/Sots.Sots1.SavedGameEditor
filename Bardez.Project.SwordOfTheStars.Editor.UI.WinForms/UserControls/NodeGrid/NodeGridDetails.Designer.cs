@@ -1,4 +1,4 @@
-﻿namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Node_Grid
+﻿namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Node_Grid
 {
     partial class NodeGridDetails
     {

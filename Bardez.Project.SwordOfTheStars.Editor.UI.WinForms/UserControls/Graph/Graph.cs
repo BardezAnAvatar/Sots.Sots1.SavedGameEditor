@@ -2,32 +2,30 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.User_Control;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.UserControl;
+using Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree.Graph;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Graph
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
 {
-    public partial class Graph : DisplayUserControl
+    public partial class Graph : DisplayUserControl, ITechTreeGraph
     {
-        protected List<TechTreeGraphNodeBitmap> nodes;
-        protected List<GraphEdge> edges;
+        protected IList<TechTreeGraphNodeBitmap> nodes;
+        protected IList<GraphEdge> edges;
         protected Bitmap buffer;
         protected BufferedGraphics bufferedGraphics;
         protected BufferedGraphicsContext bufferedGraphicsContext;
         protected static Int32 margin = 30;
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public List<TechTreeGraphNodeBitmap> Nodes
+        public IList<TechTreeGraphNodeBitmap> Nodes
         {
             get { return nodes; }
             set { nodes = value; }
         }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public List<GraphEdge> Edges
+        public IList<GraphEdge> Edges
         {
             get { return edges; }
             set { edges = value; }
@@ -69,7 +67,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Graph
                         continue;
 
                     //x/y-collision
-                    if(
+                    if (
                         //top left
                         (
                             (nodes[j].Left < (nodes[i].Left + Nodes[i].Width) && nodes[j].Left > nodes[i].Left)
@@ -95,7 +93,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Graph
 
         public void Balance()
         {
-            while(RearrangeOverlap())
+            while (RearrangeOverlap())
             {
             }
         }
@@ -121,7 +119,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Graph
         }
 
         public Coordinate Edge(TechTreeGraphNodeBitmap Source, TechTreeGraphNodeBitmap Target)
-        {            
+        {
             Coordinate s = Center(Source), t = Center(Target), ret = new Coordinate();
             Double techSlope = 0.0, lineSlope = 0.0;
             try
@@ -129,7 +127,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Graph
                 techSlope = Convert.ToDouble(Source.Width) / Convert.ToDouble(Source.Height);
                 lineSlope = Convert.ToDouble(s.X - t.X) / Convert.ToDouble(s.Y - t.Y);
             }
-            catch {}    //should be handled by the equal axis statements below
+            catch { }    //should be handled by the equal axis statements below
             Int32 delta = 0;
 
             if (s.X == t.X)
@@ -267,7 +265,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Graph
                         //pen.EndCap = System.Drawing.Drawing2D.LineCap.ArrowAnchor;
                         pen.EndCap = System.Drawing.Drawing2D.LineCap.Custom;
                         pen.CustomEndCap = new System.Drawing.Drawing2D.AdjustableArrowCap(4, 4, true);
-                        
+
                         //Draw
                         g.DrawPath(pen, new System.Drawing.Drawing2D.GraphicsPath(new Point[] { EdgeA.ToPoint(), EdgeB.ToPoint() }, new Byte[] { (Byte)System.Drawing.Drawing2D.PathPointType.Line, (Byte)System.Drawing.Drawing2D.PathPointType.Line }));
                     }
@@ -280,7 +278,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Graph
             TechTreeGraphNodeBitmap node = null;
             foreach (TechTreeGraphNodeBitmap n in nodes)
             {
-                if(n.TechName == Name)
+                if (n.TechName == Name)
                 {
                     node = n;
                     break;
@@ -355,7 +353,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Graph
 
             this.GenerateBuffer();
             this.RedrawBuffer();
-            
+
             this.Invalidate();
         }
 
@@ -383,7 +381,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Graph
             using (Graphics g = Graphics.FromImage(this.buffer))
             {
                 g.Clear(SystemColors.Control);
-                
+
                 //draw edges
                 this.RenderEdges(g);
 
@@ -426,7 +424,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Graph
                     break;
                 }
             }
-            
+
             //if it is, raise a control click event, specifying the technology clicked upon
             if (techClicked != null)
                 this.OnClickTech(techClicked);

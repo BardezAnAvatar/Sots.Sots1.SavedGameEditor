@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using Paloma;
-using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.User_Control;
-using Bardez.Project.SwordOfTheStars.ResourceManagement;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.UserControl;
+using Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree.Graph;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Graph
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
 {
     public partial class TechTreeGraphNode : DisplayUserControl
     {
@@ -97,8 +91,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.User_Controls.Graph
             newCenter.X = (((this.Width - 6) - this.pictureBoxTechImage.Width) / 2) + 2;
             this.pictureBoxTechImage.Location = newCenter;
         }
-
-
 
         private void labelTechName_MouseDown(object sender, MouseEventArgs e)
         {
