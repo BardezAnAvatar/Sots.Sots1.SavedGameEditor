@@ -10,7 +10,7 @@ namespace Bardez.Project.SwordOfTheStars.IO.Tests
         public void ReadSotsPath_Works()
         {
             //act
-            var path = Registry.ReadSotsPath();
+            var path = RegistryPathfinder.ReadSotsPath();
 
             //assert
             path.Should().NotBeNull("because the psth should be retrieved.");

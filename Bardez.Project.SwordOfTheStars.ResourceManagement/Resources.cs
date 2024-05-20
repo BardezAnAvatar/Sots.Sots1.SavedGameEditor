@@ -64,7 +64,7 @@ namespace Bardez.Project.SwordOfTheStars.ResourceManagement
         private static void InitializeGobPath()
         {
             if (ConfigurationHandler.GetBoolSettingValue("Registry.SotsPath.Lookup", false))
-                resourceGob = Registry.ReadSotsPath() + @"\sots.gob";
+                resourceGob = RegistryPathfinder.ReadSotsPath() + @"\sots.gob";
             else
                 resourceGob = ConfigurationHandler.GetSettingValue("Registry.SotsPath.HardCoded");
         }
