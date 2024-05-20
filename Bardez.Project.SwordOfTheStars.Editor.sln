@@ -13,9 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bardez.Project.ExceptionHan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bardez.Project.Configuration", "Bardez.Project.Configuration\Bardez.Project.Configuration.csproj", "{6E1496AB-268A-4EA2-99B3-726162F019F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bardez.Project.SwordOfTheStars.IO", "Bardez.Project.SwordOfTheStars.IO\Bardez.Project.SwordOfTheStars.IO.csproj", "{61476EFB-ABA2-4BEE-8325-555DFE5146A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bardez.Project.SwordOfTheStars.IO", "Bardez.Project.SwordOfTheStars.IO\Bardez.Project.SwordOfTheStars.IO.csproj", "{61476EFB-ABA2-4BEE-8325-555DFE5146A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bardez.Project.SwordOfTheStars.ResourceManagement", "Bardez.Project.SwordOfTheStars.ResourceManagement\Bardez.Project.SwordOfTheStars.ResourceManagement.csproj", "{FCD018D3-21D0-43A6-9E41-DB4929FD4958}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bardez.Project.SwordOfTheStars.ResourceManagement", "Bardez.Project.SwordOfTheStars.ResourceManagement\Bardez.Project.SwordOfTheStars.ResourceManagement.csproj", "{FCD018D3-21D0-43A6-9E41-DB4929FD4958}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B86EF94F-210F-4066-ACC7-0F5A55C744AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bardez.Project.SwordOfTheStars.IO.Tests", "tests\Bardez.Project.SwordOfTheStars.IO.Tests\Bardez.Project.SwordOfTheStars.IO.Tests.csproj", "{B31DB891-6BC5-40B7-B9BF-DB99F5E9DE55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,9 +55,16 @@ Global
 		{FCD018D3-21D0-43A6-9E41-DB4929FD4958}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCD018D3-21D0-43A6-9E41-DB4929FD4958}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCD018D3-21D0-43A6-9E41-DB4929FD4958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B31DB891-6BC5-40B7-B9BF-DB99F5E9DE55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B31DB891-6BC5-40B7-B9BF-DB99F5E9DE55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B31DB891-6BC5-40B7-B9BF-DB99F5E9DE55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B31DB891-6BC5-40B7-B9BF-DB99F5E9DE55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B31DB891-6BC5-40B7-B9BF-DB99F5E9DE55} = {B86EF94F-210F-4066-ACC7-0F5A55C744AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {732690B8-0CB8-4EA3-A41A-73A3FF44012C}
