@@ -8,24 +8,24 @@ using Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree.Graph;
 
 namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
 {
-    public partial class Graph : DisplayUserControl
+    public partial class Graph : DisplayUserControl, ITechTreeGraph
     {
-        protected List<TechTreeGraphNodeBitmap> nodes;
-        protected List<GraphEdge> edges;
+        protected IList<TechTreeGraphNodeBitmap> nodes;
+        protected IList<GraphEdge> edges;
         protected Bitmap buffer;
         protected BufferedGraphics bufferedGraphics;
         protected BufferedGraphicsContext bufferedGraphicsContext;
         protected static Int32 margin = 30;
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public List<TechTreeGraphNodeBitmap> Nodes
+        public IList<TechTreeGraphNodeBitmap> Nodes
         {
             get { return nodes; }
             set { nodes = value; }
         }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public List<GraphEdge> Edges
+        public IList<GraphEdge> Edges
         {
             get { return edges; }
             set { edges = value; }
@@ -119,7 +119,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
         }
 
         public Coordinate Edge(TechTreeGraphNodeBitmap Source, TechTreeGraphNodeBitmap Target)
-        {            
+        {
             Coordinate s = Center(Source), t = Center(Target), ret = new Coordinate();
             Double techSlope = 0.0, lineSlope = 0.0;
             try
@@ -265,7 +265,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
                         //pen.EndCap = System.Drawing.Drawing2D.LineCap.ArrowAnchor;
                         pen.EndCap = System.Drawing.Drawing2D.LineCap.Custom;
                         pen.CustomEndCap = new System.Drawing.Drawing2D.AdjustableArrowCap(4, 4, true);
-                        
+
                         //Draw
                         g.DrawPath(pen, new System.Drawing.Drawing2D.GraphicsPath(new Point[] { EdgeA.ToPoint(), EdgeB.ToPoint() }, new Byte[] { (Byte)System.Drawing.Drawing2D.PathPointType.Line, (Byte)System.Drawing.Drawing2D.PathPointType.Line }));
                     }
@@ -353,7 +353,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
 
             this.GenerateBuffer();
             this.RedrawBuffer();
-            
+
             this.Invalidate();
         }
 
@@ -381,7 +381,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
             using (Graphics g = Graphics.FromImage(this.buffer))
             {
                 g.Clear(SystemColors.Control);
-                
+
                 //draw edges
                 this.RenderEdges(g);
 
@@ -424,7 +424,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
                     break;
                 }
             }
-            
+
             //if it is, raise a control click event, specifying the technology clicked upon
             if (techClicked != null)
                 this.OnClickTech(techClicked);
