@@ -98,8 +98,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
             this.pictureBoxTechImage.Location = newCenter;
         }
 
-
-
         private void labelTechName_MouseDown(object sender, MouseEventArgs e)
         {
             Point loc = e.Location;
