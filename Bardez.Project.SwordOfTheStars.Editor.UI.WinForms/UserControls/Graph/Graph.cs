@@ -67,7 +67,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
                         continue;
 
                     //x/y-collision
-                    if(
+                    if (
                         //top left
                         (
                             (nodes[j].Left < (nodes[i].Left + Nodes[i].Width) && nodes[j].Left > nodes[i].Left)
@@ -93,7 +93,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
 
         public void Balance()
         {
-            while(RearrangeOverlap())
+            while (RearrangeOverlap())
             {
             }
         }
@@ -127,7 +127,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
                 techSlope = Convert.ToDouble(Source.Width) / Convert.ToDouble(Source.Height);
                 lineSlope = Convert.ToDouble(s.X - t.X) / Convert.ToDouble(s.Y - t.Y);
             }
-            catch {}    //should be handled by the equal axis statements below
+            catch { }    //should be handled by the equal axis statements below
             Int32 delta = 0;
 
             if (s.X == t.X)
@@ -278,7 +278,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
             TechTreeGraphNodeBitmap node = null;
             foreach (TechTreeGraphNodeBitmap n in nodes)
             {
-                if(n.TechName == Name)
+                if (n.TechName == Name)
                 {
                     node = n;
                     break;
