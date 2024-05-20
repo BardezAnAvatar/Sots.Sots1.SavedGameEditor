@@ -171,7 +171,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.ResourceManagement
 
                     List<JoinedTechnology> nodes = new List<JoinedTechnology>();
                     nodes.Add(roots[i]);
-                    AttachToGraph(roots[i].Family, maxHeight, totalWidth, 0, currentWidth, nodes, GraphTechTree);
+                    AttachToGraph(graphTechTree, nodes, roots[i].Family, maxHeight, totalWidth, 0, currentWidth);
                     currentWidth += (controlWidth * totalWidth + 100);
                 }
 
@@ -184,20 +184,20 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.ResourceManagement
         /// <summary>
         /// 
         /// </summary>
+        /// <param name="GraphTechTree"></param>
+        /// <param name="Parents"></param>
         /// <param name="Family"></param>
         /// <param name="TreeHeight"></param>
         /// <param name="TreeWidth"></param>
         /// <param name="CurrentHeight"></param>
         /// <param name="CurrentLeftmostX"></param>
-        /// <param name="Parents"></param>
-        /// <param name="GraphTechTree"></param>
         /// <remarks>
         ///     Perhaps this should be locked on locker; the recursive nature of this method, however, noticablly slows down
         ///     the application load. I believe that I should simply note that this is <em>implicitly</em> locked
         ///     by PopulateGraph, and that it does need to be locked, but the precondition is that the caller
         ///     needs to already be locked on locker.
         /// </remarks>
-        protected void AttachToGraph(String Family, Int32 TreeHeight, Int32 TreeWidth, Int32 CurrentHeight, Int32 CurrentLeftmostX, List<JoinedTechnology> Parents, Graph GraphTechTree)
+        protected void AttachToGraph(Graph GraphTechTree, List<JoinedTechnology> Parents, String Family, Int32 TreeHeight, Int32 TreeWidth, Int32 CurrentHeight, Int32 CurrentLeftmostX)
         {
             Int32 width = controlWidth * TreeWidth;
 
@@ -290,7 +290,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.ResourceManagement
 
                 if (orderedChildren.Count > 0)
                 {
-                    AttachToGraph(Family, TreeHeight, TreeWidth, CurrentHeight, CurrentLeftmostX, orderedChildren, GraphTechTree);
+                    AttachToGraph(GraphTechTree, orderedChildren, Family, TreeHeight, TreeWidth, CurrentHeight, CurrentLeftmostX);
                     break;
                 }
             }
