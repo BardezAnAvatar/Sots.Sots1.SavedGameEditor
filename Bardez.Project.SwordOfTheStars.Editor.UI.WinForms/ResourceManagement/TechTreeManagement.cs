@@ -9,7 +9,7 @@ using Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree.Graph;
 
 namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.ResourceManagement
 {
-    public class TechTreeManagement
+    public class TechTreeManagement : IBitmapLoader
     {
         protected AvailableTechnologyTree tree;
         protected List<OverrideTech> overrideTech;
@@ -253,7 +253,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.ResourceManagement
                 //ensure that the sprite resource exists
                 //this.resources.EnsureSecondaryResourceExists(spriteResourcePath);
 
-                TechTreeGraphNodeBitmap node = new TechTreeGraphNodeBitmap(Parents[i], this.spriteDictionary[Parents[i].ImagePath]);
+                TechTreeGraphNodeBitmap node = new TechTreeGraphNodeBitmap(this, Parents[i], this.spriteDictionary[Parents[i].ImagePath]);
                 Point position = node.Location;
 
                 if (Parents[i].GroupNumber == 0)
@@ -301,7 +301,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.ResourceManagement
             return new List<T>();
         }
 
-        public static Bitmap LoadBitmap(String TechImagePath)
+        public Bitmap LoadBitmap(String TechImagePath)
         {
             //Code pulled here from TechTreeGraphNodeBitmap.cs, as this can be public static, and
             //  I plan to pull the code there that even calls this in the first place.
