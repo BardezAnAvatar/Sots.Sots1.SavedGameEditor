@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using Bardez.Project.Configuration;
-using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.ResourceManagement;
+using Bardez.Project.SwordOfTheStars.IO;
 using Ionic.Zip;
 
 namespace Bardez.Project.SwordOfTheStars.ResourceManagement

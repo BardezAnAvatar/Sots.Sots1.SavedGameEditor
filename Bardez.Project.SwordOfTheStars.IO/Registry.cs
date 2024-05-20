@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.ResourceManagement
+namespace Bardez.Project.SwordOfTheStars.IO
 {
     public static class Registry
     {
