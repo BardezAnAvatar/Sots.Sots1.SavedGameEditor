@@ -27,12 +27,12 @@ public class AcfReader
         return ((braceleft == braceright) && (quote % 2 == 0));
     }
 
-    public AcfStruct ACFFileToStruct()
+    public AcfStruct AcfFileToStruct()
     {
-        return ACFFileToStruct(File.ReadAllText(FileLocation));
+        return AcfFileToStruct(File.ReadAllText(FileLocation));
     }
 
-    private AcfStruct ACFFileToStruct(string RegionToReadIn)
+    private AcfStruct AcfFileToStruct(string RegionToReadIn)
     {
         AcfStruct ACF = new AcfStruct();
         int LengthOfRegion = RegionToReadIn.Length;
@@ -58,7 +58,7 @@ public class AcfReader
             else
             {
                 int SecondItemEndBraceright = RegionToReadIn.NextEndOf('{', '}', SecondItemStartBraceleft + 1);
-                AcfStruct ACFS = ACFFileToStruct(RegionToReadIn.Substring(SecondItemStartBraceleft + 1, SecondItemEndBraceright - SecondItemStartBraceleft - 1));
+                AcfStruct ACFS = AcfFileToStruct(RegionToReadIn.Substring(SecondItemStartBraceleft + 1, SecondItemEndBraceright - SecondItemStartBraceleft - 1));
                 CurrentPos = SecondItemEndBraceright + 1;
                 ACF.SubACF.Add(FirstItem, ACFS);
             }
@@ -66,5 +66,4 @@ public class AcfReader
 
         return ACF;
     }
-}
 }
