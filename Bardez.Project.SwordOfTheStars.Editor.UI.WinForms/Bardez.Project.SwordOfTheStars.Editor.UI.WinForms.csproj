@@ -228,6 +228,7 @@
     <ProjectReference Include="..\Bardez.Project.SwordOfTheStars.DataStructures\Bardez.Project.SwordOfTheStars.DataStructures.csproj" />
     <ProjectReference Include="..\Bardez.Project.SwordOfTheStars.IO\Bardez.Project.SwordOfTheStars.IO.csproj" />
     <ProjectReference Include="..\Bardez.Project.SwordOfTheStars.ResourceManagement\Bardez.Project.SwordOfTheStars.ResourceManagement.csproj" />
+    <ProjectReference Include="..\Bardez.Project.SwordOfTheStars.UI.Abstractions\Bardez.Project.SwordOfTheStars.UI.Abstractions.csproj" />
     <ProjectReference Include="..\TargaImage\TargaImage.csproj" />
   </ItemGroup>
   <ItemGroup>

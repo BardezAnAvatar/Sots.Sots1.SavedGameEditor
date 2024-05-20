@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph;
 using Bardez.Project.SwordOfTheStars.ResourceManagement;
+using Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree.Graph;
 
 namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.ResourceManagement
 {
