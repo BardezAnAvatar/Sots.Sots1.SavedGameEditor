@@ -119,7 +119,7 @@ namespace Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree
                 this.resources.EnsurePrimaryResourcesExist();
 
                 //read tech sprites
-                List<TechSprite> spriteList = TechSpriteTable.ReadFromFile(spritesPath);
+                List<TechSprite> spriteList = TechSpriteParser.ReadFromFile(spritesPath);
 
                 //read master tech tree
                 this.ReadMasterTechList();

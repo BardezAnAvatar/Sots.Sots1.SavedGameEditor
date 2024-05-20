@@ -4,7 +4,7 @@ using System.IO;
 
 namespace Bardez.Project.SwordOfTheStars.ResourceManagement
 {
-    public static class TechSpriteTable
+    public static class TechSpriteParser
     {
         private const String iconPrefix = "TECHICON_";
 
