@@ -88,7 +88,7 @@
             tabPageSpecies.Location = new System.Drawing.Point(4, 24);
             tabPageSpecies.Margin = new System.Windows.Forms.Padding(4);
             tabPageSpecies.Name = "tabPageSpecies";
-            tabPageSpecies.Size = new System.Drawing.Size(785, 484);
+            tabPageSpecies.Size = new System.Drawing.Size(784, 484);
             tabPageSpecies.TabIndex = 1;
             tabPageSpecies.Text = "Species";
             // 
@@ -108,7 +108,7 @@
             tabPagePlayers.Location = new System.Drawing.Point(4, 24);
             tabPagePlayers.Margin = new System.Windows.Forms.Padding(4);
             tabPagePlayers.Name = "tabPagePlayers";
-            tabPagePlayers.Size = new System.Drawing.Size(785, 484);
+            tabPagePlayers.Size = new System.Drawing.Size(784, 484);
             tabPagePlayers.TabIndex = 2;
             tabPagePlayers.Text = "Players";
             // 
@@ -131,7 +131,7 @@
             tabPageSystems.Location = new System.Drawing.Point(4, 24);
             tabPageSystems.Margin = new System.Windows.Forms.Padding(4);
             tabPageSystems.Name = "tabPageSystems";
-            tabPageSystems.Size = new System.Drawing.Size(785, 484);
+            tabPageSystems.Size = new System.Drawing.Size(784, 484);
             tabPageSystems.TabIndex = 0;
             tabPageSystems.Text = "Systems";
             // 
@@ -158,12 +158,14 @@
             // 
             // nodeGridControl
             // 
-            nodeGridControl.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            nodeGridControl.Location = new System.Drawing.Point(4, 4);
+            nodeGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            nodeGridControl.Location = new System.Drawing.Point(0, 0);
             nodeGridControl.Margin = new System.Windows.Forms.Padding(4);
+            nodeGridControl.MinimumSize = new System.Drawing.Size(608, 342);
             nodeGridControl.Name = "nodeGridControl";
+            nodeGridControl.Padding = new System.Windows.Forms.Padding(4);
             nodeGridControl.ReadOnly = false;
-            nodeGridControl.Size = new System.Drawing.Size(776, 476);
+            nodeGridControl.Size = new System.Drawing.Size(784, 484);
             nodeGridControl.TabIndex = 0;
             // 
             // openFileDialogSaveFile
