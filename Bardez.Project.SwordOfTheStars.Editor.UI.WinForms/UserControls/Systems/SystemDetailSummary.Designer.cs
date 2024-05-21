@@ -50,7 +50,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             // labelSystemId
             // 
             labelSystemId.AutoSize = true;
-            labelSystemId.Location = new System.Drawing.Point(5, 24);
+            labelSystemId.Location = new System.Drawing.Point(5, 25);
             labelSystemId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelSystemId.Name = "labelSystemId";
             labelSystemId.Size = new System.Drawing.Size(59, 15);
@@ -59,7 +59,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             // 
             // textBoxSystemId
             // 
-            textBoxSystemId.Location = new System.Drawing.Point(72, 20);
+            textBoxSystemId.Location = new System.Drawing.Point(72, 21);
             textBoxSystemId.Margin = new System.Windows.Forms.Padding(4);
             textBoxSystemId.Name = "textBoxSystemId";
             textBoxSystemId.Size = new System.Drawing.Size(41, 23);
@@ -68,7 +68,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             // labelName
             // 
             labelName.AutoSize = true;
-            labelName.Location = new System.Drawing.Point(121, 24);
+            labelName.Location = new System.Drawing.Point(121, 25);
             labelName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelName.Name = "labelName";
             labelName.Size = new System.Drawing.Size(39, 15);
@@ -77,7 +77,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             // 
             // textBoxName
             // 
-            textBoxName.Location = new System.Drawing.Point(168, 20);
+            textBoxName.Location = new System.Drawing.Point(168, 21);
             textBoxName.Margin = new System.Windows.Forms.Padding(4);
             textBoxName.Name = "textBoxName";
             textBoxName.Size = new System.Drawing.Size(297, 23);
@@ -86,7 +86,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             // labelColor
             // 
             labelColor.AutoSize = true;
-            labelColor.Location = new System.Drawing.Point(473, 24);
+            labelColor.Location = new System.Drawing.Point(473, 25);
             labelColor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelColor.Name = "labelColor";
             labelColor.Size = new System.Drawing.Size(36, 15);
@@ -95,7 +95,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             // 
             // buttonColor
             // 
-            buttonColor.Location = new System.Drawing.Point(511, 20);
+            buttonColor.Location = new System.Drawing.Point(511, 21);
             buttonColor.Margin = new System.Windows.Forms.Padding(4);
             buttonColor.Name = "buttonColor";
             buttonColor.Size = new System.Drawing.Size(23, 23);
@@ -111,7 +111,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             // labelSize
             // 
             labelSize.AutoSize = true;
-            labelSize.Location = new System.Drawing.Point(548, 24);
+            labelSize.Location = new System.Drawing.Point(548, 25);
             labelSize.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelSize.Name = "labelSize";
             labelSize.Size = new System.Drawing.Size(27, 15);
@@ -120,7 +120,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             // 
             // textBoxSize
             // 
-            textBoxSize.Location = new System.Drawing.Point(579, 20);
+            textBoxSize.Location = new System.Drawing.Point(579, 21);
             textBoxSize.Margin = new System.Windows.Forms.Padding(4);
             textBoxSize.Name = "textBoxSize";
             textBoxSize.Size = new System.Drawing.Size(24, 23);

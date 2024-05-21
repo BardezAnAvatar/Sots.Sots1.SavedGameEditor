@@ -67,7 +67,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             system_Detail_Summary.Margin = new System.Windows.Forms.Padding(4);
             system_Detail_Summary.Name = "system_Detail_Summary";
             system_Detail_Summary.ReadOnly = false;
-            system_Detail_Summary.Size = new System.Drawing.Size(926, 60);
+            system_Detail_Summary.Size = new System.Drawing.Size(926, 50);
             system_Detail_Summary.TabIndex = 0;
             // 
             // SystemDetails
