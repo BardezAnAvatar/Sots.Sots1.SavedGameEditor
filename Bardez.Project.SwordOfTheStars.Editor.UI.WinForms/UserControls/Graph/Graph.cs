@@ -400,7 +400,10 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
             if (this.buffer != null)
                 this.buffer.Dispose();
 
-            this.buffer = new Bitmap(this.DisplayRectangle.Width, this.DisplayRectangle.Height);
+            var width = this.DisplayRectangle.Width > 0 ? this.DisplayRectangle.Width : 1;
+            var height = this.DisplayRectangle.Height > 0 ? this.DisplayRectangle.Height : 1;
+
+            this.buffer = new Bitmap(width, height);
             this.RedrawBuffer();
         }
 
