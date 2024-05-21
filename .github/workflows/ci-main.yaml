@@ -13,6 +13,7 @@ jobs:
   bump-tag-version:
     name: Bump and Tag Version
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
     - uses: actions/checkout@v4
       name: Checkout
