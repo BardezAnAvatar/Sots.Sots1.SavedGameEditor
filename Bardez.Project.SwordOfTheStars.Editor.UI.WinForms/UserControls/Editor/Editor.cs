@@ -1,17 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
-using System.Data;
 using System.IO;
-using System.Linq;
-using System.Management;
-using System.Text;
-using System.Threading;
 using System.Windows.Forms;
 using Bardez.Project.SwordOfTheStars.DataStructures;
-using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms;
-using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls;
 using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.UserControl;
 using Bardez.Project.SwordOfTheStars.IO;
 using Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree;
