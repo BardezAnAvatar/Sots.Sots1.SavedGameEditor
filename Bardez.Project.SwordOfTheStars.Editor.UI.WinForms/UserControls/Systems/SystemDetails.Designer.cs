@@ -28,52 +28,60 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
         /// </summary>
         private void InitializeComponent()
         {
-            this.system_Details_Misc = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.SystemDetailsMisc();
-            this.system_Details_Von_Neumann = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.SystemDetailsVonNeumann();
-            this.system_Details_History = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.SystemDetailsHistory();
-            this.system_Detail_Summary = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.SystemDetailSummary();
-            this.SuspendLayout();
+            system_Details_Misc = new SystemDetailsMisc();
+            system_Details_Von_Neumann = new SystemDetailsVonNeumann();
+            system_Details_History = new SystemDetailsHistory();
+            system_Detail_Summary = new SystemDetailSummary();
+            SuspendLayout();
             // 
-            // system_Details_Misc1
+            // system_Details_Misc
             // 
-            this.system_Details_Misc.Location = new System.Drawing.Point(3, 360);
-            this.system_Details_Misc.Name = "system_Details_Misc1";
-            this.system_Details_Misc.Size = new System.Drawing.Size(798, 231);
-            this.system_Details_Misc.TabIndex = 3;
+            system_Details_Misc.Location = new System.Drawing.Point(4, 403);
+            system_Details_Misc.Margin = new System.Windows.Forms.Padding(4);
+            system_Details_Misc.Name = "system_Details_Misc";
+            system_Details_Misc.ReadOnly = false;
+            system_Details_Misc.Size = new System.Drawing.Size(931, 267);
+            system_Details_Misc.TabIndex = 3;
             // 
-            // system_Details_Von_Neumann1
+            // system_Details_Von_Neumann
             // 
-            this.system_Details_Von_Neumann.Location = new System.Drawing.Point(641, 73);
-            this.system_Details_Von_Neumann.Name = "system_Details_Von_Neumann1";
-            this.system_Details_Von_Neumann.Size = new System.Drawing.Size(156, 119);
-            this.system_Details_Von_Neumann.TabIndex = 2;
+            system_Details_Von_Neumann.Location = new System.Drawing.Point(748, 72);
+            system_Details_Von_Neumann.Margin = new System.Windows.Forms.Padding(4);
+            system_Details_Von_Neumann.Name = "system_Details_Von_Neumann";
+            system_Details_Von_Neumann.ReadOnly = false;
+            system_Details_Von_Neumann.Size = new System.Drawing.Size(182, 137);
+            system_Details_Von_Neumann.TabIndex = 2;
             // 
-            // system_Details_History1
+            // system_Details_History
             // 
-            this.system_Details_History.Location = new System.Drawing.Point(3, 73);
-            this.system_Details_History.Name = "system_Details_History1";
-            this.system_Details_History.Size = new System.Drawing.Size(632, 281);
-            this.system_Details_History.TabIndex = 1;
+            system_Details_History.Location = new System.Drawing.Point(4, 72);
+            system_Details_History.Margin = new System.Windows.Forms.Padding(4);
+            system_Details_History.Name = "system_Details_History";
+            system_Details_History.ReadOnly = false;
+            system_Details_History.Size = new System.Drawing.Size(737, 324);
+            system_Details_History.TabIndex = 1;
             // 
-            // system_Detail_Summary1
+            // system_Detail_Summary
             // 
-            this.system_Detail_Summary.Location = new System.Drawing.Point(3, 3);
-            this.system_Detail_Summary.Name = "system_Detail_Summary1";
-            this.system_Detail_Summary.Size = new System.Drawing.Size(762, 64);
-            this.system_Detail_Summary.TabIndex = 0;
+            system_Detail_Summary.Location = new System.Drawing.Point(4, 4);
+            system_Detail_Summary.Margin = new System.Windows.Forms.Padding(4);
+            system_Detail_Summary.Name = "system_Detail_Summary";
+            system_Detail_Summary.ReadOnly = false;
+            system_Detail_Summary.Size = new System.Drawing.Size(926, 60);
+            system_Detail_Summary.TabIndex = 0;
             // 
-            // System_Details
+            // SystemDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.system_Details_Misc);
-            this.Controls.Add(this.system_Details_Von_Neumann);
-            this.Controls.Add(this.system_Details_History);
-            this.Controls.Add(this.system_Detail_Summary);
-            this.Name = "System_Details";
-            this.Size = new System.Drawing.Size(807, 598);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(system_Details_Misc);
+            Controls.Add(system_Details_Von_Neumann);
+            Controls.Add(system_Details_History);
+            Controls.Add(system_Detail_Summary);
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "SystemDetails";
+            Size = new System.Drawing.Size(941, 690);
+            ResumeLayout(false);
         }
 
         #endregion
