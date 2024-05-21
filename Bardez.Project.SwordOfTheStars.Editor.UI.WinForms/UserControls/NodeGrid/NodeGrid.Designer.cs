@@ -1,4 +1,4 @@
-﻿namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Node_Grid
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Node_Grid
 {
     partial class NodeGrid
     {
@@ -41,22 +41,22 @@
             // 
             groupBoxNodeDetails.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             groupBoxNodeDetails.Controls.Add(node_Grid_Details);
-            groupBoxNodeDetails.Location = new System.Drawing.Point(4, 195);
+            groupBoxNodeDetails.Location = new System.Drawing.Point(0, 192);
             groupBoxNodeDetails.Margin = new System.Windows.Forms.Padding(4);
             groupBoxNodeDetails.Name = "groupBoxNodeDetails";
             groupBoxNodeDetails.Padding = new System.Windows.Forms.Padding(4);
-            groupBoxNodeDetails.Size = new System.Drawing.Size(601, 157);
+            groupBoxNodeDetails.Size = new System.Drawing.Size(608, 150);
             groupBoxNodeDetails.TabIndex = 0;
             groupBoxNodeDetails.TabStop = false;
             groupBoxNodeDetails.Text = "Node Details";
             // 
             // node_Grid_Details
             // 
-            node_Grid_Details.Location = new System.Drawing.Point(7, 22);
+            node_Grid_Details.Location = new System.Drawing.Point(7, 20);
             node_Grid_Details.Margin = new System.Windows.Forms.Padding(4);
             node_Grid_Details.Name = "node_Grid_Details";
             node_Grid_Details.ReadOnly = false;
-            node_Grid_Details.Size = new System.Drawing.Size(581, 127);
+            node_Grid_Details.Size = new System.Drawing.Size(584, 128);
             node_Grid_Details.TabIndex = 0;
             // 
             // groupBoxNodeList
@@ -67,7 +67,7 @@
             groupBoxNodeList.Margin = new System.Windows.Forms.Padding(4);
             groupBoxNodeList.Name = "groupBoxNodeList";
             groupBoxNodeList.Padding = new System.Windows.Forms.Padding(4);
-            groupBoxNodeList.Size = new System.Drawing.Size(658, 185);
+            groupBoxNodeList.Size = new System.Drawing.Size(608, 185);
             groupBoxNodeList.TabIndex = 1;
             groupBoxNodeList.TabStop = false;
             groupBoxNodeList.Text = "Node List";
@@ -82,7 +82,7 @@
             dataGridViewNodes.Location = new System.Drawing.Point(8, 20);
             dataGridViewNodes.Margin = new System.Windows.Forms.Padding(4);
             dataGridViewNodes.Name = "dataGridViewNodes";
-            dataGridViewNodes.Size = new System.Drawing.Size(642, 156);
+            dataGridViewNodes.Size = new System.Drawing.Size(592, 156);
             dataGridViewNodes.TabIndex = 0;
             dataGridViewNodes.CellEndEdit += dataGridViewNodes_CellEndEdit;
             dataGridViewNodes.CurrentCellChanged += dataGridViewNodes_CurrentCellChanged;
@@ -94,8 +94,9 @@
             Controls.Add(groupBoxNodeList);
             Controls.Add(groupBoxNodeDetails);
             Margin = new System.Windows.Forms.Padding(4);
+            MinimumSize = new System.Drawing.Size(608, 342);
             Name = "NodeGrid";
-            Size = new System.Drawing.Size(658, 355);
+            Size = new System.Drawing.Size(608, 342);
             groupBoxNodeDetails.ResumeLayout(false);
             groupBoxNodeList.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewNodes).EndInit();
