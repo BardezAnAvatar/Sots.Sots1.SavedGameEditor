@@ -13,7 +13,7 @@ namespace Bardez.Project.SwordOfTheStars.ResourceManagement
             String line = null;
             OverrideTech tech = null;
 
-            using (StreamReader reader = new StreamReader(OverrideTechList, Encoding.GetEncoding(1252)))  //ANSI encoding
+            using (StreamReader reader = new StreamReader(OverrideTechList, Encoding.UTF8))  //ANSI encoding
             {
                 //read the definition line and, frankly, discard.
                 line = reader.ReadLine().Trim();
