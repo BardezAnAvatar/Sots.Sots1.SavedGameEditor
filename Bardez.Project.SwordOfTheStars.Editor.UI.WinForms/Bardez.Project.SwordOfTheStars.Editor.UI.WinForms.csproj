@@ -9,6 +9,7 @@
     <Product>Sword of the Stars Save Game Editor</Product>
     <Description>Save Game editor for Sword of the Stars</Description>
     <Copyright>Copyright © Bardez 2024</Copyright>
+	<ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.Program</StartupObject>
