@@ -38,7 +38,7 @@
             // system_Details
             // 
             system_Details.Location = new System.Drawing.Point(4, 239);
-            system_Details.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            system_Details.Margin = new System.Windows.Forms.Padding(4);
             system_Details.Name = "system_Details";
             system_Details.ReadOnly = false;
             system_Details.Size = new System.Drawing.Size(941, 690);
@@ -49,9 +49,9 @@
             groupBoxSystems.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             groupBoxSystems.Controls.Add(dataGridViewSystems);
             groupBoxSystems.Location = new System.Drawing.Point(0, 0);
-            groupBoxSystems.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBoxSystems.Margin = new System.Windows.Forms.Padding(4);
             groupBoxSystems.Name = "groupBoxSystems";
-            groupBoxSystems.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBoxSystems.Padding = new System.Windows.Forms.Padding(4);
             groupBoxSystems.Size = new System.Drawing.Size(1196, 222);
             groupBoxSystems.TabIndex = 2;
             groupBoxSystems.TabStop = false;
@@ -65,7 +65,7 @@
             dataGridViewSystems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewSystems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewSystems.Location = new System.Drawing.Point(8, 20);
-            dataGridViewSystems.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            dataGridViewSystems.Margin = new System.Windows.Forms.Padding(4);
             dataGridViewSystems.Name = "dataGridViewSystems";
             dataGridViewSystems.Size = new System.Drawing.Size(1181, 192);
             dataGridViewSystems.TabIndex = 0;
@@ -78,7 +78,7 @@
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             Controls.Add(groupBoxSystems);
             Controls.Add(system_Details);
-            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Margin = new System.Windows.Forms.Padding(4);
             Name = "Systems";
             Size = new System.Drawing.Size(1203, 932);
             groupBoxSystems.ResumeLayout(false);

@@ -59,7 +59,7 @@
             // 
             checkBoxReadOnly.AutoSize = true;
             checkBoxReadOnly.Location = new System.Drawing.Point(192, 30);
-            checkBoxReadOnly.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBoxReadOnly.Margin = new System.Windows.Forms.Padding(4);
             checkBoxReadOnly.Name = "checkBoxReadOnly";
             checkBoxReadOnly.Size = new System.Drawing.Size(80, 19);
             checkBoxReadOnly.TabIndex = 9;
@@ -75,10 +75,10 @@
             tabControlOptions.Controls.Add(tabPageSystems);
             tabControlOptions.Controls.Add(tabPageNodeLines);
             tabControlOptions.Location = new System.Drawing.Point(4, 59);
-            tabControlOptions.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tabControlOptions.Margin = new System.Windows.Forms.Padding(4);
             tabControlOptions.Name = "tabControlOptions";
             tabControlOptions.SelectedIndex = 0;
-            tabControlOptions.Size = new System.Drawing.Size(1335, 991);
+            tabControlOptions.Size = new System.Drawing.Size(792, 512);
             tabControlOptions.TabIndex = 8;
             // 
             // tabPageSpecies
@@ -86,17 +86,16 @@
             tabPageSpecies.BackColor = System.Drawing.SystemColors.Control;
             tabPageSpecies.Controls.Add(speciesDetails);
             tabPageSpecies.Location = new System.Drawing.Point(4, 24);
-            tabPageSpecies.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tabPageSpecies.Margin = new System.Windows.Forms.Padding(4);
             tabPageSpecies.Name = "tabPageSpecies";
-            tabPageSpecies.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            tabPageSpecies.Size = new System.Drawing.Size(1327, 963);
+            tabPageSpecies.Size = new System.Drawing.Size(785, 484);
             tabPageSpecies.TabIndex = 1;
             tabPageSpecies.Text = "Species";
             // 
             // speciesDetails
             // 
             speciesDetails.Location = new System.Drawing.Point(4, 4);
-            speciesDetails.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            speciesDetails.Margin = new System.Windows.Forms.Padding(4);
             speciesDetails.Name = "speciesDetails";
             speciesDetails.ReadOnly = false;
             speciesDetails.Size = new System.Drawing.Size(442, 258);
@@ -107,21 +106,21 @@
             tabPagePlayers.BackColor = System.Drawing.SystemColors.Control;
             tabPagePlayers.Controls.Add(playersControl);
             tabPagePlayers.Location = new System.Drawing.Point(4, 24);
-            tabPagePlayers.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tabPagePlayers.Margin = new System.Windows.Forms.Padding(4);
             tabPagePlayers.Name = "tabPagePlayers";
-            tabPagePlayers.Size = new System.Drawing.Size(1327, 963);
+            tabPagePlayers.Size = new System.Drawing.Size(785, 484);
             tabPagePlayers.TabIndex = 2;
             tabPagePlayers.Text = "Players";
             // 
             // playersControl
             // 
             playersControl.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            playersControl.Location = new System.Drawing.Point(4, 9);
-            playersControl.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            playersControl.MinimumSize = new System.Drawing.Size(1318, 948);
+            playersControl.Location = new System.Drawing.Point(4, 12);
+            playersControl.Margin = new System.Windows.Forms.Padding(4);
+            playersControl.MinimumSize = new System.Drawing.Size(500, 500);
             playersControl.Name = "playersControl";
             playersControl.ReadOnly = false;
-            playersControl.Size = new System.Drawing.Size(1318, 948);
+            playersControl.Size = new System.Drawing.Size(2453, 1839);
             playersControl.TabIndex = 0;
             playersControl.ValidTechTree = null;
             // 
@@ -130,10 +129,9 @@
             tabPageSystems.BackColor = System.Drawing.SystemColors.Control;
             tabPageSystems.Controls.Add(systemsControl);
             tabPageSystems.Location = new System.Drawing.Point(4, 24);
-            tabPageSystems.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tabPageSystems.Margin = new System.Windows.Forms.Padding(4);
             tabPageSystems.Name = "tabPageSystems";
-            tabPageSystems.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            tabPageSystems.Size = new System.Drawing.Size(1327, 963);
+            tabPageSystems.Size = new System.Drawing.Size(785, 484);
             tabPageSystems.TabIndex = 0;
             tabPageSystems.Text = "Systems";
             // 
@@ -141,10 +139,10 @@
             // 
             systemsControl.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             systemsControl.Location = new System.Drawing.Point(4, 4);
-            systemsControl.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            systemsControl.Margin = new System.Windows.Forms.Padding(4);
             systemsControl.Name = "systemsControl";
             systemsControl.ReadOnly = true;
-            systemsControl.Size = new System.Drawing.Size(1315, 951);
+            systemsControl.Size = new System.Drawing.Size(781, 478);
             systemsControl.TabIndex = 4;
             // 
             // tabPageNodeLines
@@ -152,19 +150,20 @@
             tabPageNodeLines.BackColor = System.Drawing.SystemColors.Control;
             tabPageNodeLines.Controls.Add(nodeGridControl);
             tabPageNodeLines.Location = new System.Drawing.Point(4, 24);
-            tabPageNodeLines.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tabPageNodeLines.Margin = new System.Windows.Forms.Padding(4);
             tabPageNodeLines.Name = "tabPageNodeLines";
-            tabPageNodeLines.Size = new System.Drawing.Size(1327, 963);
+            tabPageNodeLines.Size = new System.Drawing.Size(784, 484);
             tabPageNodeLines.TabIndex = 3;
             tabPageNodeLines.Text = "Node Lines";
             // 
             // nodeGridControl
             // 
+            nodeGridControl.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             nodeGridControl.Location = new System.Drawing.Point(4, 4);
-            nodeGridControl.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            nodeGridControl.Margin = new System.Windows.Forms.Padding(4);
             nodeGridControl.Name = "nodeGridControl";
             nodeGridControl.ReadOnly = false;
-            nodeGridControl.Size = new System.Drawing.Size(1220, 355);
+            nodeGridControl.Size = new System.Drawing.Size(776, 476);
             nodeGridControl.TabIndex = 0;
             // 
             // openFileDialogSaveFile
@@ -199,7 +198,7 @@
             // buttonLoad
             // 
             buttonLoad.Location = new System.Drawing.Point(4, 25);
-            buttonLoad.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            buttonLoad.Margin = new System.Windows.Forms.Padding(4);
             buttonLoad.Name = "buttonLoad";
             buttonLoad.Size = new System.Drawing.Size(88, 27);
             buttonLoad.TabIndex = 11;
@@ -210,7 +209,7 @@
             // buttonSave
             // 
             buttonSave.Location = new System.Drawing.Point(98, 25);
-            buttonSave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            buttonSave.Margin = new System.Windows.Forms.Padding(4);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new System.Drawing.Size(88, 27);
             buttonSave.TabIndex = 12;
@@ -222,10 +221,10 @@
             // statusStripLoadSave
             // 
             statusStripLoadSave.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { toolStripStatusLabelMessage, toolStripProgressBarLoadSave });
-            statusStripLoadSave.Location = new System.Drawing.Point(0, 1055);
+            statusStripLoadSave.Location = new System.Drawing.Point(0, 576);
             statusStripLoadSave.Name = "statusStripLoadSave";
             statusStripLoadSave.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
-            statusStripLoadSave.Size = new System.Drawing.Size(1342, 24);
+            statusStripLoadSave.Size = new System.Drawing.Size(800, 24);
             statusStripLoadSave.TabIndex = 13;
             statusStripLoadSave.Text = "statusStripLoadSave";
             // 
@@ -251,10 +250,10 @@
             Controls.Add(labelSourceFile);
             Controls.Add(checkBoxReadOnly);
             Controls.Add(tabControlOptions);
-            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            MinimumSize = new System.Drawing.Size(1342, 1079);
+            Margin = new System.Windows.Forms.Padding(4);
+            MinimumSize = new System.Drawing.Size(500, 500);
             Name = "Editor";
-            Size = new System.Drawing.Size(1342, 1079);
+            Size = new System.Drawing.Size(800, 600);
             tabControlOptions.ResumeLayout(false);
             tabPageSpecies.ResumeLayout(false);
             tabPagePlayers.ResumeLayout(false);

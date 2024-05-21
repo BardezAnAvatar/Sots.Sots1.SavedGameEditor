@@ -29,36 +29,33 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SotsEditor));
-            this.editorSaveGame = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Editor.Editor();
-            this.SuspendLayout();
+            editorSaveGame = new UserControls.Editor.Editor();
+            SuspendLayout();
             // 
             // editorSaveGame
             // 
-            this.editorSaveGame.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.editorSaveGame.Location = new System.Drawing.Point(-2, -2);
-            this.editorSaveGame.Margin = new System.Windows.Forms.Padding(0);
-            this.editorSaveGame.MinimumSize = new System.Drawing.Size(1725, 1385);
-            this.editorSaveGame.Name = "editorSaveGame";
-            this.editorSaveGame.ReadOnly = false;
-            this.editorSaveGame.Size = new System.Drawing.Size(1725, 1431);
-            this.editorSaveGame.TabIndex = 7;
+            editorSaveGame.Dock = System.Windows.Forms.DockStyle.Fill;
+            editorSaveGame.Location = new System.Drawing.Point(0, 0);
+            editorSaveGame.Margin = new System.Windows.Forms.Padding(0);
+            editorSaveGame.MinimumSize = new System.Drawing.Size(150, 100);
+            editorSaveGame.Name = "editorSaveGame";
+            editorSaveGame.ReadOnly = false;
+            editorSaveGame.Size = new System.Drawing.Size(999, 586);
+            editorSaveGame.TabIndex = 7;
             // 
             // SotsEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1724, 1170);
-            this.Controls.Add(this.editorSaveGame);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MinimumSize = new System.Drawing.Size(1736, 1138);
-            this.Name = "SotsEditor";
-            this.Text = "Sword of the Stars - Save Game Editor - Version [SemVer]";
-            this.Load += new System.EventHandler(this.SotsEditor_Load);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(999, 586);
+            Controls.Add(editorSaveGame);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            MinimumSize = new System.Drawing.Size(998, 578);
+            Name = "SotsEditor";
+            Text = "Sword of the Stars - Save Game Editor - Version [SemVer]";
+            Load += SotsEditor_Load;
+            ResumeLayout(false);
         }
 
         #endregion
