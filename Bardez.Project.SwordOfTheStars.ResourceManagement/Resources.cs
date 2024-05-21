@@ -53,7 +53,7 @@ namespace Bardez.Project.SwordOfTheStars.ResourceManagement
         {
             get
             {
-                if (resourceGob == null || resourceGob == String.Empty)
+                if (string.IsNullOrEmpty(resourceGob))
                     InitializeGobPath();
                 
                 return resourceGob;
