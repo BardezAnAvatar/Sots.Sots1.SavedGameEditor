@@ -1,4 +1,4 @@
-name: "Continous Integration: PRs"
+name: "Continous Integration: Auto-Approve PRs"
 
 on:
   pull_request:
