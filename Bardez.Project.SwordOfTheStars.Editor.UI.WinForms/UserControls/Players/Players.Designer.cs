@@ -50,7 +50,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             groupBoxDetails.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             groupBoxDetails.Name = "groupBoxDetails";
             groupBoxDetails.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            groupBoxDetails.Size = new System.Drawing.Size(1288, 599);
+            groupBoxDetails.Size = new System.Drawing.Size(1288, 888);
             groupBoxDetails.TabIndex = 2;
             groupBoxDetails.TabStop = false;
             groupBoxDetails.Text = "Player Details";
@@ -58,11 +58,11 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // playerDetailsControl
             // 
             playerDetailsControl.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            playerDetailsControl.Location = new System.Drawing.Point(16, 22);
+            playerDetailsControl.Location = new System.Drawing.Point(0, 0);
             playerDetailsControl.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             playerDetailsControl.Name = "playerDetailsControl";
             playerDetailsControl.ReadOnly = false;
-            playerDetailsControl.Size = new System.Drawing.Size(1265, 570);
+            playerDetailsControl.Size = new System.Drawing.Size(1150, 488);
             playerDetailsControl.TabIndex = 1;
             // 
             // dataGridViewPlayers
@@ -73,9 +73,9 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             dataGridViewPlayers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewPlayers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewPlayers.Location = new System.Drawing.Point(8, 0);
-            dataGridViewPlayers.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            dataGridViewPlayers.Margin = new System.Windows.Forms.Padding(4);
             dataGridViewPlayers.Name = "dataGridViewPlayers";
-            dataGridViewPlayers.Size = new System.Drawing.Size(1300, 295);
+            dataGridViewPlayers.Size = new System.Drawing.Size(1300, 109);
             dataGridViewPlayers.TabIndex = 0;
             dataGridViewPlayers.CellEndEdit += dataGridViewPlayers_CellEndEdit;
             dataGridViewPlayers.CurrentCellChanged += dataGridViewPlayers_CurrentCellChanged;
@@ -85,11 +85,11 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabControlPlayer.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             tabControlPlayer.Controls.Add(tabPageDetails);
             tabControlPlayer.Controls.Add(tabPageTechTree);
-            tabControlPlayer.Location = new System.Drawing.Point(7, 302);
-            tabControlPlayer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tabControlPlayer.Location = new System.Drawing.Point(7, 115);
+            tabControlPlayer.Margin = new System.Windows.Forms.Padding(4);
             tabControlPlayer.Name = "tabControlPlayer";
             tabControlPlayer.SelectedIndex = 0;
-            tabControlPlayer.Size = new System.Drawing.Size(1311, 643);
+            tabControlPlayer.Size = new System.Drawing.Size(1311, 932);
             tabControlPlayer.TabIndex = 3;
             // 
             // tabPageDetails
@@ -100,7 +100,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPageDetails.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             tabPageDetails.Name = "tabPageDetails";
             tabPageDetails.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            tabPageDetails.Size = new System.Drawing.Size(1303, 615);
+            tabPageDetails.Size = new System.Drawing.Size(1303, 904);
             tabPageDetails.TabIndex = 0;
             tabPageDetails.Text = "Details";
             // 
@@ -112,7 +112,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPageTechTree.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             tabPageTechTree.Name = "tabPageTechTree";
             tabPageTechTree.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            tabPageTechTree.Size = new System.Drawing.Size(1303, 615);
+            tabPageTechTree.Size = new System.Drawing.Size(1303, 904);
             tabPageTechTree.TabIndex = 1;
             tabPageTechTree.Text = "Tech Tree";
             // 
@@ -124,7 +124,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             techTree.Name = "techTree";
             techTree.Player = null;
             techTree.ReadOnly = false;
-            techTree.Size = new System.Drawing.Size(1288, 599);
+            techTree.Size = new System.Drawing.Size(1288, 345);
             techTree.TabIndex = 0;
             techTree.ValidTechTree = null;
             // 
@@ -135,9 +135,8 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             Controls.Add(tabControlPlayer);
             Controls.Add(dataGridViewPlayers);
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            MinimumSize = new System.Drawing.Size(1318, 948);
             Name = "Players";
-            Size = new System.Drawing.Size(1318, 948);
+            Size = new System.Drawing.Size(1318, 898);
             groupBoxDetails.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewPlayers).EndInit();
             tabControlPlayer.ResumeLayout(false);
