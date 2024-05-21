@@ -28,60 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.system_Details = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.SystemDetails();
-            this.groupBoxSystems = new System.Windows.Forms.GroupBox();
-            this.dataGridViewSystems = new System.Windows.Forms.DataGridView();
-            this.groupBoxSystems.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSystems)).BeginInit();
-            this.SuspendLayout();
+            system_Details = new SystemDetails();
+            groupBoxSystems = new System.Windows.Forms.GroupBox();
+            dataGridViewSystems = new System.Windows.Forms.DataGridView();
+            groupBoxSystems.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewSystems).BeginInit();
+            SuspendLayout();
             // 
             // system_Details
             // 
-            this.system_Details.Location = new System.Drawing.Point(3, 207);
-            this.system_Details.Name = "system_Details";
-            this.system_Details.ReadOnly = false;
-            this.system_Details.Size = new System.Drawing.Size(807, 598);
-            this.system_Details.TabIndex = 0;
+            system_Details.Location = new System.Drawing.Point(4, 239);
+            system_Details.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            system_Details.Name = "system_Details";
+            system_Details.ReadOnly = false;
+            system_Details.Size = new System.Drawing.Size(941, 690);
+            system_Details.TabIndex = 0;
             // 
             // groupBoxSystems
             // 
-            this.groupBoxSystems.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxSystems.Controls.Add(this.dataGridViewSystems);
-            this.groupBoxSystems.Location = new System.Drawing.Point(3, 3);
-            this.groupBoxSystems.Name = "groupBoxSystems";
-            this.groupBoxSystems.Size = new System.Drawing.Size(1025, 192);
-            this.groupBoxSystems.TabIndex = 2;
-            this.groupBoxSystems.TabStop = false;
-            this.groupBoxSystems.Text = "List of Systems";
+            groupBoxSystems.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            groupBoxSystems.Controls.Add(dataGridViewSystems);
+            groupBoxSystems.Location = new System.Drawing.Point(0, 0);
+            groupBoxSystems.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBoxSystems.Name = "groupBoxSystems";
+            groupBoxSystems.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBoxSystems.Size = new System.Drawing.Size(1196, 222);
+            groupBoxSystems.TabIndex = 2;
+            groupBoxSystems.TabStop = false;
+            groupBoxSystems.Text = "List of Systems";
             // 
             // dataGridViewSystems
             // 
-            this.dataGridViewSystems.AllowUserToAddRows = false;
-            this.dataGridViewSystems.AllowUserToDeleteRows = false;
-            this.dataGridViewSystems.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewSystems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewSystems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSystems.Location = new System.Drawing.Point(7, 20);
-            this.dataGridViewSystems.Name = "dataGridViewSystems";
-            this.dataGridViewSystems.Size = new System.Drawing.Size(1012, 166);
-            this.dataGridViewSystems.TabIndex = 0;
-            this.dataGridViewSystems.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSystems_CellEndEdit);
-            this.dataGridViewSystems.CurrentCellChanged += new System.EventHandler(this.dataGridViewSystems_CurrentCellChanged);
+            dataGridViewSystems.AllowUserToAddRows = false;
+            dataGridViewSystems.AllowUserToDeleteRows = false;
+            dataGridViewSystems.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            dataGridViewSystems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewSystems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewSystems.Location = new System.Drawing.Point(8, 20);
+            dataGridViewSystems.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            dataGridViewSystems.Name = "dataGridViewSystems";
+            dataGridViewSystems.Size = new System.Drawing.Size(1181, 192);
+            dataGridViewSystems.TabIndex = 0;
+            dataGridViewSystems.CellEndEdit += dataGridViewSystems_CellEndEdit;
+            dataGridViewSystems.CurrentCellChanged += dataGridViewSystems_CurrentCellChanged;
             // 
             // Systems
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBoxSystems);
-            this.Controls.Add(this.system_Details);
-            this.Name = "Systems";
-            this.Size = new System.Drawing.Size(1031, 808);
-            this.groupBoxSystems.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSystems)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(groupBoxSystems);
+            Controls.Add(system_Details);
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "Systems";
+            Size = new System.Drawing.Size(1203, 932);
+            groupBoxSystems.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewSystems).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion

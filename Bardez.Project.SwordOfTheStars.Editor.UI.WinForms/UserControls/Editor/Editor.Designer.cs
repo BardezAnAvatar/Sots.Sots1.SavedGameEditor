@@ -95,7 +95,7 @@
             // 
             // speciesDetails
             // 
-            speciesDetails.Location = new System.Drawing.Point(7, 9);
+            speciesDetails.Location = new System.Drawing.Point(4, 4);
             speciesDetails.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             speciesDetails.Name = "speciesDetails";
             speciesDetails.ReadOnly = false;
@@ -140,7 +140,7 @@
             // systemsControl
             // 
             systemsControl.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            systemsControl.Location = new System.Drawing.Point(4, 7);
+            systemsControl.Location = new System.Drawing.Point(4, 4);
             systemsControl.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             systemsControl.Name = "systemsControl";
             systemsControl.ReadOnly = true;
@@ -160,7 +160,7 @@
             // 
             // nodeGridControl
             // 
-            nodeGridControl.Location = new System.Drawing.Point(4, 3);
+            nodeGridControl.Location = new System.Drawing.Point(4, 4);
             nodeGridControl.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             nodeGridControl.Name = "nodeGridControl";
             nodeGridControl.ReadOnly = false;

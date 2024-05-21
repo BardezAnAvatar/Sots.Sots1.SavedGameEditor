@@ -28,123 +28,122 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBoxDetails = new System.Windows.Forms.GroupBox();
-            this.playerDetailsControl = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players.PlayerDetails();
-            this.dataGridViewPlayers = new System.Windows.Forms.DataGridView();
-            this.tabControlPlayer = new System.Windows.Forms.TabControl();
-            this.tabPageDetails = new System.Windows.Forms.TabPage();
-            this.tabPageTechTree = new System.Windows.Forms.TabPage();
-            this.techTree = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Tech_Tree.TechTree();
-            this.groupBoxDetails.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlayers)).BeginInit();
-            this.tabControlPlayer.SuspendLayout();
-            this.tabPageDetails.SuspendLayout();
-            this.tabPageTechTree.SuspendLayout();
-            this.SuspendLayout();
+            groupBoxDetails = new System.Windows.Forms.GroupBox();
+            playerDetailsControl = new PlayerDetails();
+            dataGridViewPlayers = new System.Windows.Forms.DataGridView();
+            tabControlPlayer = new System.Windows.Forms.TabControl();
+            tabPageDetails = new System.Windows.Forms.TabPage();
+            tabPageTechTree = new System.Windows.Forms.TabPage();
+            techTree = new Tech_Tree.TechTree();
+            groupBoxDetails.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewPlayers).BeginInit();
+            tabControlPlayer.SuspendLayout();
+            tabPageDetails.SuspendLayout();
+            tabPageTechTree.SuspendLayout();
+            SuspendLayout();
             // 
             // groupBoxDetails
             // 
-            this.groupBoxDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxDetails.Controls.Add(this.playerDetailsControl);
-            this.groupBoxDetails.Location = new System.Drawing.Point(6, 6);
-            this.groupBoxDetails.Name = "groupBoxDetails";
-            this.groupBoxDetails.Size = new System.Drawing.Size(1104, 519);
-            this.groupBoxDetails.TabIndex = 2;
-            this.groupBoxDetails.TabStop = false;
-            this.groupBoxDetails.Text = "Player Details";
+            groupBoxDetails.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            groupBoxDetails.Controls.Add(playerDetailsControl);
+            groupBoxDetails.Location = new System.Drawing.Point(7, 7);
+            groupBoxDetails.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBoxDetails.Name = "groupBoxDetails";
+            groupBoxDetails.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBoxDetails.Size = new System.Drawing.Size(1288, 599);
+            groupBoxDetails.TabIndex = 2;
+            groupBoxDetails.TabStop = false;
+            groupBoxDetails.Text = "Player Details";
             // 
             // playerDetailsControl
             // 
-            this.playerDetailsControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.playerDetailsControl.Location = new System.Drawing.Point(14, 19);
-            this.playerDetailsControl.Name = "playerDetailsControl";
-            this.playerDetailsControl.ReadOnly = false;
-            this.playerDetailsControl.Size = new System.Drawing.Size(1084, 494);
-            this.playerDetailsControl.TabIndex = 1;
+            playerDetailsControl.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            playerDetailsControl.Location = new System.Drawing.Point(16, 22);
+            playerDetailsControl.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            playerDetailsControl.Name = "playerDetailsControl";
+            playerDetailsControl.ReadOnly = false;
+            playerDetailsControl.Size = new System.Drawing.Size(1265, 570);
+            playerDetailsControl.TabIndex = 1;
             // 
             // dataGridViewPlayers
             // 
-            this.dataGridViewPlayers.AllowUserToAddRows = false;
-            this.dataGridViewPlayers.AllowUserToDeleteRows = false;
-            this.dataGridViewPlayers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewPlayers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewPlayers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPlayers.Location = new System.Drawing.Point(6, 0);
-            this.dataGridViewPlayers.Name = "dataGridViewPlayers";
-            this.dataGridViewPlayers.Size = new System.Drawing.Size(1114, 256);
-            this.dataGridViewPlayers.TabIndex = 0;
-            this.dataGridViewPlayers.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPlayers_CellEndEdit);
-            this.dataGridViewPlayers.CurrentCellChanged += new System.EventHandler(this.dataGridViewPlayers_CurrentCellChanged);
+            dataGridViewPlayers.AllowUserToAddRows = false;
+            dataGridViewPlayers.AllowUserToDeleteRows = false;
+            dataGridViewPlayers.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            dataGridViewPlayers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewPlayers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewPlayers.Location = new System.Drawing.Point(8, 0);
+            dataGridViewPlayers.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            dataGridViewPlayers.Name = "dataGridViewPlayers";
+            dataGridViewPlayers.Size = new System.Drawing.Size(1300, 295);
+            dataGridViewPlayers.TabIndex = 0;
+            dataGridViewPlayers.CellEndEdit += dataGridViewPlayers_CellEndEdit;
+            dataGridViewPlayers.CurrentCellChanged += dataGridViewPlayers_CurrentCellChanged;
             // 
             // tabControlPlayer
             // 
-            this.tabControlPlayer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControlPlayer.Controls.Add(this.tabPageDetails);
-            this.tabControlPlayer.Controls.Add(this.tabPageTechTree);
-            this.tabControlPlayer.Location = new System.Drawing.Point(6, 262);
-            this.tabControlPlayer.Name = "tabControlPlayer";
-            this.tabControlPlayer.SelectedIndex = 0;
-            this.tabControlPlayer.Size = new System.Drawing.Size(1124, 557);
-            this.tabControlPlayer.TabIndex = 3;
+            tabControlPlayer.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            tabControlPlayer.Controls.Add(tabPageDetails);
+            tabControlPlayer.Controls.Add(tabPageTechTree);
+            tabControlPlayer.Location = new System.Drawing.Point(7, 302);
+            tabControlPlayer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tabControlPlayer.Name = "tabControlPlayer";
+            tabControlPlayer.SelectedIndex = 0;
+            tabControlPlayer.Size = new System.Drawing.Size(1311, 643);
+            tabControlPlayer.TabIndex = 3;
             // 
             // tabPageDetails
             // 
-            this.tabPageDetails.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPageDetails.Controls.Add(this.groupBoxDetails);
-            this.tabPageDetails.Location = new System.Drawing.Point(4, 22);
-            this.tabPageDetails.Name = "tabPageDetails";
-            this.tabPageDetails.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDetails.Size = new System.Drawing.Size(1116, 531);
-            this.tabPageDetails.TabIndex = 0;
-            this.tabPageDetails.Text = "Details";
+            tabPageDetails.BackColor = System.Drawing.SystemColors.Control;
+            tabPageDetails.Controls.Add(groupBoxDetails);
+            tabPageDetails.Location = new System.Drawing.Point(4, 24);
+            tabPageDetails.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tabPageDetails.Name = "tabPageDetails";
+            tabPageDetails.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tabPageDetails.Size = new System.Drawing.Size(1303, 615);
+            tabPageDetails.TabIndex = 0;
+            tabPageDetails.Text = "Details";
             // 
             // tabPageTechTree
             // 
-            this.tabPageTechTree.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPageTechTree.Controls.Add(this.techTree);
-            this.tabPageTechTree.Location = new System.Drawing.Point(4, 22);
-            this.tabPageTechTree.Name = "tabPageTechTree";
-            this.tabPageTechTree.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTechTree.Size = new System.Drawing.Size(1116, 531);
-            this.tabPageTechTree.TabIndex = 1;
-            this.tabPageTechTree.Text = "Tech Tree";
+            tabPageTechTree.BackColor = System.Drawing.SystemColors.Control;
+            tabPageTechTree.Controls.Add(techTree);
+            tabPageTechTree.Location = new System.Drawing.Point(4, 24);
+            tabPageTechTree.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tabPageTechTree.Name = "tabPageTechTree";
+            tabPageTechTree.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tabPageTechTree.Size = new System.Drawing.Size(1303, 615);
+            tabPageTechTree.TabIndex = 1;
+            tabPageTechTree.Text = "Tech Tree";
             // 
             // techTree
             // 
-            this.techTree.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.techTree.Location = new System.Drawing.Point(6, 6);
-            this.techTree.Name = "techTree";
-            this.techTree.Player = null;
-            this.techTree.ReadOnly = false;
-            this.techTree.Size = new System.Drawing.Size(1104, 519);
-            this.techTree.TabIndex = 0;
-            this.techTree.ValidTechTree = null;
+            techTree.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            techTree.Location = new System.Drawing.Point(7, 7);
+            techTree.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            techTree.Name = "techTree";
+            techTree.Player = null;
+            techTree.ReadOnly = false;
+            techTree.Size = new System.Drawing.Size(1288, 599);
+            techTree.TabIndex = 0;
+            techTree.ValidTechTree = null;
             // 
             // Players
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tabControlPlayer);
-            this.Controls.Add(this.dataGridViewPlayers);
-            this.MinimumSize = new System.Drawing.Size(1130, 822);
-            this.Name = "Players";
-            this.Size = new System.Drawing.Size(1130, 822);
-            this.groupBoxDetails.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlayers)).EndInit();
-            this.tabControlPlayer.ResumeLayout(false);
-            this.tabPageDetails.ResumeLayout(false);
-            this.tabPageTechTree.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(tabControlPlayer);
+            Controls.Add(dataGridViewPlayers);
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            MinimumSize = new System.Drawing.Size(1318, 948);
+            Name = "Players";
+            Size = new System.Drawing.Size(1318, 948);
+            groupBoxDetails.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewPlayers).EndInit();
+            tabControlPlayer.ResumeLayout(false);
+            tabPageDetails.ResumeLayout(false);
+            tabPageTechTree.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
