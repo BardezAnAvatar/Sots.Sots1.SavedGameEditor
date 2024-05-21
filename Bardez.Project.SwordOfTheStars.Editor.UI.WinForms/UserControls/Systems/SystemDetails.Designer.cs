@@ -36,11 +36,13 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             tabPageHistory = new System.Windows.Forms.TabPage();
             tabPageMisc = new System.Windows.Forms.TabPage();
             tabControlDetails.SuspendLayout();
+            tabPageHistory.SuspendLayout();
+            tabPageMisc.SuspendLayout();
             SuspendLayout();
             // 
             // system_Details_Misc
             // 
-            system_Details_Misc.Location = new System.Drawing.Point(4, 403);
+            system_Details_Misc.Location = new System.Drawing.Point(0, 0);
             system_Details_Misc.Margin = new System.Windows.Forms.Padding(4);
             system_Details_Misc.Name = "system_Details_Misc";
             system_Details_Misc.ReadOnly = false;
@@ -49,7 +51,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             // 
             // system_Details_Von_Neumann
             // 
-            system_Details_Von_Neumann.Location = new System.Drawing.Point(748, 72);
+            system_Details_Von_Neumann.Location = new System.Drawing.Point(744, 0);
             system_Details_Von_Neumann.Margin = new System.Windows.Forms.Padding(4);
             system_Details_Von_Neumann.Name = "system_Details_Von_Neumann";
             system_Details_Von_Neumann.ReadOnly = false;
@@ -58,11 +60,11 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             // 
             // system_Details_History
             // 
-            system_Details_History.Location = new System.Drawing.Point(4, 72);
+            system_Details_History.Location = new System.Drawing.Point(0, 0);
             system_Details_History.Margin = new System.Windows.Forms.Padding(4);
             system_Details_History.Name = "system_Details_History";
             system_Details_History.ReadOnly = false;
-            system_Details_History.Size = new System.Drawing.Size(737, 324);
+            system_Details_History.Size = new System.Drawing.Size(737, 322);
             system_Details_History.TabIndex = 1;
             // 
             // system_Detail_Summary
@@ -81,43 +83,47 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             tabControlDetails.Location = new System.Drawing.Point(0, 62);
             tabControlDetails.Margin = new System.Windows.Forms.Padding(4);
             tabControlDetails.Name = "tabControlDetails";
+            tabControlDetails.Padding = new System.Drawing.Point(4, 4);
             tabControlDetails.SelectedIndex = 0;
-            tabControlDetails.Size = new System.Drawing.Size(753, 233);
+            tabControlDetails.Size = new System.Drawing.Size(940, 357);
             tabControlDetails.TabIndex = 4;
             // 
             // tabPageHistory
             // 
             tabPageHistory.BackColor = System.Drawing.SystemColors.Control;
-            tabPageHistory.Location = new System.Drawing.Point(4, 24);
+            tabPageHistory.Location = new System.Drawing.Point(4, 26);
+            tabPageHistory.Margin = new System.Windows.Forms.Padding(4);
             tabPageHistory.Name = "tabPageHistory";
-            tabPageHistory.Padding = new System.Windows.Forms.Padding(3);
-            tabPageHistory.Size = new System.Drawing.Size(745, 205);
+            tabPageHistory.Padding = new System.Windows.Forms.Padding(4);
+            tabPageHistory.Size = new System.Drawing.Size(932, 327);
             tabPageHistory.TabIndex = 0;
             tabPageHistory.Text = "History";
+            tabPageHistory.Controls.Add(system_Details_Von_Neumann);
+            tabPageHistory.Controls.Add(system_Details_History);
             // 
             // tabPageMisc
             // 
             tabPageMisc.BackColor = System.Drawing.SystemColors.Control;
-            tabPageMisc.Location = new System.Drawing.Point(4, 24);
+            tabPageMisc.Location = new System.Drawing.Point(4, 26);
             tabPageMisc.Name = "tabPageMisc";
             tabPageMisc.Padding = new System.Windows.Forms.Padding(3);
-            tabPageMisc.Size = new System.Drawing.Size(745, 205);
+            tabPageMisc.Size = new System.Drawing.Size(932, 327);
             tabPageMisc.TabIndex = 1;
             tabPageMisc.Text = "Misc.";
+            tabPageMisc.Controls.Add(system_Details_Misc);
             // 
             // SystemDetails
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             Controls.Add(tabControlDetails);
-            Controls.Add(system_Details_Misc);
-            Controls.Add(system_Details_Von_Neumann);
-            Controls.Add(system_Details_History);
             Controls.Add(system_Detail_Summary);
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "SystemDetails";
-            Size = new System.Drawing.Size(941, 690);
+            Size = new System.Drawing.Size(940, 420);
             tabControlDetails.ResumeLayout(false);
+            tabPageHistory.ResumeLayout(false);
+            tabPageMisc.ResumeLayout(false);
             ResumeLayout(false);
         }
 
