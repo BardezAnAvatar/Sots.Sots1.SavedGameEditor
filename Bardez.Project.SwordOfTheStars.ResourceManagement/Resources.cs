@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Bardez.Project.Configuration;
-using Bardez.Project.SwordOfTheStars.IO;
+using Bardez.Project.SwordOfTheStars.IO.Pathfinding;
+using Bardez.Project.SwordOfTheStars.IO.Pathfinding.Physical;
 using Ionic.Zip;
 
 namespace Bardez.Project.SwordOfTheStars.ResourceManagement
 {
-    public class Resources : IDisposable
+    public class Resources(Pathfinder pathfinder) : IDisposable
     {
         public const String DirectoryResources = "Resources";
         public const String DirectoryResourcesAdd = @"Resources\";
@@ -19,14 +20,8 @@ namespace Bardez.Project.SwordOfTheStars.ResourceManagement
         protected const String slash = @"\";
         protected static String resourceGob = String.Empty;
 
-        protected Ionic.Zip.ZipFile zip;
+        protected Ionic.Zip.ZipFile zip = null;
 
-
-        /// <summary>Default constructor</summary>
-        public Resources()
-        {
-            this.zip = null;
-        }
 
         /// <summary>Destructor</summary>
         ~Resources()
@@ -53,7 +48,7 @@ namespace Bardez.Project.SwordOfTheStars.ResourceManagement
         {
             get
             {
-                if (resourceGob == null || resourceGob == String.Empty)
+                if (string.IsNullOrEmpty(resourceGob))
                     InitializeGobPath();
                 
                 return resourceGob;
@@ -61,10 +56,10 @@ namespace Bardez.Project.SwordOfTheStars.ResourceManagement
             set { resourceGob = value; }
         }
 
-        private static void InitializeGobPath()
+        private void InitializeGobPath()
         {
             if (ConfigurationHandler.GetBoolSettingValue("Registry.SotsPath.Lookup", false))
-                resourceGob = Registry.ReadSotsPath() + @"\sots.gob";
+                resourceGob = pathfinder.DeriveSotsPath() + @"\sots.gob";
             else
                 resourceGob = ConfigurationHandler.GetSettingValue("Registry.SotsPath.HardCoded");
         }

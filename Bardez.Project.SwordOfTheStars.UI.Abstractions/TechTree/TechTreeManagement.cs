@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using Bardez.Project.SwordOfTheStars.IO.Pathfinding;
+using Bardez.Project.SwordOfTheStars.IO.Pathfinding.Steam;
 using Bardez.Project.SwordOfTheStars.ResourceManagement;
 using Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree.Graph;
 
@@ -115,7 +117,7 @@ namespace Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree
                 Resources.SetUpDirectories();
 
                 //ensure prerequisite files exist
-                this.resources = new Resources();
+                this.resources = new Resources(new Pathfinder(new SteamPathfinder(new AcfManifestParserBuilder())));
                 this.resources.EnsurePrimaryResourcesExist();
 
                 //read tech sprites
