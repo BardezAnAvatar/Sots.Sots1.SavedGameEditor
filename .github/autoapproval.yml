@@ -1,9 +1,0 @@
-from_owner:
-  - BardezAnAvatar
-
-
-required_labels:
-  - ready for approval
-
-
-apply_labels: []
