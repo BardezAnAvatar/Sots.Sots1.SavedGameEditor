@@ -1,4 +1,4 @@
-namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Node_Grid
+﻿namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Node_Grid
 {
     partial class NodeGrid
     {
@@ -39,7 +39,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Node_Gr
             // 
             // groupBoxNodeDetails
             // 
-            groupBoxNodeDetails.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
+            groupBoxNodeDetails.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             groupBoxNodeDetails.Controls.Add(node_Grid_Details);
             groupBoxNodeDetails.Location = new System.Drawing.Point(0, 192);
             groupBoxNodeDetails.Margin = new System.Windows.Forms.Padding(4);
@@ -52,6 +52,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Node_Gr
             // 
             // node_Grid_Details
             // 
+            node_Grid_Details.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             node_Grid_Details.Location = new System.Drawing.Point(7, 20);
             node_Grid_Details.Margin = new System.Windows.Forms.Padding(4);
             node_Grid_Details.Name = "node_Grid_Details";
@@ -61,7 +62,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Node_Gr
             // 
             // groupBoxNodeList
             // 
-            groupBoxNodeList.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            groupBoxNodeList.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             groupBoxNodeList.Controls.Add(dataGridViewNodes);
             groupBoxNodeList.Location = new System.Drawing.Point(0, 0);
             groupBoxNodeList.Margin = new System.Windows.Forms.Padding(4);
