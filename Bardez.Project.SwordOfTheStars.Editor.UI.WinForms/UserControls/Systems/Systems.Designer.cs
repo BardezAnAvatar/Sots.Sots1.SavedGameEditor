@@ -37,7 +37,7 @@
             // 
             // system_Details
             // 
-            system_Details.Location = new System.Drawing.Point(4, 239);
+            system_Details.Location = new System.Drawing.Point(4, 220);
             system_Details.Margin = new System.Windows.Forms.Padding(4);
             system_Details.Name = "system_Details";
             system_Details.ReadOnly = false;
