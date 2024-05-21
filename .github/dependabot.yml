@@ -9,10 +9,4 @@ updates:
     schedule:
       timezone: "America/Chicago"
       time: "22:00"
-      interval: "daily"
-
-registries:
-  nuget:
-    type: "nuget-feed"
-    url: https://api.nuget.org/v3/index.json
-    token: ${{ secrets.DEPENDABOT_NUGET_RESTORE_PASSWORD }}
+      interval: daily
