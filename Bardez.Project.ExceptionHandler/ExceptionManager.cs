@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using System.Windows.Threading;
 using Bardez.Project.Configuration;
 using Bardez.Project.ExceptionHandler.Loggers;
 
@@ -85,21 +82,14 @@ namespace Bardez.Project.ExceptionHandler
             LogException(args.ExceptionObject as System.Exception);
         }
 
-        /// <summary>Static method designed to be a delegate to log an unhandled exception.</summary>
-        /// <param name="obj">Standard System.Object used in delegate calls</param>
-        /// <param name="args">System.Windows.Threading.DispatcherUnhandledExceptionEventArgs containing the unhandled exception</param>
-        public static void LogException(System.Object sender, DispatcherUnhandledExceptionEventArgs e)
-        {
-            //Initialize();     //redundant
-            LogException(e.Exception);
-        }
-
-
         public static void AttachManagerForWinForms()
         {
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(LogException);
             Application.ThreadException += new System.Threading.ThreadExceptionEventHandler(LogException);
-            System.Windows.Threading.Dispatcher.CurrentDispatcher.UnhandledException += new DispatcherUnhandledExceptionEventHandler(LogException);
+
+            // Set the unhandled exception mode to force all Windows Forms errors
+            // to go through our handler.
+            Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
         }
 
         public static void AttachManagerForConsole()

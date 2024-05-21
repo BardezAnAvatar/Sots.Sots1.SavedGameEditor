@@ -9,14 +9,6 @@
     <Product>Sword of the Stars Save Game Editor</Product>
     <Description>Save Game editor for Sword of the Stars</Description>
     <Copyright>Copyright © Bardez 2024</Copyright>
-    <OutputPath>bin\$(Configuration)\</OutputPath>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugType>full</DebugType>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.Program</StartupObject>
