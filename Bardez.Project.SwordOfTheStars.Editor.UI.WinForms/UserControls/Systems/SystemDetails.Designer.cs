@@ -118,7 +118,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             Controls.Add(tabControlDetails);
             Controls.Add(system_Detail_Summary);
-            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Margin = new System.Windows.Forms.Padding(4);
             Name = "SystemDetails";
             Size = new System.Drawing.Size(940, 420);
             tabControlDetails.ResumeLayout(false);

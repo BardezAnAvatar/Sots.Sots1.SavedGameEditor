@@ -49,9 +49,9 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             groupBoxDetails.Controls.Add(playerDetailsControl);
             groupBoxDetails.Dock = System.Windows.Forms.DockStyle.Fill;
             groupBoxDetails.Location = new System.Drawing.Point(4, 3);
-            groupBoxDetails.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBoxDetails.Margin = new System.Windows.Forms.Padding(4);
             groupBoxDetails.Name = "groupBoxDetails";
-            groupBoxDetails.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBoxDetails.Padding = new System.Windows.Forms.Padding(4);
             groupBoxDetails.Size = new System.Drawing.Size(1160, 406);
             groupBoxDetails.TabIndex = 2;
             groupBoxDetails.TabStop = false;
@@ -98,9 +98,9 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPageDetails.BackColor = System.Drawing.SystemColors.Control;
             tabPageDetails.Controls.Add(groupBoxDetails);
             tabPageDetails.Location = new System.Drawing.Point(4, 24);
-            tabPageDetails.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tabPageDetails.Margin = new System.Windows.Forms.Padding(4);
             tabPageDetails.Name = "tabPageDetails";
-            tabPageDetails.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tabPageDetails.Padding = new System.Windows.Forms.Padding(4);
             tabPageDetails.Size = new System.Drawing.Size(1168, 412);
             tabPageDetails.TabIndex = 0;
             tabPageDetails.Text = "Details";
@@ -110,9 +110,9 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPageTechTree.BackColor = System.Drawing.SystemColors.Control;
             tabPageTechTree.Controls.Add(techTree);
             tabPageTechTree.Location = new System.Drawing.Point(4, 24);
-            tabPageTechTree.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tabPageTechTree.Margin = new System.Windows.Forms.Padding(4);
             tabPageTechTree.Name = "tabPageTechTree";
-            tabPageTechTree.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tabPageTechTree.Padding = new System.Windows.Forms.Padding(4);
             tabPageTechTree.Size = new System.Drawing.Size(1302, 412);
             tabPageTechTree.TabIndex = 1;
             tabPageTechTree.Text = "Tech Tree";

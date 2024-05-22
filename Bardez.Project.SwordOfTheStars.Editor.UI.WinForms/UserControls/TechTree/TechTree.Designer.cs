@@ -44,9 +44,9 @@
             groupBoxTechTreeGraph.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             groupBoxTechTreeGraph.Controls.Add(graphTechTree);
             groupBoxTechTreeGraph.Location = new System.Drawing.Point(4, 3);
-            groupBoxTechTreeGraph.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBoxTechTreeGraph.Margin = new System.Windows.Forms.Padding(4);
             groupBoxTechTreeGraph.Name = "groupBoxTechTreeGraph";
-            groupBoxTechTreeGraph.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBoxTechTreeGraph.Padding = new System.Windows.Forms.Padding(4);
             groupBoxTechTreeGraph.Size = new System.Drawing.Size(928, 187);
             groupBoxTechTreeGraph.TabIndex = 0;
             groupBoxTechTreeGraph.TabStop = false;
@@ -82,7 +82,7 @@
             // buttonEnableTech
             // 
             buttonEnableTech.Location = new System.Drawing.Point(8, 23);
-            buttonEnableTech.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            buttonEnableTech.Margin = new System.Windows.Forms.Padding(4);
             buttonEnableTech.Name = "buttonEnableTech";
             buttonEnableTech.Size = new System.Drawing.Size(88, 27);
             buttonEnableTech.TabIndex = 1;
@@ -112,7 +112,7 @@
             tableLayoutPanelLayout.Controls.Add(groupBoxDetails, 0, 1);
             tableLayoutPanelLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             tableLayoutPanelLayout.Location = new System.Drawing.Point(0, 0);
-            tableLayoutPanelLayout.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tableLayoutPanelLayout.Margin = new System.Windows.Forms.Padding(4);
             tableLayoutPanelLayout.Name = "tableLayoutPanelLayout";
             tableLayoutPanelLayout.RowCount = 2;
             tableLayoutPanelLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -125,7 +125,7 @@
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             Controls.Add(tableLayoutPanelLayout);
-            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Margin = new System.Windows.Forms.Padding(4);
             Name = "TechTree";
             Size = new System.Drawing.Size(936, 403);
             groupBoxTechTreeGraph.ResumeLayout(false);

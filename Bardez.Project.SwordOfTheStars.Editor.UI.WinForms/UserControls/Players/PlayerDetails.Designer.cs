@@ -198,7 +198,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxPlayerId.Enabled = false;
             textBoxPlayerId.Location = new System.Drawing.Point(141, 23);
-            textBoxPlayerId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxPlayerId.Margin = new System.Windows.Forms.Padding(4);
             textBoxPlayerId.Name = "textBoxPlayerId";
             textBoxPlayerId.Size = new System.Drawing.Size(116, 23);
             textBoxPlayerId.TabIndex = 10;
@@ -217,7 +217,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxPlayerIndex.Enabled = false;
             textBoxPlayerIndex.Location = new System.Drawing.Point(141, 49);
-            textBoxPlayerIndex.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxPlayerIndex.Margin = new System.Windows.Forms.Padding(4);
             textBoxPlayerIndex.Name = "textBoxPlayerIndex";
             textBoxPlayerIndex.Size = new System.Drawing.Size(116, 23);
             textBoxPlayerIndex.TabIndex = 20;
@@ -235,7 +235,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // textBoxName
             // 
             textBoxName.Location = new System.Drawing.Point(141, 75);
-            textBoxName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxName.Margin = new System.Windows.Forms.Padding(4);
             textBoxName.Name = "textBoxName";
             textBoxName.Size = new System.Drawing.Size(116, 23);
             textBoxName.TabIndex = 30;
@@ -254,7 +254,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxSpecies.Enabled = false;
             textBoxSpecies.Location = new System.Drawing.Point(141, 101);
-            textBoxSpecies.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxSpecies.Margin = new System.Windows.Forms.Padding(4);
             textBoxSpecies.Name = "textBoxSpecies";
             textBoxSpecies.Size = new System.Drawing.Size(116, 23);
             textBoxSpecies.TabIndex = 40;
@@ -272,7 +272,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // textBoxHomeSystem
             // 
             textBoxHomeSystem.Location = new System.Drawing.Point(141, 128);
-            textBoxHomeSystem.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxHomeSystem.Margin = new System.Windows.Forms.Padding(4);
             textBoxHomeSystem.Name = "textBoxHomeSystem";
             textBoxHomeSystem.Size = new System.Drawing.Size(116, 23);
             textBoxHomeSystem.TabIndex = 50;
@@ -290,7 +290,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // buttonColor
             // 
             buttonColor.Location = new System.Drawing.Point(140, 153);
-            buttonColor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            buttonColor.Margin = new System.Windows.Forms.Padding(4);
             buttonColor.Name = "buttonColor";
             buttonColor.Size = new System.Drawing.Size(23, 23);
             buttonColor.TabIndex = 60;
@@ -310,7 +310,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // textBoxBadge
             // 
             textBoxBadge.Location = new System.Drawing.Point(141, 179);
-            textBoxBadge.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxBadge.Margin = new System.Windows.Forms.Padding(4);
             textBoxBadge.Name = "textBoxBadge";
             textBoxBadge.Size = new System.Drawing.Size(151, 23);
             textBoxBadge.TabIndex = 70;
@@ -328,7 +328,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // textBoxAvatar
             // 
             textBoxAvatar.Location = new System.Drawing.Point(141, 205);
-            textBoxAvatar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxAvatar.Margin = new System.Windows.Forms.Padding(4);
             textBoxAvatar.Name = "textBoxAvatar";
             textBoxAvatar.Size = new System.Drawing.Size(151, 23);
             textBoxAvatar.TabIndex = 80;
@@ -432,9 +432,9 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             groupBoxUnknowns.Controls.Add(labelTra);
             groupBoxUnknowns.Controls.Add(labelTrm);
             groupBoxUnknowns.Location = new System.Drawing.Point(549, 0);
-            groupBoxUnknowns.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBoxUnknowns.Margin = new System.Windows.Forms.Padding(4);
             groupBoxUnknowns.Name = "groupBoxUnknowns";
-            groupBoxUnknowns.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBoxUnknowns.Padding = new System.Windows.Forms.Padding(4);
             groupBoxUnknowns.Size = new System.Drawing.Size(600, 488);
             groupBoxUnknowns.TabIndex = 400;
             groupBoxUnknowns.TabStop = false;
@@ -444,7 +444,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxTnc.Enabled = false;
             textBoxTnc.Location = new System.Drawing.Point(477, 438);
-            textBoxTnc.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxTnc.Margin = new System.Windows.Forms.Padding(4);
             textBoxTnc.Name = "textBoxTnc";
             textBoxTnc.Size = new System.Drawing.Size(116, 23);
             textBoxTnc.TabIndex = 960;
@@ -453,7 +453,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxRdtc.Enabled = false;
             textBoxRdtc.Location = new System.Drawing.Point(477, 412);
-            textBoxRdtc.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxRdtc.Margin = new System.Windows.Forms.Padding(4);
             textBoxRdtc.Name = "textBoxRdtc";
             textBoxRdtc.Size = new System.Drawing.Size(116, 23);
             textBoxRdtc.TabIndex = 950;
@@ -462,7 +462,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxNdeflay.Enabled = false;
             textBoxNdeflay.Location = new System.Drawing.Point(477, 386);
-            textBoxNdeflay.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNdeflay.Margin = new System.Windows.Forms.Padding(4);
             textBoxNdeflay.Name = "textBoxNdeflay";
             textBoxNdeflay.Size = new System.Drawing.Size(116, 23);
             textBoxNdeflay.TabIndex = 940;
@@ -501,7 +501,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxNWeapXcl.Enabled = false;
             textBoxNWeapXcl.Location = new System.Drawing.Point(477, 360);
-            textBoxNWeapXcl.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNWeapXcl.Margin = new System.Windows.Forms.Padding(4);
             textBoxNWeapXcl.Name = "textBoxNWeapXcl";
             textBoxNWeapXcl.Size = new System.Drawing.Size(116, 23);
             textBoxNWeapXcl.TabIndex = 930;
@@ -520,7 +520,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxNexp.Enabled = false;
             textBoxNexp.Location = new System.Drawing.Point(477, 334);
-            textBoxNexp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNexp.Margin = new System.Windows.Forms.Padding(4);
             textBoxNexp.Name = "textBoxNexp";
             textBoxNexp.Size = new System.Drawing.Size(116, 23);
             textBoxNexp.TabIndex = 920;
@@ -540,7 +540,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             checkBoxCta.AutoSize = true;
             checkBoxCta.Enabled = false;
             checkBoxCta.Location = new System.Drawing.Point(449, 310);
-            checkBoxCta.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBoxCta.Margin = new System.Windows.Forms.Padding(4);
             checkBoxCta.Name = "checkBoxCta";
             checkBoxCta.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             checkBoxCta.Size = new System.Drawing.Size(42, 19);
@@ -553,7 +553,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             checkBoxResErrRoll.AutoSize = true;
             checkBoxResErrRoll.Enabled = false;
             checkBoxResErrRoll.Location = new System.Drawing.Point(416, 284);
-            checkBoxResErrRoll.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBoxResErrRoll.Margin = new System.Windows.Forms.Padding(4);
             checkBoxResErrRoll.Name = "checkBoxResErrRoll";
             checkBoxResErrRoll.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             checkBoxResErrRoll.Size = new System.Drawing.Size(75, 19);
@@ -565,7 +565,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxResTnm.Enabled = false;
             textBoxResTnm.Location = new System.Drawing.Point(477, 256);
-            textBoxResTnm.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxResTnm.Margin = new System.Windows.Forms.Padding(4);
             textBoxResTnm.Name = "textBoxResTnm";
             textBoxResTnm.Size = new System.Drawing.Size(116, 23);
             textBoxResTnm.TabIndex = 890;
@@ -584,7 +584,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxLcid2.Enabled = false;
             textBoxLcid2.Location = new System.Drawing.Point(477, 230);
-            textBoxLcid2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxLcid2.Margin = new System.Windows.Forms.Padding(4);
             textBoxLcid2.Name = "textBoxLcid2";
             textBoxLcid2.Size = new System.Drawing.Size(116, 23);
             textBoxLcid2.TabIndex = 880;
@@ -603,7 +603,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxLboid.Enabled = false;
             textBoxLboid.Location = new System.Drawing.Point(477, 204);
-            textBoxLboid.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxLboid.Margin = new System.Windows.Forms.Padding(4);
             textBoxLboid.Name = "textBoxLboid";
             textBoxLboid.Size = new System.Drawing.Size(116, 23);
             textBoxLboid.TabIndex = 870;
@@ -622,7 +622,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxSrcTo.Enabled = false;
             textBoxSrcTo.Location = new System.Drawing.Point(477, 178);
-            textBoxSrcTo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxSrcTo.Margin = new System.Windows.Forms.Padding(4);
             textBoxSrcTo.Name = "textBoxSrcTo";
             textBoxSrcTo.Size = new System.Drawing.Size(116, 23);
             textBoxSrcTo.TabIndex = 860;
@@ -642,7 +642,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             checkBoxSrn.AutoSize = true;
             checkBoxSrn.Enabled = false;
             checkBoxSrn.Location = new System.Drawing.Point(449, 154);
-            checkBoxSrn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBoxSrn.Margin = new System.Windows.Forms.Padding(4);
             checkBoxSrn.Name = "checkBoxSrn";
             checkBoxSrn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             checkBoxSrn.Size = new System.Drawing.Size(42, 19);
@@ -654,7 +654,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxAidf.Enabled = false;
             textBoxAidf.Location = new System.Drawing.Point(477, 126);
-            textBoxAidf.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxAidf.Margin = new System.Windows.Forms.Padding(4);
             textBoxAidf.Name = "textBoxAidf";
             textBoxAidf.Size = new System.Drawing.Size(116, 23);
             textBoxAidf.TabIndex = 840;
@@ -674,7 +674,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             checkBoxCdp.AutoSize = true;
             checkBoxCdp.Enabled = false;
             checkBoxCdp.Location = new System.Drawing.Point(445, 102);
-            checkBoxCdp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBoxCdp.Margin = new System.Windows.Forms.Padding(4);
             checkBoxCdp.Name = "checkBoxCdp";
             checkBoxCdp.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             checkBoxCdp.Size = new System.Drawing.Size(46, 19);
@@ -686,7 +686,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxNmeid.Enabled = false;
             textBoxNmeid.Location = new System.Drawing.Point(477, 74);
-            textBoxNmeid.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNmeid.Margin = new System.Windows.Forms.Padding(4);
             textBoxNmeid.Name = "textBoxNmeid";
             textBoxNmeid.Size = new System.Drawing.Size(116, 23);
             textBoxNmeid.TabIndex = 820;
@@ -705,7 +705,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxLret.Enabled = false;
             textBoxLret.Location = new System.Drawing.Point(477, 48);
-            textBoxLret.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxLret.Margin = new System.Windows.Forms.Padding(4);
             textBoxLret.Name = "textBoxLret";
             textBoxLret.Size = new System.Drawing.Size(116, 23);
             textBoxLret.TabIndex = 810;
@@ -724,7 +724,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxPswd.Enabled = false;
             textBoxPswd.Location = new System.Drawing.Point(477, 22);
-            textBoxPswd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxPswd.Margin = new System.Windows.Forms.Padding(4);
             textBoxPswd.Name = "textBoxPswd";
             textBoxPswd.Size = new System.Drawing.Size(116, 23);
             textBoxPswd.TabIndex = 800;
@@ -743,7 +743,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxPlcy.Enabled = false;
             textBoxPlcy.Location = new System.Drawing.Point(279, 464);
-            textBoxPlcy.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxPlcy.Margin = new System.Windows.Forms.Padding(4);
             textBoxPlcy.Name = "textBoxPlcy";
             textBoxPlcy.Size = new System.Drawing.Size(116, 23);
             textBoxPlcy.TabIndex = 790;
@@ -762,7 +762,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxBankEl.Enabled = false;
             textBoxBankEl.Location = new System.Drawing.Point(279, 438);
-            textBoxBankEl.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxBankEl.Margin = new System.Windows.Forms.Padding(4);
             textBoxBankEl.Name = "textBoxBankEl";
             textBoxBankEl.Size = new System.Drawing.Size(116, 23);
             textBoxBankEl.TabIndex = 780;
@@ -781,7 +781,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxBankPr.Enabled = false;
             textBoxBankPr.Location = new System.Drawing.Point(279, 412);
-            textBoxBankPr.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxBankPr.Margin = new System.Windows.Forms.Padding(4);
             textBoxBankPr.Name = "textBoxBankPr";
             textBoxBankPr.Size = new System.Drawing.Size(116, 23);
             textBoxBankPr.TabIndex = 770;
@@ -800,7 +800,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxBankTrn.Enabled = false;
             textBoxBankTrn.Location = new System.Drawing.Point(279, 386);
-            textBoxBankTrn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxBankTrn.Margin = new System.Windows.Forms.Padding(4);
             textBoxBankTrn.Name = "textBoxBankTrn";
             textBoxBankTrn.Size = new System.Drawing.Size(116, 23);
             textBoxBankTrn.TabIndex = 760;
@@ -819,7 +819,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxPddm.Enabled = false;
             textBoxPddm.Location = new System.Drawing.Point(279, 360);
-            textBoxPddm.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxPddm.Margin = new System.Windows.Forms.Padding(4);
             textBoxPddm.Name = "textBoxPddm";
             textBoxPddm.Size = new System.Drawing.Size(116, 23);
             textBoxPddm.TabIndex = 750;
@@ -839,7 +839,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             checkBoxCnVItl.AutoSize = true;
             checkBoxCnVItl.Enabled = false;
             checkBoxCnVItl.Location = new System.Drawing.Point(237, 336);
-            checkBoxCnVItl.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBoxCnVItl.Margin = new System.Windows.Forms.Padding(4);
             checkBoxCnVItl.Name = "checkBoxCnVItl";
             checkBoxCnVItl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             checkBoxCnVItl.Size = new System.Drawing.Size(56, 19);
@@ -851,7 +851,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxAibn.Enabled = false;
             textBoxAibn.Location = new System.Drawing.Point(279, 230);
-            textBoxAibn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxAibn.Margin = new System.Windows.Forms.Padding(4);
             textBoxAibn.Name = "textBoxAibn";
             textBoxAibn.Size = new System.Drawing.Size(116, 23);
             textBoxAibn.TabIndex = 700;
@@ -871,7 +871,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             checkBoxHarcc.AutoSize = true;
             checkBoxHarcc.Enabled = false;
             checkBoxHarcc.Location = new System.Drawing.Point(238, 310);
-            checkBoxHarcc.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBoxHarcc.Margin = new System.Windows.Forms.Padding(4);
             checkBoxHarcc.Name = "checkBoxHarcc";
             checkBoxHarcc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             checkBoxHarcc.Size = new System.Drawing.Size(55, 19);
@@ -883,7 +883,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxPvMa.Enabled = false;
             textBoxPvMa.Location = new System.Drawing.Point(279, 204);
-            textBoxPvMa.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxPvMa.Margin = new System.Windows.Forms.Padding(4);
             textBoxPvMa.Name = "textBoxPvMa";
             textBoxPvMa.Size = new System.Drawing.Size(116, 23);
             textBoxPvMa.TabIndex = 690;
@@ -903,7 +903,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             checkBoxHadvs.AutoSize = true;
             checkBoxHadvs.Enabled = false;
             checkBoxHadvs.Location = new System.Drawing.Point(236, 284);
-            checkBoxHadvs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBoxHadvs.Margin = new System.Windows.Forms.Padding(4);
             checkBoxHadvs.Name = "checkBoxHadvs";
             checkBoxHadvs.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             checkBoxHadvs.Size = new System.Drawing.Size(57, 19);
@@ -915,7 +915,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxFngNum.Enabled = false;
             textBoxFngNum.Location = new System.Drawing.Point(279, 178);
-            textBoxFngNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxFngNum.Margin = new System.Windows.Forms.Padding(4);
             textBoxFngNum.Name = "textBoxFngNum";
             textBoxFngNum.Size = new System.Drawing.Size(116, 23);
             textBoxFngNum.TabIndex = 680;
@@ -935,7 +935,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             checkBoxHgs.AutoSize = true;
             checkBoxHgs.Enabled = false;
             checkBoxHgs.Location = new System.Drawing.Point(248, 258);
-            checkBoxHgs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBoxHgs.Margin = new System.Windows.Forms.Padding(4);
             checkBoxHgs.Name = "checkBoxHgs";
             checkBoxHgs.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             checkBoxHgs.Size = new System.Drawing.Size(45, 19);
@@ -947,7 +947,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxHasEng.Enabled = false;
             textBoxHasEng.Location = new System.Drawing.Point(279, 152);
-            textBoxHasEng.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxHasEng.Margin = new System.Windows.Forms.Padding(4);
             textBoxHasEng.Name = "textBoxHasEng";
             textBoxHasEng.Size = new System.Drawing.Size(116, 23);
             textBoxHasEng.TabIndex = 670;
@@ -956,7 +956,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxHasEnc.Enabled = false;
             textBoxHasEnc.Location = new System.Drawing.Point(279, 126);
-            textBoxHasEnc.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxHasEnc.Margin = new System.Windows.Forms.Padding(4);
             textBoxHasEnc.Name = "textBoxHasEnc";
             textBoxHasEnc.Size = new System.Drawing.Size(116, 23);
             textBoxHasEnc.TabIndex = 660;
@@ -985,7 +985,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxHasDiscCl.Enabled = false;
             textBoxHasDiscCl.Location = new System.Drawing.Point(279, 100);
-            textBoxHasDiscCl.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxHasDiscCl.Margin = new System.Windows.Forms.Padding(4);
             textBoxHasDiscCl.Name = "textBoxHasDiscCl";
             textBoxHasDiscCl.Size = new System.Drawing.Size(116, 23);
             textBoxHasDiscCl.TabIndex = 650;
@@ -1004,7 +1004,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxHasDiscSp.Enabled = false;
             textBoxHasDiscSp.Location = new System.Drawing.Point(279, 74);
-            textBoxHasDiscSp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxHasDiscSp.Margin = new System.Windows.Forms.Padding(4);
             textBoxHasDiscSp.Name = "textBoxHasDiscSp";
             textBoxHasDiscSp.Size = new System.Drawing.Size(116, 23);
             textBoxHasDiscSp.TabIndex = 640;
@@ -1023,7 +1023,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxHasDisc.Enabled = false;
             textBoxHasDisc.Location = new System.Drawing.Point(279, 48);
-            textBoxHasDisc.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxHasDisc.Margin = new System.Windows.Forms.Padding(4);
             textBoxHasDisc.Name = "textBoxHasDisc";
             textBoxHasDisc.Size = new System.Drawing.Size(116, 23);
             textBoxHasDisc.TabIndex = 630;
@@ -1042,7 +1042,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxNpTrak.Enabled = false;
             textBoxNpTrak.Location = new System.Drawing.Point(279, 22);
-            textBoxNpTrak.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpTrak.Margin = new System.Windows.Forms.Padding(4);
             textBoxNpTrak.Name = "textBoxNpTrak";
             textBoxNpTrak.Size = new System.Drawing.Size(116, 23);
             textBoxNpTrak.TabIndex = 620;
@@ -1062,7 +1062,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             checkBoxReqCl.AutoSize = true;
             checkBoxReqCl.Enabled = false;
             checkBoxReqCl.Location = new System.Drawing.Point(20, 466);
-            checkBoxReqCl.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBoxReqCl.Margin = new System.Windows.Forms.Padding(4);
             checkBoxReqCl.Name = "checkBoxReqCl";
             checkBoxReqCl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             checkBoxReqCl.Size = new System.Drawing.Size(54, 19);
@@ -1084,7 +1084,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxElim.Enabled = false;
             textBoxElim.Location = new System.Drawing.Point(62, 438);
-            textBoxElim.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxElim.Margin = new System.Windows.Forms.Padding(4);
             textBoxElim.Name = "textBoxElim";
             textBoxElim.Size = new System.Drawing.Size(116, 23);
             textBoxElim.TabIndex = 600;
@@ -1103,7 +1103,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxStatus.Enabled = false;
             textBoxStatus.Location = new System.Drawing.Point(62, 412);
-            textBoxStatus.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxStatus.Margin = new System.Windows.Forms.Padding(4);
             textBoxStatus.Name = "textBoxStatus";
             textBoxStatus.Size = new System.Drawing.Size(116, 23);
             textBoxStatus.TabIndex = 590;
@@ -1112,7 +1112,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxShrm.Enabled = false;
             textBoxShrm.Location = new System.Drawing.Point(62, 386);
-            textBoxShrm.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxShrm.Margin = new System.Windows.Forms.Padding(4);
             textBoxShrm.Name = "textBoxShrm";
             textBoxShrm.Size = new System.Drawing.Size(116, 23);
             textBoxShrm.TabIndex = 580;
@@ -1131,7 +1131,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxMaint.Enabled = false;
             textBoxMaint.Location = new System.Drawing.Point(62, 360);
-            textBoxMaint.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxMaint.Margin = new System.Windows.Forms.Padding(4);
             textBoxMaint.Name = "textBoxMaint";
             textBoxMaint.Size = new System.Drawing.Size(116, 23);
             textBoxMaint.TabIndex = 570;
@@ -1150,7 +1150,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxCstT.Enabled = false;
             textBoxCstT.Location = new System.Drawing.Point(62, 334);
-            textBoxCstT.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxCstT.Margin = new System.Windows.Forms.Padding(4);
             textBoxCstT.Name = "textBoxCstT";
             textBoxCstT.Size = new System.Drawing.Size(116, 23);
             textBoxCstT.TabIndex = 560;
@@ -1169,7 +1169,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxCstE.Enabled = false;
             textBoxCstE.Location = new System.Drawing.Point(62, 308);
-            textBoxCstE.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxCstE.Margin = new System.Windows.Forms.Padding(4);
             textBoxCstE.Name = "textBoxCstE";
             textBoxCstE.Size = new System.Drawing.Size(116, 23);
             textBoxCstE.TabIndex = 550;
@@ -1188,7 +1188,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxCstR.Enabled = false;
             textBoxCstR.Location = new System.Drawing.Point(62, 282);
-            textBoxCstR.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxCstR.Margin = new System.Windows.Forms.Padding(4);
             textBoxCstR.Name = "textBoxCstR";
             textBoxCstR.Size = new System.Drawing.Size(116, 23);
             textBoxCstR.TabIndex = 540;
@@ -1217,7 +1217,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxGTraf.Enabled = false;
             textBoxGTraf.Location = new System.Drawing.Point(62, 256);
-            textBoxGTraf.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxGTraf.Margin = new System.Windows.Forms.Padding(4);
             textBoxGTraf.Name = "textBoxGTraf";
             textBoxGTraf.Size = new System.Drawing.Size(116, 23);
             textBoxGTraf.TabIndex = 530;
@@ -1226,7 +1226,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxPrGtTrf.Enabled = false;
             textBoxPrGtTrf.Location = new System.Drawing.Point(62, 230);
-            textBoxPrGtTrf.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxPrGtTrf.Margin = new System.Windows.Forms.Padding(4);
             textBoxPrGtTrf.Name = "textBoxPrGtTrf";
             textBoxPrGtTrf.Size = new System.Drawing.Size(116, 23);
             textBoxPrGtTrf.TabIndex = 520;
@@ -1245,7 +1245,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxNgts.Enabled = false;
             textBoxNgts.Location = new System.Drawing.Point(62, 204);
-            textBoxNgts.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNgts.Margin = new System.Windows.Forms.Padding(4);
             textBoxNgts.Name = "textBoxNgts";
             textBoxNgts.Size = new System.Drawing.Size(116, 23);
             textBoxNgts.TabIndex = 510;
@@ -1264,7 +1264,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxMinRate.Enabled = false;
             textBoxMinRate.Location = new System.Drawing.Point(62, 178);
-            textBoxMinRate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxMinRate.Margin = new System.Windows.Forms.Padding(4);
             textBoxMinRate.Name = "textBoxMinRate";
             textBoxMinRate.Size = new System.Drawing.Size(116, 23);
             textBoxMinRate.TabIndex = 500;
@@ -1283,7 +1283,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxMinPure.Enabled = false;
             textBoxMinPure.Location = new System.Drawing.Point(62, 152);
-            textBoxMinPure.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxMinPure.Margin = new System.Windows.Forms.Padding(4);
             textBoxMinPure.Name = "textBoxMinPure";
             textBoxMinPure.Size = new System.Drawing.Size(116, 23);
             textBoxMinPure.TabIndex = 480;
@@ -1303,7 +1303,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             checkBoxAmine.AutoSize = true;
             checkBoxAmine.Enabled = false;
             checkBoxAmine.Location = new System.Drawing.Point(17, 128);
-            checkBoxAmine.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBoxAmine.Margin = new System.Windows.Forms.Padding(4);
             checkBoxAmine.Name = "checkBoxAmine";
             checkBoxAmine.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             checkBoxAmine.Size = new System.Drawing.Size(59, 19);
@@ -1315,7 +1315,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxTra.Enabled = false;
             textBoxTra.Location = new System.Drawing.Point(62, 100);
-            textBoxTra.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxTra.Margin = new System.Windows.Forms.Padding(4);
             textBoxTra.Name = "textBoxTra";
             textBoxTra.Size = new System.Drawing.Size(116, 23);
             textBoxTra.TabIndex = 460;
@@ -1324,7 +1324,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxMaxOh.Enabled = false;
             textBoxMaxOh.Location = new System.Drawing.Point(62, 22);
-            textBoxMaxOh.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxMaxOh.Margin = new System.Windows.Forms.Padding(4);
             textBoxMaxOh.Name = "textBoxMaxOh";
             textBoxMaxOh.Size = new System.Drawing.Size(116, 23);
             textBoxMaxOh.TabIndex = 430;
@@ -1333,7 +1333,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxTrp.Enabled = false;
             textBoxTrp.Location = new System.Drawing.Point(62, 74);
-            textBoxTrp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxTrp.Margin = new System.Windows.Forms.Padding(4);
             textBoxTrp.Name = "textBoxTrp";
             textBoxTrp.Size = new System.Drawing.Size(116, 23);
             textBoxTrp.TabIndex = 450;
@@ -1352,7 +1352,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxTrm.Enabled = false;
             textBoxTrm.Location = new System.Drawing.Point(62, 48);
-            textBoxTrm.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxTrm.Margin = new System.Windows.Forms.Padding(4);
             textBoxTrm.Name = "textBoxTrm";
             textBoxTrm.Size = new System.Drawing.Size(116, 23);
             textBoxTrm.TabIndex = 440;
@@ -1390,7 +1390,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // textBoxSav
             // 
             textBoxSav.Location = new System.Drawing.Point(141, 309);
-            textBoxSav.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxSav.Margin = new System.Windows.Forms.Padding(4);
             textBoxSav.Name = "textBoxSav";
             textBoxSav.Size = new System.Drawing.Size(116, 23);
             textBoxSav.TabIndex = 120;
@@ -1418,7 +1418,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // textBoxTeam
             // 
             textBoxTeam.Location = new System.Drawing.Point(141, 231);
-            textBoxTeam.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxTeam.Margin = new System.Windows.Forms.Padding(4);
             textBoxTeam.Name = "textBoxTeam";
             textBoxTeam.Size = new System.Drawing.Size(116, 23);
             textBoxTeam.TabIndex = 90;
@@ -1436,7 +1436,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // textBoxIdealSuit
             // 
             textBoxIdealSuit.Location = new System.Drawing.Point(141, 257);
-            textBoxIdealSuit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxIdealSuit.Margin = new System.Windows.Forms.Padding(4);
             textBoxIdealSuit.Name = "textBoxIdealSuit";
             textBoxIdealSuit.Size = new System.Drawing.Size(116, 23);
             textBoxIdealSuit.TabIndex = 100;
@@ -1444,7 +1444,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // textBoxSuitTol
             // 
             textBoxSuitTol.Location = new System.Drawing.Point(141, 283);
-            textBoxSuitTol.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxSuitTol.Margin = new System.Windows.Forms.Padding(4);
             textBoxSuitTol.Name = "textBoxSuitTol";
             textBoxSuitTol.Size = new System.Drawing.Size(116, 23);
             textBoxSuitTol.TabIndex = 110;
@@ -1472,7 +1472,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // textBoxResRate
             // 
             textBoxResRate.Location = new System.Drawing.Point(141, 335);
-            textBoxResRate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxResRate.Margin = new System.Windows.Forms.Padding(4);
             textBoxResRate.Name = "textBoxResRate";
             textBoxResRate.Size = new System.Drawing.Size(116, 23);
             textBoxResRate.TabIndex = 130;
@@ -1490,7 +1490,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // textBoxResMod
             // 
             textBoxResMod.Location = new System.Drawing.Point(141, 361);
-            textBoxResMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxResMod.Margin = new System.Windows.Forms.Padding(4);
             textBoxResMod.Name = "textBoxResMod";
             textBoxResMod.Size = new System.Drawing.Size(116, 23);
             textBoxResMod.TabIndex = 140;
@@ -1508,7 +1508,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // textBoxResScl
             // 
             textBoxResScl.Location = new System.Drawing.Point(141, 387);
-            textBoxResScl.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxResScl.Margin = new System.Windows.Forms.Padding(4);
             textBoxResScl.Name = "textBoxResScl";
             textBoxResScl.Size = new System.Drawing.Size(116, 23);
             textBoxResScl.TabIndex = 150;
@@ -1526,7 +1526,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // textBoxIndOutMod
             // 
             textBoxIndOutMod.Location = new System.Drawing.Point(141, 413);
-            textBoxIndOutMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxIndOutMod.Margin = new System.Windows.Forms.Padding(4);
             textBoxIndOutMod.Name = "textBoxIndOutMod";
             textBoxIndOutMod.Size = new System.Drawing.Size(116, 23);
             textBoxIndOutMod.TabIndex = 160;
@@ -1534,7 +1534,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // textBoxIndOutReb
             // 
             textBoxIndOutReb.Location = new System.Drawing.Point(141, 439);
-            textBoxIndOutReb.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxIndOutReb.Margin = new System.Windows.Forms.Padding(4);
             textBoxIndOutReb.Name = "textBoxIndOutReb";
             textBoxIndOutReb.Size = new System.Drawing.Size(116, 23);
             textBoxIndOutReb.TabIndex = 170;
@@ -1552,7 +1552,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // textBoxIndOutScl
             // 
             textBoxIndOutScl.Location = new System.Drawing.Point(141, 465);
-            textBoxIndOutScl.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxIndOutScl.Margin = new System.Windows.Forms.Padding(4);
             textBoxIndOutScl.Name = "textBoxIndOutScl";
             textBoxIndOutScl.Size = new System.Drawing.Size(116, 23);
             textBoxIndOutScl.TabIndex = 180;
@@ -1580,7 +1580,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // textBoxIncMod
             // 
             textBoxIncMod.Location = new System.Drawing.Point(425, 23);
-            textBoxIncMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxIncMod.Margin = new System.Windows.Forms.Padding(4);
             textBoxIncMod.Name = "textBoxIncMod";
             textBoxIncMod.Size = new System.Drawing.Size(116, 23);
             textBoxIncMod.TabIndex = 190;
@@ -1598,7 +1598,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // textBoxPopMod
             // 
             textBoxPopMod.Location = new System.Drawing.Point(425, 49);
-            textBoxPopMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxPopMod.Margin = new System.Windows.Forms.Padding(4);
             textBoxPopMod.Name = "textBoxPopMod";
             textBoxPopMod.Size = new System.Drawing.Size(116, 23);
             textBoxPopMod.TabIndex = 200;
@@ -1616,7 +1616,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // textBoxTerrMod
             // 
             textBoxTerrMod.Location = new System.Drawing.Point(425, 75);
-            textBoxTerrMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxTerrMod.Margin = new System.Windows.Forms.Padding(4);
             textBoxTerrMod.Name = "textBoxTerrMod";
             textBoxTerrMod.Size = new System.Drawing.Size(116, 23);
             textBoxTerrMod.TabIndex = 210;
@@ -1625,7 +1625,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             checkBoxNpc.AutoSize = true;
             checkBoxNpc.Location = new System.Drawing.Point(389, 103);
-            checkBoxNpc.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBoxNpc.Margin = new System.Windows.Forms.Padding(4);
             checkBoxNpc.Name = "checkBoxNpc";
             checkBoxNpc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             checkBoxNpc.Size = new System.Drawing.Size(50, 19);
@@ -1637,7 +1637,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             checkBoxRebAi.AutoSize = true;
             checkBoxRebAi.Location = new System.Drawing.Point(382, 130);
-            checkBoxRebAi.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBoxRebAi.Margin = new System.Windows.Forms.Padding(4);
             checkBoxRebAi.Name = "checkBoxRebAi";
             checkBoxRebAi.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             checkBoxRebAi.Size = new System.Drawing.Size(57, 19);
@@ -1658,7 +1658,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // textBoxHasVac
             // 
             textBoxHasVac.Location = new System.Drawing.Point(425, 153);
-            textBoxHasVac.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxHasVac.Margin = new System.Windows.Forms.Padding(4);
             textBoxHasVac.Name = "textBoxHasVac";
             textBoxHasVac.Size = new System.Drawing.Size(116, 23);
             textBoxHasVac.TabIndex = 240;
@@ -1676,7 +1676,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // textBoxHasImm
             // 
             textBoxHasImm.Location = new System.Drawing.Point(425, 179);
-            textBoxHasImm.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxHasImm.Margin = new System.Windows.Forms.Padding(4);
             textBoxHasImm.Name = "textBoxHasImm";
             textBoxHasImm.Size = new System.Drawing.Size(116, 23);
             textBoxHasImm.TabIndex = 250;
@@ -1695,7 +1695,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxPvSav.Enabled = false;
             textBoxPvSav.Location = new System.Drawing.Point(425, 309);
-            textBoxPvSav.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxPvSav.Margin = new System.Windows.Forms.Padding(4);
             textBoxPvSav.Name = "textBoxPvSav";
             textBoxPvSav.Size = new System.Drawing.Size(116, 23);
             textBoxPvSav.TabIndex = 300;
@@ -1704,7 +1704,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             checkBoxCnTrd.AutoSize = true;
             checkBoxCnTrd.Location = new System.Drawing.Point(361, 207);
-            checkBoxCnTrd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBoxCnTrd.Margin = new System.Windows.Forms.Padding(4);
             checkBoxCnTrd.Name = "checkBoxCnTrd";
             checkBoxCnTrd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             checkBoxCnTrd.Size = new System.Drawing.Size(78, 19);
@@ -1716,7 +1716,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             checkBoxCnRad.AutoSize = true;
             checkBoxCnRad.Location = new System.Drawing.Point(366, 233);
-            checkBoxCnRad.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBoxCnRad.Margin = new System.Windows.Forms.Padding(4);
             checkBoxCnRad.Name = "checkBoxCnRad";
             checkBoxCnRad.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             checkBoxCnRad.Size = new System.Drawing.Size(73, 19);
@@ -1738,7 +1738,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             textBoxNextPrjId.Enabled = false;
             textBoxNextPrjId.Location = new System.Drawing.Point(425, 257);
-            textBoxNextPrjId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNextPrjId.Margin = new System.Windows.Forms.Padding(4);
             textBoxNextPrjId.Name = "textBoxNextPrjId";
             textBoxNextPrjId.Size = new System.Drawing.Size(116, 23);
             textBoxNextPrjId.TabIndex = 280;
@@ -1747,7 +1747,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             checkBoxHasAiRebellion.AutoSize = true;
             checkBoxHasAiRebellion.Location = new System.Drawing.Point(327, 285);
-            checkBoxHasAiRebellion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBoxHasAiRebellion.Margin = new System.Windows.Forms.Padding(4);
             checkBoxHasAiRebellion.Name = "checkBoxHasAiRebellion";
             checkBoxHasAiRebellion.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             checkBoxHasAiRebellion.Size = new System.Drawing.Size(112, 19);

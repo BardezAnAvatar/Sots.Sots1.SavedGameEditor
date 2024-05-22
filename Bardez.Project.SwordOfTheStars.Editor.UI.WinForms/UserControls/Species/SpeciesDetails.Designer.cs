@@ -39,9 +39,9 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Species
             groupBoxSpecies.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             groupBoxSpecies.Controls.Add(dataGridViewSpecies);
             groupBoxSpecies.Location = new System.Drawing.Point(0, 0);
-            groupBoxSpecies.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBoxSpecies.Margin = new System.Windows.Forms.Padding(4);
             groupBoxSpecies.Name = "groupBoxSpecies";
-            groupBoxSpecies.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBoxSpecies.Padding = new System.Windows.Forms.Padding(4);
             groupBoxSpecies.Size = new System.Drawing.Size(337, 216);
             groupBoxSpecies.TabIndex = 0;
             groupBoxSpecies.TabStop = false;
@@ -56,7 +56,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Species
             dataGridViewSpecies.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             dataGridViewSpecies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewSpecies.Location = new System.Drawing.Point(8, 20);
-            dataGridViewSpecies.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            dataGridViewSpecies.Margin = new System.Windows.Forms.Padding(4);
             dataGridViewSpecies.Name = "dataGridViewSpecies";
             dataGridViewSpecies.ReadOnly = true;
             dataGridViewSpecies.Size = new System.Drawing.Size(323, 187);
@@ -68,7 +68,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Species
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             Controls.Add(groupBoxSpecies);
-            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Margin = new System.Windows.Forms.Padding(4);
             Name = "Species_Details";
             Size = new System.Drawing.Size(341, 219);
             groupBoxSpecies.ResumeLayout(false);

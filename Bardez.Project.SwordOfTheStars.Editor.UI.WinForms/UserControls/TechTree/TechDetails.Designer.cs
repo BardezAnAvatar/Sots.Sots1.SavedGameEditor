@@ -100,7 +100,7 @@
             // textBoxResCost
             // 
             textBoxResCost.Location = new System.Drawing.Point(144, 63);
-            textBoxResCost.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            textBoxResCost.Margin = new System.Windows.Forms.Padding(4);
             textBoxResCost.Name = "textBoxResCost";
             textBoxResCost.Size = new System.Drawing.Size(116, 23);
             textBoxResCost.TabIndex = 7;
@@ -109,7 +109,7 @@
             // 
             textBoxSt.Enabled = false;
             textBoxSt.Location = new System.Drawing.Point(40, 22);
-            textBoxSt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            textBoxSt.Margin = new System.Windows.Forms.Padding(4);
             textBoxSt.Name = "textBoxSt";
             textBoxSt.Size = new System.Drawing.Size(116, 23);
             textBoxSt.TabIndex = 8;
@@ -127,7 +127,7 @@
             // textBoxResDone
             // 
             textBoxResDone.Location = new System.Drawing.Point(144, 93);
-            textBoxResDone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            textBoxResDone.Margin = new System.Windows.Forms.Padding(4);
             textBoxResDone.Name = "textBoxResDone";
             textBoxResDone.Size = new System.Drawing.Size(116, 23);
             textBoxResDone.TabIndex = 10;
@@ -155,7 +155,7 @@
             // textBoxAcquired
             // 
             textBoxAcquired.Location = new System.Drawing.Point(144, 123);
-            textBoxAcquired.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            textBoxAcquired.Margin = new System.Windows.Forms.Padding(4);
             textBoxAcquired.Name = "textBoxAcquired";
             textBoxAcquired.Size = new System.Drawing.Size(116, 23);
             textBoxAcquired.TabIndex = 13;
@@ -174,7 +174,7 @@
             // 
             textBoxIAcquired.Enabled = false;
             textBoxIAcquired.Location = new System.Drawing.Point(144, 153);
-            textBoxIAcquired.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            textBoxIAcquired.Margin = new System.Windows.Forms.Padding(4);
             textBoxIAcquired.Name = "textBoxIAcquired";
             textBoxIAcquired.Size = new System.Drawing.Size(116, 23);
             textBoxIAcquired.TabIndex = 15;
@@ -193,7 +193,7 @@
             // 
             textBoxTbd.Enabled = false;
             textBoxTbd.Location = new System.Drawing.Point(40, 52);
-            textBoxTbd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            textBoxTbd.Margin = new System.Windows.Forms.Padding(4);
             textBoxTbd.Name = "textBoxTbd";
             textBoxTbd.Size = new System.Drawing.Size(116, 23);
             textBoxTbd.TabIndex = 17;
@@ -203,7 +203,7 @@
             checkBoxTfc.AutoSize = true;
             checkBoxTfc.Enabled = false;
             checkBoxTfc.Location = new System.Drawing.Point(12, 82);
-            checkBoxTfc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            checkBoxTfc.Margin = new System.Windows.Forms.Padding(4);
             checkBoxTfc.Name = "checkBoxTfc";
             checkBoxTfc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             checkBoxTfc.Size = new System.Drawing.Size(40, 19);
@@ -219,9 +219,9 @@
             groupBoxUnknowns.Controls.Add(textBoxTbd);
             groupBoxUnknowns.Controls.Add(labelTbd);
             groupBoxUnknowns.Location = new System.Drawing.Point(279, 52);
-            groupBoxUnknowns.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            groupBoxUnknowns.Margin = new System.Windows.Forms.Padding(4);
             groupBoxUnknowns.Name = "groupBoxUnknowns";
-            groupBoxUnknowns.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            groupBoxUnknowns.Padding = new System.Windows.Forms.Padding(4);
             groupBoxUnknowns.Size = new System.Drawing.Size(166, 115);
             groupBoxUnknowns.TabIndex = 19;
             groupBoxUnknowns.TabStop = false;
@@ -263,7 +263,7 @@
             listBoxConnections.FormattingEnabled = true;
             listBoxConnections.ItemHeight = 15;
             listBoxConnections.Location = new System.Drawing.Point(453, 70);
-            listBoxConnections.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            listBoxConnections.Margin = new System.Windows.Forms.Padding(4);
             listBoxConnections.Name = "listBoxConnections";
             listBoxConnections.Size = new System.Drawing.Size(221, 109);
             listBoxConnections.TabIndex = 23;
@@ -284,7 +284,7 @@
             comboBoxLegitimateConnections.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             comboBoxLegitimateConnections.FormattingEnabled = true;
             comboBoxLegitimateConnections.Location = new System.Drawing.Point(682, 73);
-            comboBoxLegitimateConnections.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            comboBoxLegitimateConnections.Margin = new System.Windows.Forms.Padding(4);
             comboBoxLegitimateConnections.Name = "comboBoxLegitimateConnections";
             comboBoxLegitimateConnections.Size = new System.Drawing.Size(140, 23);
             comboBoxLegitimateConnections.TabIndex = 25;
@@ -304,7 +304,7 @@
             // 
             buttonAddConnection.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             buttonAddConnection.Location = new System.Drawing.Point(681, 104);
-            buttonAddConnection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            buttonAddConnection.Margin = new System.Windows.Forms.Padding(4);
             buttonAddConnection.Name = "buttonAddConnection";
             buttonAddConnection.Size = new System.Drawing.Size(88, 27);
             buttonAddConnection.TabIndex = 27;
@@ -316,7 +316,7 @@
             // 
             buttonRemove.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             buttonRemove.Location = new System.Drawing.Point(776, 103);
-            buttonRemove.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            buttonRemove.Margin = new System.Windows.Forms.Padding(4);
             buttonRemove.Name = "buttonRemove";
             buttonRemove.Size = new System.Drawing.Size(88, 27);
             buttonRemove.TabIndex = 28;
