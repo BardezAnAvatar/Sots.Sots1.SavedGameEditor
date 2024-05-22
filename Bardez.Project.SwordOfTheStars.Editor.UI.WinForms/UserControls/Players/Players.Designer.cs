@@ -52,7 +52,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             dataGridViewPlayers.Location = new System.Drawing.Point(4, 4);
             dataGridViewPlayers.Margin = new System.Windows.Forms.Padding(4);
             dataGridViewPlayers.Name = "dataGridViewPlayers";
-            dataGridViewPlayers.Size = new System.Drawing.Size(1176, 256);
+            dataGridViewPlayers.Size = new System.Drawing.Size(1176, 126);
             dataGridViewPlayers.TabIndex = 0;
             dataGridViewPlayers.CellEndEdit += dataGridViewPlayers_CellEndEdit;
             dataGridViewPlayers.CurrentCellChanged += dataGridViewPlayers_CurrentCellChanged;
@@ -62,11 +62,11 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabControlPlayer.Controls.Add(tabPageDetails);
             tabControlPlayer.Controls.Add(tabPageTechTree);
             tabControlPlayer.Dock = System.Windows.Forms.DockStyle.Fill;
-            tabControlPlayer.Location = new System.Drawing.Point(4, 268);
+            tabControlPlayer.Location = new System.Drawing.Point(4, 138);
             tabControlPlayer.Margin = new System.Windows.Forms.Padding(4);
             tabControlPlayer.Name = "tabControlPlayer";
             tabControlPlayer.SelectedIndex = 0;
-            tabControlPlayer.Size = new System.Drawing.Size(1176, 408);
+            tabControlPlayer.Size = new System.Drawing.Size(1176, 538);
             tabControlPlayer.TabIndex = 3;
             // 
             // tabPageDetails
@@ -77,7 +77,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPageDetails.Margin = new System.Windows.Forms.Padding(4);
             tabPageDetails.Name = "tabPageDetails";
             tabPageDetails.Padding = new System.Windows.Forms.Padding(4);
-            tabPageDetails.Size = new System.Drawing.Size(1168, 380);
+            tabPageDetails.Size = new System.Drawing.Size(1168, 510);
             tabPageDetails.TabIndex = 0;
             tabPageDetails.Text = "Details";
             // 
@@ -89,7 +89,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             playerDetailsControl.MinimumSize = new System.Drawing.Size(772, 372);
             playerDetailsControl.Name = "playerDetailsControl";
             playerDetailsControl.ReadOnly = false;
-            playerDetailsControl.Size = new System.Drawing.Size(1160, 372);
+            playerDetailsControl.Size = new System.Drawing.Size(1160, 502);
             playerDetailsControl.TabIndex = 2;
             // 
             // tabPageTechTree
@@ -100,7 +100,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPageTechTree.Margin = new System.Windows.Forms.Padding(4);
             tabPageTechTree.Name = "tabPageTechTree";
             tabPageTechTree.Padding = new System.Windows.Forms.Padding(4);
-            tabPageTechTree.Size = new System.Drawing.Size(1168, 364);
+            tabPageTechTree.Size = new System.Drawing.Size(1168, 508);
             tabPageTechTree.TabIndex = 1;
             tabPageTechTree.Text = "Tech Tree";
             // 
@@ -112,7 +112,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             techTree.Name = "techTree";
             techTree.Player = null;
             techTree.ReadOnly = false;
-            techTree.Size = new System.Drawing.Size(1160, 356);
+            techTree.Size = new System.Drawing.Size(1160, 500);
             techTree.TabIndex = 0;
             techTree.ValidTechTree = null;
             // 
@@ -127,8 +127,8 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tableLayoutPanelSplit.Margin = new System.Windows.Forms.Padding(4);
             tableLayoutPanelSplit.Name = "tableLayoutPanelSplit";
             tableLayoutPanelSplit.RowCount = 2;
+            tableLayoutPanelSplit.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 134F));
             tableLayoutPanelSplit.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            tableLayoutPanelSplit.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 416F));
             tableLayoutPanelSplit.Size = new System.Drawing.Size(1184, 680);
             tableLayoutPanelSplit.TabIndex = 4;
             // 
