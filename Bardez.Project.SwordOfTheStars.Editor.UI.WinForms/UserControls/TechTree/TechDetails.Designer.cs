@@ -60,17 +60,17 @@
             // labelDescription
             // 
             labelDescription.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            labelDescription.Location = new System.Drawing.Point(358, 7);
+            labelDescription.Location = new System.Drawing.Point(338, 7);
             labelDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelDescription.Name = "labelDescription";
-            labelDescription.Size = new System.Drawing.Size(486, 42);
+            labelDescription.Size = new System.Drawing.Size(526, 42);
             labelDescription.TabIndex = 0;
             labelDescription.Text = "[Tech description]";
             // 
             // labelTechName
             // 
             labelTechName.AutoSize = true;
-            labelTechName.Location = new System.Drawing.Point(144, 7);
+            labelTechName.Location = new System.Drawing.Point(133, 7);
             labelTechName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelTechName.Name = "labelTechName";
             labelTechName.Size = new System.Drawing.Size(74, 15);
@@ -80,7 +80,7 @@
             // labelTechFriendlyName
             // 
             labelTechFriendlyName.AutoSize = true;
-            labelTechFriendlyName.Location = new System.Drawing.Point(144, 36);
+            labelTechFriendlyName.Location = new System.Drawing.Point(133, 36);
             labelTechFriendlyName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelTechFriendlyName.Name = "labelTechFriendlyName";
             labelTechFriendlyName.Size = new System.Drawing.Size(92, 15);
@@ -90,7 +90,7 @@
             // labelResCost
             // 
             labelResCost.AutoSize = true;
-            labelResCost.Location = new System.Drawing.Point(9, 67);
+            labelResCost.Location = new System.Drawing.Point(6, 67);
             labelResCost.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelResCost.Name = "labelResCost";
             labelResCost.Size = new System.Drawing.Size(117, 15);
@@ -99,7 +99,7 @@
             // 
             // textBoxResCost
             // 
-            textBoxResCost.Location = new System.Drawing.Point(144, 63);
+            textBoxResCost.Location = new System.Drawing.Point(133, 63);
             textBoxResCost.Margin = new System.Windows.Forms.Padding(4);
             textBoxResCost.Name = "textBoxResCost";
             textBoxResCost.Size = new System.Drawing.Size(116, 23);
@@ -126,7 +126,7 @@
             // 
             // textBoxResDone
             // 
-            textBoxResDone.Location = new System.Drawing.Point(144, 93);
+            textBoxResDone.Location = new System.Drawing.Point(133, 93);
             textBoxResDone.Margin = new System.Windows.Forms.Padding(4);
             textBoxResDone.Name = "textBoxResDone";
             textBoxResDone.Size = new System.Drawing.Size(116, 23);
@@ -135,7 +135,7 @@
             // labelResDone
             // 
             labelResDone.AutoSize = true;
-            labelResDone.Location = new System.Drawing.Point(4, 97);
+            labelResDone.Location = new System.Drawing.Point(2, 97);
             labelResDone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelResDone.Name = "labelResDone";
             labelResDone.Size = new System.Drawing.Size(121, 15);
@@ -145,7 +145,7 @@
             // labelAcquired
             // 
             labelAcquired.AutoSize = true;
-            labelAcquired.Location = new System.Drawing.Point(79, 127);
+            labelAcquired.Location = new System.Drawing.Point(68, 127);
             labelAcquired.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelAcquired.Name = "labelAcquired";
             labelAcquired.Size = new System.Drawing.Size(55, 15);
@@ -154,7 +154,7 @@
             // 
             // textBoxAcquired
             // 
-            textBoxAcquired.Location = new System.Drawing.Point(144, 123);
+            textBoxAcquired.Location = new System.Drawing.Point(133, 123);
             textBoxAcquired.Margin = new System.Windows.Forms.Padding(4);
             textBoxAcquired.Name = "textBoxAcquired";
             textBoxAcquired.Size = new System.Drawing.Size(116, 23);
@@ -163,7 +163,7 @@
             // labelIAcquired
             // 
             labelIAcquired.AutoSize = true;
-            labelIAcquired.Location = new System.Drawing.Point(77, 157);
+            labelIAcquired.Location = new System.Drawing.Point(65, 157);
             labelIAcquired.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelIAcquired.Name = "labelIAcquired";
             labelIAcquired.Size = new System.Drawing.Size(58, 15);
@@ -173,7 +173,7 @@
             // textBoxIAcquired
             // 
             textBoxIAcquired.Enabled = false;
-            textBoxIAcquired.Location = new System.Drawing.Point(144, 153);
+            textBoxIAcquired.Location = new System.Drawing.Point(133, 153);
             textBoxIAcquired.Margin = new System.Windows.Forms.Padding(4);
             textBoxIAcquired.Name = "textBoxIAcquired";
             textBoxIAcquired.Size = new System.Drawing.Size(116, 23);
@@ -218,11 +218,11 @@
             groupBoxUnknowns.Controls.Add(textBoxSt);
             groupBoxUnknowns.Controls.Add(textBoxTbd);
             groupBoxUnknowns.Controls.Add(labelTbd);
-            groupBoxUnknowns.Location = new System.Drawing.Point(279, 52);
+            groupBoxUnknowns.Location = new System.Drawing.Point(255, 52);
             groupBoxUnknowns.Margin = new System.Windows.Forms.Padding(4);
             groupBoxUnknowns.Name = "groupBoxUnknowns";
             groupBoxUnknowns.Padding = new System.Windows.Forms.Padding(4);
-            groupBoxUnknowns.Size = new System.Drawing.Size(166, 115);
+            groupBoxUnknowns.Size = new System.Drawing.Size(166, 128);
             groupBoxUnknowns.TabIndex = 19;
             groupBoxUnknowns.TabStop = false;
             groupBoxUnknowns.Text = "Unknowns";
@@ -230,7 +230,7 @@
             // labelTechNameLabel
             // 
             labelTechNameLabel.AutoSize = true;
-            labelTechNameLabel.Location = new System.Drawing.Point(96, 7);
+            labelTechNameLabel.Location = new System.Drawing.Point(84, 7);
             labelTechNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelTechNameLabel.Name = "labelTechNameLabel";
             labelTechNameLabel.Size = new System.Drawing.Size(39, 15);
@@ -240,7 +240,7 @@
             // labelFriendlyNameLabel
             // 
             labelFriendlyNameLabel.AutoSize = true;
-            labelFriendlyNameLabel.Location = new System.Drawing.Point(50, 36);
+            labelFriendlyNameLabel.Location = new System.Drawing.Point(39, 36);
             labelFriendlyNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelFriendlyNameLabel.Name = "labelFriendlyNameLabel";
             labelFriendlyNameLabel.Size = new System.Drawing.Size(84, 15);
@@ -250,7 +250,7 @@
             // labelDescriptionLabel
             // 
             labelDescriptionLabel.AutoSize = true;
-            labelDescriptionLabel.Location = new System.Drawing.Point(286, 7);
+            labelDescriptionLabel.Location = new System.Drawing.Point(260, 7);
             labelDescriptionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelDescriptionLabel.Name = "labelDescriptionLabel";
             labelDescriptionLabel.Size = new System.Drawing.Size(70, 15);
@@ -262,16 +262,16 @@
             listBoxConnections.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             listBoxConnections.FormattingEnabled = true;
             listBoxConnections.ItemHeight = 15;
-            listBoxConnections.Location = new System.Drawing.Point(453, 70);
+            listBoxConnections.Location = new System.Drawing.Point(429, 70);
             listBoxConnections.Margin = new System.Windows.Forms.Padding(4);
             listBoxConnections.Name = "listBoxConnections";
-            listBoxConnections.Size = new System.Drawing.Size(221, 109);
+            listBoxConnections.Size = new System.Drawing.Size(245, 109);
             listBoxConnections.TabIndex = 23;
             // 
             // labelConnections
             // 
             labelConnections.AutoSize = true;
-            labelConnections.Location = new System.Drawing.Point(451, 52);
+            labelConnections.Location = new System.Drawing.Point(430, 51);
             labelConnections.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelConnections.Name = "labelConnections";
             labelConnections.Size = new System.Drawing.Size(204, 15);
@@ -283,17 +283,17 @@
             comboBoxLegitimateConnections.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             comboBoxLegitimateConnections.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             comboBoxLegitimateConnections.FormattingEnabled = true;
-            comboBoxLegitimateConnections.Location = new System.Drawing.Point(682, 73);
+            comboBoxLegitimateConnections.Location = new System.Drawing.Point(682, 70);
             comboBoxLegitimateConnections.Margin = new System.Windows.Forms.Padding(4);
             comboBoxLegitimateConnections.Name = "comboBoxLegitimateConnections";
-            comboBoxLegitimateConnections.Size = new System.Drawing.Size(140, 23);
+            comboBoxLegitimateConnections.Size = new System.Drawing.Size(182, 23);
             comboBoxLegitimateConnections.TabIndex = 25;
             // 
             // labelPossibleConnections
             // 
             labelPossibleConnections.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             labelPossibleConnections.AutoSize = true;
-            labelPossibleConnections.Location = new System.Drawing.Point(682, 54);
+            labelPossibleConnections.Location = new System.Drawing.Point(682, 51);
             labelPossibleConnections.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelPossibleConnections.Name = "labelPossibleConnections";
             labelPossibleConnections.Size = new System.Drawing.Size(123, 15);
@@ -303,7 +303,7 @@
             // buttonAddConnection
             // 
             buttonAddConnection.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            buttonAddConnection.Location = new System.Drawing.Point(681, 104);
+            buttonAddConnection.Location = new System.Drawing.Point(681, 101);
             buttonAddConnection.Margin = new System.Windows.Forms.Padding(4);
             buttonAddConnection.Name = "buttonAddConnection";
             buttonAddConnection.Size = new System.Drawing.Size(88, 27);
@@ -315,7 +315,7 @@
             // buttonRemove
             // 
             buttonRemove.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            buttonRemove.Location = new System.Drawing.Point(776, 103);
+            buttonRemove.Location = new System.Drawing.Point(776, 100);
             buttonRemove.Margin = new System.Windows.Forms.Padding(4);
             buttonRemove.Name = "buttonRemove";
             buttonRemove.Size = new System.Drawing.Size(88, 27);
