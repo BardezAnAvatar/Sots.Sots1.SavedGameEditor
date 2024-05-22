@@ -78,7 +78,7 @@
             tabControlOptions.Margin = new System.Windows.Forms.Padding(4);
             tabControlOptions.Name = "tabControlOptions";
             tabControlOptions.SelectedIndex = 0;
-            tabControlOptions.Size = new System.Drawing.Size(792, 512);
+            tabControlOptions.Size = new System.Drawing.Size(1196, 612);
             tabControlOptions.TabIndex = 8;
             // 
             // tabPageSpecies
@@ -88,7 +88,7 @@
             tabPageSpecies.Location = new System.Drawing.Point(4, 24);
             tabPageSpecies.Margin = new System.Windows.Forms.Padding(4);
             tabPageSpecies.Name = "tabPageSpecies";
-            tabPageSpecies.Size = new System.Drawing.Size(784, 484);
+            tabPageSpecies.Size = new System.Drawing.Size(784, 584);
             tabPageSpecies.TabIndex = 1;
             tabPageSpecies.Text = "Species";
             // 
@@ -108,7 +108,7 @@
             tabPagePlayers.Location = new System.Drawing.Point(4, 24);
             tabPagePlayers.Margin = new System.Windows.Forms.Padding(4);
             tabPagePlayers.Name = "tabPagePlayers";
-            tabPagePlayers.Size = new System.Drawing.Size(784, 484);
+            tabPagePlayers.Size = new System.Drawing.Size(1188, 584);
             tabPagePlayers.TabIndex = 2;
             tabPagePlayers.Text = "Players";
             // 
@@ -120,7 +120,7 @@
             playersControl.MinimumSize = new System.Drawing.Size(500, 500);
             playersControl.Name = "playersControl";
             playersControl.ReadOnly = false;
-            playersControl.Size = new System.Drawing.Size(2453, 1839);
+            playersControl.Size = new System.Drawing.Size(1496, 568);
             playersControl.TabIndex = 0;
             playersControl.ValidTechTree = null;
             // 
@@ -131,7 +131,7 @@
             tabPageSystems.Location = new System.Drawing.Point(4, 24);
             tabPageSystems.Margin = new System.Windows.Forms.Padding(4);
             tabPageSystems.Name = "tabPageSystems";
-            tabPageSystems.Size = new System.Drawing.Size(784, 484);
+            tabPageSystems.Size = new System.Drawing.Size(784, 584);
             tabPageSystems.TabIndex = 0;
             tabPageSystems.Text = "Systems";
             // 
@@ -142,7 +142,7 @@
             systemsControl.Margin = new System.Windows.Forms.Padding(4);
             systemsControl.Name = "systemsControl";
             systemsControl.ReadOnly = true;
-            systemsControl.Size = new System.Drawing.Size(781, 478);
+            systemsControl.Size = new System.Drawing.Size(781, 578);
             systemsControl.TabIndex = 4;
             // 
             // tabPageNodeLines
@@ -152,7 +152,7 @@
             tabPageNodeLines.Location = new System.Drawing.Point(4, 24);
             tabPageNodeLines.Margin = new System.Windows.Forms.Padding(4);
             tabPageNodeLines.Name = "tabPageNodeLines";
-            tabPageNodeLines.Size = new System.Drawing.Size(784, 484);
+            tabPageNodeLines.Size = new System.Drawing.Size(192, 72);
             tabPageNodeLines.TabIndex = 3;
             tabPageNodeLines.Text = "Node Lines";
             // 
@@ -165,7 +165,7 @@
             nodeGridControl.Name = "nodeGridControl";
             nodeGridControl.Padding = new System.Windows.Forms.Padding(4);
             nodeGridControl.ReadOnly = false;
-            nodeGridControl.Size = new System.Drawing.Size(784, 484);
+            nodeGridControl.Size = new System.Drawing.Size(608, 342);
             nodeGridControl.TabIndex = 0;
             // 
             // openFileDialogSaveFile
@@ -223,10 +223,10 @@
             // statusStripLoadSave
             // 
             statusStripLoadSave.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { toolStripStatusLabelMessage, toolStripProgressBarLoadSave });
-            statusStripLoadSave.Location = new System.Drawing.Point(0, 576);
+            statusStripLoadSave.Location = new System.Drawing.Point(0, 676);
             statusStripLoadSave.Name = "statusStripLoadSave";
             statusStripLoadSave.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
-            statusStripLoadSave.Size = new System.Drawing.Size(800, 24);
+            statusStripLoadSave.Size = new System.Drawing.Size(1204, 24);
             statusStripLoadSave.TabIndex = 13;
             statusStripLoadSave.Text = "statusStripLoadSave";
             // 
@@ -253,9 +253,9 @@
             Controls.Add(checkBoxReadOnly);
             Controls.Add(tabControlOptions);
             Margin = new System.Windows.Forms.Padding(4);
-            MinimumSize = new System.Drawing.Size(500, 500);
+            MinimumSize = new System.Drawing.Size(500, 700);
             Name = "Editor";
-            Size = new System.Drawing.Size(800, 600);
+            Size = new System.Drawing.Size(1204, 700);
             tabControlOptions.ResumeLayout(false);
             tabPageSpecies.ResumeLayout(false);
             tabPagePlayers.ResumeLayout(false);
