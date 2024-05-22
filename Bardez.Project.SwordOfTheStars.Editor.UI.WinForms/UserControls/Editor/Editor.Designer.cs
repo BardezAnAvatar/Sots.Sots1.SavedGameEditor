@@ -88,7 +88,7 @@
             tabPageSpecies.Location = new System.Drawing.Point(4, 24);
             tabPageSpecies.Margin = new System.Windows.Forms.Padding(4);
             tabPageSpecies.Name = "tabPageSpecies";
-            tabPageSpecies.Size = new System.Drawing.Size(784, 584);
+            tabPageSpecies.Size = new System.Drawing.Size(1188, 584);
             tabPageSpecies.TabIndex = 1;
             tabPageSpecies.Text = "Species";
             // 
@@ -120,7 +120,7 @@
             playersControl.MinimumSize = new System.Drawing.Size(500, 500);
             playersControl.Name = "playersControl";
             playersControl.ReadOnly = false;
-            playersControl.Size = new System.Drawing.Size(1496, 568);
+            playersControl.Size = new System.Drawing.Size(1184, 568);
             playersControl.TabIndex = 0;
             playersControl.ValidTechTree = null;
             // 
@@ -142,7 +142,7 @@
             systemsControl.Margin = new System.Windows.Forms.Padding(4);
             systemsControl.Name = "systemsControl";
             systemsControl.ReadOnly = true;
-            systemsControl.Size = new System.Drawing.Size(781, 578);
+            systemsControl.Size = new System.Drawing.Size(782, 578);
             systemsControl.TabIndex = 4;
             // 
             // tabPageNodeLines

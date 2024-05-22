@@ -435,7 +435,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             groupBoxUnknowns.Margin = new System.Windows.Forms.Padding(4);
             groupBoxUnknowns.Name = "groupBoxUnknowns";
             groupBoxUnknowns.Padding = new System.Windows.Forms.Padding(4);
-            groupBoxUnknowns.Size = new System.Drawing.Size(600, 488);
+            groupBoxUnknowns.Size = new System.Drawing.Size(600, 492);
             groupBoxUnknowns.TabIndex = 400;
             groupBoxUnknowns.TabStop = false;
             groupBoxUnknowns.Text = "Unknowns";
@@ -1821,7 +1821,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             Controls.Add(labelPlayerId);
             Margin = new System.Windows.Forms.Padding(4);
             Name = "PlayerDetails";
-            Size = new System.Drawing.Size(1150, 488);
+            Size = new System.Drawing.Size(1150, 492);
             groupBoxUnknowns.ResumeLayout(false);
             groupBoxUnknowns.PerformLayout();
             ResumeLayout(false);
