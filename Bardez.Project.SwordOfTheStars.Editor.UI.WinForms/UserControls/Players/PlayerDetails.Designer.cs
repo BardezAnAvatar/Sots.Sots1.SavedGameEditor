@@ -28,6 +28,13 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
         /// </summary>
         private void InitializeComponent()
         {
+            tabControlPlayer = new System.Windows.Forms.TabControl();
+            tabPagePlayerDetails = new System.Windows.Forms.TabPage();
+            tabPageHabitability = new System.Windows.Forms.TabPage();
+            tabPageEconomy = new System.Windows.Forms.TabPage();
+            tabPageResearch = new System.Windows.Forms.TabPage();
+            tabPageIndustry = new System.Windows.Forms.TabPage();
+            tabPageUnknowns = new System.Windows.Forms.TabPage();
             labelPlayerId = new System.Windows.Forms.Label();
             textBoxPlayerId = new System.Windows.Forms.TextBox();
             labelPlayerIndex = new System.Windows.Forms.Label();
@@ -44,7 +51,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             textBoxBadge = new System.Windows.Forms.TextBox();
             labelAvatar = new System.Windows.Forms.Label();
             textBoxAvatar = new System.Windows.Forms.TextBox();
-            groupBoxUnknowns = new System.Windows.Forms.GroupBox();
             textBoxTnc = new System.Windows.Forms.TextBox();
             textBoxRdtc = new System.Windows.Forms.TextBox();
             textBoxNdeflay = new System.Windows.Forms.TextBox();
@@ -181,7 +187,14 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             textBoxNextPrjId = new System.Windows.Forms.TextBox();
             checkBoxHasAiRebellion = new System.Windows.Forms.CheckBox();
             colorDialogColor = new System.Windows.Forms.ColorDialog();
-            groupBoxUnknowns.SuspendLayout();
+
+            tabControlPlayer.SuspendLayout();
+            tabPagePlayerDetails.SuspendLayout();
+            tabPageHabitability.SuspendLayout();
+            tabPageEconomy.SuspendLayout();
+            tabPageResearch.SuspendLayout();
+            tabPageIndustry.SuspendLayout();
+            tabPageUnknowns.SuspendLayout();
             SuspendLayout();
             // 
             // labelPlayerId
@@ -332,113 +345,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             textBoxAvatar.Name = "textBoxAvatar";
             textBoxAvatar.Size = new System.Drawing.Size(151, 23);
             textBoxAvatar.TabIndex = 80;
-            // 
-            // groupBoxUnknowns
-            // 
-            groupBoxUnknowns.Controls.Add(textBoxTnc);
-            groupBoxUnknowns.Controls.Add(textBoxRdtc);
-            groupBoxUnknowns.Controls.Add(textBoxNdeflay);
-            groupBoxUnknowns.Controls.Add(labelTnc);
-            groupBoxUnknowns.Controls.Add(labelRdtc);
-            groupBoxUnknowns.Controls.Add(labelNdeflay);
-            groupBoxUnknowns.Controls.Add(textBoxNWeapXcl);
-            groupBoxUnknowns.Controls.Add(labelNWeapXcl);
-            groupBoxUnknowns.Controls.Add(textBoxNexp);
-            groupBoxUnknowns.Controls.Add(labelNexp);
-            groupBoxUnknowns.Controls.Add(checkBoxCta);
-            groupBoxUnknowns.Controls.Add(checkBoxResErrRoll);
-            groupBoxUnknowns.Controls.Add(textBoxResTnm);
-            groupBoxUnknowns.Controls.Add(labelResTnm);
-            groupBoxUnknowns.Controls.Add(textBoxLcid2);
-            groupBoxUnknowns.Controls.Add(labelLcid2);
-            groupBoxUnknowns.Controls.Add(textBoxLboid);
-            groupBoxUnknowns.Controls.Add(labelLboid);
-            groupBoxUnknowns.Controls.Add(textBoxSrcTo);
-            groupBoxUnknowns.Controls.Add(labelSrcTo);
-            groupBoxUnknowns.Controls.Add(checkBoxSrn);
-            groupBoxUnknowns.Controls.Add(textBoxAidf);
-            groupBoxUnknowns.Controls.Add(labelAidf);
-            groupBoxUnknowns.Controls.Add(checkBoxCdp);
-            groupBoxUnknowns.Controls.Add(textBoxNmeid);
-            groupBoxUnknowns.Controls.Add(labelNmeid);
-            groupBoxUnknowns.Controls.Add(textBoxLret);
-            groupBoxUnknowns.Controls.Add(labelLret);
-            groupBoxUnknowns.Controls.Add(textBoxPswd);
-            groupBoxUnknowns.Controls.Add(labelPswd);
-            groupBoxUnknowns.Controls.Add(textBoxPlcy);
-            groupBoxUnknowns.Controls.Add(labelPlcy);
-            groupBoxUnknowns.Controls.Add(textBoxBankEl);
-            groupBoxUnknowns.Controls.Add(labelBankEl);
-            groupBoxUnknowns.Controls.Add(textBoxBankPr);
-            groupBoxUnknowns.Controls.Add(labelBankPr);
-            groupBoxUnknowns.Controls.Add(textBoxBankTrn);
-            groupBoxUnknowns.Controls.Add(labelBankTrn);
-            groupBoxUnknowns.Controls.Add(textBoxPddm);
-            groupBoxUnknowns.Controls.Add(labelPddm);
-            groupBoxUnknowns.Controls.Add(checkBoxCnVItl);
-            groupBoxUnknowns.Controls.Add(textBoxAibn);
-            groupBoxUnknowns.Controls.Add(labelAibn);
-            groupBoxUnknowns.Controls.Add(checkBoxHarcc);
-            groupBoxUnknowns.Controls.Add(textBoxPvMa);
-            groupBoxUnknowns.Controls.Add(labelPvMa);
-            groupBoxUnknowns.Controls.Add(checkBoxHadvs);
-            groupBoxUnknowns.Controls.Add(textBoxFngNum);
-            groupBoxUnknowns.Controls.Add(labelFngNum);
-            groupBoxUnknowns.Controls.Add(checkBoxHgs);
-            groupBoxUnknowns.Controls.Add(textBoxHasEng);
-            groupBoxUnknowns.Controls.Add(textBoxHasEnc);
-            groupBoxUnknowns.Controls.Add(labelHasEng);
-            groupBoxUnknowns.Controls.Add(labelHasEnc);
-            groupBoxUnknowns.Controls.Add(textBoxHasDiscCl);
-            groupBoxUnknowns.Controls.Add(labelHasDiscCl);
-            groupBoxUnknowns.Controls.Add(textBoxHasDiscSp);
-            groupBoxUnknowns.Controls.Add(labelHasDiscSp);
-            groupBoxUnknowns.Controls.Add(textBoxHasDisc);
-            groupBoxUnknowns.Controls.Add(labelHasDisc);
-            groupBoxUnknowns.Controls.Add(textBoxNpTrak);
-            groupBoxUnknowns.Controls.Add(labelNpTrak);
-            groupBoxUnknowns.Controls.Add(checkBoxReqCl);
-            groupBoxUnknowns.Controls.Add(labelElim);
-            groupBoxUnknowns.Controls.Add(textBoxElim);
-            groupBoxUnknowns.Controls.Add(labelStatus);
-            groupBoxUnknowns.Controls.Add(textBoxStatus);
-            groupBoxUnknowns.Controls.Add(textBoxShrm);
-            groupBoxUnknowns.Controls.Add(labelShrm);
-            groupBoxUnknowns.Controls.Add(textBoxMaint);
-            groupBoxUnknowns.Controls.Add(labelMaint);
-            groupBoxUnknowns.Controls.Add(textBoxCstT);
-            groupBoxUnknowns.Controls.Add(labelCstT);
-            groupBoxUnknowns.Controls.Add(textBoxCstE);
-            groupBoxUnknowns.Controls.Add(labelCstE);
-            groupBoxUnknowns.Controls.Add(textBoxCstR);
-            groupBoxUnknowns.Controls.Add(labelCstR);
-            groupBoxUnknowns.Controls.Add(labelGTraf);
-            groupBoxUnknowns.Controls.Add(textBoxGTraf);
-            groupBoxUnknowns.Controls.Add(textBoxPrGtTrf);
-            groupBoxUnknowns.Controls.Add(labelPrGtTrf);
-            groupBoxUnknowns.Controls.Add(textBoxNgts);
-            groupBoxUnknowns.Controls.Add(labelNgts);
-            groupBoxUnknowns.Controls.Add(textBoxMinRate);
-            groupBoxUnknowns.Controls.Add(labelMinRate);
-            groupBoxUnknowns.Controls.Add(textBoxMinPure);
-            groupBoxUnknowns.Controls.Add(labelMinPure);
-            groupBoxUnknowns.Controls.Add(checkBoxAmine);
-            groupBoxUnknowns.Controls.Add(textBoxTra);
-            groupBoxUnknowns.Controls.Add(textBoxMaxOh);
-            groupBoxUnknowns.Controls.Add(textBoxTrp);
-            groupBoxUnknowns.Controls.Add(labelMaxOh);
-            groupBoxUnknowns.Controls.Add(textBoxTrm);
-            groupBoxUnknowns.Controls.Add(labelTrp);
-            groupBoxUnknowns.Controls.Add(labelTra);
-            groupBoxUnknowns.Controls.Add(labelTrm);
-            groupBoxUnknowns.Location = new System.Drawing.Point(549, 0);
-            groupBoxUnknowns.Margin = new System.Windows.Forms.Padding(4);
-            groupBoxUnknowns.Name = "groupBoxUnknowns";
-            groupBoxUnknowns.Padding = new System.Windows.Forms.Padding(4);
-            groupBoxUnknowns.Size = new System.Drawing.Size(600, 492);
-            groupBoxUnknowns.TabIndex = 400;
-            groupBoxUnknowns.TabStop = false;
-            groupBoxUnknowns.Text = "Unknowns";
             // 
             // textBoxTnc
             // 
@@ -1203,6 +1109,229 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             labelCstR.TabIndex = 535;
             labelCstR.Text = "CstR";
             // 
+
+            // 
+            // tabPagePlayerDetails
+            // 
+            tabPagePlayerDetails.BackColor = System.Drawing.SystemColors.Control;
+            tabPagePlayerDetails.Controls.Add(checkBoxHasAiRebellion);
+            tabPagePlayerDetails.Controls.Add(checkBoxRebAi);
+            tabPagePlayerDetails.Controls.Add(checkBoxNpc);
+            tabPagePlayerDetails.Controls.Add(textBoxTeam);
+            tabPagePlayerDetails.Controls.Add(labelTeam);
+            tabPagePlayerDetails.Controls.Add(textBoxAvatar);
+            tabPagePlayerDetails.Controls.Add(labelAvatar);
+            tabPagePlayerDetails.Controls.Add(textBoxBadge);
+            tabPagePlayerDetails.Controls.Add(labelBadge);
+            tabPagePlayerDetails.Controls.Add(buttonColor);
+            tabPagePlayerDetails.Controls.Add(labelColor);
+            tabPagePlayerDetails.Controls.Add(textBoxHomeSystem);
+            tabPagePlayerDetails.Controls.Add(labelHomeSystem);
+            tabPagePlayerDetails.Controls.Add(textBoxSpecies);
+            tabPagePlayerDetails.Controls.Add(labelSpecies);
+            tabPagePlayerDetails.Controls.Add(textBoxName);
+            tabPagePlayerDetails.Controls.Add(labelName);
+            tabPagePlayerDetails.Controls.Add(textBoxPlayerIndex);
+            tabPagePlayerDetails.Controls.Add(labelPlayerIndex);
+            tabPagePlayerDetails.Controls.Add(textBoxPlayerId);
+            tabPagePlayerDetails.Controls.Add(labelPlayerId);
+            tabPagePlayerDetails.Location = new System.Drawing.Point(4, 24);
+            tabPagePlayerDetails.Name = "tabPagePlayerDetails";
+            tabPagePlayerDetails.Padding = new System.Windows.Forms.Padding(3);
+            tabPagePlayerDetails.Size = new System.Drawing.Size(531, 100);
+            tabPagePlayerDetails.TabIndex = 0;
+            tabPagePlayerDetails.Text = "Player Details";
+            // 
+            // tabPageHabitability
+            // 
+            tabPageHabitability.BackColor = System.Drawing.SystemColors.Control;
+            tabPageHabitability.Controls.Add(textBoxHasImm);
+            tabPageHabitability.Controls.Add(labelHasImm);
+            tabPageHabitability.Controls.Add(textBoxHasVac);
+            tabPageHabitability.Controls.Add(labelHasVac);
+            tabPageHabitability.Controls.Add(textBoxTerrMod);
+            tabPageHabitability.Controls.Add(labelTerrMod);
+            tabPageHabitability.Controls.Add(textBoxPopMod);
+            tabPageHabitability.Controls.Add(labelPopMod);
+            tabPageHabitability.Controls.Add(labelSuitTol);
+            tabPageHabitability.Controls.Add(textBoxSuitTol);
+            tabPageHabitability.Controls.Add(textBoxIdealSuit);
+            tabPageHabitability.Controls.Add(labelIdealSuit);
+            tabPageHabitability.Location = new System.Drawing.Point(4, 24);
+            tabPageHabitability.Name = "tabPageHabitability";
+            tabPageHabitability.Padding = new System.Windows.Forms.Padding(3);
+            tabPageHabitability.Size = new System.Drawing.Size(531, 322);
+            tabPageHabitability.TabIndex = 1;
+            tabPageHabitability.Text = "Habitability";
+            // 
+            // tabPageEconomy
+            // 
+            tabPageEconomy.BackColor = System.Drawing.SystemColors.Control;
+            tabPageEconomy.Controls.Add(textBoxPvSav);
+            tabPageEconomy.Controls.Add(labelPvSav);
+            tabPageEconomy.Controls.Add(textBoxSav);
+            tabPageEconomy.Controls.Add(labelSav);
+            tabPageEconomy.Controls.Add(checkBoxCnRad);
+            tabPageEconomy.Controls.Add(checkBoxCnTrd);
+            tabPageEconomy.Controls.Add(textBoxIncMod);
+            tabPageEconomy.Controls.Add(labelIncMod);
+            tabPageEconomy.Location = new System.Drawing.Point(4, 24);
+            tabPageEconomy.Name = "tabPageEconomy";
+            tabPageEconomy.Size = new System.Drawing.Size(531, 322);
+            tabPageEconomy.TabIndex = 2;
+            tabPageEconomy.Text = "tabPageEconomy";
+            // 
+            // tabPageResearch
+            // 
+            tabPageResearch.BackColor = System.Drawing.SystemColors.Control;
+            tabPageResearch.Controls.Add(textBoxResScl);
+            tabPageResearch.Controls.Add(labelResScl);
+            tabPageResearch.Controls.Add(textBoxResMod);
+            tabPageResearch.Controls.Add(labelResMod);
+            tabPageResearch.Controls.Add(textBoxResRate);
+            tabPageResearch.Controls.Add(labelResRate);
+            tabPageResearch.Controls.Add(textBoxNextPrjId);
+            tabPageResearch.Controls.Add(labelNextPrjId);
+            tabPageResearch.Location = new System.Drawing.Point(4, 24);
+            tabPageResearch.Name = "tabPageResearch";
+            tabPageResearch.Size = new System.Drawing.Size(531, 322);
+            tabPageResearch.TabIndex = 3;
+            tabPageResearch.Text = "Research";
+            // 
+            // tabPageIndustry
+            // 
+            tabPageIndustry.BackColor = System.Drawing.SystemColors.Control;
+            tabPageIndustry.Controls.Add(textBoxIndOutScl);
+            tabPageIndustry.Controls.Add(labelIndOutScl);
+            tabPageIndustry.Controls.Add(textBoxIndOutReb);
+            tabPageIndustry.Controls.Add(labelIndOutReb);
+            tabPageIndustry.Controls.Add(textBoxIndOutMod);
+            tabPageIndustry.Controls.Add(labelIndOutMod);
+            tabPageIndustry.Location = new System.Drawing.Point(4, 24);
+            tabPageIndustry.Name = "tabPageIndustry";
+            tabPageIndustry.Size = new System.Drawing.Size(531, 322);
+            tabPageIndustry.TabIndex = 4;
+            tabPageIndustry.Text = "Industry";
+            // 
+            // tabPageUnknowns
+            // 
+            tabPageUnknowns.BackColor = System.Drawing.SystemColors.Control;
+            tabPageUnknowns.Controls.Add(textBoxTnc);
+            tabPageUnknowns.Controls.Add(textBoxRdtc);
+            tabPageUnknowns.Controls.Add(textBoxNdeflay);
+            tabPageUnknowns.Controls.Add(labelTnc);
+            tabPageUnknowns.Controls.Add(labelRdtc);
+            tabPageUnknowns.Controls.Add(labelNdeflay);
+            tabPageUnknowns.Controls.Add(textBoxNWeapXcl);
+            tabPageUnknowns.Controls.Add(labelNWeapXcl);
+            tabPageUnknowns.Controls.Add(textBoxNexp);
+            tabPageUnknowns.Controls.Add(labelNexp);
+            tabPageUnknowns.Controls.Add(checkBoxCta);
+            tabPageUnknowns.Controls.Add(checkBoxResErrRoll);
+            tabPageUnknowns.Controls.Add(textBoxResTnm);
+            tabPageUnknowns.Controls.Add(labelResTnm);
+            tabPageUnknowns.Controls.Add(textBoxLcid2);
+            tabPageUnknowns.Controls.Add(labelLcid2);
+            tabPageUnknowns.Controls.Add(textBoxLboid);
+            tabPageUnknowns.Controls.Add(labelLboid);
+            tabPageUnknowns.Controls.Add(textBoxSrcTo);
+            tabPageUnknowns.Controls.Add(labelSrcTo);
+            tabPageUnknowns.Controls.Add(checkBoxSrn);
+            tabPageUnknowns.Controls.Add(textBoxAidf);
+            tabPageUnknowns.Controls.Add(labelAidf);
+            tabPageUnknowns.Controls.Add(checkBoxCdp);
+            tabPageUnknowns.Controls.Add(textBoxNmeid);
+            tabPageUnknowns.Controls.Add(labelNmeid);
+            tabPageUnknowns.Controls.Add(textBoxLret);
+            tabPageUnknowns.Controls.Add(labelLret);
+            tabPageUnknowns.Controls.Add(textBoxPswd);
+            tabPageUnknowns.Controls.Add(labelPswd);
+            tabPageUnknowns.Controls.Add(textBoxPlcy);
+            tabPageUnknowns.Controls.Add(labelPlcy);
+            tabPageUnknowns.Controls.Add(textBoxBankEl);
+            tabPageUnknowns.Controls.Add(labelBankEl);
+            tabPageUnknowns.Controls.Add(textBoxBankPr);
+            tabPageUnknowns.Controls.Add(labelBankPr);
+            tabPageUnknowns.Controls.Add(textBoxBankTrn);
+            tabPageUnknowns.Controls.Add(labelBankTrn);
+            tabPageUnknowns.Controls.Add(textBoxPddm);
+            tabPageUnknowns.Controls.Add(labelPddm);
+            tabPageUnknowns.Controls.Add(checkBoxCnVItl);
+            tabPageUnknowns.Controls.Add(textBoxAibn);
+            tabPageUnknowns.Controls.Add(labelAibn);
+            tabPageUnknowns.Controls.Add(checkBoxHarcc);
+            tabPageUnknowns.Controls.Add(textBoxPvMa);
+            tabPageUnknowns.Controls.Add(labelPvMa);
+            tabPageUnknowns.Controls.Add(checkBoxHadvs);
+            tabPageUnknowns.Controls.Add(textBoxFngNum);
+            tabPageUnknowns.Controls.Add(labelFngNum);
+            tabPageUnknowns.Controls.Add(checkBoxHgs);
+            tabPageUnknowns.Controls.Add(textBoxHasEng);
+            tabPageUnknowns.Controls.Add(textBoxHasEnc);
+            tabPageUnknowns.Controls.Add(labelHasEng);
+            tabPageUnknowns.Controls.Add(labelHasEnc);
+            tabPageUnknowns.Controls.Add(textBoxHasDiscCl);
+            tabPageUnknowns.Controls.Add(labelHasDiscCl);
+            tabPageUnknowns.Controls.Add(textBoxHasDiscSp);
+            tabPageUnknowns.Controls.Add(labelHasDiscSp);
+            tabPageUnknowns.Controls.Add(textBoxHasDisc);
+            tabPageUnknowns.Controls.Add(labelHasDisc);
+            tabPageUnknowns.Controls.Add(textBoxNpTrak);
+            tabPageUnknowns.Controls.Add(labelNpTrak);
+            tabPageUnknowns.Controls.Add(checkBoxReqCl);
+            tabPageUnknowns.Controls.Add(labelElim);
+            tabPageUnknowns.Controls.Add(textBoxElim);
+            tabPageUnknowns.Controls.Add(labelStatus);
+            tabPageUnknowns.Controls.Add(textBoxStatus);
+            tabPageUnknowns.Controls.Add(textBoxShrm);
+            tabPageUnknowns.Controls.Add(labelShrm);
+            tabPageUnknowns.Controls.Add(textBoxMaint);
+            tabPageUnknowns.Controls.Add(labelMaint);
+            tabPageUnknowns.Controls.Add(textBoxCstT);
+            tabPageUnknowns.Controls.Add(labelCstT);
+            tabPageUnknowns.Controls.Add(textBoxCstE);
+            tabPageUnknowns.Controls.Add(labelCstE);
+            tabPageUnknowns.Controls.Add(textBoxCstR);
+            tabPageUnknowns.Controls.Add(labelCstR);
+            tabPageUnknowns.Controls.Add(labelGTraf);
+            tabPageUnknowns.Controls.Add(textBoxGTraf);
+            tabPageUnknowns.Controls.Add(textBoxPrGtTrf);
+            tabPageUnknowns.Controls.Add(labelPrGtTrf);
+            tabPageUnknowns.Controls.Add(textBoxNgts);
+            tabPageUnknowns.Controls.Add(labelNgts);
+            tabPageUnknowns.Controls.Add(textBoxMinRate);
+            tabPageUnknowns.Controls.Add(labelMinRate);
+            tabPageUnknowns.Controls.Add(textBoxMinPure);
+            tabPageUnknowns.Controls.Add(labelMinPure);
+            tabPageUnknowns.Controls.Add(checkBoxAmine);
+            tabPageUnknowns.Controls.Add(textBoxTra);
+            tabPageUnknowns.Controls.Add(textBoxMaxOh);
+            tabPageUnknowns.Controls.Add(textBoxTrp);
+            tabPageUnknowns.Controls.Add(labelMaxOh);
+            tabPageUnknowns.Controls.Add(textBoxTrm);
+            tabPageUnknowns.Controls.Add(labelTrp);
+            tabPageUnknowns.Controls.Add(labelTra);
+            tabPageUnknowns.Controls.Add(labelTrm);
+            tabPageUnknowns.Location = new System.Drawing.Point(4, 24);
+            tabPageUnknowns.Name = "tabPageUnknowns";
+            tabPageUnknowns.Size = new System.Drawing.Size(1148, 430);
+            tabPageUnknowns.TabIndex = 5;
+            tabPageUnknowns.Text = "Unknowns";
+            // 
+            // tabControlPlayer
+            // 
+            tabControlPlayer.Controls.Add(tabPagePlayerDetails);
+            tabControlPlayer.Controls.Add(tabPageHabitability);
+            tabControlPlayer.Controls.Add(tabPageEconomy);
+            tabControlPlayer.Controls.Add(tabPageResearch);
+            tabControlPlayer.Controls.Add(tabPageIndustry);
+            tabControlPlayer.Controls.Add(tabPageUnknowns);
+            tabControlPlayer.Location = new System.Drawing.Point(3, 3);
+            tabControlPlayer.Name = "tabControlPlayer";
+            tabControlPlayer.SelectedIndex = 0;
+            tabControlPlayer.Size = new System.Drawing.Size(1156, 458);
+            tabControlPlayer.TabIndex = 0;
+            // 
             // labelGTraf
             // 
             labelGTraf.AutoSize = true;
@@ -1763,73 +1892,38 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            Controls.Add(checkBoxHasAiRebellion);
-            Controls.Add(textBoxNextPrjId);
-            Controls.Add(labelNextPrjId);
-            Controls.Add(checkBoxCnRad);
-            Controls.Add(checkBoxCnTrd);
-            Controls.Add(textBoxPvSav);
-            Controls.Add(labelPvSav);
-            Controls.Add(textBoxHasImm);
-            Controls.Add(labelHasImm);
-            Controls.Add(textBoxHasVac);
-            Controls.Add(labelHasVac);
-            Controls.Add(checkBoxRebAi);
-            Controls.Add(checkBoxNpc);
-            Controls.Add(textBoxTerrMod);
-            Controls.Add(labelTerrMod);
-            Controls.Add(textBoxPopMod);
-            Controls.Add(labelPopMod);
-            Controls.Add(textBoxIncMod);
-            Controls.Add(labelIncMod);
-            Controls.Add(textBoxIndOutScl);
-            Controls.Add(labelIndOutScl);
-            Controls.Add(textBoxIndOutReb);
-            Controls.Add(labelIndOutReb);
-            Controls.Add(textBoxIndOutMod);
-            Controls.Add(labelIndOutMod);
-            Controls.Add(textBoxSav);
-            Controls.Add(textBoxResScl);
-            Controls.Add(labelSav);
-            Controls.Add(labelResScl);
-            Controls.Add(textBoxResMod);
-            Controls.Add(labelResMod);
-            Controls.Add(textBoxResRate);
-            Controls.Add(labelResRate);
-            Controls.Add(labelSuitTol);
-            Controls.Add(textBoxSuitTol);
-            Controls.Add(textBoxIdealSuit);
-            Controls.Add(labelIdealSuit);
-            Controls.Add(textBoxTeam);
-            Controls.Add(labelTeam);
-            Controls.Add(groupBoxUnknowns);
-            Controls.Add(textBoxAvatar);
-            Controls.Add(labelAvatar);
-            Controls.Add(textBoxBadge);
-            Controls.Add(labelBadge);
-            Controls.Add(buttonColor);
-            Controls.Add(labelColor);
-            Controls.Add(textBoxHomeSystem);
-            Controls.Add(labelHomeSystem);
-            Controls.Add(textBoxSpecies);
-            Controls.Add(labelSpecies);
-            Controls.Add(textBoxName);
-            Controls.Add(labelName);
-            Controls.Add(textBoxPlayerIndex);
-            Controls.Add(labelPlayerIndex);
-            Controls.Add(textBoxPlayerId);
-            Controls.Add(labelPlayerId);
+            Controls.Add(tabControlPlayer);
             Margin = new System.Windows.Forms.Padding(4);
             Name = "PlayerDetails";
             Size = new System.Drawing.Size(1150, 492);
             groupBoxUnknowns.ResumeLayout(false);
             groupBoxUnknowns.PerformLayout();
+            tabControlPlayer.ResumeLayout(false);
+            tabPagePlayerDetails.ResumeLayout(false);
+            tabPagePlayerDetails.PerformLayout();
+            tabPageHabitability.ResumeLayout(false);
+            tabPageHabitability.PerformLayout();
+            tabPageEconomy.ResumeLayout(false);
+            tabPageEconomy.PerformLayout();
+            tabPageResearch.ResumeLayout(false);
+            tabPageResearch.PerformLayout();
+            tabPageIndustry.ResumeLayout(false);
+            tabPageIndustry.PerformLayout();
+            tabPageUnknowns.ResumeLayout(false);
+            tabPageUnknowns.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
+        private System.Windows.Forms.TabControl tabControlPlayer;
+        private System.Windows.Forms.TabPage tabPagePlayerDetails;
+        private System.Windows.Forms.TabPage tabPageHabitability;
+        private System.Windows.Forms.TabPage tabPageEconomy;
+        private System.Windows.Forms.TabPage tabPageResearch;
+        private System.Windows.Forms.TabPage tabPageIndustry;
+        private System.Windows.Forms.TabPage tabPageUnknowns;
         private System.Windows.Forms.Label labelPlayerId;
         private System.Windows.Forms.TextBox textBoxPlayerId;
         private System.Windows.Forms.Label labelPlayerIndex;
