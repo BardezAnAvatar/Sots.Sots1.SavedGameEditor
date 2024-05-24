@@ -9,6 +9,7 @@
     <Description>Loads Targa image files using pure .NET code.</Description>
     <Copyright>Copyright © David Polomis 2008</Copyright>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+	<GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
   </PropertyGroup>
   <ItemGroup>
     <Compile Update="Resource1.Designer.cs">
