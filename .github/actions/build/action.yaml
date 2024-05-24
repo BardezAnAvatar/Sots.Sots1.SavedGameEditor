@@ -13,20 +13,26 @@ runs:
         dotnet-version: '8.x.x'
       
     - name: Navigate to Workspace
-      shell: bash
+      shell: PowerShell
       run: cd ${{ github.workspace }}
 
     - name: Create Build Directory
-      shell: bash
+      shell: PowerShell
       run: mkdir ${{ github.workspace }}/_build
       
     - name: Restore Packages
-      shell: bash
+      shell: PowerShell
       run: dotnet restore "Bardez.Project.SwordOfTheStars.Editor.sln"
 
     - name: Build Solution
-      shell: bash
+      shell: PowerShell
       run: |
         commit=$(git rev-parse HEAD)
         branch=$(git branch --show-current)
-        dotnet build "Bardez.Project.SwordOfTheStars.Editor.sln" --configuration Release --no-restore --output "${{ github.workspace }}/_build" -p:RepositoryCommit="$commit" -p:RepositoryBranch="$branch" -p:EnableWindowsTargeting=true
+        dotnet build "Bardez.Project.SwordOfTheStars.Editor.sln" `
+           --configuration Release `
+           --no-restore `
+           --output "${{ github.workspace }}/_build" `
+           -p:RepositoryCommit="$commit" `
+           -p:RepositoryBranch="$branch" `
+           -p:EnableWindowsTargeting=true

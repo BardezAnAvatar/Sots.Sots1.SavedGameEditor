@@ -52,7 +52,7 @@ jobs:
   build:
     name: Build Release
     if: ${{ needs.bump-tag-version.outputs.semver_skipped == 'false' }}
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: bump-tag-version
 
     steps:
@@ -78,7 +78,12 @@ jobs:
 
     - name: Compress Build
       run: |
-        zip "${{ github.workspace }}/_release/sots-sge_${{ needs.bump-tag-version.outputs.semver_next }}.zip" "${{ github.workspace }}/_build/*"" -r
+        $compress = @{
+          Path = "${{ github.workspace }}/_build/*"
+          CompressionLevel = "Fastest"
+          DestinationPath = "${{ github.workspace }}/_release/sots-sge_${{ needs.bump-tag-version.outputs.semver_next }}.zip"
+        }
+        Compress-Archive @compress
 
     - name: Create Release
       id: create_release
