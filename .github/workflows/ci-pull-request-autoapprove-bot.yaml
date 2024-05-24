@@ -20,7 +20,6 @@ permissions:
   contents: read
   pull-requests: write
 
-
 concurrency: 
   group: Auto-Approve-${{ github.ref_name }}
   cancel-in-progress: true
@@ -61,5 +60,6 @@ jobs:
     if: ${{ needs.check-pr.outputs.semver_skipped == 'false' }} && (github.actor == 'dependabot[bot]' || github.actor == 'BardezAnAvatar')
     steps:
       - uses: hmarr/auto-approve-action@v4
+        name: Auto-Approval
         env:
           review-message: "Bot auto-approved PR"
