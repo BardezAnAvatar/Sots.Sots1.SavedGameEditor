@@ -76,19 +76,12 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             textBoxIncMod = new System.Windows.Forms.TextBox();
             labelIncMod = new System.Windows.Forms.Label();
             tabPageResearch = new System.Windows.Forms.TabPage();
-            textBoxResScl = new System.Windows.Forms.TextBox();
-            labelResScl = new System.Windows.Forms.Label();
-            textBoxResMod = new System.Windows.Forms.TextBox();
-            labelResMod = new System.Windows.Forms.Label();
-            textBoxResRate = new System.Windows.Forms.TextBox();
-            labelResRate = new System.Windows.Forms.Label();
-            textBoxNextPrjId = new System.Windows.Forms.TextBox();
-            labelNextPrjId = new System.Windows.Forms.Label();
+            playerResearch = new PlayerResearch();
             tabPageIndustry = new System.Windows.Forms.TabPage();
+            playerIndustry = new PlayerIndustry();
             tabPageUnknowns = new System.Windows.Forms.TabPage();
             playerUnknowns = new PlayerUnknowns();
             colorDialogColor = new System.Windows.Forms.ColorDialog();
-            playerIndustry = new PlayerIndustry();
             tabControlPlayer.SuspendLayout();
             tabPagePlayerDetails.SuspendLayout();
             tabPageHabitability.SuspendLayout();
@@ -597,92 +590,21 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // tabPageResearch
             // 
             tabPageResearch.BackColor = System.Drawing.SystemColors.Control;
-            tabPageResearch.Controls.Add(textBoxResScl);
-            tabPageResearch.Controls.Add(labelResScl);
-            tabPageResearch.Controls.Add(textBoxResMod);
-            tabPageResearch.Controls.Add(labelResMod);
-            tabPageResearch.Controls.Add(textBoxResRate);
-            tabPageResearch.Controls.Add(labelResRate);
-            tabPageResearch.Controls.Add(textBoxNextPrjId);
-            tabPageResearch.Controls.Add(labelNextPrjId);
+            tabPageResearch.Controls.Add(playerResearch);
             tabPageResearch.Location = new System.Drawing.Point(4, 24);
             tabPageResearch.Name = "tabPageResearch";
             tabPageResearch.Size = new System.Drawing.Size(764, 344);
             tabPageResearch.TabIndex = 3;
             tabPageResearch.Text = "Research";
             // 
-            // textBoxResScl
+            // playerResearch
             // 
-            textBoxResScl.Location = new System.Drawing.Point(110, 66);
-            textBoxResScl.Margin = new System.Windows.Forms.Padding(4);
-            textBoxResScl.Name = "textBoxResScl";
-            textBoxResScl.Size = new System.Drawing.Size(116, 23);
-            textBoxResScl.TabIndex = 3030;
-            // 
-            // labelResScl
-            // 
-            labelResScl.AutoSize = true;
-            labelResScl.Location = new System.Drawing.Point(22, 70);
-            labelResScl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            labelResScl.Name = "labelResScl";
-            labelResScl.Size = new System.Drawing.Size(84, 15);
-            labelResScl.TabIndex = 3025;
-            labelResScl.Text = "Research Scale";
-            // 
-            // textBoxResMod
-            // 
-            textBoxResMod.Location = new System.Drawing.Point(110, 35);
-            textBoxResMod.Margin = new System.Windows.Forms.Padding(4);
-            textBoxResMod.Name = "textBoxResMod";
-            textBoxResMod.Size = new System.Drawing.Size(116, 23);
-            textBoxResMod.TabIndex = 3020;
-            // 
-            // labelResMod
-            // 
-            labelResMod.AutoSize = true;
-            labelResMod.Location = new System.Drawing.Point(4, 39);
-            labelResMod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            labelResMod.Name = "labelResMod";
-            labelResMod.Size = new System.Drawing.Size(102, 15);
-            labelResMod.TabIndex = 3015;
-            labelResMod.Text = "Research Modifier";
-            // 
-            // textBoxResRate
-            // 
-            textBoxResRate.Location = new System.Drawing.Point(110, 4);
-            textBoxResRate.Margin = new System.Windows.Forms.Padding(4);
-            textBoxResRate.Name = "textBoxResRate";
-            textBoxResRate.Size = new System.Drawing.Size(116, 23);
-            textBoxResRate.TabIndex = 3010;
-            // 
-            // labelResRate
-            // 
-            labelResRate.AutoSize = true;
-            labelResRate.Location = new System.Drawing.Point(26, 8);
-            labelResRate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            labelResRate.Name = "labelResRate";
-            labelResRate.Size = new System.Drawing.Size(80, 15);
-            labelResRate.TabIndex = 3005;
-            labelResRate.Text = "Research Rate";
-            // 
-            // textBoxNextPrjId
-            // 
-            textBoxNextPrjId.Enabled = false;
-            textBoxNextPrjId.Location = new System.Drawing.Point(110, 97);
-            textBoxNextPrjId.Margin = new System.Windows.Forms.Padding(4);
-            textBoxNextPrjId.Name = "textBoxNextPrjId";
-            textBoxNextPrjId.Size = new System.Drawing.Size(116, 23);
-            textBoxNextPrjId.TabIndex = 3040;
-            // 
-            // labelNextPrjId
-            // 
-            labelNextPrjId.AutoSize = true;
-            labelNextPrjId.Location = new System.Drawing.Point(20, 101);
-            labelNextPrjId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            labelNextPrjId.Name = "labelNextPrjId";
-            labelNextPrjId.Size = new System.Drawing.Size(86, 15);
-            labelNextPrjId.TabIndex = 3035;
-            labelNextPrjId.Text = "Next Project ID";
+            playerResearch.Dock = System.Windows.Forms.DockStyle.Fill;
+            playerResearch.Location = new System.Drawing.Point(0, 0);
+            playerResearch.Name = "playerResearch";
+            playerResearch.ReadOnly = false;
+            playerResearch.Size = new System.Drawing.Size(764, 344);
+            playerResearch.TabIndex = 0;
             // 
             // tabPageIndustry
             // 
@@ -693,6 +615,15 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPageIndustry.Size = new System.Drawing.Size(764, 344);
             tabPageIndustry.TabIndex = 4;
             tabPageIndustry.Text = "Industry";
+            // 
+            // playerIndustry
+            // 
+            playerIndustry.Dock = System.Windows.Forms.DockStyle.Fill;
+            playerIndustry.Location = new System.Drawing.Point(0, 0);
+            playerIndustry.Name = "playerIndustry";
+            playerIndustry.ReadOnly = false;
+            playerIndustry.Size = new System.Drawing.Size(764, 344);
+            playerIndustry.TabIndex = 0;
             // 
             // tabPageUnknowns
             // 
@@ -718,15 +649,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             colorDialogColor.FullOpen = true;
             // 
-            // playerIndustry
-            // 
-            playerIndustry.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerIndustry.Location = new System.Drawing.Point(0, 0);
-            playerIndustry.Name = "playerIndustry";
-            playerIndustry.ReadOnly = false;
-            playerIndustry.Size = new System.Drawing.Size(764, 344);
-            playerIndustry.TabIndex = 0;
-            // 
             // PlayerDetails
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -744,7 +666,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPageEconomy.ResumeLayout(false);
             tabPageEconomy.PerformLayout();
             tabPageResearch.ResumeLayout(false);
-            tabPageResearch.PerformLayout();
             tabPageIndustry.ResumeLayout(false);
             tabPageUnknowns.ResumeLayout(false);
             ResumeLayout(false);
@@ -784,12 +705,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
         private System.Windows.Forms.TextBox textBoxIdealSuit;
         private System.Windows.Forms.TextBox textBoxSuitTol;
         private System.Windows.Forms.Label labelSuitTol;
-        private System.Windows.Forms.Label labelResRate;
-        private System.Windows.Forms.TextBox textBoxResRate;
-        private System.Windows.Forms.Label labelResMod;
-        private System.Windows.Forms.TextBox textBoxResMod;
-        private System.Windows.Forms.Label labelResScl;
-        private System.Windows.Forms.TextBox textBoxResScl;
         private System.Windows.Forms.Label labelIncMod;
         private System.Windows.Forms.TextBox textBoxIncMod;
         private System.Windows.Forms.Label labelPopMod;
@@ -806,13 +721,12 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
         private System.Windows.Forms.TextBox textBoxPvSav;
         private System.Windows.Forms.CheckBox checkBoxCnTrd;
         private System.Windows.Forms.CheckBox checkBoxCnRad;
-        private System.Windows.Forms.Label labelNextPrjId;
-        private System.Windows.Forms.TextBox textBoxNextPrjId;
         private System.Windows.Forms.CheckBox checkBoxHasAiRebellion;
         private System.Windows.Forms.ColorDialog colorDialogColor;
         private System.Windows.Forms.TextBox textBoxPswd;
         private System.Windows.Forms.Label labelPswd;
         private PlayerUnknowns playerUnknowns;
         private PlayerIndustry playerIndustry;
+        private PlayerResearch playerResearch;
     }
 }

@@ -36,9 +36,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             this.textBoxIdealSuit.Text				= this.player.Details.IdealSuit.Value.ToString();
             this.textBoxSuitTol.Text				= this.player.Details.SuitTolerance.Value.ToString();
             this.textBoxSav.Text					= this.player.Details.Sav.Value.ToString();
-            this.textBoxResRate.Text				= this.player.Details.ResRate.Value.ToString();
-            this.textBoxResMod.Text					= this.player.Details.ResModifier.Value.ToString();
-            this.textBoxResScl.Text					= this.player.Details.ResScl.Value.ToString();
             this.textBoxIncMod.Text					= this.player.Details.IncMod.Value.ToString();
             this.textBoxPopMod.Text					= this.player.Details.PopMod.Value.ToString();
             this.textBoxTerrMod.Text				= this.player.Details.TerraMod.Value.ToString();
@@ -48,9 +45,13 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             this.textBoxHasImm.Text					= this.player.Details.HasImm.Value.ToString();
             this.checkBoxCnTrd.Checked				= this.player.Details.CnTrd.BooleanValue;
             this.checkBoxCnRad.Checked				= this.player.Details.CnRad.BooleanValue;
-            this.textBoxNextPrjId.Text				= this.player.Details.NextPrjId.Value.ToString();
             this.checkBoxHasAiRebellion.Checked		= this.player.Details.HasAiRebellion.BooleanValue;
             this.textBoxPvSav.Text					= this.player.Details.PvSav.Value.ToString();
+
+            /****************
+            *   Research    *
+            ****************/
+            playerResearch.LoadFromStruct(player.Details);
 
             /****************
             *   Industry    *
@@ -161,9 +162,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             this.textBoxIdealSuit.Enabled =         !ReadOnlyFlag;
             this.textBoxSuitTol.Enabled =           !ReadOnlyFlag;
             this.textBoxSav.Enabled =               !ReadOnlyFlag;
-            this.textBoxResRate.Enabled =           !ReadOnlyFlag;
-            this.textBoxResMod.Enabled =            !ReadOnlyFlag;
-            this.textBoxResScl.Enabled =            !ReadOnlyFlag;
             this.textBoxIncMod.Enabled =            !ReadOnlyFlag;
             this.textBoxPopMod.Enabled =            !ReadOnlyFlag;
             this.textBoxTerrMod.Enabled =           !ReadOnlyFlag;
@@ -174,6 +172,11 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             this.checkBoxCnTrd.Enabled =            !ReadOnlyFlag;
             this.checkBoxCnRad.Enabled =            !ReadOnlyFlag;
             this.checkBoxHasAiRebellion.Enabled =   !ReadOnlyFlag;
+
+            /****************
+            *   Research    *
+            ****************/
+            playerResearch.PercolateReadOnlyFlag(ReadOnlyFlag);
 
             /****************
             *   Industry    *
@@ -248,9 +251,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             this.player.Details.IdealSuit.Value                     = Single.Parse(this.textBoxIdealSuit.Text);
             this.player.Details.SuitTolerance.Value                 = Single.Parse(this.textBoxSuitTol.Text);
             this.player.Details.Sav.Value                           = Int32.Parse(this.textBoxSav.Text);
-            this.player.Details.ResRate.Value                       = Single.Parse(this.textBoxResRate.Text);
-            this.player.Details.ResModifier.Value                   = Single.Parse(this.textBoxResMod.Text);
-            this.player.Details.ResScl.Value                        = Single.Parse(this.textBoxResScl.Text);
             this.player.Details.IncMod.Value                        = Single.Parse(this.textBoxIncMod.Text);
             this.player.Details.PopMod.Value                        = Single.Parse(this.textBoxPopMod.Text);
             this.player.Details.TerraMod.Value                      = Single.Parse(this.textBoxTerrMod.Text);
@@ -260,9 +260,13 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             this.player.Details.HasImm.Value                        = Int32.Parse(this.textBoxHasImm.Text);
             this.player.Details.CnTrd.BooleanValue                  = this.checkBoxCnTrd.Checked;
             this.player.Details.CnRad.BooleanValue                  = this.checkBoxCnRad.Checked;
-            this.player.Details.NextPrjId.Value                     = Int32.Parse(this.textBoxNextPrjId.Text);
             this.player.Details.HasAiRebellion.BooleanValue         = this.checkBoxHasAiRebellion.Checked;
             this.player.Details.PvSav.Value                         = Int32.Parse(this.textBoxPvSav.Text);
+
+            /****************
+            *   Research    *
+            ****************/
+            playerResearch.UpdateStruct(player.Details);
 
             /****************
             *   Industry    *
