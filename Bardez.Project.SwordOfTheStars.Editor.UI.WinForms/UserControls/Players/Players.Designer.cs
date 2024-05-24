@@ -85,7 +85,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             playerDetailsControl.Dock = System.Windows.Forms.DockStyle.Fill;
             playerDetailsControl.Location = new System.Drawing.Point(4, 4);
-            playerDetailsControl.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            playerDetailsControl.Margin = new System.Windows.Forms.Padding(4);
             playerDetailsControl.MinimumSize = new System.Drawing.Size(772, 372);
             playerDetailsControl.Name = "playerDetailsControl";
             playerDetailsControl.ReadOnly = false;
@@ -100,7 +100,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPageTechTree.Margin = new System.Windows.Forms.Padding(4);
             tabPageTechTree.Name = "tabPageTechTree";
             tabPageTechTree.Padding = new System.Windows.Forms.Padding(4);
-            tabPageTechTree.Size = new System.Drawing.Size(1168, 508);
+            tabPageTechTree.Size = new System.Drawing.Size(1168, 510);
             tabPageTechTree.TabIndex = 1;
             tabPageTechTree.Text = "Tech Tree";
             // 
@@ -108,11 +108,11 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             techTree.Dock = System.Windows.Forms.DockStyle.Fill;
             techTree.Location = new System.Drawing.Point(4, 4);
-            techTree.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            techTree.Margin = new System.Windows.Forms.Padding(4);
             techTree.Name = "techTree";
             techTree.Player = null;
             techTree.ReadOnly = false;
-            techTree.Size = new System.Drawing.Size(1160, 500);
+            techTree.Size = new System.Drawing.Size(1160, 502);
             techTree.TabIndex = 0;
             techTree.ValidTechTree = null;
             // 

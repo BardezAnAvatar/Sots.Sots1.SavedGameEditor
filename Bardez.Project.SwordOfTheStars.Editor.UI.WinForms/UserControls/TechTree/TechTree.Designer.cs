@@ -58,7 +58,7 @@
             graphTechTree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             graphTechTree.Dock = System.Windows.Forms.DockStyle.Fill;
             graphTechTree.Location = new System.Drawing.Point(4, 19);
-            graphTechTree.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            graphTechTree.Margin = new System.Windows.Forms.Padding(4);
             graphTechTree.Name = "graphTechTree";
             graphTechTree.ReadOnly = false;
             graphTechTree.Size = new System.Drawing.Size(920, 165);
@@ -95,7 +95,7 @@
             // 
             techDetails.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             techDetails.Location = new System.Drawing.Point(7, 23);
-            techDetails.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            techDetails.Margin = new System.Windows.Forms.Padding(4);
             techDetails.MinimumSize = new System.Drawing.Size(868, 180);
             techDetails.Name = "techDetails";
             techDetails.ReadOnly = false;
