@@ -51,15 +51,15 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Species
             // 
             dataGridViewSpecies.AllowUserToAddRows = false;
             dataGridViewSpecies.AllowUserToDeleteRows = false;
-            dataGridViewSpecies.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             dataGridViewSpecies.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewSpecies.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             dataGridViewSpecies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewSpecies.Location = new System.Drawing.Point(8, 20);
+            dataGridViewSpecies.Dock = System.Windows.Forms.DockStyle.Fill;
+            dataGridViewSpecies.Location = new System.Drawing.Point(4, 20);
             dataGridViewSpecies.Margin = new System.Windows.Forms.Padding(4);
             dataGridViewSpecies.Name = "dataGridViewSpecies";
             dataGridViewSpecies.ReadOnly = true;
-            dataGridViewSpecies.Size = new System.Drawing.Size(323, 187);
+            dataGridViewSpecies.Size = new System.Drawing.Size(329, 192);
             dataGridViewSpecies.TabIndex = 0;
             dataGridViewSpecies.CellEndEdit += dataGridViewSpecies_CellEndEdit;
             // 
