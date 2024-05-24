@@ -72,9 +72,7 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
                 //read the string
                 buffer = new Byte[this.length];
                 Data.Read(buffer, 0, this.length);
-
-                //this.characters = Encoding.ASCII.GetChars(buffer);
-                Encoding enc = Encoding.UTF8;  //ANSI
+                var enc = CodePagesEncodingProvider.Instance.GetEncoding(1252);  //windows-1252
                 this.characters = enc.GetChars(buffer);
 
                 //do not discard trailing 0s; that is on the basic save structure level.
@@ -89,8 +87,7 @@ namespace Bardez.Project.SwordOfTheStars.DataStructures
 
             buffer = BitConverter.GetBytes(this.length);
             Destination.Write(buffer, 0, buffer.Length);
-            //buffer = Encoding.ASCII.GetBytes(this.characters);
-            Encoding enc = Encoding.UTF8;  //ANSI
+            Encoding enc = CodePagesEncodingProvider.Instance.GetEncoding(1252);  //windows-1252
             buffer = enc.GetBytes(this.characters);
             Destination.Write(buffer, 0, buffer.Length);
         }
