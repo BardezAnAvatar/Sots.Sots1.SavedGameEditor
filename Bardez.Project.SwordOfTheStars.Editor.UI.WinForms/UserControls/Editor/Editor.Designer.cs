@@ -130,7 +130,7 @@
             tabPageSystems.Location = new System.Drawing.Point(4, 24);
             tabPageSystems.Margin = new System.Windows.Forms.Padding(4);
             tabPageSystems.Name = "tabPageSystems";
-            tabPageSystems.Size = new System.Drawing.Size(192, 72);
+            tabPageSystems.Size = new System.Drawing.Size(1188, 584);
             tabPageSystems.TabIndex = 0;
             tabPageSystems.Text = "Systems";
             // 
@@ -138,10 +138,10 @@
             // 
             systemsControl.Dock = System.Windows.Forms.DockStyle.Fill;
             systemsControl.Location = new System.Drawing.Point(0, 0);
-            systemsControl.Margin = new System.Windows.Forms.Padding(4);
+            systemsControl.Margin = new System.Windows.Forms.Padding(0);
             systemsControl.Name = "systemsControl";
             systemsControl.ReadOnly = true;
-            systemsControl.Size = new System.Drawing.Size(192, 72);
+            systemsControl.Size = new System.Drawing.Size(1188, 584);
             systemsControl.TabIndex = 4;
             // 
             // tabPageNodeLines
@@ -151,7 +151,7 @@
             tabPageNodeLines.Location = new System.Drawing.Point(4, 24);
             tabPageNodeLines.Margin = new System.Windows.Forms.Padding(4);
             tabPageNodeLines.Name = "tabPageNodeLines";
-            tabPageNodeLines.Size = new System.Drawing.Size(1188, 584);
+            tabPageNodeLines.Size = new System.Drawing.Size(192, 72);
             tabPageNodeLines.TabIndex = 3;
             tabPageNodeLines.Text = "Node Lines";
             // 
@@ -163,7 +163,7 @@
             nodeGridControl.MinimumSize = new System.Drawing.Size(608, 342);
             nodeGridControl.Name = "nodeGridControl";
             nodeGridControl.ReadOnly = false;
-            nodeGridControl.Size = new System.Drawing.Size(1188, 584);
+            nodeGridControl.Size = new System.Drawing.Size(608, 342);
             nodeGridControl.TabIndex = 0;
             // 
             // openFileDialogSaveFile

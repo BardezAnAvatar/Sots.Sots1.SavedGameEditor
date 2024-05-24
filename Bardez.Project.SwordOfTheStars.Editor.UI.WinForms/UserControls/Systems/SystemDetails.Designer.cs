@@ -63,11 +63,11 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             tabControlDetails.Controls.Add(tabPageMisc);
             tabControlDetails.Dock = System.Windows.Forms.DockStyle.Fill;
             tabControlDetails.Location = new System.Drawing.Point(4, 62);
-            tabControlDetails.Margin = new System.Windows.Forms.Padding(4);
+            tabControlDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 0);
             tabControlDetails.Name = "tabControlDetails";
             tabControlDetails.Padding = new System.Drawing.Point(0, 0);
             tabControlDetails.SelectedIndex = 0;
-            tabControlDetails.Size = new System.Drawing.Size(940, 354);
+            tabControlDetails.Size = new System.Drawing.Size(940, 358);
             tabControlDetails.TabIndex = 5;
             // 
             // tabPageHistory
@@ -81,7 +81,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             tabPageHistory.Margin = new System.Windows.Forms.Padding(4);
             tabPageHistory.Name = "tabPageHistory";
             tabPageHistory.Padding = new System.Windows.Forms.Padding(4);
-            tabPageHistory.Size = new System.Drawing.Size(932, 326);
+            tabPageHistory.Size = new System.Drawing.Size(932, 330);
             tabPageHistory.TabIndex = 0;
             tabPageHistory.Text = "History";
             // 
@@ -113,7 +113,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             tabPageMisc.Margin = new System.Windows.Forms.Padding(4);
             tabPageMisc.Name = "tabPageMisc";
             tabPageMisc.Padding = new System.Windows.Forms.Padding(4);
-            tabPageMisc.Size = new System.Drawing.Size(932, 326);
+            tabPageMisc.Size = new System.Drawing.Size(940, 334);
             tabPageMisc.TabIndex = 1;
             tabPageMisc.Text = "Misc.";
             // 

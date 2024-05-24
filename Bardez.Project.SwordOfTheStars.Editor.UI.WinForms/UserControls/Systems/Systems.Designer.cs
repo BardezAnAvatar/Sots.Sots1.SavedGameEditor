@@ -45,6 +45,7 @@
             tableLayoutPanel.Controls.Add(groupBoxSystems, 0, 0);
             tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             tableLayoutPanel.Location = new System.Drawing.Point(0, 0);
+            tableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
             tableLayoutPanel.Name = "tableLayoutPanel";
             tableLayoutPanel.RowCount = 2;
             tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -55,12 +56,12 @@
             // systemDetails
             // 
             systemDetails.Dock = System.Windows.Forms.DockStyle.Fill;
-            systemDetails.Location = new System.Drawing.Point(4, 78);
-            systemDetails.Margin = new System.Windows.Forms.Padding(4);
+            systemDetails.Location = new System.Drawing.Point(0, 74);
+            systemDetails.Margin = new System.Windows.Forms.Padding(0);
             systemDetails.MaximumSize = new System.Drawing.Size(948, 420);
             systemDetails.Name = "systemDetails";
             systemDetails.ReadOnly = false;
-            systemDetails.Size = new System.Drawing.Size(931, 416);
+            systemDetails.Size = new System.Drawing.Size(939, 420);
             systemDetails.TabIndex = 4;
             // 
             // groupBoxSystems
@@ -94,7 +95,7 @@
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             Controls.Add(tableLayoutPanel);
-            Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            Margin = new System.Windows.Forms.Padding(0);
             Name = "Systems";
             Size = new System.Drawing.Size(939, 498);
             tableLayoutPanel.ResumeLayout(false);
