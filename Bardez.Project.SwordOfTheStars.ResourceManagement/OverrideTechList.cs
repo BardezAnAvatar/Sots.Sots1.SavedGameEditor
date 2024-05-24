@@ -13,7 +13,9 @@ namespace Bardez.Project.SwordOfTheStars.ResourceManagement
             String line = null;
             OverrideTech tech = null;
 
-            using (StreamReader reader = new StreamReader(OverrideTechList, Encoding.GetEncoding(1252)))  //ANSI encoding
+            var enc = CodePagesEncodingProvider.Instance.GetEncoding(1252);  //windows-1252
+
+            using (StreamReader reader = new StreamReader(OverrideTechList, enc))
             {
                 //read the definition line and, frankly, discard.
                 line = reader.ReadLine().Trim();

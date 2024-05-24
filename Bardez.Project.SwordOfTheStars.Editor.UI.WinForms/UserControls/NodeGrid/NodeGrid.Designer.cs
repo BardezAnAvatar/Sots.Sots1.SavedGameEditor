@@ -28,78 +28,104 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBoxNodeDetails = new System.Windows.Forms.GroupBox();
-            this.node_Grid_Details = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Node_Grid.NodeGridDetails();
-            this.groupBoxNodeList = new System.Windows.Forms.GroupBox();
-            this.dataGridViewNodes = new System.Windows.Forms.DataGridView();
-            this.groupBoxNodeDetails.SuspendLayout();
-            this.groupBoxNodeList.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNodes)).BeginInit();
-            this.SuspendLayout();
+            tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            groupBoxNodeDetails = new System.Windows.Forms.GroupBox();
+            nodeGridDetails = new NodeGridDetails();
+            groupBoxNodeList = new System.Windows.Forms.GroupBox();
+            dataGridViewNodes = new System.Windows.Forms.DataGridView();
+            tableLayoutPanel.SuspendLayout();
+            groupBoxNodeDetails.SuspendLayout();
+            groupBoxNodeList.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewNodes).BeginInit();
+            SuspendLayout();
+            // 
+            // tableLayoutPanel
+            // 
+            tableLayoutPanel.ColumnCount = 1;
+            tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            tableLayoutPanel.Controls.Add(groupBoxNodeDetails, 0, 1);
+            tableLayoutPanel.Controls.Add(groupBoxNodeList, 0, 0);
+            tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            tableLayoutPanel.Location = new System.Drawing.Point(0, 0);
+            tableLayoutPanel.Margin = new System.Windows.Forms.Padding(4);
+            tableLayoutPanel.Name = "tableLayoutPanel";
+            tableLayoutPanel.RowCount = 2;
+            tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            tableLayoutPanel.Size = new System.Drawing.Size(621, 303);
+            tableLayoutPanel.TabIndex = 2;
             // 
             // groupBoxNodeDetails
             // 
-            this.groupBoxNodeDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBoxNodeDetails.Controls.Add(this.node_Grid_Details);
-            this.groupBoxNodeDetails.Location = new System.Drawing.Point(3, 169);
-            this.groupBoxNodeDetails.Name = "groupBoxNodeDetails";
-            this.groupBoxNodeDetails.Size = new System.Drawing.Size(515, 136);
-            this.groupBoxNodeDetails.TabIndex = 0;
-            this.groupBoxNodeDetails.TabStop = false;
-            this.groupBoxNodeDetails.Text = "Node Details";
+            groupBoxNodeDetails.Controls.Add(nodeGridDetails);
+            groupBoxNodeDetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            groupBoxNodeDetails.Location = new System.Drawing.Point(4, 155);
+            groupBoxNodeDetails.Margin = new System.Windows.Forms.Padding(4);
+            groupBoxNodeDetails.Name = "groupBoxNodeDetails";
+            groupBoxNodeDetails.Padding = new System.Windows.Forms.Padding(4);
+            groupBoxNodeDetails.Size = new System.Drawing.Size(613, 144);
+            groupBoxNodeDetails.TabIndex = 3;
+            groupBoxNodeDetails.TabStop = false;
+            groupBoxNodeDetails.Text = "Node Details";
             // 
-            // node_Grid_Details
+            // nodeGridDetails
             // 
-            this.node_Grid_Details.Location = new System.Drawing.Point(6, 19);
-            this.node_Grid_Details.Name = "node_Grid_Details";
-            this.node_Grid_Details.ReadOnly = false;
-            this.node_Grid_Details.Size = new System.Drawing.Size(498, 110);
-            this.node_Grid_Details.TabIndex = 0;
+            nodeGridDetails.AutoScroll = true;
+            nodeGridDetails.AutoScrollMinSize = new System.Drawing.Size(576, 120);
+            nodeGridDetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            nodeGridDetails.Location = new System.Drawing.Point(4, 20);
+            nodeGridDetails.Margin = new System.Windows.Forms.Padding(4);
+            nodeGridDetails.Name = "nodeGridDetails";
+            nodeGridDetails.ReadOnly = false;
+            nodeGridDetails.Size = new System.Drawing.Size(605, 120);
+            nodeGridDetails.TabIndex = 0;
             // 
             // groupBoxNodeList
             // 
-            this.groupBoxNodeList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxNodeList.Controls.Add(this.dataGridViewNodes);
-            this.groupBoxNodeList.Location = new System.Drawing.Point(3, 3);
-            this.groupBoxNodeList.Name = "groupBoxNodeList";
-            this.groupBoxNodeList.Size = new System.Drawing.Size(1040, 160);
-            this.groupBoxNodeList.TabIndex = 1;
-            this.groupBoxNodeList.TabStop = false;
-            this.groupBoxNodeList.Text = "Node List";
+            groupBoxNodeList.Controls.Add(dataGridViewNodes);
+            groupBoxNodeList.Dock = System.Windows.Forms.DockStyle.Fill;
+            groupBoxNodeList.Location = new System.Drawing.Point(4, 4);
+            groupBoxNodeList.Margin = new System.Windows.Forms.Padding(4);
+            groupBoxNodeList.Name = "groupBoxNodeList";
+            groupBoxNodeList.Padding = new System.Windows.Forms.Padding(4);
+            groupBoxNodeList.Size = new System.Drawing.Size(613, 143);
+            groupBoxNodeList.TabIndex = 2;
+            groupBoxNodeList.TabStop = false;
+            groupBoxNodeList.Text = "Node List";
             // 
             // dataGridViewNodes
             // 
-            this.dataGridViewNodes.AllowUserToAddRows = false;
-            this.dataGridViewNodes.AllowUserToDeleteRows = false;
-            this.dataGridViewNodes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewNodes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewNodes.Location = new System.Drawing.Point(6, 19);
-            this.dataGridViewNodes.Name = "dataGridViewNodes";
-            this.dataGridViewNodes.Size = new System.Drawing.Size(1028, 135);
-            this.dataGridViewNodes.TabIndex = 0;
-            this.dataGridViewNodes.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewNodes_CellEndEdit);
-            this.dataGridViewNodes.CurrentCellChanged += new System.EventHandler(this.dataGridViewNodes_CurrentCellChanged);
+            dataGridViewNodes.AllowUserToAddRows = false;
+            dataGridViewNodes.AllowUserToDeleteRows = false;
+            dataGridViewNodes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewNodes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewNodes.Dock = System.Windows.Forms.DockStyle.Fill;
+            dataGridViewNodes.Location = new System.Drawing.Point(4, 20);
+            dataGridViewNodes.Margin = new System.Windows.Forms.Padding(4);
+            dataGridViewNodes.Name = "dataGridViewNodes";
+            dataGridViewNodes.Size = new System.Drawing.Size(605, 119);
+            dataGridViewNodes.TabIndex = 0;
             // 
             // NodeGrid
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBoxNodeList);
-            this.Controls.Add(this.groupBoxNodeDetails);
-            this.Name = "NodeGrid";
-            this.Size = new System.Drawing.Size(1046, 308);
-            this.groupBoxNodeDetails.ResumeLayout(false);
-            this.groupBoxNodeList.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNodes)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(tableLayoutPanel);
+            Margin = new System.Windows.Forms.Padding(4);
+            Name = "NodeGrid";
+            Size = new System.Drawing.Size(621, 303);
+            tableLayoutPanel.ResumeLayout(false);
+            groupBoxNodeDetails.ResumeLayout(false);
+            groupBoxNodeList.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewNodes).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
 
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel;
         private System.Windows.Forms.GroupBox groupBoxNodeDetails;
-        private NodeGridDetails node_Grid_Details;
+        private NodeGridDetails nodeGridDetails;
         private System.Windows.Forms.GroupBox groupBoxNodeList;
         private System.Windows.Forms.DataGridView dataGridViewNodes;
     }

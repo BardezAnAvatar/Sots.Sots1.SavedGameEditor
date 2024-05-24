@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
+            SuspendLayout();
             // 
             // Graph
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Name = "Graph";
-            this.Size = new System.Drawing.Size(560, 511);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            AutoScroll = true;
+            BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            Margin = new System.Windows.Forms.Padding(4);
+            Name = "Graph";
+            Size = new System.Drawing.Size(653, 590);
+            ResumeLayout(false);
         }
 
         #endregion

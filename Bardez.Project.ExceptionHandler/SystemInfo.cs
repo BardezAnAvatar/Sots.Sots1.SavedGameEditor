@@ -1,17 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
-using System.Linq;
 using System.Reflection;
 using System.Text;
 
-//GetMemoryB
-using System.Management;
-
 namespace Bardez.Project.ExceptionHandler
 {
-
     public static class SystemInfo
     {
         /// <summary>Gets the system up time.</summary>

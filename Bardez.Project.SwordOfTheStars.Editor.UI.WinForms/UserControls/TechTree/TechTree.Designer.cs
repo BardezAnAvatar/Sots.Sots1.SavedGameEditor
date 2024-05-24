@@ -28,111 +28,110 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBoxTechTreeGraph = new System.Windows.Forms.GroupBox();
-            this.graphTechTree = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph.Graph();
-            this.groupBoxDetails = new System.Windows.Forms.GroupBox();
-            this.buttonEnableTech = new System.Windows.Forms.Button();
-            this.techDetails = new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Tech_Tree.TechDetails();
-            this.tableLayoutPanelLayout = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBoxTechTreeGraph.SuspendLayout();
-            this.groupBoxDetails.SuspendLayout();
-            this.tableLayoutPanelLayout.SuspendLayout();
-            this.SuspendLayout();
+            groupBoxTechTreeGraph = new System.Windows.Forms.GroupBox();
+            graphTechTree = new Graph.Graph();
+            groupBoxDetails = new System.Windows.Forms.GroupBox();
+            buttonEnableTech = new System.Windows.Forms.Button();
+            techDetails = new TechDetails();
+            tableLayoutPanelLayout = new System.Windows.Forms.TableLayoutPanel();
+            groupBoxTechTreeGraph.SuspendLayout();
+            groupBoxDetails.SuspendLayout();
+            tableLayoutPanelLayout.SuspendLayout();
+            SuspendLayout();
             // 
             // groupBoxTechTreeGraph
             // 
-            this.groupBoxTechTreeGraph.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxTechTreeGraph.Controls.Add(this.graphTechTree);
-            this.groupBoxTechTreeGraph.Location = new System.Drawing.Point(3, 3);
-            this.groupBoxTechTreeGraph.Name = "groupBoxTechTreeGraph";
-            this.groupBoxTechTreeGraph.Size = new System.Drawing.Size(722, 256);
-            this.groupBoxTechTreeGraph.TabIndex = 0;
-            this.groupBoxTechTreeGraph.TabStop = false;
-            this.groupBoxTechTreeGraph.Text = "Global Tech Tree";
+            groupBoxTechTreeGraph.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            groupBoxTechTreeGraph.Controls.Add(graphTechTree);
+            groupBoxTechTreeGraph.Location = new System.Drawing.Point(4, 3);
+            groupBoxTechTreeGraph.Margin = new System.Windows.Forms.Padding(4);
+            groupBoxTechTreeGraph.Name = "groupBoxTechTreeGraph";
+            groupBoxTechTreeGraph.Padding = new System.Windows.Forms.Padding(4);
+            groupBoxTechTreeGraph.Size = new System.Drawing.Size(928, 187);
+            groupBoxTechTreeGraph.TabIndex = 0;
+            groupBoxTechTreeGraph.TabStop = false;
+            groupBoxTechTreeGraph.Text = "Global Tech Tree";
             // 
             // graphTechTree
             // 
-            this.graphTechTree.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.graphTechTree.AutoScroll = true;
-            this.graphTechTree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.graphTechTree.Location = new System.Drawing.Point(7, 19);
-            this.graphTechTree.Name = "graphTechTree";
-            this.graphTechTree.ReadOnly = false;
-            this.graphTechTree.Size = new System.Drawing.Size(709, 231);
-            this.graphTechTree.TabIndex = 0;
-            this.graphTechTree.ClickedTech += new Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph.Graph.ClickTech(this.graphTechTree_ClickedTech);
+            graphTechTree.AutoScroll = true;
+            graphTechTree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            graphTechTree.Dock = System.Windows.Forms.DockStyle.Fill;
+            graphTechTree.Location = new System.Drawing.Point(4, 19);
+            graphTechTree.Margin = new System.Windows.Forms.Padding(4);
+            graphTechTree.Name = "graphTechTree";
+            graphTechTree.ReadOnly = false;
+            graphTechTree.Size = new System.Drawing.Size(920, 165);
+            graphTechTree.TabIndex = 0;
+            graphTechTree.ClickedTech += graphTechTree_ClickedTech;
             // 
             // groupBoxDetails
             // 
-            this.groupBoxDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxDetails.Controls.Add(this.buttonEnableTech);
-            this.groupBoxDetails.Controls.Add(this.techDetails);
-            this.groupBoxDetails.Location = new System.Drawing.Point(3, 265);
-            this.groupBoxDetails.Name = "groupBoxDetails";
-            this.groupBoxDetails.Size = new System.Drawing.Size(722, 257);
-            this.groupBoxDetails.TabIndex = 1;
-            this.groupBoxDetails.TabStop = false;
-            this.groupBoxDetails.Text = "Selected Technology Details";
+            groupBoxDetails.Controls.Add(buttonEnableTech);
+            groupBoxDetails.Controls.Add(techDetails);
+            groupBoxDetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            groupBoxDetails.Location = new System.Drawing.Point(4, 197);
+            groupBoxDetails.Margin = new System.Windows.Forms.Padding(4);
+            groupBoxDetails.Name = "groupBoxDetails";
+            groupBoxDetails.Padding = new System.Windows.Forms.Padding(4);
+            groupBoxDetails.Size = new System.Drawing.Size(928, 202);
+            groupBoxDetails.TabIndex = 1;
+            groupBoxDetails.TabStop = false;
+            groupBoxDetails.Text = "Selected Technology Details";
             // 
             // buttonEnableTech
             // 
-            this.buttonEnableTech.Location = new System.Drawing.Point(7, 20);
-            this.buttonEnableTech.Name = "buttonEnableTech";
-            this.buttonEnableTech.Size = new System.Drawing.Size(75, 23);
-            this.buttonEnableTech.TabIndex = 1;
-            this.buttonEnableTech.Text = "Enable";
-            this.buttonEnableTech.UseVisualStyleBackColor = true;
-            this.buttonEnableTech.Visible = false;
-            this.buttonEnableTech.Click += new System.EventHandler(this.buttonEnableTech_Click);
+            buttonEnableTech.Location = new System.Drawing.Point(8, 23);
+            buttonEnableTech.Margin = new System.Windows.Forms.Padding(4);
+            buttonEnableTech.Name = "buttonEnableTech";
+            buttonEnableTech.Size = new System.Drawing.Size(88, 27);
+            buttonEnableTech.TabIndex = 1;
+            buttonEnableTech.Text = "Enable";
+            buttonEnableTech.UseVisualStyleBackColor = true;
+            buttonEnableTech.Visible = false;
+            buttonEnableTech.Click += buttonEnableTech_Click;
             // 
             // techDetails
             // 
-            this.techDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.techDetails.Location = new System.Drawing.Point(6, 19);
-            this.techDetails.Name = "techDetails";
-            this.techDetails.ReadOnly = false;
-            this.techDetails.Size = new System.Drawing.Size(715, 232);
-            this.techDetails.TabIndex = 0;
-            this.techDetails.ValidTechTree = null;
-            this.techDetails.Visible = false;
+            techDetails.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            techDetails.Location = new System.Drawing.Point(7, 23);
+            techDetails.Margin = new System.Windows.Forms.Padding(4);
+            techDetails.MinimumSize = new System.Drawing.Size(868, 180);
+            techDetails.Name = "techDetails";
+            techDetails.ReadOnly = false;
+            techDetails.Size = new System.Drawing.Size(868, 180);
+            techDetails.TabIndex = 0;
+            techDetails.ValidTechTree = null;
+            techDetails.Visible = false;
             // 
             // tableLayoutPanelLayout
             // 
-            this.tableLayoutPanelLayout.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanelLayout.ColumnCount = 1;
-            this.tableLayoutPanelLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelLayout.Controls.Add(this.groupBoxTechTreeGraph, 0, 0);
-            this.tableLayoutPanelLayout.Controls.Add(this.groupBoxDetails, 0, 1);
-            this.tableLayoutPanelLayout.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanelLayout.Name = "tableLayoutPanelLayout";
-            this.tableLayoutPanelLayout.RowCount = 2;
-            this.tableLayoutPanelLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelLayout.Size = new System.Drawing.Size(728, 525);
-            this.tableLayoutPanelLayout.TabIndex = 2;
+            tableLayoutPanelLayout.ColumnCount = 1;
+            tableLayoutPanelLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            tableLayoutPanelLayout.Controls.Add(groupBoxTechTreeGraph, 0, 0);
+            tableLayoutPanelLayout.Controls.Add(groupBoxDetails, 0, 1);
+            tableLayoutPanelLayout.Dock = System.Windows.Forms.DockStyle.Fill;
+            tableLayoutPanelLayout.Location = new System.Drawing.Point(0, 0);
+            tableLayoutPanelLayout.Margin = new System.Windows.Forms.Padding(4);
+            tableLayoutPanelLayout.Name = "tableLayoutPanelLayout";
+            tableLayoutPanelLayout.RowCount = 2;
+            tableLayoutPanelLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            tableLayoutPanelLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 210F));
+            tableLayoutPanelLayout.Size = new System.Drawing.Size(936, 403);
+            tableLayoutPanelLayout.TabIndex = 2;
             // 
             // TechTree
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tableLayoutPanelLayout);
-            this.Name = "TechTree";
-            this.Size = new System.Drawing.Size(734, 531);
-            this.groupBoxTechTreeGraph.ResumeLayout(false);
-            this.groupBoxDetails.ResumeLayout(false);
-            this.tableLayoutPanelLayout.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(tableLayoutPanelLayout);
+            Margin = new System.Windows.Forms.Padding(4);
+            Name = "TechTree";
+            Size = new System.Drawing.Size(936, 403);
+            groupBoxTechTreeGraph.ResumeLayout(false);
+            groupBoxDetails.ResumeLayout(false);
+            tableLayoutPanelLayout.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion

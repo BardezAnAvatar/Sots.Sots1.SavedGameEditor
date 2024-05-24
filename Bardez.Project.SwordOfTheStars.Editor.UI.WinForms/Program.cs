@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 using Bardez.Project.ExceptionHandler;
 
@@ -18,7 +17,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new SotsEditor());
-            //Application.Run(new Form2());
         }
     }
 }

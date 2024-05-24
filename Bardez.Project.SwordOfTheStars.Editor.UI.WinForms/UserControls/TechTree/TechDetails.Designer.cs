@@ -28,309 +28,335 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelDescription = new System.Windows.Forms.Label();
-            this.labelTechName = new System.Windows.Forms.Label();
-            this.labelTechFriendlyName = new System.Windows.Forms.Label();
-            this.labelResCost = new System.Windows.Forms.Label();
-            this.textBoxResCost = new System.Windows.Forms.TextBox();
-            this.textBoxSt = new System.Windows.Forms.TextBox();
-            this.labelSt = new System.Windows.Forms.Label();
-            this.textBoxResDone = new System.Windows.Forms.TextBox();
-            this.labelResDone = new System.Windows.Forms.Label();
-            this.labelAcquired = new System.Windows.Forms.Label();
-            this.textBoxAcquired = new System.Windows.Forms.TextBox();
-            this.labelIAcquired = new System.Windows.Forms.Label();
-            this.textBoxIAcquired = new System.Windows.Forms.TextBox();
-            this.labelTbd = new System.Windows.Forms.Label();
-            this.textBoxTbd = new System.Windows.Forms.TextBox();
-            this.checkBoxTfc = new System.Windows.Forms.CheckBox();
-            this.groupBoxUnknowns = new System.Windows.Forms.GroupBox();
-            this.labelTechNameLabel = new System.Windows.Forms.Label();
-            this.labelFriendlyNameLabel = new System.Windows.Forms.Label();
-            this.labelDescriptionLabel = new System.Windows.Forms.Label();
-            this.listBoxConnections = new System.Windows.Forms.ListBox();
-            this.labelConnections = new System.Windows.Forms.Label();
-            this.comboBoxLegitimateConnections = new System.Windows.Forms.ComboBox();
-            this.labelPossibleConnections = new System.Windows.Forms.Label();
-            this.buttonAddConnection = new System.Windows.Forms.Button();
-            this.buttonRemove = new System.Windows.Forms.Button();
-            this.groupBoxUnknowns.SuspendLayout();
-            this.SuspendLayout();
+            labelDescription = new System.Windows.Forms.Label();
+            labelTechName = new System.Windows.Forms.Label();
+            labelTechFriendlyName = new System.Windows.Forms.Label();
+            labelResCost = new System.Windows.Forms.Label();
+            textBoxResCost = new System.Windows.Forms.TextBox();
+            textBoxSt = new System.Windows.Forms.TextBox();
+            labelSt = new System.Windows.Forms.Label();
+            textBoxResDone = new System.Windows.Forms.TextBox();
+            labelResDone = new System.Windows.Forms.Label();
+            labelAcquired = new System.Windows.Forms.Label();
+            textBoxAcquired = new System.Windows.Forms.TextBox();
+            labelIAcquired = new System.Windows.Forms.Label();
+            textBoxIAcquired = new System.Windows.Forms.TextBox();
+            labelTbd = new System.Windows.Forms.Label();
+            textBoxTbd = new System.Windows.Forms.TextBox();
+            checkBoxTfc = new System.Windows.Forms.CheckBox();
+            groupBoxUnknowns = new System.Windows.Forms.GroupBox();
+            labelTechNameLabel = new System.Windows.Forms.Label();
+            labelFriendlyNameLabel = new System.Windows.Forms.Label();
+            labelDescriptionLabel = new System.Windows.Forms.Label();
+            listBoxConnections = new System.Windows.Forms.ListBox();
+            labelConnections = new System.Windows.Forms.Label();
+            comboBoxLegitimateConnections = new System.Windows.Forms.ComboBox();
+            labelPossibleConnections = new System.Windows.Forms.Label();
+            buttonAddConnection = new System.Windows.Forms.Button();
+            buttonRemove = new System.Windows.Forms.Button();
+            groupBoxUnknowns.SuspendLayout();
+            SuspendLayout();
             // 
             // labelDescription
             // 
-            this.labelDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelDescription.Location = new System.Drawing.Point(263, 31);
-            this.labelDescription.Name = "labelDescription";
-            this.labelDescription.Size = new System.Drawing.Size(499, 29);
-            this.labelDescription.TabIndex = 0;
-            this.labelDescription.Text = "[Tech description]";
+            labelDescription.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            labelDescription.Location = new System.Drawing.Point(338, 7);
+            labelDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelDescription.Name = "labelDescription";
+            labelDescription.Size = new System.Drawing.Size(526, 42);
+            labelDescription.TabIndex = 0;
+            labelDescription.Text = "[Tech description]";
             // 
             // labelTechName
             // 
-            this.labelTechName.AutoSize = true;
-            this.labelTechName.Location = new System.Drawing.Point(123, 6);
-            this.labelTechName.Name = "labelTechName";
-            this.labelTechName.Size = new System.Drawing.Size(69, 13);
-            this.labelTechName.TabIndex = 1;
-            this.labelTechName.Text = "[Tech Name]";
+            labelTechName.AutoSize = true;
+            labelTechName.Location = new System.Drawing.Point(133, 7);
+            labelTechName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelTechName.Name = "labelTechName";
+            labelTechName.Size = new System.Drawing.Size(74, 15);
+            labelTechName.TabIndex = 1;
+            labelTechName.Text = "[Tech Name]";
             // 
             // labelTechFriendlyName
             // 
-            this.labelTechFriendlyName.AutoSize = true;
-            this.labelTechFriendlyName.Location = new System.Drawing.Point(123, 31);
-            this.labelTechFriendlyName.Name = "labelTechFriendlyName";
-            this.labelTechFriendlyName.Size = new System.Drawing.Size(80, 13);
-            this.labelTechFriendlyName.TabIndex = 2;
-            this.labelTechFriendlyName.Text = "[Friendly Name]";
+            labelTechFriendlyName.AutoSize = true;
+            labelTechFriendlyName.Location = new System.Drawing.Point(133, 36);
+            labelTechFriendlyName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelTechFriendlyName.Name = "labelTechFriendlyName";
+            labelTechFriendlyName.Size = new System.Drawing.Size(92, 15);
+            labelTechFriendlyName.TabIndex = 2;
+            labelTechFriendlyName.Text = "[Friendly Name]";
             // 
             // labelResCost
             // 
-            this.labelResCost.AutoSize = true;
-            this.labelResCost.Location = new System.Drawing.Point(8, 58);
-            this.labelResCost.Name = "labelResCost";
-            this.labelResCost.Size = new System.Drawing.Size(109, 13);
-            this.labelResCost.TabIndex = 6;
-            this.labelResCost.Text = "Research Points Cost";
+            labelResCost.AutoSize = true;
+            labelResCost.Location = new System.Drawing.Point(6, 67);
+            labelResCost.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelResCost.Name = "labelResCost";
+            labelResCost.Size = new System.Drawing.Size(117, 15);
+            labelResCost.TabIndex = 6;
+            labelResCost.Text = "Research Points Cost";
             // 
             // textBoxResCost
             // 
-            this.textBoxResCost.Location = new System.Drawing.Point(123, 55);
-            this.textBoxResCost.Name = "textBoxResCost";
-            this.textBoxResCost.Size = new System.Drawing.Size(100, 20);
-            this.textBoxResCost.TabIndex = 7;
+            textBoxResCost.Location = new System.Drawing.Point(133, 63);
+            textBoxResCost.Margin = new System.Windows.Forms.Padding(4);
+            textBoxResCost.Name = "textBoxResCost";
+            textBoxResCost.Size = new System.Drawing.Size(116, 23);
+            textBoxResCost.TabIndex = 7;
             // 
             // textBoxSt
             // 
-            this.textBoxSt.Enabled = false;
-            this.textBoxSt.Location = new System.Drawing.Point(34, 19);
-            this.textBoxSt.Name = "textBoxSt";
-            this.textBoxSt.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSt.TabIndex = 8;
+            textBoxSt.Enabled = false;
+            textBoxSt.Location = new System.Drawing.Point(40, 22);
+            textBoxSt.Margin = new System.Windows.Forms.Padding(4);
+            textBoxSt.Name = "textBoxSt";
+            textBoxSt.Size = new System.Drawing.Size(116, 23);
+            textBoxSt.TabIndex = 8;
             // 
             // labelSt
             // 
-            this.labelSt.AutoSize = true;
-            this.labelSt.Location = new System.Drawing.Point(13, 22);
-            this.labelSt.Name = "labelSt";
-            this.labelSt.Size = new System.Drawing.Size(15, 13);
-            this.labelSt.TabIndex = 9;
-            this.labelSt.Text = "st";
+            labelSt.AutoSize = true;
+            labelSt.Location = new System.Drawing.Point(15, 25);
+            labelSt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelSt.Name = "labelSt";
+            labelSt.Size = new System.Drawing.Size(16, 15);
+            labelSt.TabIndex = 9;
+            labelSt.Text = "st";
             // 
             // textBoxResDone
             // 
-            this.textBoxResDone.Location = new System.Drawing.Point(123, 81);
-            this.textBoxResDone.Name = "textBoxResDone";
-            this.textBoxResDone.Size = new System.Drawing.Size(100, 20);
-            this.textBoxResDone.TabIndex = 10;
+            textBoxResDone.Location = new System.Drawing.Point(133, 93);
+            textBoxResDone.Margin = new System.Windows.Forms.Padding(4);
+            textBoxResDone.Name = "textBoxResDone";
+            textBoxResDone.Size = new System.Drawing.Size(116, 23);
+            textBoxResDone.TabIndex = 10;
             // 
             // labelResDone
             // 
-            this.labelResDone.AutoSize = true;
-            this.labelResDone.Location = new System.Drawing.Point(3, 84);
-            this.labelResDone.Name = "labelResDone";
-            this.labelResDone.Size = new System.Drawing.Size(114, 13);
-            this.labelResDone.TabIndex = 11;
-            this.labelResDone.Text = "Research Points Done";
+            labelResDone.AutoSize = true;
+            labelResDone.Location = new System.Drawing.Point(2, 97);
+            labelResDone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelResDone.Name = "labelResDone";
+            labelResDone.Size = new System.Drawing.Size(121, 15);
+            labelResDone.TabIndex = 11;
+            labelResDone.Text = "Research Points Done";
             // 
             // labelAcquired
             // 
-            this.labelAcquired.AutoSize = true;
-            this.labelAcquired.Location = new System.Drawing.Point(68, 110);
-            this.labelAcquired.Name = "labelAcquired";
-            this.labelAcquired.Size = new System.Drawing.Size(49, 13);
-            this.labelAcquired.TabIndex = 12;
-            this.labelAcquired.Text = "Acquired";
+            labelAcquired.AutoSize = true;
+            labelAcquired.Location = new System.Drawing.Point(68, 127);
+            labelAcquired.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelAcquired.Name = "labelAcquired";
+            labelAcquired.Size = new System.Drawing.Size(55, 15);
+            labelAcquired.TabIndex = 12;
+            labelAcquired.Text = "Acquired";
             // 
             // textBoxAcquired
             // 
-            this.textBoxAcquired.Location = new System.Drawing.Point(123, 107);
-            this.textBoxAcquired.Name = "textBoxAcquired";
-            this.textBoxAcquired.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAcquired.TabIndex = 13;
+            textBoxAcquired.Location = new System.Drawing.Point(133, 123);
+            textBoxAcquired.Margin = new System.Windows.Forms.Padding(4);
+            textBoxAcquired.Name = "textBoxAcquired";
+            textBoxAcquired.Size = new System.Drawing.Size(116, 23);
+            textBoxAcquired.TabIndex = 13;
             // 
             // labelIAcquired
             // 
-            this.labelIAcquired.AutoSize = true;
-            this.labelIAcquired.Location = new System.Drawing.Point(66, 136);
-            this.labelIAcquired.Name = "labelIAcquired";
-            this.labelIAcquired.Size = new System.Drawing.Size(51, 13);
-            this.labelIAcquired.TabIndex = 14;
-            this.labelIAcquired.Text = "iAcquired";
+            labelIAcquired.AutoSize = true;
+            labelIAcquired.Location = new System.Drawing.Point(65, 157);
+            labelIAcquired.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelIAcquired.Name = "labelIAcquired";
+            labelIAcquired.Size = new System.Drawing.Size(58, 15);
+            labelIAcquired.TabIndex = 14;
+            labelIAcquired.Text = "iAcquired";
             // 
             // textBoxIAcquired
             // 
-            this.textBoxIAcquired.Enabled = false;
-            this.textBoxIAcquired.Location = new System.Drawing.Point(123, 133);
-            this.textBoxIAcquired.Name = "textBoxIAcquired";
-            this.textBoxIAcquired.Size = new System.Drawing.Size(100, 20);
-            this.textBoxIAcquired.TabIndex = 15;
+            textBoxIAcquired.Enabled = false;
+            textBoxIAcquired.Location = new System.Drawing.Point(133, 153);
+            textBoxIAcquired.Margin = new System.Windows.Forms.Padding(4);
+            textBoxIAcquired.Name = "textBoxIAcquired";
+            textBoxIAcquired.Size = new System.Drawing.Size(116, 23);
+            textBoxIAcquired.TabIndex = 15;
             // 
             // labelTbd
             // 
-            this.labelTbd.AutoSize = true;
-            this.labelTbd.Location = new System.Drawing.Point(6, 48);
-            this.labelTbd.Name = "labelTbd";
-            this.labelTbd.Size = new System.Drawing.Size(22, 13);
-            this.labelTbd.TabIndex = 16;
-            this.labelTbd.Text = "tbd";
+            labelTbd.AutoSize = true;
+            labelTbd.Location = new System.Drawing.Point(7, 55);
+            labelTbd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelTbd.Name = "labelTbd";
+            labelTbd.Size = new System.Drawing.Size(25, 15);
+            labelTbd.TabIndex = 16;
+            labelTbd.Text = "tbd";
             // 
             // textBoxTbd
             // 
-            this.textBoxTbd.Enabled = false;
-            this.textBoxTbd.Location = new System.Drawing.Point(34, 45);
-            this.textBoxTbd.Name = "textBoxTbd";
-            this.textBoxTbd.Size = new System.Drawing.Size(100, 20);
-            this.textBoxTbd.TabIndex = 17;
+            textBoxTbd.Enabled = false;
+            textBoxTbd.Location = new System.Drawing.Point(40, 52);
+            textBoxTbd.Margin = new System.Windows.Forms.Padding(4);
+            textBoxTbd.Name = "textBoxTbd";
+            textBoxTbd.Size = new System.Drawing.Size(116, 23);
+            textBoxTbd.TabIndex = 17;
             // 
             // checkBoxTfc
             // 
-            this.checkBoxTfc.AutoSize = true;
-            this.checkBoxTfc.Enabled = false;
-            this.checkBoxTfc.Location = new System.Drawing.Point(10, 71);
-            this.checkBoxTfc.Name = "checkBoxTfc";
-            this.checkBoxTfc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBoxTfc.Size = new System.Drawing.Size(38, 17);
-            this.checkBoxTfc.TabIndex = 18;
-            this.checkBoxTfc.Text = "tfc";
-            this.checkBoxTfc.UseVisualStyleBackColor = true;
+            checkBoxTfc.AutoSize = true;
+            checkBoxTfc.Enabled = false;
+            checkBoxTfc.Location = new System.Drawing.Point(12, 82);
+            checkBoxTfc.Margin = new System.Windows.Forms.Padding(4);
+            checkBoxTfc.Name = "checkBoxTfc";
+            checkBoxTfc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            checkBoxTfc.Size = new System.Drawing.Size(40, 19);
+            checkBoxTfc.TabIndex = 18;
+            checkBoxTfc.Text = "tfc";
+            checkBoxTfc.UseVisualStyleBackColor = true;
             // 
             // groupBoxUnknowns
             // 
-            this.groupBoxUnknowns.Controls.Add(this.labelSt);
-            this.groupBoxUnknowns.Controls.Add(this.checkBoxTfc);
-            this.groupBoxUnknowns.Controls.Add(this.textBoxSt);
-            this.groupBoxUnknowns.Controls.Add(this.textBoxTbd);
-            this.groupBoxUnknowns.Controls.Add(this.labelTbd);
-            this.groupBoxUnknowns.Location = new System.Drawing.Point(257, 63);
-            this.groupBoxUnknowns.Name = "groupBoxUnknowns";
-            this.groupBoxUnknowns.Size = new System.Drawing.Size(157, 100);
-            this.groupBoxUnknowns.TabIndex = 19;
-            this.groupBoxUnknowns.TabStop = false;
-            this.groupBoxUnknowns.Text = "Unknowns";
+            groupBoxUnknowns.Controls.Add(labelSt);
+            groupBoxUnknowns.Controls.Add(checkBoxTfc);
+            groupBoxUnknowns.Controls.Add(textBoxSt);
+            groupBoxUnknowns.Controls.Add(textBoxTbd);
+            groupBoxUnknowns.Controls.Add(labelTbd);
+            groupBoxUnknowns.Location = new System.Drawing.Point(255, 52);
+            groupBoxUnknowns.Margin = new System.Windows.Forms.Padding(4);
+            groupBoxUnknowns.Name = "groupBoxUnknowns";
+            groupBoxUnknowns.Padding = new System.Windows.Forms.Padding(4);
+            groupBoxUnknowns.Size = new System.Drawing.Size(166, 128);
+            groupBoxUnknowns.TabIndex = 19;
+            groupBoxUnknowns.TabStop = false;
+            groupBoxUnknowns.Text = "Unknowns";
             // 
             // labelTechNameLabel
             // 
-            this.labelTechNameLabel.AutoSize = true;
-            this.labelTechNameLabel.Location = new System.Drawing.Point(82, 6);
-            this.labelTechNameLabel.Name = "labelTechNameLabel";
-            this.labelTechNameLabel.Size = new System.Drawing.Size(35, 13);
-            this.labelTechNameLabel.TabIndex = 20;
-            this.labelTechNameLabel.Text = "Name";
+            labelTechNameLabel.AutoSize = true;
+            labelTechNameLabel.Location = new System.Drawing.Point(84, 7);
+            labelTechNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelTechNameLabel.Name = "labelTechNameLabel";
+            labelTechNameLabel.Size = new System.Drawing.Size(39, 15);
+            labelTechNameLabel.TabIndex = 20;
+            labelTechNameLabel.Text = "Name";
             // 
             // labelFriendlyNameLabel
             // 
-            this.labelFriendlyNameLabel.AutoSize = true;
-            this.labelFriendlyNameLabel.Location = new System.Drawing.Point(43, 31);
-            this.labelFriendlyNameLabel.Name = "labelFriendlyNameLabel";
-            this.labelFriendlyNameLabel.Size = new System.Drawing.Size(74, 13);
-            this.labelFriendlyNameLabel.TabIndex = 21;
-            this.labelFriendlyNameLabel.Text = "Friendly Name";
+            labelFriendlyNameLabel.AutoSize = true;
+            labelFriendlyNameLabel.Location = new System.Drawing.Point(39, 36);
+            labelFriendlyNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelFriendlyNameLabel.Name = "labelFriendlyNameLabel";
+            labelFriendlyNameLabel.Size = new System.Drawing.Size(84, 15);
+            labelFriendlyNameLabel.TabIndex = 21;
+            labelFriendlyNameLabel.Text = "Friendly Name";
             // 
             // labelDescriptionLabel
             // 
-            this.labelDescriptionLabel.AutoSize = true;
-            this.labelDescriptionLabel.Location = new System.Drawing.Point(263, 6);
-            this.labelDescriptionLabel.Name = "labelDescriptionLabel";
-            this.labelDescriptionLabel.Size = new System.Drawing.Size(63, 13);
-            this.labelDescriptionLabel.TabIndex = 22;
-            this.labelDescriptionLabel.Text = "Description:";
+            labelDescriptionLabel.AutoSize = true;
+            labelDescriptionLabel.Location = new System.Drawing.Point(260, 7);
+            labelDescriptionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelDescriptionLabel.Name = "labelDescriptionLabel";
+            labelDescriptionLabel.Size = new System.Drawing.Size(70, 15);
+            labelDescriptionLabel.TabIndex = 22;
+            labelDescriptionLabel.Text = "Description:";
             // 
             // listBoxConnections
             // 
-            this.listBoxConnections.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.listBoxConnections.FormattingEnabled = true;
-            this.listBoxConnections.Location = new System.Drawing.Point(422, 94);
-            this.listBoxConnections.Name = "listBoxConnections";
-            this.listBoxConnections.Size = new System.Drawing.Size(170, 69);
-            this.listBoxConnections.TabIndex = 23;
+            listBoxConnections.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            listBoxConnections.FormattingEnabled = true;
+            listBoxConnections.ItemHeight = 15;
+            listBoxConnections.Location = new System.Drawing.Point(429, 70);
+            listBoxConnections.Margin = new System.Windows.Forms.Padding(4);
+            listBoxConnections.Name = "listBoxConnections";
+            listBoxConnections.Size = new System.Drawing.Size(245, 109);
+            listBoxConnections.TabIndex = 23;
             // 
             // labelConnections
             // 
-            this.labelConnections.AutoSize = true;
-            this.labelConnections.Location = new System.Drawing.Point(419, 78);
-            this.labelConnections.Name = "labelConnections";
-            this.labelConnections.Size = new System.Drawing.Size(188, 13);
-            this.labelConnections.TabIndex = 24;
-            this.labelConnections.Text = "Available Technologies after research:";
+            labelConnections.AutoSize = true;
+            labelConnections.Location = new System.Drawing.Point(430, 51);
+            labelConnections.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelConnections.Name = "labelConnections";
+            labelConnections.Size = new System.Drawing.Size(204, 15);
+            labelConnections.TabIndex = 24;
+            labelConnections.Text = "Available Technologies after research:";
             // 
             // comboBoxLegitimateConnections
             // 
-            this.comboBoxLegitimateConnections.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxLegitimateConnections.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxLegitimateConnections.FormattingEnabled = true;
-            this.comboBoxLegitimateConnections.Location = new System.Drawing.Point(598, 110);
-            this.comboBoxLegitimateConnections.Name = "comboBoxLegitimateConnections";
-            this.comboBoxLegitimateConnections.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxLegitimateConnections.TabIndex = 25;
+            comboBoxLegitimateConnections.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            comboBoxLegitimateConnections.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBoxLegitimateConnections.FormattingEnabled = true;
+            comboBoxLegitimateConnections.Location = new System.Drawing.Point(682, 70);
+            comboBoxLegitimateConnections.Margin = new System.Windows.Forms.Padding(4);
+            comboBoxLegitimateConnections.Name = "comboBoxLegitimateConnections";
+            comboBoxLegitimateConnections.Size = new System.Drawing.Size(182, 23);
+            comboBoxLegitimateConnections.TabIndex = 25;
             // 
             // labelPossibleConnections
             // 
-            this.labelPossibleConnections.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPossibleConnections.AutoSize = true;
-            this.labelPossibleConnections.Location = new System.Drawing.Point(598, 94);
-            this.labelPossibleConnections.Name = "labelPossibleConnections";
-            this.labelPossibleConnections.Size = new System.Drawing.Size(111, 13);
-            this.labelPossibleConnections.TabIndex = 26;
-            this.labelPossibleConnections.Text = "Possible Connections:";
+            labelPossibleConnections.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            labelPossibleConnections.AutoSize = true;
+            labelPossibleConnections.Location = new System.Drawing.Point(682, 51);
+            labelPossibleConnections.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelPossibleConnections.Name = "labelPossibleConnections";
+            labelPossibleConnections.Size = new System.Drawing.Size(123, 15);
+            labelPossibleConnections.TabIndex = 26;
+            labelPossibleConnections.Text = "Possible Connections:";
             // 
             // buttonAddConnection
             // 
-            this.buttonAddConnection.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAddConnection.Location = new System.Drawing.Point(601, 137);
-            this.buttonAddConnection.Name = "buttonAddConnection";
-            this.buttonAddConnection.Size = new System.Drawing.Size(75, 23);
-            this.buttonAddConnection.TabIndex = 27;
-            this.buttonAddConnection.Text = "Enable Connection";
-            this.buttonAddConnection.UseVisualStyleBackColor = true;
-            this.buttonAddConnection.Click += new System.EventHandler(this.buttonAddConnection_Click);
+            buttonAddConnection.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            buttonAddConnection.Location = new System.Drawing.Point(681, 101);
+            buttonAddConnection.Margin = new System.Windows.Forms.Padding(4);
+            buttonAddConnection.Name = "buttonAddConnection";
+            buttonAddConnection.Size = new System.Drawing.Size(88, 27);
+            buttonAddConnection.TabIndex = 27;
+            buttonAddConnection.Text = "Enable Connection";
+            buttonAddConnection.UseVisualStyleBackColor = true;
+            buttonAddConnection.Click += buttonAddConnection_Click;
             // 
             // buttonRemove
             // 
-            this.buttonRemove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonRemove.Location = new System.Drawing.Point(682, 136);
-            this.buttonRemove.Name = "buttonRemove";
-            this.buttonRemove.Size = new System.Drawing.Size(75, 23);
-            this.buttonRemove.TabIndex = 28;
-            this.buttonRemove.Text = "Remove";
-            this.buttonRemove.UseVisualStyleBackColor = true;
-            this.buttonRemove.Click += new System.EventHandler(this.buttonRemove_Click);
+            buttonRemove.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            buttonRemove.Location = new System.Drawing.Point(776, 100);
+            buttonRemove.Margin = new System.Windows.Forms.Padding(4);
+            buttonRemove.Name = "buttonRemove";
+            buttonRemove.Size = new System.Drawing.Size(88, 27);
+            buttonRemove.TabIndex = 28;
+            buttonRemove.Text = "Remove";
+            buttonRemove.UseVisualStyleBackColor = true;
+            buttonRemove.Click += buttonRemove_Click;
             // 
             // TechDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.buttonRemove);
-            this.Controls.Add(this.buttonAddConnection);
-            this.Controls.Add(this.labelPossibleConnections);
-            this.Controls.Add(this.comboBoxLegitimateConnections);
-            this.Controls.Add(this.labelConnections);
-            this.Controls.Add(this.listBoxConnections);
-            this.Controls.Add(this.labelDescriptionLabel);
-            this.Controls.Add(this.labelFriendlyNameLabel);
-            this.Controls.Add(this.labelTechNameLabel);
-            this.Controls.Add(this.groupBoxUnknowns);
-            this.Controls.Add(this.textBoxIAcquired);
-            this.Controls.Add(this.labelIAcquired);
-            this.Controls.Add(this.textBoxAcquired);
-            this.Controls.Add(this.labelAcquired);
-            this.Controls.Add(this.labelResDone);
-            this.Controls.Add(this.textBoxResDone);
-            this.Controls.Add(this.textBoxResCost);
-            this.Controls.Add(this.labelResCost);
-            this.Controls.Add(this.labelTechFriendlyName);
-            this.Controls.Add(this.labelTechName);
-            this.Controls.Add(this.labelDescription);
-            this.Name = "TechDetails";
-            this.Size = new System.Drawing.Size(765, 172);
-            this.groupBoxUnknowns.ResumeLayout(false);
-            this.groupBoxUnknowns.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(buttonRemove);
+            Controls.Add(buttonAddConnection);
+            Controls.Add(labelPossibleConnections);
+            Controls.Add(comboBoxLegitimateConnections);
+            Controls.Add(labelConnections);
+            Controls.Add(listBoxConnections);
+            Controls.Add(labelDescriptionLabel);
+            Controls.Add(labelFriendlyNameLabel);
+            Controls.Add(labelTechNameLabel);
+            Controls.Add(groupBoxUnknowns);
+            Controls.Add(textBoxIAcquired);
+            Controls.Add(labelIAcquired);
+            Controls.Add(textBoxAcquired);
+            Controls.Add(labelAcquired);
+            Controls.Add(labelResDone);
+            Controls.Add(textBoxResDone);
+            Controls.Add(textBoxResCost);
+            Controls.Add(labelResCost);
+            Controls.Add(labelTechFriendlyName);
+            Controls.Add(labelTechName);
+            Controls.Add(labelDescription);
+            Margin = new System.Windows.Forms.Padding(4);
+            MinimumSize = new System.Drawing.Size(868, 180);
+            Name = "TechDetails";
+            Size = new System.Drawing.Size(868, 180);
+            groupBoxUnknowns.ResumeLayout(false);
+            groupBoxUnknowns.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

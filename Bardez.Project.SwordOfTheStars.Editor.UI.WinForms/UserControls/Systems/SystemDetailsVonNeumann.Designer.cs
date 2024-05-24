@@ -28,85 +28,91 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
         /// </summary>
         private void InitializeComponent()
         {
-            this.checkBoxVonNeumannHomeWorld = new System.Windows.Forms.CheckBox();
-            this.groupBoxDetails = new System.Windows.Forms.GroupBox();
-            this.checkBoxVnpex3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxVnex3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxVnd = new System.Windows.Forms.CheckBox();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.groupBoxDetails.SuspendLayout();
-            this.SuspendLayout();
+            checkBoxVonNeumannHomeWorld = new System.Windows.Forms.CheckBox();
+            groupBoxDetails = new System.Windows.Forms.GroupBox();
+            checkBoxVnpex3 = new System.Windows.Forms.CheckBox();
+            checkBoxVnex3 = new System.Windows.Forms.CheckBox();
+            checkBoxVnd = new System.Windows.Forms.CheckBox();
+            colorDialog1 = new System.Windows.Forms.ColorDialog();
+            groupBoxDetails.SuspendLayout();
+            SuspendLayout();
             // 
             // checkBoxVonNeumannHomeWorld
             // 
-            this.checkBoxVonNeumannHomeWorld.AutoSize = true;
-            this.checkBoxVonNeumannHomeWorld.Location = new System.Drawing.Point(3, 3);
-            this.checkBoxVonNeumannHomeWorld.Name = "checkBoxVonNeumannHomeWorld";
-            this.checkBoxVonNeumannHomeWorld.Size = new System.Drawing.Size(150, 17);
-            this.checkBoxVonNeumannHomeWorld.TabIndex = 0;
-            this.checkBoxVonNeumannHomeWorld.Text = "Von Neumann Homeworld";
-            this.checkBoxVonNeumannHomeWorld.UseVisualStyleBackColor = true;
-            this.checkBoxVonNeumannHomeWorld.CheckedChanged += new System.EventHandler(this.checkBoxVonNeumannHomeWorld_CheckedChanged);
+            checkBoxVonNeumannHomeWorld.AutoSize = true;
+            checkBoxVonNeumannHomeWorld.Location = new System.Drawing.Point(4, 3);
+            checkBoxVonNeumannHomeWorld.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            checkBoxVonNeumannHomeWorld.Name = "checkBoxVonNeumannHomeWorld";
+            checkBoxVonNeumannHomeWorld.Size = new System.Drawing.Size(168, 19);
+            checkBoxVonNeumannHomeWorld.TabIndex = 0;
+            checkBoxVonNeumannHomeWorld.Text = "Von Neumann Homeworld";
+            checkBoxVonNeumannHomeWorld.UseVisualStyleBackColor = true;
+            checkBoxVonNeumannHomeWorld.CheckedChanged += checkBoxVonNeumannHomeWorld_CheckedChanged;
             // 
             // groupBoxDetails
             // 
-            this.groupBoxDetails.Controls.Add(this.checkBoxVnpex3);
-            this.groupBoxDetails.Controls.Add(this.checkBoxVnex3);
-            this.groupBoxDetails.Controls.Add(this.checkBoxVnd);
-            this.groupBoxDetails.Location = new System.Drawing.Point(3, 26);
-            this.groupBoxDetails.Name = "groupBoxDetails";
-            this.groupBoxDetails.Size = new System.Drawing.Size(150, 90);
-            this.groupBoxDetails.TabIndex = 1;
-            this.groupBoxDetails.TabStop = false;
-            this.groupBoxDetails.Text = "Homeworld Details";
-            this.groupBoxDetails.Visible = false;
+            groupBoxDetails.Controls.Add(checkBoxVnpex3);
+            groupBoxDetails.Controls.Add(checkBoxVnex3);
+            groupBoxDetails.Controls.Add(checkBoxVnd);
+            groupBoxDetails.Location = new System.Drawing.Point(4, 30);
+            groupBoxDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            groupBoxDetails.Name = "groupBoxDetails";
+            groupBoxDetails.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            groupBoxDetails.Size = new System.Drawing.Size(175, 104);
+            groupBoxDetails.TabIndex = 1;
+            groupBoxDetails.TabStop = false;
+            groupBoxDetails.Text = "Homeworld Details";
+            groupBoxDetails.Visible = false;
             // 
             // checkBoxVnpex3
             // 
-            this.checkBoxVnpex3.AutoSize = true;
-            this.checkBoxVnpex3.Enabled = false;
-            this.checkBoxVnpex3.Location = new System.Drawing.Point(6, 65);
-            this.checkBoxVnpex3.Name = "checkBoxVnpex3";
-            this.checkBoxVnpex3.Size = new System.Drawing.Size(61, 17);
-            this.checkBoxVnpex3.TabIndex = 2;
-            this.checkBoxVnpex3.Text = "vnpex3";
-            this.checkBoxVnpex3.UseVisualStyleBackColor = true;
+            checkBoxVnpex3.AutoSize = true;
+            checkBoxVnpex3.Enabled = false;
+            checkBoxVnpex3.Location = new System.Drawing.Point(7, 75);
+            checkBoxVnpex3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            checkBoxVnpex3.Name = "checkBoxVnpex3";
+            checkBoxVnpex3.Size = new System.Drawing.Size(64, 19);
+            checkBoxVnpex3.TabIndex = 2;
+            checkBoxVnpex3.Text = "vnpex3";
+            checkBoxVnpex3.UseVisualStyleBackColor = true;
             // 
             // checkBoxVnex3
             // 
-            this.checkBoxVnex3.AutoSize = true;
-            this.checkBoxVnex3.Enabled = false;
-            this.checkBoxVnex3.Location = new System.Drawing.Point(6, 42);
-            this.checkBoxVnex3.Name = "checkBoxVnex3";
-            this.checkBoxVnex3.Size = new System.Drawing.Size(55, 17);
-            this.checkBoxVnex3.TabIndex = 1;
-            this.checkBoxVnex3.Text = "vnex3";
-            this.checkBoxVnex3.UseVisualStyleBackColor = true;
+            checkBoxVnex3.AutoSize = true;
+            checkBoxVnex3.Enabled = false;
+            checkBoxVnex3.Location = new System.Drawing.Point(7, 48);
+            checkBoxVnex3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            checkBoxVnex3.Name = "checkBoxVnex3";
+            checkBoxVnex3.Size = new System.Drawing.Size(57, 19);
+            checkBoxVnex3.TabIndex = 1;
+            checkBoxVnex3.Text = "vnex3";
+            checkBoxVnex3.UseVisualStyleBackColor = true;
             // 
             // checkBoxVnd
             // 
-            this.checkBoxVnd.AutoSize = true;
-            this.checkBoxVnd.Enabled = false;
-            this.checkBoxVnd.Location = new System.Drawing.Point(6, 19);
-            this.checkBoxVnd.Name = "checkBoxVnd";
-            this.checkBoxVnd.Size = new System.Drawing.Size(44, 17);
-            this.checkBoxVnd.TabIndex = 0;
-            this.checkBoxVnd.Text = "vnd";
-            this.checkBoxVnd.UseVisualStyleBackColor = true;
+            checkBoxVnd.AutoSize = true;
+            checkBoxVnd.Enabled = false;
+            checkBoxVnd.Location = new System.Drawing.Point(7, 22);
+            checkBoxVnd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            checkBoxVnd.Name = "checkBoxVnd";
+            checkBoxVnd.Size = new System.Drawing.Size(46, 19);
+            checkBoxVnd.TabIndex = 0;
+            checkBoxVnd.Text = "vnd";
+            checkBoxVnd.UseVisualStyleBackColor = true;
             // 
-            // System_Details_Von_Neumann
+            // SystemDetailsVonNeumann
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBoxDetails);
-            this.Controls.Add(this.checkBoxVonNeumannHomeWorld);
-            this.Name = "System_Details_Von_Neumann";
-            this.Size = new System.Drawing.Size(156, 119);
-            this.groupBoxDetails.ResumeLayout(false);
-            this.groupBoxDetails.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(groupBoxDetails);
+            Controls.Add(checkBoxVonNeumannHomeWorld);
+            Margin = new System.Windows.Forms.Padding(4);
+            Name = "SystemDetailsVonNeumann";
+            Size = new System.Drawing.Size(182, 136);
+            groupBoxDetails.ResumeLayout(false);
+            groupBoxDetails.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

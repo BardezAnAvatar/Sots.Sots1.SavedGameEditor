@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
-using System.Text;
 using System.Windows.Forms;
 using Bardez.Project.SwordOfTheStars.DataStructures;
-using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.UserControl;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.Helpers;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.BaseUserControls;
 
 namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
 {
@@ -106,7 +103,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
         protected override void PercolateReadOnlyFlag(bool ReadOnlyFlag)
         {
             this.dataGridViewSystems.ReadOnly = ReadOnlyFlag;
-            this.system_Details.ReadOnly = ReadOnlyFlag;
+            this.systemDetails.ReadOnly = ReadOnlyFlag;
         }
 
 
@@ -151,7 +148,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
 
         protected void PersistDetailsChanges(Int32 Index)
         {
-            this.system_Details.UpdateStruct(this.simulation.Systems.Values[Index]);
+            this.systemDetails.UpdateStruct(this.simulation.Systems.Values[Index]);
         }
 
         public void PersistBeforeSave()
@@ -165,7 +162,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
         /// <summary>Refreshes the Player Details control from its data source</summary>
         protected void RefreshDetails(Int32 Index)
         {
-            this.system_Details.LoadFromStruct(this.simulation.Systems.Values[Index]);
+            this.systemDetails.LoadFromStruct(this.simulation.Systems.Values[Index]);
         }
 
         /// <summary>Refreshes the entire dataview grid's data source</summary>
@@ -270,7 +267,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             if(this.adapter != null)
                 this.adapter.Rows.Clear();
             this.currentIndex = -1;
-            this.system_Details.Clear();
+            this.systemDetails.Clear();
         }
     }
 }

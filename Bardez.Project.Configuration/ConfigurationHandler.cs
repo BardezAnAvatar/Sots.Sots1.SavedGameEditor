@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Configuration;
-using System.Web.Configuration;
 
 namespace Bardez.Project.Configuration
 {
@@ -128,9 +126,6 @@ namespace Bardez.Project.Configuration
 
                 //look for <machinename>.config
                 LoadMachineNameConfig();
-
-                //look for <domain>.config
-                LoadDomainNameConfig();
             }
             catch
             {
@@ -144,11 +139,11 @@ namespace Bardez.Project.Configuration
         }
 
         private static void CopyKeys
-                (
-                    System.Configuration.Configuration Config,
-                    Dictionary<String, KeyValueConfigurationElement> Settings,
-                    Dictionary<String, ConnectionStringSettings> ConnectionStrings
-                )
+        (
+            System.Configuration.Configuration Config,
+            Dictionary<String, KeyValueConfigurationElement> Settings,
+            Dictionary<String, ConnectionStringSettings> ConnectionStrings
+        )
         {
             //read all the settings
             foreach (KeyValueConfigurationElement pair in Config.AppSettings.Settings)
@@ -159,18 +154,18 @@ namespace Bardez.Project.Configuration
         }
 
         private static void CopyKeys
-                (
-                    NameValueCollection AppSettings, ConnectionStringSettingsCollection ConnStrings,
-                    Dictionary<String, KeyValueConfigurationElement> Settings,
-                    Dictionary<String, ConnectionStringSettings> ConnectionStrings
-                )
+        (
+            NameValueCollection AppSettings, ConnectionStringSettingsCollection ConnStrings,
+            Dictionary<String, KeyValueConfigurationElement> Settings,
+            Dictionary<String, ConnectionStringSettings> ConnectionStrings
+        )
         {
             KeyValueConfigurationElement tempElement;
             KeyValueConfigurationCollection collection = new KeyValueConfigurationCollection();
             //read all the settings
             foreach (String key in AppSettings.Keys)
             {
-                tempElement  = new KeyValueConfigurationElement(key, AppSettings[key]);
+                tempElement = new KeyValueConfigurationElement(key, AppSettings[key]);
                 collection.Add(tempElement);
             }
             foreach (String key in AppSettings.Keys)
@@ -196,51 +191,10 @@ namespace Bardez.Project.Configuration
             }
         }
 
-        private static void LoadDomainNameConfig()
-        {
-            if (System.Web.HttpContext.Current != null)
-            {
-                String path = GetAssemblyPath();
-
-                String config = System.Web.HttpContext.Current.Request.ServerVariables["HTTP_HOST"];
-
-                if(config.IndexOf(':') > -1)
-                    config = config.Substring(0, config.IndexOf(':'));
-
-                path = path + "\\" + config + ".config";
-                if (System.IO.File.Exists(path))
-                {
-                    ExeConfigurationFileMap map = new ExeConfigurationFileMap();
-                    map.ExeConfigFilename = path;
-                    System.Configuration.Configuration configuration = ConfigurationManager.OpenMappedExeConfiguration(map, ConfigurationUserLevel.None);
-
-                    //System.Configuration.Configuration configuration = ConfigurationManager.OpenExeConfiguration(path);
-                    CopyKeys(configuration, AppSettings, ConnectionStrings);
-                }
-            }
-        }
-
         private static void LoadAppConfig()
         {
-            System.Configuration.Configuration configuration;
-
-            if (System.Web.HttpContext.Current != null)
-            {
-                String path = GetAssemblyPath();
-
-                path = path + "\\web.config";
-                if (System.IO.File.Exists(path))
-                {
-                    String webPath = System.IO.Path.GetDirectoryName(System.Web.HttpContext.Current.Request.FilePath).Replace('\\', '/');
-                    configuration = WebConfigurationManager.OpenWebConfiguration(webPath);
-                    CopyKeys(configuration, AppSettings, ConnectionStrings);
-                }
-            }
-            else
-            {
-                configuration = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-                CopyKeys(configuration, AppSettings, ConnectionStrings);
-            }
+            var configuration = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            CopyKeys(configuration, AppSettings, ConnectionStrings);
         }
 
         private static String GetAssemblyPath()

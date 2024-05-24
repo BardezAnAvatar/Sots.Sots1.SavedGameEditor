@@ -2,20 +2,15 @@
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
     <AssemblyTitle>Sword of the Stars Save Game Editor</AssemblyTitle>
     <Company>SyNDiCaTED Software</Company>
     <Product>Sword of the Stars Save Game Editor</Product>
     <Description>Save Game editor for Sword of the Stars</Description>
     <Copyright>Copyright © Bardez 2024</Copyright>
-    <OutputPath>bin\$(Configuration)\</OutputPath>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugType>full</DebugType>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+	<ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.Program</StartupObject>
@@ -24,16 +19,7 @@
     <ApplicationIcon>Sword of the Stars 1.8.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System.Management" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Windows.Forms" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Update="SotsEditor.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="SotsEditor.cs" />
     <Compile Update="SotsEditor.Designer.cs">
       <DependentUpon>SotsEditor.cs</DependentUpon>
     </Compile>
@@ -49,8 +35,8 @@
     <Compile Update="UserControls\TechTree\TechTree.Designer.cs">
       <DependentUpon>TechTree.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\UserControl\DisplayUserControl.cs" />
-    <Compile Update="UserControls\UserControl\UserControlBase.cs" />
+    <Compile Update="UserControls\BaseUserControls\DisplayUserControl.cs" />
+    <Compile Update="UserControls\BaseUserControls\UserControlBase.cs" />
     <Compile Update="UserControls\Graph\Graph.cs" />
     <Compile Update="UserControls\Graph\Graph.Designer.cs">
       <DependentUpon>Graph.cs</DependentUpon>
@@ -67,9 +53,9 @@
     <Compile Update="UserControls\NodeGrid\NodeGrid.Designer.cs">
       <DependentUpon>NodeGrid.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\Players\PlayerDetails.cs" />
-    <Compile Update="UserControls\Players\PlayerDetails.Designer.cs">
-      <DependentUpon>PlayerDetails.cs</DependentUpon>
+    <Compile Update="UserControls\Players\PlayerInfo.cs" />
+    <Compile Update="UserControls\Players\PlayerInfo.Designer.cs">
+      <DependentUpon>PlayerInfo.cs</DependentUpon>
     </Compile>
     <Compile Update="UserControls\Players\Players.cs" />
     <Compile Update="UserControls\Players\Players.Designer.cs">
@@ -110,16 +96,6 @@
     <EmbeddedResource Update="SotsEditor.resx">
       <DependentUpon>SotsEditor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Update="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Update="UserControls\Editor\Editor.resx">
       <DependentUpon>Editor.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,8 +111,8 @@
     <EmbeddedResource Update="UserControls\NodeGrid\NodeGrid.resx">
       <DependentUpon>NodeGrid.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="UserControls\Players\PlayerDetails.resx">
-      <DependentUpon>PlayerDetails.cs</DependentUpon>
+    <EmbeddedResource Update="UserControls\Players\PlayerInfo.resx">
+      <DependentUpon>PlayerInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Update="UserControls\Players\Players.resx">
       <DependentUpon>Players.cs</DependentUpon>
@@ -171,15 +147,6 @@
     <EmbeddedResource Update="UserControls\TechTree\TechTree.resx">
       <DependentUpon>TechTree.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Update="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bardez.Project.Configuration\Bardez.Project.Configuration.csproj" />
@@ -199,5 +166,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="System.Resources.Extensions" Version="8.0.0" />
   </ItemGroup>
 </Project>

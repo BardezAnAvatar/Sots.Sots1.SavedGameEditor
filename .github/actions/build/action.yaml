@@ -4,11 +4,13 @@ description: Build the solution using MSBuild
 runs:
   using: "composite"
   steps:
-    - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v2
-
     - name: Setup NuGet
       uses: NuGet/setup-nuget@v2
+
+    - name: Setup dotnet
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.x.x'
       
     - name: Navigate to Workspace
       shell: PowerShell
@@ -20,17 +22,17 @@ runs:
       
     - name: Restore Packages
       shell: PowerShell
-      run: nuget restore "Bardez.Project.SwordOfTheStars.Editor.sln"
+      run: dotnet restore "Bardez.Project.SwordOfTheStars.Editor.sln"
 
     - name: Build Solution
       shell: PowerShell
       run: |
-        msbuild.exe "Bardez.Project.SwordOfTheStars.Editor.sln" `
-            /nologo /nr:false `
-            /p:DeployOnBuild=true `
-            /p:DeployDefaultTarget=WebPublish `
-            /p:WebPublishMethod=FileSystem `
-            /p:DeleteExistingFiles=True `
-            /p:platform="Any CPU" `
-            /p:configuration="Release" `
-            /p:OutputPath="${{ github.workspace }}/_build"
+        commit=$(git rev-parse HEAD)
+        branch=$(git branch --show-current)
+        dotnet build "Bardez.Project.SwordOfTheStars.Editor.sln" `
+           --configuration Release `
+           --no-restore `
+           --output "${{ github.workspace }}/_build" `
+           -p:RepositoryCommit="$commit" `
+           -p:RepositoryBranch="$branch" `
+           -p:EnableWindowsTargeting=true
