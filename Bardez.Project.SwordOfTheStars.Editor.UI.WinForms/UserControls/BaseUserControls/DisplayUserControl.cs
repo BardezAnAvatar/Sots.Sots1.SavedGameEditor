@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.UserControl
+namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.BaseUserControls
 {
 #if false
     public abstract class DisplayUserControl : UserControlBase
@@ -9,15 +9,15 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.UserCon
     public class DisplayUserControl : UserControlBase
 #endif
     {
-        protected Boolean readOnly;
+        protected bool readOnly;
 
-        public Boolean ReadOnly
+        public bool ReadOnly
         {
             get { return readOnly; }
             set
             {
                 readOnly = value;
-                this.PercolateReadOnlyFlag(this.readOnly);
+                PercolateReadOnlyFlag(readOnly);
             }
         }
 
@@ -27,7 +27,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.UserCon
             readOnly = false;
         }
 
-        protected virtual void PercolateReadOnlyFlag(Boolean ReadOnlyFlag)
+        protected virtual void PercolateReadOnlyFlag(bool ReadOnlyFlag)
         {
         }
     }

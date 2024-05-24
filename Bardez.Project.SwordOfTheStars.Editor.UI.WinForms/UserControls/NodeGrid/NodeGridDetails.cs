@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Bardez.Project.SwordOfTheStars.DataStructures;
-using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.UserControl;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.BaseUserControls;
 
 namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Node_Grid
 {

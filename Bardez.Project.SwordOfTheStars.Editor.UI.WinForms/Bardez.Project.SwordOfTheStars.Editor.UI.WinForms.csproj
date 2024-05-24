@@ -34,8 +34,8 @@
     <Compile Update="UserControls\TechTree\TechTree.Designer.cs">
       <DependentUpon>TechTree.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\UserControl\DisplayUserControl.cs" />
-    <Compile Update="UserControls\UserControl\UserControlBase.cs" />
+    <Compile Update="UserControls\BaseUserControls\DisplayUserControl.cs" />
+    <Compile Update="UserControls\BaseUserControls\UserControlBase.cs" />
     <Compile Update="UserControls\Graph\Graph.cs" />
     <Compile Update="UserControls\Graph\Graph.Designer.cs">
       <DependentUpon>Graph.cs</DependentUpon>

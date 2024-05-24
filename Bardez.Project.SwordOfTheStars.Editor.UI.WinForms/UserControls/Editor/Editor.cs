@@ -4,7 +4,7 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using Bardez.Project.SwordOfTheStars.DataStructures;
-using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.UserControl;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.BaseUserControls;
 using Bardez.Project.SwordOfTheStars.IO;
 using Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree;
 

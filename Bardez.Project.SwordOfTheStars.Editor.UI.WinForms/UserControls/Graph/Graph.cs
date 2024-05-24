@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.UserControl;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.BaseUserControls;
 using Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree.Graph;
 
 namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Graph
