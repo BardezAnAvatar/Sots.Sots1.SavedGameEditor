@@ -1,4 +1,4 @@
-name: "Continous Integration: Releases"
+name: "Continuous Integration: Releases"
 
 on:
   push:
