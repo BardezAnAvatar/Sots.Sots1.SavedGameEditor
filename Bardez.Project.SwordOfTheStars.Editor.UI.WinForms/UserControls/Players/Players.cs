@@ -14,6 +14,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
         protected DataTable adapter;
         protected SaveGameData savegame;
         protected Int32 selectedIndex;
+        protected SimPlayerSaveStruct _player = null;
 
 
         /// <summary>Public property to access the Tech Tree Graph</summary>
@@ -86,7 +87,8 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             {
                 //update to new Row
                 this.selectedIndex = GetCurrentPlayerRow();
-                this.playerInfoControl.LoadFromStruct(this.savegame.Sim.Players.Values[this.selectedIndex]);
+                this._player = this.savegame.Sim.Players.Values[this.selectedIndex];
+                this.playerInfoControl.LoadFromStruct(_player);
                 this.techTree.Player = this.savegame.Sim.Players.Values[this.selectedIndex].Details;
 
                 //clear tech tree details
@@ -166,7 +168,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
 
         protected void PersistDetailsChanges()
         {
-            this.playerInfoControl.UpdateStruct();
+            this.playerInfoControl.UpdateStruct(_player);
         }
 
         protected void PersistTechTreeChanges()
@@ -185,7 +187,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
         /// <summary>Refreshes the Player Details control from its data source</summary>
         protected void RefreshDetails()
         {
-            this.playerInfoControl.LoadFromStruct();
+            this.playerInfoControl.LoadFromStruct(_player);
         }
 
         /// <summary>Refreshes the entire dataview grid's data source</summary>
