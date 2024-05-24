@@ -60,7 +60,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             /****************
             *   Unknowns    *
             ****************/
-            playerUnknowns.SetPlayerStruct(player.Details);
+            playerUnknowns.LoadFromStruct(player.Details);
         }
 
 
@@ -272,61 +272,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             /****************
             *   Unknowns    *
             ****************/
-            /*
-            this.player.Details.MaxOH.Value                         = Single.Parse(this.textBoxMaxOh.Text);
-            this.player.Details.Trm.Value                           = Int32.Parse(this.textBoxTrm.Text);
-            this.player.Details.Trp.Value                           = Int32.Parse(this.textBoxTrp.Text);
-            this.player.Details.Tra.Value                           = Int32.Parse(this.textBoxTra.Text);
-            this.player.Details.AMine.BooleanValue                  = this.checkBoxAmine.Checked;
-            this.player.Details.MinPure.Value                       = Single.Parse(this.textBoxMinPure.Text);
-            this.player.Details.MinRate.Value                       = Single.Parse(this.textBoxMinRate.Text);
-            this.player.Details.Ngts.Value                          = Int32.Parse(this.textBoxNgts.Text);
-            this.player.Details.PrGtTrf.Value                       = Int32.Parse(this.textBoxPrGtTrf.Text);
-            this.player.Details.GTraf.Value                         = Int32.Parse(this.textBoxGTraf.Text);
-            this.player.Details.CstR.Value                          = Int32.Parse(this.textBoxCstR.Text);
-            this.player.Details.CstE.Value                          = Int32.Parse(this.textBoxCstE.Text);
-            this.player.Details.CstT.Value                          = Int32.Parse(this.textBoxCstT.Text);
-            this.player.Details.Maint.Value                         = Int32.Parse(this.textBoxMaint.Text);
-            this.player.Details.Shrm.Value                          = Int32.Parse(this.textBoxShrm.Text);
-            this.player.Details.Status.Value                        = Int32.Parse(this.textBoxStatus.Text);
-            this.player.Details.Elim.Value                          = Int32.Parse(this.textBoxElim.Text);
-            this.player.Details.ReqCL.BooleanValue                  = this.checkBoxReqCl.Checked;
-            this.player.Details.NpTrak.Value                        = Int32.Parse(this.textBoxNpTrak.Text);
-            this.player.Details.HasDisc.Value                       = Int32.Parse(this.textBoxHasDisc.Text);
-            this.player.Details.HasDiscSp.Value                     = Int32.Parse(this.textBoxHasDiscSp.Text);
-            this.player.Details.HasDiscCl.Value                     = Int32.Parse(this.textBoxHasDiscCl.Text);
-            this.player.Details.HasEnc.Value                        = Int32.Parse(this.textBoxHasEnc.Text);
-            this.player.Details.HasEng.Value                        = Int32.Parse(this.textBoxHasEng.Text);
-            this.player.Details.FngNum.Value.Value                  = Int32.Parse(this.textBoxFngNum.Text);
-            this.player.Details.PvMA.Value                          = Int32.Parse(this.textBoxPvMa.Text);
-            this.player.Details.AibN.Value                          = Int32.Parse(this.textBoxAibn.Text);
-            this.player.Details.Hgs.BooleanValue                    = this.checkBoxHgs.Checked;
-            this.player.Details.Hadvs.BooleanValue                  = this.checkBoxHadvs.Checked;
-            this.player.Details.Harcc.BooleanValue                  = this.checkBoxHarcc.Checked;
-            this.player.Details.CnVItl.BooleanValue                 = this.checkBoxCnVItl.Checked;
-            this.player.Details.Pddm.Value                          = Single.Parse(this.textBoxPddm.Text);
-            this.player.Details.BankTrn.Value                       = Int32.Parse(this.textBoxBankTrn.Text);
-            this.player.Details.BankPr.Value                        = Int32.Parse(this.textBoxBankPr.Text);
-            this.player.Details.BankEl.Value                        = Int32.Parse(this.textBoxBankEl.Text);
-            this.player.Details.Plcy.Value                          = Int32.Parse(this.textBoxPlcy.Text);
-            this.player.Details.Pswd.Value                          = Int32.Parse(this.textBoxPswd.Text);
-            this.player.Details.Lret.Value                          = Int32.Parse(this.textBoxLret.Text);
-            this.player.Details.Nmeid.Value                         = Int32.Parse(this.textBoxNmeid.Text);
-            this.player.Details.Cdp.BooleanValue                    = this.checkBoxCdp.Checked;
-            this.player.Details.Aidf.Value                          = Int32.Parse(this.textBoxAidf.Text);
-            this.player.Details.Srn.BooleanValue                    = this.checkBoxSrn.Checked;
-            this.player.Details.SrcTo.Value                         = Int32.Parse(this.textBoxSrcTo.Text);
-            this.player.Details.Lboid.Value                         = Int32.Parse(this.textBoxLboid.Text);
-            this.player.Details.Lcid2.Value                         = Int32.Parse(this.textBoxLcid2.Text);
-            this.player.Details.ResTnm.Value.CharacterString        = this.textBoxResTnm.Text;
-            this.player.Details.ResErrRoll.BooleanValue             = this.checkBoxResErrRoll.Checked;
-            this.player.Details.Cta.BooleanValue                    = this.checkBoxCta.Checked;
-            this.player.Details.Nexp.Value                          = Int32.Parse(this.textBoxNexp.Text);
-            this.player.Details.NWeapXcl.Value                      = Int32.Parse(this.textBoxNWeapXcl.Text);
-            this.player.Details.Ndeflay.Value                       = Int32.Parse(this.textBoxNdeflay.Text);
-            this.player.Details.Rdtc.Value                          = Int32.Parse(this.textBoxRdtc.Text);
-            this.player.Details.Tnc.Value                           = Int32.Parse(this.textBoxTnc.Text);
-            */
+            playerUnknowns.UpdateStruct(player.Details);
         }
     }
 }
