@@ -28,237 +28,261 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelNpt = new System.Windows.Forms.Label();
-            this.textBoxNpt = new System.Windows.Forms.TextBox();
-            this.labelNpid = new System.Windows.Forms.Label();
-            this.textBoxNpid = new System.Windows.Forms.TextBox();
-            this.labelNpfr = new System.Windows.Forms.Label();
-            this.textBoxNpfr = new System.Windows.Forms.TextBox();
-            this.labelNpto = new System.Windows.Forms.Label();
-            this.textBoxNpto = new System.Windows.Forms.TextBox();
-            this.textBoxNpctm = new System.Windows.Forms.TextBox();
-            this.labelNpctm = new System.Windows.Forms.Label();
-            this.labelNpcby = new System.Windows.Forms.Label();
-            this.textBoxNpcby = new System.Windows.Forms.TextBox();
-            this.labelNpdtn = new System.Windows.Forms.Label();
-            this.textBoxNpdtn = new System.Windows.Forms.TextBox();
-            this.textBoxNpdtf = new System.Windows.Forms.TextBox();
-            this.labelNpdtf = new System.Windows.Forms.Label();
-            this.labelNpenp = new System.Windows.Forms.Label();
-            this.textBoxNpenp = new System.Windows.Forms.TextBox();
-            this.labelNpuse = new System.Windows.Forms.Label();
-            this.textBoxNpuse = new System.Windows.Forms.TextBox();
-            this.labelNptf = new System.Windows.Forms.Label();
-            this.textBoxNptf = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
+            labelNpt = new System.Windows.Forms.Label();
+            textBoxNpt = new System.Windows.Forms.TextBox();
+            labelNpid = new System.Windows.Forms.Label();
+            textBoxNpid = new System.Windows.Forms.TextBox();
+            labelNpfr = new System.Windows.Forms.Label();
+            textBoxNpfr = new System.Windows.Forms.TextBox();
+            labelNpto = new System.Windows.Forms.Label();
+            textBoxNpto = new System.Windows.Forms.TextBox();
+            textBoxNpctm = new System.Windows.Forms.TextBox();
+            labelNpctm = new System.Windows.Forms.Label();
+            labelNpcby = new System.Windows.Forms.Label();
+            textBoxNpcby = new System.Windows.Forms.TextBox();
+            labelNpdtn = new System.Windows.Forms.Label();
+            textBoxNpdtn = new System.Windows.Forms.TextBox();
+            textBoxNpdtf = new System.Windows.Forms.TextBox();
+            labelNpdtf = new System.Windows.Forms.Label();
+            labelNpenp = new System.Windows.Forms.Label();
+            textBoxNpenp = new System.Windows.Forms.TextBox();
+            labelNpuse = new System.Windows.Forms.Label();
+            textBoxNpuse = new System.Windows.Forms.TextBox();
+            labelNptf = new System.Windows.Forms.Label();
+            textBoxNptf = new System.Windows.Forms.TextBox();
+            SuspendLayout();
             // 
             // labelNpt
             // 
-            this.labelNpt.AutoSize = true;
-            this.labelNpt.Location = new System.Drawing.Point(9, 6);
-            this.labelNpt.Name = "labelNpt";
-            this.labelNpt.Size = new System.Drawing.Size(22, 13);
-            this.labelNpt.TabIndex = 0;
-            this.labelNpt.Text = "npt";
+            labelNpt.AutoSize = true;
+            labelNpt.Location = new System.Drawing.Point(10, 7);
+            labelNpt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelNpt.Name = "labelNpt";
+            labelNpt.Size = new System.Drawing.Size(25, 15);
+            labelNpt.TabIndex = 0;
+            labelNpt.Text = "npt";
             // 
             // textBoxNpt
             // 
-            this.textBoxNpt.Location = new System.Drawing.Point(37, 3);
-            this.textBoxNpt.Name = "textBoxNpt";
-            this.textBoxNpt.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNpt.TabIndex = 1;
+            textBoxNpt.Location = new System.Drawing.Point(43, 3);
+            textBoxNpt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpt.Name = "textBoxNpt";
+            textBoxNpt.Size = new System.Drawing.Size(116, 23);
+            textBoxNpt.TabIndex = 1;
             // 
             // labelNpid
             // 
-            this.labelNpid.AutoSize = true;
-            this.labelNpid.Location = new System.Drawing.Point(4, 32);
-            this.labelNpid.Name = "labelNpid";
-            this.labelNpid.Size = new System.Drawing.Size(27, 13);
-            this.labelNpid.TabIndex = 2;
-            this.labelNpid.Text = "npid";
+            labelNpid.AutoSize = true;
+            labelNpid.Location = new System.Drawing.Point(5, 37);
+            labelNpid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelNpid.Name = "labelNpid";
+            labelNpid.Size = new System.Drawing.Size(31, 15);
+            labelNpid.TabIndex = 2;
+            labelNpid.Text = "npid";
             // 
             // textBoxNpid
             // 
-            this.textBoxNpid.Location = new System.Drawing.Point(37, 29);
-            this.textBoxNpid.Name = "textBoxNpid";
-            this.textBoxNpid.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNpid.TabIndex = 3;
+            textBoxNpid.Location = new System.Drawing.Point(43, 33);
+            textBoxNpid.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpid.Name = "textBoxNpid";
+            textBoxNpid.Size = new System.Drawing.Size(116, 23);
+            textBoxNpid.TabIndex = 3;
             // 
             // labelNpfr
             // 
-            this.labelNpfr.AutoSize = true;
-            this.labelNpfr.Location = new System.Drawing.Point(6, 58);
-            this.labelNpfr.Name = "labelNpfr";
-            this.labelNpfr.Size = new System.Drawing.Size(25, 13);
-            this.labelNpfr.TabIndex = 4;
-            this.labelNpfr.Text = "npfr";
+            labelNpfr.AutoSize = true;
+            labelNpfr.Location = new System.Drawing.Point(7, 67);
+            labelNpfr.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelNpfr.Name = "labelNpfr";
+            labelNpfr.Size = new System.Drawing.Size(29, 15);
+            labelNpfr.TabIndex = 4;
+            labelNpfr.Text = "npfr";
             // 
             // textBoxNpfr
             // 
-            this.textBoxNpfr.Location = new System.Drawing.Point(37, 55);
-            this.textBoxNpfr.Name = "textBoxNpfr";
-            this.textBoxNpfr.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNpfr.TabIndex = 5;
+            textBoxNpfr.Location = new System.Drawing.Point(43, 63);
+            textBoxNpfr.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpfr.Name = "textBoxNpfr";
+            textBoxNpfr.Size = new System.Drawing.Size(116, 23);
+            textBoxNpfr.TabIndex = 5;
             // 
             // labelNpto
             // 
-            this.labelNpto.AutoSize = true;
-            this.labelNpto.Location = new System.Drawing.Point(3, 84);
-            this.labelNpto.Name = "labelNpto";
-            this.labelNpto.Size = new System.Drawing.Size(28, 13);
-            this.labelNpto.TabIndex = 6;
-            this.labelNpto.Text = "npto";
+            labelNpto.AutoSize = true;
+            labelNpto.Location = new System.Drawing.Point(4, 97);
+            labelNpto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelNpto.Name = "labelNpto";
+            labelNpto.Size = new System.Drawing.Size(32, 15);
+            labelNpto.TabIndex = 6;
+            labelNpto.Text = "npto";
             // 
             // textBoxNpto
             // 
-            this.textBoxNpto.Location = new System.Drawing.Point(37, 81);
-            this.textBoxNpto.Name = "textBoxNpto";
-            this.textBoxNpto.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNpto.TabIndex = 7;
+            textBoxNpto.Location = new System.Drawing.Point(43, 93);
+            textBoxNpto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpto.Name = "textBoxNpto";
+            textBoxNpto.Size = new System.Drawing.Size(116, 23);
+            textBoxNpto.TabIndex = 7;
             // 
             // textBoxNpctm
             // 
-            this.textBoxNpctm.Location = new System.Drawing.Point(217, 3);
-            this.textBoxNpctm.Name = "textBoxNpctm";
-            this.textBoxNpctm.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNpctm.TabIndex = 8;
+            textBoxNpctm.Location = new System.Drawing.Point(253, 3);
+            textBoxNpctm.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpctm.Name = "textBoxNpctm";
+            textBoxNpctm.Size = new System.Drawing.Size(116, 23);
+            textBoxNpctm.TabIndex = 8;
             // 
             // labelNpctm
             // 
-            this.labelNpctm.AutoSize = true;
-            this.labelNpctm.Location = new System.Drawing.Point(175, 6);
-            this.labelNpctm.Name = "labelNpctm";
-            this.labelNpctm.Size = new System.Drawing.Size(36, 13);
-            this.labelNpctm.TabIndex = 9;
-            this.labelNpctm.Text = "npctm";
+            labelNpctm.AutoSize = true;
+            labelNpctm.Location = new System.Drawing.Point(204, 7);
+            labelNpctm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelNpctm.Name = "labelNpctm";
+            labelNpctm.Size = new System.Drawing.Size(42, 15);
+            labelNpctm.TabIndex = 9;
+            labelNpctm.Text = "npctm";
             // 
             // labelNpcby
             // 
-            this.labelNpcby.AutoSize = true;
-            this.labelNpcby.Location = new System.Drawing.Point(175, 32);
-            this.labelNpcby.Name = "labelNpcby";
-            this.labelNpcby.Size = new System.Drawing.Size(36, 13);
-            this.labelNpcby.TabIndex = 10;
-            this.labelNpcby.Text = "npcby";
+            labelNpcby.AutoSize = true;
+            labelNpcby.Location = new System.Drawing.Point(204, 37);
+            labelNpcby.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelNpcby.Name = "labelNpcby";
+            labelNpcby.Size = new System.Drawing.Size(40, 15);
+            labelNpcby.TabIndex = 10;
+            labelNpcby.Text = "npcby";
             // 
             // textBoxNpcby
             // 
-            this.textBoxNpcby.Location = new System.Drawing.Point(217, 29);
-            this.textBoxNpcby.Name = "textBoxNpcby";
-            this.textBoxNpcby.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNpcby.TabIndex = 11;
+            textBoxNpcby.Location = new System.Drawing.Point(253, 33);
+            textBoxNpcby.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpcby.Name = "textBoxNpcby";
+            textBoxNpcby.Size = new System.Drawing.Size(116, 23);
+            textBoxNpcby.TabIndex = 11;
             // 
             // labelNpdtn
             // 
-            this.labelNpdtn.AutoSize = true;
-            this.labelNpdtn.Location = new System.Drawing.Point(177, 58);
-            this.labelNpdtn.Name = "labelNpdtn";
-            this.labelNpdtn.Size = new System.Drawing.Size(34, 13);
-            this.labelNpdtn.TabIndex = 12;
-            this.labelNpdtn.Text = "npdtn";
+            labelNpdtn.AutoSize = true;
+            labelNpdtn.Location = new System.Drawing.Point(206, 67);
+            labelNpdtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelNpdtn.Name = "labelNpdtn";
+            labelNpdtn.Size = new System.Drawing.Size(39, 15);
+            labelNpdtn.TabIndex = 12;
+            labelNpdtn.Text = "npdtn";
             // 
             // textBoxNpdtn
             // 
-            this.textBoxNpdtn.Location = new System.Drawing.Point(217, 55);
-            this.textBoxNpdtn.Name = "textBoxNpdtn";
-            this.textBoxNpdtn.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNpdtn.TabIndex = 13;
+            textBoxNpdtn.Location = new System.Drawing.Point(253, 63);
+            textBoxNpdtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpdtn.Name = "textBoxNpdtn";
+            textBoxNpdtn.Size = new System.Drawing.Size(116, 23);
+            textBoxNpdtn.TabIndex = 13;
             // 
             // textBoxNpdtf
             // 
-            this.textBoxNpdtf.Location = new System.Drawing.Point(217, 81);
-            this.textBoxNpdtf.Name = "textBoxNpdtf";
-            this.textBoxNpdtf.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNpdtf.TabIndex = 14;
+            textBoxNpdtf.Location = new System.Drawing.Point(253, 93);
+            textBoxNpdtf.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpdtf.Name = "textBoxNpdtf";
+            textBoxNpdtf.Size = new System.Drawing.Size(116, 23);
+            textBoxNpdtf.TabIndex = 14;
             // 
             // labelNpdtf
             // 
-            this.labelNpdtf.AutoSize = true;
-            this.labelNpdtf.Location = new System.Drawing.Point(180, 84);
-            this.labelNpdtf.Name = "labelNpdtf";
-            this.labelNpdtf.Size = new System.Drawing.Size(31, 13);
-            this.labelNpdtf.TabIndex = 15;
-            this.labelNpdtf.Text = "npdtf";
+            labelNpdtf.AutoSize = true;
+            labelNpdtf.Location = new System.Drawing.Point(210, 97);
+            labelNpdtf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelNpdtf.Name = "labelNpdtf";
+            labelNpdtf.Size = new System.Drawing.Size(36, 15);
+            labelNpdtf.TabIndex = 15;
+            labelNpdtf.Text = "npdtf";
             // 
             // labelNpenp
             // 
-            this.labelNpenp.AutoSize = true;
-            this.labelNpenp.Location = new System.Drawing.Point(346, 6);
-            this.labelNpenp.Name = "labelNpenp";
-            this.labelNpenp.Size = new System.Drawing.Size(37, 13);
-            this.labelNpenp.TabIndex = 16;
-            this.labelNpenp.Text = "npenp";
+            labelNpenp.AutoSize = true;
+            labelNpenp.Location = new System.Drawing.Point(404, 7);
+            labelNpenp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelNpenp.Name = "labelNpenp";
+            labelNpenp.Size = new System.Drawing.Size(41, 15);
+            labelNpenp.TabIndex = 16;
+            labelNpenp.Text = "npenp";
             // 
             // textBoxNpenp
             // 
-            this.textBoxNpenp.Location = new System.Drawing.Point(389, 3);
-            this.textBoxNpenp.Name = "textBoxNpenp";
-            this.textBoxNpenp.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNpenp.TabIndex = 17;
+            textBoxNpenp.Location = new System.Drawing.Point(454, 3);
+            textBoxNpenp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpenp.Name = "textBoxNpenp";
+            textBoxNpenp.Size = new System.Drawing.Size(116, 23);
+            textBoxNpenp.TabIndex = 17;
             // 
             // labelNpuse
             // 
-            this.labelNpuse.AutoSize = true;
-            this.labelNpuse.Location = new System.Drawing.Point(347, 32);
-            this.labelNpuse.Name = "labelNpuse";
-            this.labelNpuse.Size = new System.Drawing.Size(36, 13);
-            this.labelNpuse.TabIndex = 18;
-            this.labelNpuse.Text = "npuse";
+            labelNpuse.AutoSize = true;
+            labelNpuse.Location = new System.Drawing.Point(405, 37);
+            labelNpuse.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelNpuse.Name = "labelNpuse";
+            labelNpuse.Size = new System.Drawing.Size(39, 15);
+            labelNpuse.TabIndex = 18;
+            labelNpuse.Text = "npuse";
             // 
             // textBoxNpuse
             // 
-            this.textBoxNpuse.Location = new System.Drawing.Point(389, 29);
-            this.textBoxNpuse.Name = "textBoxNpuse";
-            this.textBoxNpuse.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNpuse.TabIndex = 19;
+            textBoxNpuse.Location = new System.Drawing.Point(454, 33);
+            textBoxNpuse.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpuse.Name = "textBoxNpuse";
+            textBoxNpuse.Size = new System.Drawing.Size(116, 23);
+            textBoxNpuse.TabIndex = 19;
             // 
             // labelNptf
             // 
-            this.labelNptf.AutoSize = true;
-            this.labelNptf.Location = new System.Drawing.Point(358, 58);
-            this.labelNptf.Name = "labelNptf";
-            this.labelNptf.Size = new System.Drawing.Size(25, 13);
-            this.labelNptf.TabIndex = 20;
-            this.labelNptf.Text = "nptf";
+            labelNptf.AutoSize = true;
+            labelNptf.Location = new System.Drawing.Point(418, 67);
+            labelNptf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelNptf.Name = "labelNptf";
+            labelNptf.Size = new System.Drawing.Size(29, 15);
+            labelNptf.TabIndex = 20;
+            labelNptf.Text = "nptf";
             // 
             // textBoxNptf
             // 
-            this.textBoxNptf.Location = new System.Drawing.Point(389, 55);
-            this.textBoxNptf.Name = "textBoxNptf";
-            this.textBoxNptf.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNptf.TabIndex = 21;
+            textBoxNptf.Location = new System.Drawing.Point(454, 63);
+            textBoxNptf.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNptf.Name = "textBoxNptf";
+            textBoxNptf.Size = new System.Drawing.Size(116, 23);
+            textBoxNptf.TabIndex = 21;
             // 
-            // Node_Grid_Details
+            // NodeGridDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.textBoxNptf);
-            this.Controls.Add(this.labelNptf);
-            this.Controls.Add(this.textBoxNpuse);
-            this.Controls.Add(this.labelNpuse);
-            this.Controls.Add(this.textBoxNpenp);
-            this.Controls.Add(this.labelNpenp);
-            this.Controls.Add(this.labelNpdtf);
-            this.Controls.Add(this.textBoxNpdtf);
-            this.Controls.Add(this.textBoxNpdtn);
-            this.Controls.Add(this.labelNpdtn);
-            this.Controls.Add(this.textBoxNpcby);
-            this.Controls.Add(this.labelNpcby);
-            this.Controls.Add(this.labelNpctm);
-            this.Controls.Add(this.textBoxNpctm);
-            this.Controls.Add(this.textBoxNpto);
-            this.Controls.Add(this.labelNpto);
-            this.Controls.Add(this.textBoxNpfr);
-            this.Controls.Add(this.labelNpfr);
-            this.Controls.Add(this.textBoxNpid);
-            this.Controls.Add(this.labelNpid);
-            this.Controls.Add(this.textBoxNpt);
-            this.Controls.Add(this.labelNpt);
-            this.Name = "Node_Grid_Details";
-            this.Size = new System.Drawing.Size(498, 110);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            AutoScroll = true;
+            AutoScrollMinSize = new System.Drawing.Size(576, 120);
+            Controls.Add(textBoxNptf);
+            Controls.Add(labelNptf);
+            Controls.Add(textBoxNpuse);
+            Controls.Add(labelNpuse);
+            Controls.Add(textBoxNpenp);
+            Controls.Add(labelNpenp);
+            Controls.Add(labelNpdtf);
+            Controls.Add(textBoxNpdtf);
+            Controls.Add(textBoxNpdtn);
+            Controls.Add(labelNpdtn);
+            Controls.Add(textBoxNpcby);
+            Controls.Add(labelNpcby);
+            Controls.Add(labelNpctm);
+            Controls.Add(textBoxNpctm);
+            Controls.Add(textBoxNpto);
+            Controls.Add(labelNpto);
+            Controls.Add(textBoxNpfr);
+            Controls.Add(labelNpfr);
+            Controls.Add(textBoxNpid);
+            Controls.Add(labelNpid);
+            Controls.Add(textBoxNpt);
+            Controls.Add(labelNpt);
+            Margin = new System.Windows.Forms.Padding(4);
+            Name = "NodeGridDetails";
+            Size = new System.Drawing.Size(576, 120);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

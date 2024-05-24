@@ -108,19 +108,18 @@
             tabPagePlayers.Location = new System.Drawing.Point(4, 24);
             tabPagePlayers.Margin = new System.Windows.Forms.Padding(4);
             tabPagePlayers.Name = "tabPagePlayers";
-            tabPagePlayers.Size = new System.Drawing.Size(1188, 584);
+            tabPagePlayers.Size = new System.Drawing.Size(192, 72);
             tabPagePlayers.TabIndex = 2;
             tabPagePlayers.Text = "Players";
             // 
             // playersControl
             // 
-            playersControl.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            playersControl.Location = new System.Drawing.Point(4, 12);
+            playersControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            playersControl.Location = new System.Drawing.Point(0, 0);
             playersControl.Margin = new System.Windows.Forms.Padding(4);
-            playersControl.MinimumSize = new System.Drawing.Size(500, 500);
             playersControl.Name = "playersControl";
             playersControl.ReadOnly = false;
-            playersControl.Size = new System.Drawing.Size(1184, 568);
+            playersControl.Size = new System.Drawing.Size(192, 72);
             playersControl.TabIndex = 0;
             playersControl.ValidTechTree = null;
             // 
@@ -131,18 +130,18 @@
             tabPageSystems.Location = new System.Drawing.Point(4, 24);
             tabPageSystems.Margin = new System.Windows.Forms.Padding(4);
             tabPageSystems.Name = "tabPageSystems";
-            tabPageSystems.Size = new System.Drawing.Size(784, 584);
+            tabPageSystems.Size = new System.Drawing.Size(1188, 584);
             tabPageSystems.TabIndex = 0;
             tabPageSystems.Text = "Systems";
             // 
             // systemsControl
             // 
-            systemsControl.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            systemsControl.Location = new System.Drawing.Point(4, 4);
+            systemsControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            systemsControl.Location = new System.Drawing.Point(0, 0);
             systemsControl.Margin = new System.Windows.Forms.Padding(4);
             systemsControl.Name = "systemsControl";
             systemsControl.ReadOnly = true;
-            systemsControl.Size = new System.Drawing.Size(782, 578);
+            systemsControl.Size = new System.Drawing.Size(1188, 584);
             systemsControl.TabIndex = 4;
             // 
             // tabPageNodeLines

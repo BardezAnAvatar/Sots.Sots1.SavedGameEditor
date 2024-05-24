@@ -17,34 +17,34 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
 
         public void LoadFromStruct(SimSystemSaveStruct System)
         {
-            this.system_Detail_Summary.LoadFromStruct(System);
-            this.system_Details_History.LoadFromStruct(System.Details);
-            this.system_Details_Misc.LoadFromStruct(System.Details);
-            this.system_Details_Von_Neumann.LoadFromStruct(System.Details.Vnm);
+            this.systemDetailSummary.LoadFromStruct(System);
+            this.systemDetailsHistory.LoadFromStruct(System.Details);
+            this.systemDetailsMisc.LoadFromStruct(System.Details);
+            this.systemDetailsVonNeumann.LoadFromStruct(System.Details.Vnm);
         }
 
         public void UpdateStruct(SimSystemSaveStruct System)
         {
-            this.system_Detail_Summary.UpdateStruct(System);
-            this.system_Details_History.UpdateStruct(System.Details);
-            this.system_Details_Misc.UpdateStruct(System.Details);
-            this.system_Details_Von_Neumann.UpdateStruct(System.Details.Vnm);
+            this.systemDetailSummary.UpdateStruct(System);
+            this.systemDetailsHistory.UpdateStruct(System.Details);
+            this.systemDetailsMisc.UpdateStruct(System.Details);
+            this.systemDetailsVonNeumann.UpdateStruct(System.Details.Vnm);
         }
 
         protected override void PercolateReadOnlyFlag(bool ReadOnlyFlag)
         {
-            this.system_Detail_Summary.ReadOnly = ReadOnlyFlag;
-            this.system_Details_History.ReadOnly = ReadOnlyFlag;
-            this.system_Details_Misc.ReadOnly = ReadOnlyFlag;
-            this.system_Details_Von_Neumann.ReadOnly = ReadOnlyFlag;
+            this.systemDetailSummary.ReadOnly = ReadOnlyFlag;
+            this.systemDetailsHistory.ReadOnly = ReadOnlyFlag;
+            this.systemDetailsMisc.ReadOnly = ReadOnlyFlag;
+            this.systemDetailsVonNeumann.ReadOnly = ReadOnlyFlag;
         }
 
         public void Clear()
         {
-            this.system_Detail_Summary.Clear();
-            this.system_Details_History.Clear();
-            this.system_Details_Von_Neumann.Clear();
-            this.system_Details_Misc.Clear();
+            this.systemDetailSummary.Clear();
+            this.systemDetailsHistory.Clear();
+            this.systemDetailsVonNeumann.Clear();
+            this.systemDetailsMisc.Clear();
         }
     }
 }

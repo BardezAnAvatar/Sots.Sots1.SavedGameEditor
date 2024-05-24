@@ -52,7 +52,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             dataGridViewPlayers.Location = new System.Drawing.Point(4, 4);
             dataGridViewPlayers.Margin = new System.Windows.Forms.Padding(4);
             dataGridViewPlayers.Name = "dataGridViewPlayers";
-            dataGridViewPlayers.Size = new System.Drawing.Size(1176, 126);
+            dataGridViewPlayers.Size = new System.Drawing.Size(1173, 126);
             dataGridViewPlayers.TabIndex = 0;
             dataGridViewPlayers.CellEndEdit += dataGridViewPlayers_CellEndEdit;
             dataGridViewPlayers.CurrentCellChanged += dataGridViewPlayers_CurrentCellChanged;
@@ -66,7 +66,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabControlPlayer.Margin = new System.Windows.Forms.Padding(4);
             tabControlPlayer.Name = "tabControlPlayer";
             tabControlPlayer.SelectedIndex = 0;
-            tabControlPlayer.Size = new System.Drawing.Size(1176, 538);
+            tabControlPlayer.Size = new System.Drawing.Size(1173, 538);
             tabControlPlayer.TabIndex = 3;
             // 
             // tabPageDetails
@@ -77,7 +77,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPageDetails.Margin = new System.Windows.Forms.Padding(4);
             tabPageDetails.Name = "tabPageDetails";
             tabPageDetails.Padding = new System.Windows.Forms.Padding(4);
-            tabPageDetails.Size = new System.Drawing.Size(1168, 510);
+            tabPageDetails.Size = new System.Drawing.Size(1165, 510);
             tabPageDetails.TabIndex = 0;
             tabPageDetails.Text = "Details";
             // 
@@ -86,10 +86,9 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             playerInfoControl.Dock = System.Windows.Forms.DockStyle.Fill;
             playerInfoControl.Location = new System.Drawing.Point(4, 4);
             playerInfoControl.Margin = new System.Windows.Forms.Padding(4);
-            playerInfoControl.MinimumSize = new System.Drawing.Size(772, 372);
             playerInfoControl.Name = "playerInfoControl";
             playerInfoControl.ReadOnly = false;
-            playerInfoControl.Size = new System.Drawing.Size(1160, 502);
+            playerInfoControl.Size = new System.Drawing.Size(1157, 502);
             playerInfoControl.TabIndex = 2;
             // 
             // tabPageTechTree
@@ -129,7 +128,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tableLayoutPanelSplit.RowCount = 2;
             tableLayoutPanelSplit.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 134F));
             tableLayoutPanelSplit.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            tableLayoutPanelSplit.Size = new System.Drawing.Size(1184, 680);
+            tableLayoutPanelSplit.Size = new System.Drawing.Size(1181, 680);
             tableLayoutPanelSplit.TabIndex = 4;
             // 
             // Players

@@ -75,7 +75,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Node_Gr
         protected override void PercolateReadOnlyFlag(bool ReadOnlyFlag)
         {
             this.dataGridViewNodes.ReadOnly = ReadOnlyFlag;
-            this.node_Grid_Details.ReadOnly = ReadOnlyFlag;
+            this.nodeGridDetails.ReadOnly = ReadOnlyFlag;
         }
 
 
@@ -102,7 +102,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Node_Gr
                 if (this.currentRow < this.saveGame.Sim.Ndgr2.Paths.Length.Value)
                     this.RefreshDetails(this.currentRow);
                 else
-                    this.node_Grid_Details.Clear();
+                    this.nodeGridDetails.Clear();
             }
         }
 
@@ -157,7 +157,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Node_Gr
 
         protected void PersistDetailsChanges(Int32 Row)
         {
-            this.node_Grid_Details.UpdateStruct(this.saveGame.Sim.Ndgr2.Paths.Values[Row]);
+            this.nodeGridDetails.UpdateStruct(this.saveGame.Sim.Ndgr2.Paths.Values[Row]);
         }
 
         public void PersistBeforeSave()
@@ -171,7 +171,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Node_Gr
         /// <summary>Refreshes the Player Details control from its data source</summary>
         protected void RefreshDetails(Int32 Row)
         {
-            this.node_Grid_Details.LoadFromStruct(this.saveGame.Sim.Ndgr2.Paths.Values[Row]);
+            this.nodeGridDetails.LoadFromStruct(this.saveGame.Sim.Ndgr2.Paths.Values[Row]);
         }
 
         /// <summary>Refreshes the entire dataview grid's data source</summary>
