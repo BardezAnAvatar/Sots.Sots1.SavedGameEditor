@@ -21,12 +21,12 @@ on:
           - skipped
       dry_run:
         description: 'Only log actions, do not perform any delete operations.'
-        required: true
+        required: false
         type: choice
         default: "true"
         options:
           - "true"
-          - "false"
+          - ""
 
 jobs:
   del_runs:
