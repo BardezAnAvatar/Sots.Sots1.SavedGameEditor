@@ -65,7 +65,7 @@
             // textBoxNpt
             // 
             textBoxNpt.Location = new System.Drawing.Point(43, 3);
-            textBoxNpt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             textBoxNpt.Name = "textBoxNpt";
             textBoxNpt.Size = new System.Drawing.Size(116, 23);
             textBoxNpt.TabIndex = 1;
@@ -83,7 +83,7 @@
             // textBoxNpid
             // 
             textBoxNpid.Location = new System.Drawing.Point(43, 33);
-            textBoxNpid.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             textBoxNpid.Name = "textBoxNpid";
             textBoxNpid.Size = new System.Drawing.Size(116, 23);
             textBoxNpid.TabIndex = 3;
@@ -101,7 +101,7 @@
             // textBoxNpfr
             // 
             textBoxNpfr.Location = new System.Drawing.Point(43, 63);
-            textBoxNpfr.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpfr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             textBoxNpfr.Name = "textBoxNpfr";
             textBoxNpfr.Size = new System.Drawing.Size(116, 23);
             textBoxNpfr.TabIndex = 5;
@@ -119,7 +119,7 @@
             // textBoxNpto
             // 
             textBoxNpto.Location = new System.Drawing.Point(43, 93);
-            textBoxNpto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             textBoxNpto.Name = "textBoxNpto";
             textBoxNpto.Size = new System.Drawing.Size(116, 23);
             textBoxNpto.TabIndex = 7;
@@ -127,7 +127,7 @@
             // textBoxNpctm
             // 
             textBoxNpctm.Location = new System.Drawing.Point(253, 3);
-            textBoxNpctm.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpctm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             textBoxNpctm.Name = "textBoxNpctm";
             textBoxNpctm.Size = new System.Drawing.Size(116, 23);
             textBoxNpctm.TabIndex = 8;
@@ -155,7 +155,7 @@
             // textBoxNpcby
             // 
             textBoxNpcby.Location = new System.Drawing.Point(253, 33);
-            textBoxNpcby.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpcby.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             textBoxNpcby.Name = "textBoxNpcby";
             textBoxNpcby.Size = new System.Drawing.Size(116, 23);
             textBoxNpcby.TabIndex = 11;
@@ -173,7 +173,7 @@
             // textBoxNpdtn
             // 
             textBoxNpdtn.Location = new System.Drawing.Point(253, 63);
-            textBoxNpdtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpdtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             textBoxNpdtn.Name = "textBoxNpdtn";
             textBoxNpdtn.Size = new System.Drawing.Size(116, 23);
             textBoxNpdtn.TabIndex = 13;
@@ -181,7 +181,7 @@
             // textBoxNpdtf
             // 
             textBoxNpdtf.Location = new System.Drawing.Point(253, 93);
-            textBoxNpdtf.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpdtf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             textBoxNpdtf.Name = "textBoxNpdtf";
             textBoxNpdtf.Size = new System.Drawing.Size(116, 23);
             textBoxNpdtf.TabIndex = 14;
@@ -209,7 +209,7 @@
             // textBoxNpenp
             // 
             textBoxNpenp.Location = new System.Drawing.Point(454, 3);
-            textBoxNpenp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpenp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             textBoxNpenp.Name = "textBoxNpenp";
             textBoxNpenp.Size = new System.Drawing.Size(116, 23);
             textBoxNpenp.TabIndex = 17;
@@ -227,7 +227,7 @@
             // textBoxNpuse
             // 
             textBoxNpuse.Location = new System.Drawing.Point(454, 33);
-            textBoxNpuse.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNpuse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             textBoxNpuse.Name = "textBoxNpuse";
             textBoxNpuse.Size = new System.Drawing.Size(116, 23);
             textBoxNpuse.TabIndex = 19;
@@ -245,7 +245,7 @@
             // textBoxNptf
             // 
             textBoxNptf.Location = new System.Drawing.Point(454, 63);
-            textBoxNptf.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBoxNptf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             textBoxNptf.Name = "textBoxNptf";
             textBoxNptf.Size = new System.Drawing.Size(116, 23);
             textBoxNptf.TabIndex = 21;

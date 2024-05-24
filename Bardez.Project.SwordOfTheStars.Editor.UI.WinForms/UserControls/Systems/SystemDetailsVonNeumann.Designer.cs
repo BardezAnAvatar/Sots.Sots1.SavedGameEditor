@@ -41,7 +41,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             // 
             checkBoxVonNeumannHomeWorld.AutoSize = true;
             checkBoxVonNeumannHomeWorld.Location = new System.Drawing.Point(4, 3);
-            checkBoxVonNeumannHomeWorld.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBoxVonNeumannHomeWorld.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             checkBoxVonNeumannHomeWorld.Name = "checkBoxVonNeumannHomeWorld";
             checkBoxVonNeumannHomeWorld.Size = new System.Drawing.Size(168, 19);
             checkBoxVonNeumannHomeWorld.TabIndex = 0;
@@ -55,9 +55,9 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             groupBoxDetails.Controls.Add(checkBoxVnex3);
             groupBoxDetails.Controls.Add(checkBoxVnd);
             groupBoxDetails.Location = new System.Drawing.Point(4, 30);
-            groupBoxDetails.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBoxDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             groupBoxDetails.Name = "groupBoxDetails";
-            groupBoxDetails.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBoxDetails.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             groupBoxDetails.Size = new System.Drawing.Size(175, 104);
             groupBoxDetails.TabIndex = 1;
             groupBoxDetails.TabStop = false;
@@ -69,7 +69,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             checkBoxVnpex3.AutoSize = true;
             checkBoxVnpex3.Enabled = false;
             checkBoxVnpex3.Location = new System.Drawing.Point(7, 75);
-            checkBoxVnpex3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBoxVnpex3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             checkBoxVnpex3.Name = "checkBoxVnpex3";
             checkBoxVnpex3.Size = new System.Drawing.Size(64, 19);
             checkBoxVnpex3.TabIndex = 2;
@@ -81,7 +81,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             checkBoxVnex3.AutoSize = true;
             checkBoxVnex3.Enabled = false;
             checkBoxVnex3.Location = new System.Drawing.Point(7, 48);
-            checkBoxVnex3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBoxVnex3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             checkBoxVnex3.Name = "checkBoxVnex3";
             checkBoxVnex3.Size = new System.Drawing.Size(57, 19);
             checkBoxVnex3.TabIndex = 1;
@@ -93,7 +93,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             checkBoxVnd.AutoSize = true;
             checkBoxVnd.Enabled = false;
             checkBoxVnd.Location = new System.Drawing.Point(7, 22);
-            checkBoxVnd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBoxVnd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             checkBoxVnd.Name = "checkBoxVnd";
             checkBoxVnd.Size = new System.Drawing.Size(46, 19);
             checkBoxVnd.TabIndex = 0;

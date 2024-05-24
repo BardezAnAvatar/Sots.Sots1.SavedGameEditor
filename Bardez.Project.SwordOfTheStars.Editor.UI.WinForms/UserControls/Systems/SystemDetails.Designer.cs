@@ -79,7 +79,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             tabPageHistory.Margin = new System.Windows.Forms.Padding(4);
             tabPageHistory.Name = "tabPageHistory";
             tabPageHistory.Padding = new System.Windows.Forms.Padding(4);
-            tabPageHistory.Size = new System.Drawing.Size(924, 424);
+            tabPageHistory.Size = new System.Drawing.Size(932, 424);
             tabPageHistory.TabIndex = 0;
             tabPageHistory.Text = "History";
             // 
