@@ -23,7 +23,7 @@ on:
         description: 'Only log actions, do not perform any delete operations.'
         required: false
         type: choice
-        default: "true"
+        default: ""
         options:
           - "true"
           - ""
