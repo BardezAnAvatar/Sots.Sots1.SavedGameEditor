@@ -54,18 +54,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             textBoxPlayerId = new System.Windows.Forms.TextBox();
             labelPlayerId = new System.Windows.Forms.Label();
             tabPageHabitability = new System.Windows.Forms.TabPage();
-            textBoxHasImm = new System.Windows.Forms.TextBox();
-            labelHasImm = new System.Windows.Forms.Label();
-            textBoxHasVac = new System.Windows.Forms.TextBox();
-            labelHasVac = new System.Windows.Forms.Label();
-            textBoxTerrMod = new System.Windows.Forms.TextBox();
-            labelTerrMod = new System.Windows.Forms.Label();
-            textBoxPopMod = new System.Windows.Forms.TextBox();
-            labelPopMod = new System.Windows.Forms.Label();
-            labelSuitTol = new System.Windows.Forms.Label();
-            textBoxSuitTol = new System.Windows.Forms.TextBox();
-            textBoxIdealSuit = new System.Windows.Forms.TextBox();
-            labelIdealSuit = new System.Windows.Forms.Label();
+            playerHabitability = new PlayerHabitability();
             tabPageEconomy = new System.Windows.Forms.TabPage();
             playerEconomy = new PlayerEconomy();
             tabPageResearch = new System.Windows.Forms.TabPage();
@@ -126,8 +115,9 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPagePlayerDetails.Controls.Add(textBoxPlayerId);
             tabPagePlayerDetails.Controls.Add(labelPlayerId);
             tabPagePlayerDetails.Location = new System.Drawing.Point(4, 24);
+            tabPagePlayerDetails.Margin = new System.Windows.Forms.Padding(4);
             tabPagePlayerDetails.Name = "tabPagePlayerDetails";
-            tabPagePlayerDetails.Padding = new System.Windows.Forms.Padding(3);
+            tabPagePlayerDetails.Padding = new System.Windows.Forms.Padding(4);
             tabPagePlayerDetails.Size = new System.Drawing.Size(764, 344);
             tabPagePlayerDetails.TabIndex = 0;
             tabPagePlayerDetails.Text = "Player Details";
@@ -144,7 +134,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // labelPswd
             // 
             labelPswd.AutoSize = true;
-            labelPswd.Location = new System.Drawing.Point(40, 132);
+            labelPswd.Location = new System.Drawing.Point(41, 133);
             labelPswd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelPswd.Name = "labelPswd";
             labelPswd.Size = new System.Drawing.Size(35, 15);
@@ -154,7 +144,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // checkBoxHasAiRebellion
             // 
             checkBoxHasAiRebellion.AutoSize = true;
-            checkBoxHasAiRebellion.Location = new System.Drawing.Point(359, 101);
+            checkBoxHasAiRebellion.Location = new System.Drawing.Point(360, 102);
             checkBoxHasAiRebellion.Margin = new System.Windows.Forms.Padding(4);
             checkBoxHasAiRebellion.Name = "checkBoxHasAiRebellion";
             checkBoxHasAiRebellion.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -166,7 +156,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // checkBoxRebAi
             // 
             checkBoxRebAi.AutoSize = true;
-            checkBoxRebAi.Location = new System.Drawing.Point(240, 101);
+            checkBoxRebAi.Location = new System.Drawing.Point(241, 102);
             checkBoxRebAi.Margin = new System.Windows.Forms.Padding(4);
             checkBoxRebAi.Name = "checkBoxRebAi";
             checkBoxRebAi.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -178,7 +168,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // checkBoxNpc
             // 
             checkBoxNpc.AutoSize = true;
-            checkBoxNpc.Location = new System.Drawing.Point(43, 101);
+            checkBoxNpc.Location = new System.Drawing.Point(44, 102);
             checkBoxNpc.Margin = new System.Windows.Forms.Padding(4);
             checkBoxNpc.Name = "checkBoxNpc";
             checkBoxNpc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -198,7 +188,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // labelTeam
             // 
             labelTeam.AutoSize = true;
-            labelTeam.Location = new System.Drawing.Point(40, 74);
+            labelTeam.Location = new System.Drawing.Point(41, 75);
             labelTeam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelTeam.Name = "labelTeam";
             labelTeam.Size = new System.Drawing.Size(35, 15);
@@ -216,7 +206,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // labelAvatar
             // 
             labelAvatar.AutoSize = true;
-            labelAvatar.Location = new System.Drawing.Point(412, 75);
+            labelAvatar.Location = new System.Drawing.Point(413, 76);
             labelAvatar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelAvatar.Name = "labelAvatar";
             labelAvatar.Size = new System.Drawing.Size(41, 15);
@@ -234,7 +224,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // labelBadge
             // 
             labelBadge.AutoSize = true;
-            labelBadge.Location = new System.Drawing.Point(413, 42);
+            labelBadge.Location = new System.Drawing.Point(414, 43);
             labelBadge.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelBadge.Name = "labelBadge";
             labelBadge.Size = new System.Drawing.Size(40, 15);
@@ -254,7 +244,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // labelColor
             // 
             labelColor.AutoSize = true;
-            labelColor.Location = new System.Drawing.Point(417, 11);
+            labelColor.Location = new System.Drawing.Point(418, 12);
             labelColor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelColor.Name = "labelColor";
             labelColor.Size = new System.Drawing.Size(36, 15);
@@ -272,7 +262,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // labelHomeSystem
             // 
             labelHomeSystem.AutoSize = true;
-            labelHomeSystem.Location = new System.Drawing.Point(198, 74);
+            labelHomeSystem.Location = new System.Drawing.Point(199, 75);
             labelHomeSystem.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelHomeSystem.Name = "labelHomeSystem";
             labelHomeSystem.Size = new System.Drawing.Size(81, 15);
@@ -291,7 +281,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // labelSpecies
             // 
             labelSpecies.AutoSize = true;
-            labelSpecies.Location = new System.Drawing.Point(219, 43);
+            labelSpecies.Location = new System.Drawing.Point(220, 44);
             labelSpecies.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelSpecies.Name = "labelSpecies";
             labelSpecies.Size = new System.Drawing.Size(60, 15);
@@ -309,7 +299,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // labelName
             // 
             labelName.AutoSize = true;
-            labelName.Location = new System.Drawing.Point(240, 12);
+            labelName.Location = new System.Drawing.Point(241, 13);
             labelName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelName.Name = "labelName";
             labelName.Size = new System.Drawing.Size(39, 15);
@@ -328,7 +318,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // labelPlayerIndex
             // 
             labelPlayerIndex.AutoSize = true;
-            labelPlayerIndex.Location = new System.Drawing.Point(4, 42);
+            labelPlayerIndex.Location = new System.Drawing.Point(5, 43);
             labelPlayerIndex.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelPlayerIndex.Name = "labelPlayerIndex";
             labelPlayerIndex.Size = new System.Drawing.Size(71, 15);
@@ -347,7 +337,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // labelPlayerId
             // 
             labelPlayerId.AutoSize = true;
-            labelPlayerId.Location = new System.Drawing.Point(22, 11);
+            labelPlayerId.Location = new System.Drawing.Point(23, 12);
             labelPlayerId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelPlayerId.Name = "labelPlayerId";
             labelPlayerId.Size = new System.Drawing.Size(53, 15);
@@ -357,139 +347,34 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // tabPageHabitability
             // 
             tabPageHabitability.BackColor = System.Drawing.SystemColors.Control;
-            tabPageHabitability.Controls.Add(textBoxHasImm);
-            tabPageHabitability.Controls.Add(labelHasImm);
-            tabPageHabitability.Controls.Add(textBoxHasVac);
-            tabPageHabitability.Controls.Add(labelHasVac);
-            tabPageHabitability.Controls.Add(textBoxTerrMod);
-            tabPageHabitability.Controls.Add(labelTerrMod);
-            tabPageHabitability.Controls.Add(textBoxPopMod);
-            tabPageHabitability.Controls.Add(labelPopMod);
-            tabPageHabitability.Controls.Add(labelSuitTol);
-            tabPageHabitability.Controls.Add(textBoxSuitTol);
-            tabPageHabitability.Controls.Add(textBoxIdealSuit);
-            tabPageHabitability.Controls.Add(labelIdealSuit);
+            tabPageHabitability.Controls.Add(playerHabitability);
             tabPageHabitability.Location = new System.Drawing.Point(4, 24);
+            tabPageHabitability.Margin = new System.Windows.Forms.Padding(4);
             tabPageHabitability.Name = "tabPageHabitability";
-            tabPageHabitability.Padding = new System.Windows.Forms.Padding(3);
+            tabPageHabitability.Padding = new System.Windows.Forms.Padding(4);
             tabPageHabitability.Size = new System.Drawing.Size(764, 344);
             tabPageHabitability.TabIndex = 1;
             tabPageHabitability.Text = "Habitability";
             // 
-            // textBoxHasImm
+            // playerHabitability
             // 
-            textBoxHasImm.Location = new System.Drawing.Point(627, 38);
-            textBoxHasImm.Margin = new System.Windows.Forms.Padding(4);
-            textBoxHasImm.Name = "textBoxHasImm";
-            textBoxHasImm.Size = new System.Drawing.Size(116, 23);
-            textBoxHasImm.TabIndex = 1060;
-            // 
-            // labelHasImm
-            // 
-            labelHasImm.AutoSize = true;
-            labelHasImm.Location = new System.Drawing.Point(528, 42);
-            labelHasImm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            labelHasImm.Name = "labelHasImm";
-            labelHasImm.Size = new System.Drawing.Size(95, 15);
-            labelHasImm.TabIndex = 1055;
-            labelHasImm.Text = "Has Imm(unity?)";
-            // 
-            // textBoxHasVac
-            // 
-            textBoxHasVac.Location = new System.Drawing.Point(627, 7);
-            textBoxHasVac.Margin = new System.Windows.Forms.Padding(4);
-            textBoxHasVac.Name = "textBoxHasVac";
-            textBoxHasVac.Size = new System.Drawing.Size(116, 23);
-            textBoxHasVac.TabIndex = 1050;
-            // 
-            // labelHasVac
-            // 
-            labelHasVac.AutoSize = true;
-            labelHasVac.Location = new System.Drawing.Point(545, 11);
-            labelHasVac.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            labelHasVac.Name = "labelHasVac";
-            labelHasVac.Size = new System.Drawing.Size(78, 15);
-            labelHasVac.TabIndex = 1045;
-            labelHasVac.Text = "Has Vac(cine)";
-            // 
-            // textBoxTerrMod
-            // 
-            textBoxTerrMod.Location = new System.Drawing.Point(396, 38);
-            textBoxTerrMod.Margin = new System.Windows.Forms.Padding(4);
-            textBoxTerrMod.Name = "textBoxTerrMod";
-            textBoxTerrMod.Size = new System.Drawing.Size(116, 23);
-            textBoxTerrMod.TabIndex = 1040;
-            // 
-            // labelTerrMod
-            // 
-            labelTerrMod.AutoSize = true;
-            labelTerrMod.Location = new System.Drawing.Point(269, 42);
-            labelTerrMod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            labelTerrMod.Name = "labelTerrMod";
-            labelTerrMod.Size = new System.Drawing.Size(123, 15);
-            labelTerrMod.TabIndex = 1035;
-            labelTerrMod.Text = "Terraforming Modifier";
-            // 
-            // textBoxPopMod
-            // 
-            textBoxPopMod.Location = new System.Drawing.Point(396, 7);
-            textBoxPopMod.Margin = new System.Windows.Forms.Padding(4);
-            textBoxPopMod.Name = "textBoxPopMod";
-            textBoxPopMod.Size = new System.Drawing.Size(116, 23);
-            textBoxPopMod.TabIndex = 1030;
-            // 
-            // labelPopMod
-            // 
-            labelPopMod.AutoSize = true;
-            labelPopMod.Location = new System.Drawing.Point(237, 11);
-            labelPopMod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            labelPopMod.Name = "labelPopMod";
-            labelPopMod.Size = new System.Drawing.Size(155, 15);
-            labelPopMod.TabIndex = 1025;
-            labelPopMod.Text = "Population Growth Modifier";
-            // 
-            // labelSuitTol
-            // 
-            labelSuitTol.AutoSize = true;
-            labelSuitTol.Location = new System.Drawing.Point(13, 42);
-            labelSuitTol.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            labelSuitTol.Name = "labelSuitTol";
-            labelSuitTol.Size = new System.Drawing.Size(95, 15);
-            labelSuitTol.TabIndex = 1015;
-            labelSuitTol.Text = "Climate Haz. Tol.";
-            // 
-            // textBoxSuitTol
-            // 
-            textBoxSuitTol.Location = new System.Drawing.Point(112, 38);
-            textBoxSuitTol.Margin = new System.Windows.Forms.Padding(4);
-            textBoxSuitTol.Name = "textBoxSuitTol";
-            textBoxSuitTol.Size = new System.Drawing.Size(116, 23);
-            textBoxSuitTol.TabIndex = 1020;
-            // 
-            // textBoxIdealSuit
-            // 
-            textBoxIdealSuit.Location = new System.Drawing.Point(112, 7);
-            textBoxIdealSuit.Margin = new System.Windows.Forms.Padding(4);
-            textBoxIdealSuit.Name = "textBoxIdealSuit";
-            textBoxIdealSuit.Size = new System.Drawing.Size(116, 23);
-            textBoxIdealSuit.TabIndex = 1010;
-            // 
-            // labelIdealSuit
-            // 
-            labelIdealSuit.AutoSize = true;
-            labelIdealSuit.Location = new System.Drawing.Point(6, 11);
-            labelIdealSuit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            labelIdealSuit.Name = "labelIdealSuit";
-            labelIdealSuit.Size = new System.Drawing.Size(102, 15);
-            labelIdealSuit.TabIndex = 1005;
-            labelIdealSuit.Text = "Ideal Climate Suit.";
+            playerHabitability.Dock = System.Windows.Forms.DockStyle.Fill;
+            playerHabitability.Location = new System.Drawing.Point(4, 4);
+            playerHabitability.Margin = new System.Windows.Forms.Padding(4);
+            playerHabitability.MinimumSize = new System.Drawing.Size(744, 60);
+            playerHabitability.Name = "playerHabitability";
+            playerHabitability.ReadOnly = false;
+            playerHabitability.Size = new System.Drawing.Size(756, 336);
+            playerHabitability.TabIndex = 0;
             // 
             // tabPageEconomy
             // 
             tabPageEconomy.BackColor = System.Drawing.SystemColors.Control;
             tabPageEconomy.Controls.Add(playerEconomy);
             tabPageEconomy.Location = new System.Drawing.Point(4, 24);
+            tabPageEconomy.Margin = new System.Windows.Forms.Padding(4);
             tabPageEconomy.Name = "tabPageEconomy";
+            tabPageEconomy.Padding = new System.Windows.Forms.Padding(4);
             tabPageEconomy.Size = new System.Drawing.Size(764, 344);
             tabPageEconomy.TabIndex = 2;
             tabPageEconomy.Text = "Economy";
@@ -497,12 +382,12 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // playerEconomy
             // 
             playerEconomy.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerEconomy.Location = new System.Drawing.Point(0, 0);
+            playerEconomy.Location = new System.Drawing.Point(4, 4);
             playerEconomy.Margin = new System.Windows.Forms.Padding(4);
             playerEconomy.MinimumSize = new System.Drawing.Size(552, 60);
             playerEconomy.Name = "playerEconomy";
             playerEconomy.ReadOnly = false;
-            playerEconomy.Size = new System.Drawing.Size(764, 344);
+            playerEconomy.Size = new System.Drawing.Size(756, 336);
             playerEconomy.TabIndex = 0;
             // 
             // tabPageResearch
@@ -510,7 +395,9 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPageResearch.BackColor = System.Drawing.SystemColors.Control;
             tabPageResearch.Controls.Add(playerResearch);
             tabPageResearch.Location = new System.Drawing.Point(4, 24);
+            tabPageResearch.Margin = new System.Windows.Forms.Padding(4);
             tabPageResearch.Name = "tabPageResearch";
+            tabPageResearch.Padding = new System.Windows.Forms.Padding(4);
             tabPageResearch.Size = new System.Drawing.Size(764, 344);
             tabPageResearch.TabIndex = 3;
             tabPageResearch.Text = "Research";
@@ -518,12 +405,12 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // playerResearch
             // 
             playerResearch.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerResearch.Location = new System.Drawing.Point(0, 0);
+            playerResearch.Location = new System.Drawing.Point(4, 4);
             playerResearch.Margin = new System.Windows.Forms.Padding(4);
             playerResearch.MinimumSize = new System.Drawing.Size(224, 120);
             playerResearch.Name = "playerResearch";
             playerResearch.ReadOnly = false;
-            playerResearch.Size = new System.Drawing.Size(764, 344);
+            playerResearch.Size = new System.Drawing.Size(756, 336);
             playerResearch.TabIndex = 0;
             // 
             // tabPageIndustry
@@ -531,7 +418,9 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPageIndustry.BackColor = System.Drawing.SystemColors.Control;
             tabPageIndustry.Controls.Add(playerIndustry);
             tabPageIndustry.Location = new System.Drawing.Point(4, 24);
+            tabPageIndustry.Margin = new System.Windows.Forms.Padding(4);
             tabPageIndustry.Name = "tabPageIndustry";
+            tabPageIndustry.Padding = new System.Windows.Forms.Padding(4);
             tabPageIndustry.Size = new System.Drawing.Size(764, 344);
             tabPageIndustry.TabIndex = 4;
             tabPageIndustry.Text = "Industry";
@@ -539,10 +428,12 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // playerIndustry
             // 
             playerIndustry.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerIndustry.Location = new System.Drawing.Point(0, 0);
+            playerIndustry.Location = new System.Drawing.Point(4, 4);
+            playerIndustry.Margin = new System.Windows.Forms.Padding(4);
+            playerIndustry.MinimumSize = new System.Drawing.Size(258, 92);
             playerIndustry.Name = "playerIndustry";
             playerIndustry.ReadOnly = false;
-            playerIndustry.Size = new System.Drawing.Size(764, 344);
+            playerIndustry.Size = new System.Drawing.Size(756, 336);
             playerIndustry.TabIndex = 0;
             // 
             // tabPageUnknowns
@@ -550,7 +441,9 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPageUnknowns.BackColor = System.Drawing.SystemColors.Control;
             tabPageUnknowns.Controls.Add(playerUnknowns);
             tabPageUnknowns.Location = new System.Drawing.Point(4, 24);
+            tabPageUnknowns.Margin = new System.Windows.Forms.Padding(4);
             tabPageUnknowns.Name = "tabPageUnknowns";
+            tabPageUnknowns.Padding = new System.Windows.Forms.Padding(4);
             tabPageUnknowns.Size = new System.Drawing.Size(764, 344);
             tabPageUnknowns.TabIndex = 5;
             tabPageUnknowns.Text = "Unknowns";
@@ -558,7 +451,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // playerUnknowns
             // 
             playerUnknowns.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerUnknowns.Location = new System.Drawing.Point(0, 0);
+            playerUnknowns.Location = new System.Drawing.Point(4, 4);
             playerUnknowns.Margin = new System.Windows.Forms.Padding(4);
             playerUnknowns.MinimumSize = new System.Drawing.Size(766, 346);
             playerUnknowns.Name = "playerUnknowns";
@@ -583,7 +476,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPagePlayerDetails.ResumeLayout(false);
             tabPagePlayerDetails.PerformLayout();
             tabPageHabitability.ResumeLayout(false);
-            tabPageHabitability.PerformLayout();
             tabPageEconomy.ResumeLayout(false);
             tabPageResearch.ResumeLayout(false);
             tabPageIndustry.ResumeLayout(false);
@@ -619,20 +511,8 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
         private System.Windows.Forms.GroupBox groupBoxUnknowns;
         private System.Windows.Forms.Label labelTeam;
         private System.Windows.Forms.TextBox textBoxTeam;
-        private System.Windows.Forms.Label labelIdealSuit;
-        private System.Windows.Forms.TextBox textBoxIdealSuit;
-        private System.Windows.Forms.TextBox textBoxSuitTol;
-        private System.Windows.Forms.Label labelSuitTol;
-        private System.Windows.Forms.Label labelPopMod;
-        private System.Windows.Forms.TextBox textBoxPopMod;
-        private System.Windows.Forms.Label labelTerrMod;
-        private System.Windows.Forms.TextBox textBoxTerrMod;
         private System.Windows.Forms.CheckBox checkBoxNpc;
         private System.Windows.Forms.CheckBox checkBoxRebAi;
-        private System.Windows.Forms.Label labelHasVac;
-        private System.Windows.Forms.TextBox textBoxHasVac;
-        private System.Windows.Forms.Label labelHasImm;
-        private System.Windows.Forms.TextBox textBoxHasImm;
         private System.Windows.Forms.CheckBox checkBoxHasAiRebellion;
         private System.Windows.Forms.ColorDialog colorDialogColor;
         private System.Windows.Forms.TextBox textBoxPswd;
@@ -641,5 +521,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
         private PlayerIndustry playerIndustry;
         private PlayerResearch playerResearch;
         private PlayerEconomy playerEconomy;
+        private PlayerHabitability playerHabitability;
     }
 }
