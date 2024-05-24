@@ -14,7 +14,7 @@ on:
     # - edited #updating PR title, body, state or base?
 
 concurrency: 
-  group: ${{ github.ref_name }}
+  group: PR-${{ github.ref_name }}
   cancel-in-progress: true
 
 jobs:
