@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using Bardez.Project.SwordOfTheStars.DataStructures;
 using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.UserControl;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.Helpers;
 
 namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
 {

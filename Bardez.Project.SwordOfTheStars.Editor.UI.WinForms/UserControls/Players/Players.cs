@@ -9,6 +9,7 @@ using Bardez.Project.SwordOfTheStars.DataStructures;
 using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.UserControl;
 using Bardez.Project.SwordOfTheStars.ResourceManagement;
 using Bardez.Project.SwordOfTheStars.UI.Abstractions.TechTree.Graph;
+using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.Helpers;
 
 namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
 {
