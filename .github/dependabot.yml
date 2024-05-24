@@ -22,4 +22,6 @@ updates:
       include: scope
       prefix: ":arrow_up: "
     schedule:
+      timezone: "America/Chicago"
+      time: "22:00"
       interval: daily
