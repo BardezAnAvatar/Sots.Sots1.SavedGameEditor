@@ -24,6 +24,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
         public void LoadFromStruct()
         {
             this.textBoxPlayerId.Text				= this.player.PlayerId.Value.ToString();
+            this.textBoxPswd.Text					= this.player.Details.Pswd.Value.ToString();
             this.textBoxPlayerIndex.Text			= this.player.Details.PlayerIndex.Value.ToString();
             this.textBoxName.Text					= this.player.Details.PlayerName.Value.CharacterString;
             this.textBoxSpecies.Text				= this.player.Details.Species.Value.ToString();
@@ -57,59 +58,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             /****************
             *   Unknowns    *
             ****************/
-            this.textBoxMaxOh.Text					= this.player.Details.MaxOH.Value.ToString();
-            this.textBoxTrm.Text					= this.player.Details.Trm.Value.ToString();
-            this.textBoxTrp.Text					= this.player.Details.Trp.Value.ToString();
-            this.textBoxTra.Text					= this.player.Details.Tra.Value.ToString();
-            this.checkBoxAmine.Checked				= this.player.Details.AMine.BooleanValue;
-            this.textBoxMinPure.Text				= this.player.Details.MinPure.Value.ToString();
-            this.textBoxMinRate.Text				= this.player.Details.MinRate.Value.ToString();
-            this.textBoxNgts.Text					= this.player.Details.Ngts.Value.ToString();
-            this.textBoxPrGtTrf.Text				= this.player.Details.PrGtTrf.Value.ToString();
-            this.textBoxGTraf.Text					= this.player.Details.GTraf.Value.ToString();
-            this.textBoxCstR.Text					= this.player.Details.CstR.Value.ToString();
-            this.textBoxCstE.Text					= this.player.Details.CstE.Value.ToString();
-            this.textBoxCstT.Text					= this.player.Details.CstT.Value.ToString();
-            this.textBoxMaint.Text					= this.player.Details.Maint.Value.ToString();
-            this.textBoxShrm.Text					= this.player.Details.Shrm.Value.ToString();
-            this.textBoxStatus.Text					= this.player.Details.Status.Value.ToString();
-            this.textBoxElim.Text					= this.player.Details.Elim.Value.ToString();
-            this.checkBoxReqCl.Checked				= this.player.Details.ReqCL.BooleanValue;
-            this.textBoxNpTrak.Text					= this.player.Details.NpTrak.Value.ToString();
-            this.textBoxHasDisc.Text				= this.player.Details.HasDisc.Value.ToString();
-            this.textBoxHasDiscSp.Text				= this.player.Details.HasDiscSp.Value.ToString();
-            this.textBoxHasDiscCl.Text				= this.player.Details.HasDiscCl.Value.ToString();
-            this.textBoxHasEnc.Text					= this.player.Details.HasEnc.Value.ToString();
-            this.textBoxHasEng.Text					= this.player.Details.HasEng.Value.ToString();
-            this.textBoxFngNum.Text					= this.player.Details.FngNum.Value.Value.ToString();
-            this.textBoxPvMa.Text					= this.player.Details.PvMA.Value.ToString();
-            this.textBoxAibn.Text					= this.player.Details.AibN.Value.ToString();
-            this.checkBoxHgs.Checked				= this.player.Details.Hgs.BooleanValue;
-            this.checkBoxHadvs.Checked				= this.player.Details.Hadvs.BooleanValue;
-            this.checkBoxHarcc.Checked				= this.player.Details.Harcc.BooleanValue;
-            this.checkBoxCnVItl.Checked				= this.player.Details.CnVItl.BooleanValue;
-            this.textBoxPddm.Text					= this.player.Details.Pddm.Value.ToString();
-            this.textBoxBankTrn.Text				= this.player.Details.BankTrn.Value.ToString();
-            this.textBoxBankPr.Text					= this.player.Details.BankPr.Value.ToString();
-            this.textBoxBankEl.Text					= this.player.Details.BankEl.Value.ToString();
-            this.textBoxPlcy.Text					= this.player.Details.Plcy.Value.ToString();
-            this.textBoxPswd.Text					= this.player.Details.Pswd.Value.ToString();
-            this.textBoxLret.Text					= this.player.Details.Lret.Value.ToString();
-            this.textBoxNmeid.Text					= this.player.Details.Nmeid.Value.ToString();
-            this.checkBoxCdp.Checked				= this.player.Details.Cdp.BooleanValue;
-            this.textBoxAidf.Text					= this.player.Details.Aidf.Value.ToString();
-            this.checkBoxSrn.Checked				= this.player.Details.Srn.BooleanValue;
-            this.textBoxSrcTo.Text					= this.player.Details.SrcTo.Value.ToString();
-            this.textBoxLboid.Text					= this.player.Details.Lboid.Value.ToString();
-            this.textBoxLcid2.Text					= this.player.Details.Lcid2.Value.ToString();
-            this.textBoxResTnm.Text					= this.player.Details.ResTnm.Value.CharacterString;
-            this.checkBoxResErrRoll.Checked			= this.player.Details.ResErrRoll.BooleanValue;
-            this.checkBoxCta.Checked				= this.player.Details.Cta.BooleanValue;
-            this.textBoxNexp.Text					= this.player.Details.Nexp.Value.ToString();
-            this.textBoxNWeapXcl.Text				= this.player.Details.NWeapXcl.Value.ToString();
-            this.textBoxNdeflay.Text				= this.player.Details.Ndeflay.Value.ToString();
-            this.textBoxRdtc.Text					= this.player.Details.Rdtc.Value.ToString();
-            this.textBoxTnc.Text					= this.player.Details.Tnc.Value.ToString();
+            playerUnknowns.SetPlayerStruct(player.Details);
         }
 
 
