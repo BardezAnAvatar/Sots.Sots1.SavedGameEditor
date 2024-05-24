@@ -1,4 +1,4 @@
-name: "Continous Integration: Auto-Approve PRs"
+name: "Continuous Integration: Auto-Approve PRs"
 
 on:
   pull_request:
@@ -20,9 +20,8 @@ permissions:
   contents: read
   pull-requests: write
 
-
 concurrency: 
-  group: ${{ github.ref_name }}
+  group: Auto-Approve-${{ github.ref_name }}
   cancel-in-progress: true
 
 jobs:
@@ -61,5 +60,6 @@ jobs:
     if: ${{ needs.check-pr.outputs.semver_skipped == 'false' }} && (github.actor == 'dependabot[bot]' || github.actor == 'BardezAnAvatar')
     steps:
       - uses: hmarr/auto-approve-action@v4
+        name: Auto-Approval
         env:
           review-message: "Bot auto-approved PR"
