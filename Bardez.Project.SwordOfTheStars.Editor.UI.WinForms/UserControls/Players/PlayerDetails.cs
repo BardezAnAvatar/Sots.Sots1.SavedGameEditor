@@ -39,9 +39,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             this.textBoxResRate.Text				= this.player.Details.ResRate.Value.ToString();
             this.textBoxResMod.Text					= this.player.Details.ResModifier.Value.ToString();
             this.textBoxResScl.Text					= this.player.Details.ResScl.Value.ToString();
-            this.textBoxIndOutMod.Text				= this.player.Details.OutMod.Value.ToString();
-            this.textBoxIndOutReb.Text				= this.player.Details.RebOutMod.Value.ToString();
-            this.textBoxIndOutScl.Text				= this.player.Details.ScOutMod.Value.ToString();
             this.textBoxIncMod.Text					= this.player.Details.IncMod.Value.ToString();
             this.textBoxPopMod.Text					= this.player.Details.PopMod.Value.ToString();
             this.textBoxTerrMod.Text				= this.player.Details.TerraMod.Value.ToString();
@@ -54,6 +51,11 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             this.textBoxNextPrjId.Text				= this.player.Details.NextPrjId.Value.ToString();
             this.checkBoxHasAiRebellion.Checked		= this.player.Details.HasAiRebellion.BooleanValue;
             this.textBoxPvSav.Text					= this.player.Details.PvSav.Value.ToString();
+
+            /****************
+            *   Industry    *
+            ****************/
+            playerIndustry.LoadFromStruct(player.Details);
 
             /****************
             *   Unknowns    *
@@ -162,9 +164,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             this.textBoxResRate.Enabled =           !ReadOnlyFlag;
             this.textBoxResMod.Enabled =            !ReadOnlyFlag;
             this.textBoxResScl.Enabled =            !ReadOnlyFlag;
-            this.textBoxIndOutMod.Enabled =         !ReadOnlyFlag;
-            this.textBoxIndOutReb.Enabled =         !ReadOnlyFlag;
-            this.textBoxIndOutScl.Enabled =         !ReadOnlyFlag;
             this.textBoxIncMod.Enabled =            !ReadOnlyFlag;
             this.textBoxPopMod.Enabled =            !ReadOnlyFlag;
             this.textBoxTerrMod.Enabled =           !ReadOnlyFlag;
@@ -175,6 +174,11 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             this.checkBoxCnTrd.Enabled =            !ReadOnlyFlag;
             this.checkBoxCnRad.Enabled =            !ReadOnlyFlag;
             this.checkBoxHasAiRebellion.Enabled =   !ReadOnlyFlag;
+
+            /****************
+            *   Industry    *
+            ****************/
+            playerIndustry.PercolateReadOnlyFlag(ReadOnlyFlag);
         }
 
 
@@ -247,9 +251,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             this.player.Details.ResRate.Value                       = Single.Parse(this.textBoxResRate.Text);
             this.player.Details.ResModifier.Value                   = Single.Parse(this.textBoxResMod.Text);
             this.player.Details.ResScl.Value                        = Single.Parse(this.textBoxResScl.Text);
-            this.player.Details.OutMod.Value                        = Single.Parse(this.textBoxIndOutMod.Text);
-            this.player.Details.RebOutMod.Value                     = Single.Parse(this.textBoxIndOutReb.Text);
-            this.player.Details.ScOutMod.Value                      = Single.Parse(this.textBoxIndOutScl.Text);
             this.player.Details.IncMod.Value                        = Single.Parse(this.textBoxIncMod.Text);
             this.player.Details.PopMod.Value                        = Single.Parse(this.textBoxPopMod.Text);
             this.player.Details.TerraMod.Value                      = Single.Parse(this.textBoxTerrMod.Text);
@@ -262,6 +263,11 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             this.player.Details.NextPrjId.Value                     = Int32.Parse(this.textBoxNextPrjId.Text);
             this.player.Details.HasAiRebellion.BooleanValue         = this.checkBoxHasAiRebellion.Checked;
             this.player.Details.PvSav.Value                         = Int32.Parse(this.textBoxPvSav.Text);
+
+            /****************
+            *   Industry    *
+            ****************/
+            playerIndustry.UpdateStruct(player.Details);
 
             /****************
             *   Unknowns    *

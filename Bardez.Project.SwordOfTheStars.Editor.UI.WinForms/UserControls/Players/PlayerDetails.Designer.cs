@@ -85,15 +85,10 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             textBoxNextPrjId = new System.Windows.Forms.TextBox();
             labelNextPrjId = new System.Windows.Forms.Label();
             tabPageIndustry = new System.Windows.Forms.TabPage();
-            textBoxIndOutScl = new System.Windows.Forms.TextBox();
-            labelIndOutScl = new System.Windows.Forms.Label();
-            textBoxIndOutReb = new System.Windows.Forms.TextBox();
-            labelIndOutReb = new System.Windows.Forms.Label();
-            textBoxIndOutMod = new System.Windows.Forms.TextBox();
-            labelIndOutMod = new System.Windows.Forms.Label();
             tabPageUnknowns = new System.Windows.Forms.TabPage();
-            colorDialogColor = new System.Windows.Forms.ColorDialog();
             playerUnknowns = new PlayerUnknowns();
+            colorDialogColor = new System.Windows.Forms.ColorDialog();
+            playerIndustry = new PlayerIndustry();
             tabControlPlayer.SuspendLayout();
             tabPagePlayerDetails.SuspendLayout();
             tabPageHabitability.SuspendLayout();
@@ -692,71 +687,12 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // tabPageIndustry
             // 
             tabPageIndustry.BackColor = System.Drawing.SystemColors.Control;
-            tabPageIndustry.Controls.Add(textBoxIndOutScl);
-            tabPageIndustry.Controls.Add(labelIndOutScl);
-            tabPageIndustry.Controls.Add(textBoxIndOutReb);
-            tabPageIndustry.Controls.Add(labelIndOutReb);
-            tabPageIndustry.Controls.Add(textBoxIndOutMod);
-            tabPageIndustry.Controls.Add(labelIndOutMod);
+            tabPageIndustry.Controls.Add(playerIndustry);
             tabPageIndustry.Location = new System.Drawing.Point(4, 24);
             tabPageIndustry.Name = "tabPageIndustry";
             tabPageIndustry.Size = new System.Drawing.Size(764, 344);
             tabPageIndustry.TabIndex = 4;
             tabPageIndustry.Text = "Industry";
-            // 
-            // textBoxIndOutScl
-            // 
-            textBoxIndOutScl.Location = new System.Drawing.Point(141, 66);
-            textBoxIndOutScl.Margin = new System.Windows.Forms.Padding(4);
-            textBoxIndOutScl.Name = "textBoxIndOutScl";
-            textBoxIndOutScl.Size = new System.Drawing.Size(116, 23);
-            textBoxIndOutScl.TabIndex = 4030;
-            // 
-            // labelIndOutScl
-            // 
-            labelIndOutScl.AutoSize = true;
-            labelIndOutScl.Location = new System.Drawing.Point(39, 70);
-            labelIndOutScl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            labelIndOutScl.Name = "labelIndOutScl";
-            labelIndOutScl.Size = new System.Drawing.Size(98, 15);
-            labelIndOutScl.TabIndex = 4025;
-            labelIndOutScl.Text = "Ind. Output Scale";
-            // 
-            // textBoxIndOutReb
-            // 
-            textBoxIndOutReb.Location = new System.Drawing.Point(141, 35);
-            textBoxIndOutReb.Margin = new System.Windows.Forms.Padding(4);
-            textBoxIndOutReb.Name = "textBoxIndOutReb";
-            textBoxIndOutReb.Size = new System.Drawing.Size(116, 23);
-            textBoxIndOutReb.TabIndex = 4020;
-            // 
-            // labelIndOutReb
-            // 
-            labelIndOutReb.AutoSize = true;
-            labelIndOutReb.Location = new System.Drawing.Point(4, 39);
-            labelIndOutReb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            labelIndOutReb.Name = "labelIndOutReb";
-            labelIndOutReb.Size = new System.Drawing.Size(133, 15);
-            labelIndOutReb.TabIndex = 4015;
-            labelIndOutReb.Text = "Ind. Output Reb(ellion?)";
-            // 
-            // textBoxIndOutMod
-            // 
-            textBoxIndOutMod.Location = new System.Drawing.Point(141, 4);
-            textBoxIndOutMod.Margin = new System.Windows.Forms.Padding(4);
-            textBoxIndOutMod.Name = "textBoxIndOutMod";
-            textBoxIndOutMod.Size = new System.Drawing.Size(116, 23);
-            textBoxIndOutMod.TabIndex = 4010;
-            // 
-            // labelIndOutMod
-            // 
-            labelIndOutMod.AutoSize = true;
-            labelIndOutMod.Location = new System.Drawing.Point(21, 8);
-            labelIndOutMod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            labelIndOutMod.Name = "labelIndOutMod";
-            labelIndOutMod.Size = new System.Drawing.Size(116, 15);
-            labelIndOutMod.TabIndex = 4005;
-            labelIndOutMod.Text = "Ind. Output Modifier";
             // 
             // tabPageUnknowns
             // 
@@ -768,10 +704,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPageUnknowns.TabIndex = 5;
             tabPageUnknowns.Text = "Unknowns";
             // 
-            // colorDialogColor
-            // 
-            colorDialogColor.FullOpen = true;
-            // 
             // playerUnknowns
             // 
             playerUnknowns.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -781,6 +713,19 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             playerUnknowns.ReadOnly = false;
             playerUnknowns.Size = new System.Drawing.Size(764, 344);
             playerUnknowns.TabIndex = 0;
+            // 
+            // colorDialogColor
+            // 
+            colorDialogColor.FullOpen = true;
+            // 
+            // playerIndustry
+            // 
+            playerIndustry.Dock = System.Windows.Forms.DockStyle.Fill;
+            playerIndustry.Location = new System.Drawing.Point(0, 0);
+            playerIndustry.Name = "playerIndustry";
+            playerIndustry.ReadOnly = false;
+            playerIndustry.Size = new System.Drawing.Size(764, 344);
+            playerIndustry.TabIndex = 0;
             // 
             // PlayerDetails
             // 
@@ -801,7 +746,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPageResearch.ResumeLayout(false);
             tabPageResearch.PerformLayout();
             tabPageIndustry.ResumeLayout(false);
-            tabPageIndustry.PerformLayout();
             tabPageUnknowns.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -846,12 +790,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
         private System.Windows.Forms.TextBox textBoxResMod;
         private System.Windows.Forms.Label labelResScl;
         private System.Windows.Forms.TextBox textBoxResScl;
-        private System.Windows.Forms.Label labelIndOutMod;
-        private System.Windows.Forms.TextBox textBoxIndOutMod;
-        private System.Windows.Forms.TextBox textBoxIndOutReb;
-        private System.Windows.Forms.Label labelIndOutReb;
-        private System.Windows.Forms.TextBox textBoxIndOutScl;
-        private System.Windows.Forms.Label labelIndOutScl;
         private System.Windows.Forms.Label labelIncMod;
         private System.Windows.Forms.TextBox textBoxIncMod;
         private System.Windows.Forms.Label labelPopMod;
@@ -875,5 +813,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
         private System.Windows.Forms.TextBox textBoxPswd;
         private System.Windows.Forms.Label labelPswd;
         private PlayerUnknowns playerUnknowns;
+        private PlayerIndustry playerIndustry;
     }
 }
