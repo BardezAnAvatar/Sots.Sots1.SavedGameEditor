@@ -6,6 +6,7 @@
     <TargetFramework>net8.0-windows</TargetFramework>
     <AssemblyTitle>Exception Handler</AssemblyTitle>
     <Copyright>Copyright © Bardez 2024</Copyright>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <Product>Exception Handler</Product>
   </PropertyGroup>
   <ItemGroup>

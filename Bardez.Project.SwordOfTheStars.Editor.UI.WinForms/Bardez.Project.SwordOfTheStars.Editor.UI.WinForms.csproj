@@ -10,6 +10,7 @@
     <Description>Save Game editor for Sword of the Stars</Description>
     <Copyright>Copyright © Bardez 2024</Copyright>
 	<ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.Program</StartupObject>
