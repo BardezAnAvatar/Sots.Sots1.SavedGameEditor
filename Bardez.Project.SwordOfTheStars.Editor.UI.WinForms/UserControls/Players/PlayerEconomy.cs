@@ -26,7 +26,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             textBoxIncMod.Enabled = !readOnlyFlag;
             checkBoxCnTrd.Enabled = !readOnlyFlag;
             checkBoxCnRad.Enabled = !readOnlyFlag;
-            textBoxPvSav.Enabled = !readOnlyFlag;
+            //textBoxPvSav is always disabled;
         }
 
         public void UpdateStruct(SimPlayerDetailsSaveStruct playerDetails)
