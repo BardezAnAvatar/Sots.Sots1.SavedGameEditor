@@ -94,6 +94,8 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            AutoScroll = true;
+            AutoScrollMinSize = new System.Drawing.Size(258, 92);
             Controls.Add(textBoxIndOutScl);
             Controls.Add(labelIndOutScl);
             Controls.Add(textBoxIndOutReb);
@@ -101,7 +103,6 @@
             Controls.Add(textBoxIndOutMod);
             Controls.Add(labelIndOutMod);
             Margin = new System.Windows.Forms.Padding(4);
-            MinimumSize = new System.Drawing.Size(258, 92);
             Name = "PlayerIndustry";
             Size = new System.Drawing.Size(258, 92);
             ResumeLayout(false);

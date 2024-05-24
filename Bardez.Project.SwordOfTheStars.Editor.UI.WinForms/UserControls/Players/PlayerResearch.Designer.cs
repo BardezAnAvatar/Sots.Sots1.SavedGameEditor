@@ -115,6 +115,8 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            AutoScroll = true;
+            AutoScrollMinSize = new System.Drawing.Size(224, 120);
             Controls.Add(textBoxResScl);
             Controls.Add(labelResScl);
             Controls.Add(textBoxResMod);
@@ -124,7 +126,6 @@
             Controls.Add(textBoxNextPrjId);
             Controls.Add(labelNextPrjId);
             Margin = new System.Windows.Forms.Padding(4);
-            MinimumSize = new System.Drawing.Size(224, 120);
             Name = "PlayerResearch";
             Size = new System.Drawing.Size(224, 120);
             ResumeLayout(false);

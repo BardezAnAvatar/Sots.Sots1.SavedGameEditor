@@ -154,6 +154,8 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            AutoScroll = true;
+            AutoScrollMinSize = new System.Drawing.Size(744, 60);
             Controls.Add(textBoxHasImm);
             Controls.Add(labelHasImm);
             Controls.Add(textBoxHasVac);
@@ -167,7 +169,6 @@
             Controls.Add(textBoxIdealSuit);
             Controls.Add(labelIdealSuit);
             Margin = new System.Windows.Forms.Padding(4);
-            MinimumSize = new System.Drawing.Size(744, 60);
             Name = "PlayerHabitability";
             Size = new System.Drawing.Size(744, 60);
             ResumeLayout(false);

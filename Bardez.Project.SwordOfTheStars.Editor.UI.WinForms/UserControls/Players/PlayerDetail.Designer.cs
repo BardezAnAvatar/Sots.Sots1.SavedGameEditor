@@ -284,6 +284,8 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            AutoScroll = true;
+            AutoScrollMinSize = new System.Drawing.Size(610, 150);
             Controls.Add(textBoxPswd);
             Controls.Add(labelPswd);
             Controls.Add(checkBoxHasAiRebellion);
@@ -308,7 +310,6 @@
             Controls.Add(textBoxPlayerId);
             Controls.Add(labelPlayerId);
             Margin = new System.Windows.Forms.Padding(4);
-            MinimumSize = new System.Drawing.Size(610, 150);
             Name = "PlayerDetail";
             Size = new System.Drawing.Size(610, 150);
             ResumeLayout(false);

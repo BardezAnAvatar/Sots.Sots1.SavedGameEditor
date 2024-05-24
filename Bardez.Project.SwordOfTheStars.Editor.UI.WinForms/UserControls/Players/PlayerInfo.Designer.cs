@@ -30,6 +30,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
         {
             tabControlPlayer = new System.Windows.Forms.TabControl();
             tabPagePlayerDetails = new System.Windows.Forms.TabPage();
+            playerDetail = new PlayerDetail();
             tabPageHabitability = new System.Windows.Forms.TabPage();
             playerHabitability = new PlayerHabitability();
             tabPageEconomy = new System.Windows.Forms.TabPage();
@@ -40,7 +41,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             playerIndustry = new PlayerIndustry();
             tabPageUnknowns = new System.Windows.Forms.TabPage();
             playerUnknowns = new PlayerUnknowns();
-            playerDetail = new PlayerDetail();
             tabControlPlayer.SuspendLayout();
             tabPagePlayerDetails.SuspendLayout();
             tabPageHabitability.SuspendLayout();
@@ -62,7 +62,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabControlPlayer.Location = new System.Drawing.Point(0, 0);
             tabControlPlayer.Name = "tabControlPlayer";
             tabControlPlayer.SelectedIndex = 0;
-            tabControlPlayer.Size = new System.Drawing.Size(772, 372);
+            tabControlPlayer.Size = new System.Drawing.Size(769, 372);
             tabControlPlayer.TabIndex = 0;
             // 
             // tabPagePlayerDetails
@@ -76,6 +76,18 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPagePlayerDetails.Size = new System.Drawing.Size(764, 344);
             tabPagePlayerDetails.TabIndex = 0;
             tabPagePlayerDetails.Text = "Player Details";
+            // 
+            // playerDetail
+            // 
+            playerDetail.AutoScroll = true;
+            playerDetail.AutoScrollMinSize = new System.Drawing.Size(610, 150);
+            playerDetail.Dock = System.Windows.Forms.DockStyle.Fill;
+            playerDetail.Location = new System.Drawing.Point(4, 4);
+            playerDetail.Margin = new System.Windows.Forms.Padding(4);
+            playerDetail.Name = "playerDetail";
+            playerDetail.ReadOnly = false;
+            playerDetail.Size = new System.Drawing.Size(756, 336);
+            playerDetail.TabIndex = 0;
             // 
             // tabPageHabitability
             // 
@@ -91,10 +103,11 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             // playerHabitability
             // 
+            playerHabitability.AutoScroll = true;
+            playerHabitability.AutoScrollMinSize = new System.Drawing.Size(744, 60);
             playerHabitability.Dock = System.Windows.Forms.DockStyle.Fill;
             playerHabitability.Location = new System.Drawing.Point(4, 4);
             playerHabitability.Margin = new System.Windows.Forms.Padding(4);
-            playerHabitability.MinimumSize = new System.Drawing.Size(744, 60);
             playerHabitability.Name = "playerHabitability";
             playerHabitability.ReadOnly = false;
             playerHabitability.Size = new System.Drawing.Size(756, 336);
@@ -114,10 +127,11 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             // playerEconomy
             // 
+            playerEconomy.AutoScroll = true;
+            playerEconomy.AutoScrollMinSize = new System.Drawing.Size(552, 60);
             playerEconomy.Dock = System.Windows.Forms.DockStyle.Fill;
             playerEconomy.Location = new System.Drawing.Point(4, 4);
             playerEconomy.Margin = new System.Windows.Forms.Padding(4);
-            playerEconomy.MinimumSize = new System.Drawing.Size(552, 60);
             playerEconomy.Name = "playerEconomy";
             playerEconomy.ReadOnly = false;
             playerEconomy.Size = new System.Drawing.Size(756, 336);
@@ -137,10 +151,11 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             // playerResearch
             // 
+            playerResearch.AutoScroll = true;
+            playerResearch.AutoScrollMinSize = new System.Drawing.Size(224, 120);
             playerResearch.Dock = System.Windows.Forms.DockStyle.Fill;
             playerResearch.Location = new System.Drawing.Point(4, 4);
             playerResearch.Margin = new System.Windows.Forms.Padding(4);
-            playerResearch.MinimumSize = new System.Drawing.Size(224, 120);
             playerResearch.Name = "playerResearch";
             playerResearch.ReadOnly = false;
             playerResearch.Size = new System.Drawing.Size(756, 336);
@@ -160,10 +175,11 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             // playerIndustry
             // 
+            playerIndustry.AutoScroll = true;
+            playerIndustry.AutoScrollMinSize = new System.Drawing.Size(258, 92);
             playerIndustry.Dock = System.Windows.Forms.DockStyle.Fill;
             playerIndustry.Location = new System.Drawing.Point(4, 4);
             playerIndustry.Margin = new System.Windows.Forms.Padding(4);
-            playerIndustry.MinimumSize = new System.Drawing.Size(258, 92);
             playerIndustry.Name = "playerIndustry";
             playerIndustry.ReadOnly = false;
             playerIndustry.Size = new System.Drawing.Size(756, 336);
@@ -177,31 +193,21 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPageUnknowns.Margin = new System.Windows.Forms.Padding(4);
             tabPageUnknowns.Name = "tabPageUnknowns";
             tabPageUnknowns.Padding = new System.Windows.Forms.Padding(4);
-            tabPageUnknowns.Size = new System.Drawing.Size(764, 344);
+            tabPageUnknowns.Size = new System.Drawing.Size(761, 344);
             tabPageUnknowns.TabIndex = 5;
             tabPageUnknowns.Text = "Unknowns";
             // 
             // playerUnknowns
             // 
+            playerUnknowns.AutoScroll = true;
+            playerUnknowns.AutoScrollMinSize = new System.Drawing.Size(766, 346);
             playerUnknowns.Dock = System.Windows.Forms.DockStyle.Fill;
             playerUnknowns.Location = new System.Drawing.Point(4, 4);
             playerUnknowns.Margin = new System.Windows.Forms.Padding(4);
-            playerUnknowns.MinimumSize = new System.Drawing.Size(766, 346);
             playerUnknowns.Name = "playerUnknowns";
             playerUnknowns.ReadOnly = false;
-            playerUnknowns.Size = new System.Drawing.Size(766, 346);
+            playerUnknowns.Size = new System.Drawing.Size(753, 336);
             playerUnknowns.TabIndex = 0;
-            // 
-            // playerDetail
-            // 
-            playerDetail.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerDetail.Location = new System.Drawing.Point(4, 4);
-            playerDetail.Margin = new System.Windows.Forms.Padding(4);
-            playerDetail.MinimumSize = new System.Drawing.Size(610, 150);
-            playerDetail.Name = "playerDetail";
-            playerDetail.ReadOnly = false;
-            playerDetail.Size = new System.Drawing.Size(756, 336);
-            playerDetail.TabIndex = 0;
             // 
             // PlayerInfo
             // 
@@ -209,7 +215,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             Controls.Add(tabControlPlayer);
             Margin = new System.Windows.Forms.Padding(4);
-            MinimumSize = new System.Drawing.Size(772, 372);
             Name = "PlayerInfo";
             Size = new System.Drawing.Size(772, 372);
             tabControlPlayer.ResumeLayout(false);

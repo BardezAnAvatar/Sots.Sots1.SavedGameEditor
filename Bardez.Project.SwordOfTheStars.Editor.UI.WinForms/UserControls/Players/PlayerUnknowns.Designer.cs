@@ -1056,6 +1056,8 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            AutoScroll = true;
+            AutoScrollMinSize = new System.Drawing.Size(766, 346);
             Controls.Add(textBoxTnc);
             Controls.Add(textBoxRdtc);
             Controls.Add(textBoxNdeflay);
@@ -1151,7 +1153,6 @@
             Controls.Add(labelTra);
             Controls.Add(labelTrm);
             Margin = new System.Windows.Forms.Padding(4);
-            MinimumSize = new System.Drawing.Size(766, 346);
             Name = "PlayerUnknowns";
             Size = new System.Drawing.Size(766, 346);
             ResumeLayout(false);

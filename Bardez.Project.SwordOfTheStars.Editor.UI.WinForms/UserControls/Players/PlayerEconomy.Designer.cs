@@ -121,6 +121,8 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            AutoScroll = true;
+            AutoScrollMinSize = new System.Drawing.Size(552, 60);
             Controls.Add(textBoxPvSav);
             Controls.Add(labelPvSav);
             Controls.Add(textBoxSav);
@@ -130,7 +132,6 @@
             Controls.Add(textBoxIncMod);
             Controls.Add(labelIncMod);
             Margin = new System.Windows.Forms.Padding(4);
-            MinimumSize = new System.Drawing.Size(552, 60);
             Name = "PlayerEconomy";
             Size = new System.Drawing.Size(552, 60);
             ResumeLayout(false);
