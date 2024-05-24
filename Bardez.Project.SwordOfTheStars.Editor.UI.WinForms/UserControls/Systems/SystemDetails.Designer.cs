@@ -54,7 +54,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             tableLayoutPanel.RowCount = 2;
             tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 58F));
             tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            tableLayoutPanel.Size = new System.Drawing.Size(948, 520);
+            tableLayoutPanel.Size = new System.Drawing.Size(948, 420);
             tableLayoutPanel.TabIndex = 5;
             // 
             // tabControlDetails
@@ -65,21 +65,23 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             tabControlDetails.Location = new System.Drawing.Point(4, 62);
             tabControlDetails.Margin = new System.Windows.Forms.Padding(4);
             tabControlDetails.Name = "tabControlDetails";
-            tabControlDetails.Padding = new System.Drawing.Point(4, 4);
+            tabControlDetails.Padding = new System.Drawing.Point(0, 0);
             tabControlDetails.SelectedIndex = 0;
-            tabControlDetails.Size = new System.Drawing.Size(940, 454);
+            tabControlDetails.Size = new System.Drawing.Size(940, 354);
             tabControlDetails.TabIndex = 5;
             // 
             // tabPageHistory
             // 
+            tabPageHistory.AutoScroll = true;
+            tabPageHistory.AutoScrollMinSize = new System.Drawing.Size(932, 324);
             tabPageHistory.BackColor = System.Drawing.SystemColors.Control;
             tabPageHistory.Controls.Add(systemDetailsVonNeumann);
             tabPageHistory.Controls.Add(systemDetailsHistory);
-            tabPageHistory.Location = new System.Drawing.Point(4, 26);
+            tabPageHistory.Location = new System.Drawing.Point(4, 24);
             tabPageHistory.Margin = new System.Windows.Forms.Padding(4);
             tabPageHistory.Name = "tabPageHistory";
             tabPageHistory.Padding = new System.Windows.Forms.Padding(4);
-            tabPageHistory.Size = new System.Drawing.Size(932, 424);
+            tabPageHistory.Size = new System.Drawing.Size(932, 326);
             tabPageHistory.TabIndex = 0;
             tabPageHistory.Text = "History";
             // 
@@ -103,12 +105,15 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             // 
             // tabPageMisc
             // 
+            tabPageMisc.AutoScroll = true;
+            tabPageMisc.AutoScrollMinSize = new System.Drawing.Size(931, 267);
             tabPageMisc.BackColor = System.Drawing.SystemColors.Control;
             tabPageMisc.Controls.Add(systemDetailsMisc);
-            tabPageMisc.Location = new System.Drawing.Point(4, 26);
+            tabPageMisc.Location = new System.Drawing.Point(4, 24);
+            tabPageMisc.Margin = new System.Windows.Forms.Padding(4);
             tabPageMisc.Name = "tabPageMisc";
-            tabPageMisc.Padding = new System.Windows.Forms.Padding(3);
-            tabPageMisc.Size = new System.Drawing.Size(932, 424);
+            tabPageMisc.Padding = new System.Windows.Forms.Padding(4);
+            tabPageMisc.Size = new System.Drawing.Size(932, 326);
             tabPageMisc.TabIndex = 1;
             tabPageMisc.Text = "Misc.";
             // 
@@ -137,8 +142,9 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             Controls.Add(tableLayoutPanel);
             Margin = new System.Windows.Forms.Padding(0);
+            MaximumSize = new System.Drawing.Size(948, 420);
             Name = "SystemDetails";
-            Size = new System.Drawing.Size(948, 520);
+            Size = new System.Drawing.Size(948, 420);
             tableLayoutPanel.ResumeLayout(false);
             tabControlDetails.ResumeLayout(false);
             tabPageHistory.ResumeLayout(false);
