@@ -1,6 +1,6 @@
 namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
 {
-    partial class PlayerDetails
+    partial class PlayerInfo
     {
         /// <summary> 
         /// Required designer variable.

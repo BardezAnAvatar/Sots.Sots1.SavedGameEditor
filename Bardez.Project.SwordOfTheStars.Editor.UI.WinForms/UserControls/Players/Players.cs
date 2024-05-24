@@ -67,7 +67,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
         protected override void PercolateReadOnlyFlag(bool ReadOnlyFlag)
         {
             this.dataGridViewPlayers.ReadOnly = ReadOnlyFlag;
-            this.playerDetailsControl.ReadOnly = ReadOnlyFlag;
+            this.playerInfoControl.ReadOnly = ReadOnlyFlag;
             this.techTree.ReadOnly = ReadOnlyFlag;
         }
 
@@ -86,7 +86,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             {
                 //update to new Row
                 this.selectedIndex = GetCurrentPlayerRow();
-                this.playerDetailsControl.LoadFromStruct(this.savegame.Sim.Players.Values[this.selectedIndex]);
+                this.playerInfoControl.LoadFromStruct(this.savegame.Sim.Players.Values[this.selectedIndex]);
                 this.techTree.Player = this.savegame.Sim.Players.Values[this.selectedIndex].Details;
 
                 //clear tech tree details
@@ -166,7 +166,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
 
         protected void PersistDetailsChanges()
         {
-            this.playerDetailsControl.UpdateStruct();
+            this.playerInfoControl.UpdateStruct();
         }
 
         protected void PersistTechTreeChanges()
@@ -185,7 +185,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
         /// <summary>Refreshes the Player Details control from its data source</summary>
         protected void RefreshDetails()
         {
-            this.playerDetailsControl.LoadFromStruct();
+            this.playerInfoControl.LoadFromStruct();
         }
 
         /// <summary>Refreshes the entire dataview grid's data source</summary>

@@ -52,9 +52,9 @@
     <Compile Update="UserControls\NodeGrid\NodeGrid.Designer.cs">
       <DependentUpon>NodeGrid.cs</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\Players\PlayerDetails.cs" />
-    <Compile Update="UserControls\Players\PlayerDetails.Designer.cs">
-      <DependentUpon>PlayerDetails.cs</DependentUpon>
+    <Compile Update="UserControls\Players\PlayerInfo.cs" />
+    <Compile Update="UserControls\Players\PlayerInfo.Designer.cs">
+      <DependentUpon>PlayerInfo.cs</DependentUpon>
     </Compile>
     <Compile Update="UserControls\Players\Players.cs" />
     <Compile Update="UserControls\Players\Players.Designer.cs">
@@ -110,8 +110,8 @@
     <EmbeddedResource Update="UserControls\NodeGrid\NodeGrid.resx">
       <DependentUpon>NodeGrid.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="UserControls\Players\PlayerDetails.resx">
-      <DependentUpon>PlayerDetails.cs</DependentUpon>
+    <EmbeddedResource Update="UserControls\Players\PlayerInfo.resx">
+      <DependentUpon>PlayerInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Update="UserControls\Players\Players.resx">
       <DependentUpon>Players.cs</DependentUpon>

@@ -5,11 +5,11 @@ using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.BaseUserCon
 
 namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
 {
-    public partial class PlayerDetails : DisplayUserControl
+    public partial class PlayerInfo : DisplayUserControl
     {
         protected SimPlayerSaveStruct player;
 
-        public PlayerDetails() : base()
+        public PlayerInfo() : base()
         {
             InitializeComponent();
             this.player = null;
