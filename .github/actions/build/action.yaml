@@ -29,4 +29,4 @@ runs:
       run: |
         commit=$(git rev-parse HEAD)
         branch=$(git branch --show-current)
-        dotnet build "Bardez.Project.SwordOfTheStars.Editor.sln" --configuration Release --no-restore -p:RepositoryCommit="$commit" -p:RepositoryBranch="$branch"
+        dotnet build "Bardez.Project.SwordOfTheStars.Editor.sln" --configuration Release --no-restore -p:RepositoryCommit="$commit" -p:RepositoryBranch="$branch" -p:EnableWindowsTargeting=true
