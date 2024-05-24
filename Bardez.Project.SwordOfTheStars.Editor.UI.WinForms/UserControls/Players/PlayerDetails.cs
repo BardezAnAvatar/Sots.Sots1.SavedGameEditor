@@ -35,18 +35,18 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             this.textBoxTeam.Text					= this.player.Details.Team.Value.ToString();
             this.textBoxIdealSuit.Text				= this.player.Details.IdealSuit.Value.ToString();
             this.textBoxSuitTol.Text				= this.player.Details.SuitTolerance.Value.ToString();
-            this.textBoxSav.Text					= this.player.Details.Sav.Value.ToString();
-            this.textBoxIncMod.Text					= this.player.Details.IncMod.Value.ToString();
             this.textBoxPopMod.Text					= this.player.Details.PopMod.Value.ToString();
             this.textBoxTerrMod.Text				= this.player.Details.TerraMod.Value.ToString();
             this.checkBoxNpc.Checked				= this.player.Details.Npc.BooleanValue;
             this.checkBoxRebAi.Checked				= this.player.Details.RebAi.BooleanValue;
             this.textBoxHasVac.Text					= this.player.Details.HasVac.Value.ToString();
             this.textBoxHasImm.Text					= this.player.Details.HasImm.Value.ToString();
-            this.checkBoxCnTrd.Checked				= this.player.Details.CnTrd.BooleanValue;
-            this.checkBoxCnRad.Checked				= this.player.Details.CnRad.BooleanValue;
             this.checkBoxHasAiRebellion.Checked		= this.player.Details.HasAiRebellion.BooleanValue;
-            this.textBoxPvSav.Text					= this.player.Details.PvSav.Value.ToString();
+
+            /****************
+            *   Economy     *
+            ****************/
+            playerEconomy.LoadFromStruct(player.Details);
 
             /****************
             *   Research    *
@@ -161,17 +161,18 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             this.textBoxTeam.Enabled =              !ReadOnlyFlag;
             this.textBoxIdealSuit.Enabled =         !ReadOnlyFlag;
             this.textBoxSuitTol.Enabled =           !ReadOnlyFlag;
-            this.textBoxSav.Enabled =               !ReadOnlyFlag;
-            this.textBoxIncMod.Enabled =            !ReadOnlyFlag;
             this.textBoxPopMod.Enabled =            !ReadOnlyFlag;
             this.textBoxTerrMod.Enabled =           !ReadOnlyFlag;
             this.checkBoxNpc.Enabled =              !ReadOnlyFlag;
             this.checkBoxRebAi.Enabled =            !ReadOnlyFlag;
             this.textBoxHasVac.Enabled =            !ReadOnlyFlag;
             this.textBoxHasImm.Enabled =            !ReadOnlyFlag;
-            this.checkBoxCnTrd.Enabled =            !ReadOnlyFlag;
-            this.checkBoxCnRad.Enabled =            !ReadOnlyFlag;
             this.checkBoxHasAiRebellion.Enabled =   !ReadOnlyFlag;
+
+            /****************
+            *   Economy     *
+            ****************/
+            playerEconomy.PercolateReadOnlyFlag(ReadOnlyFlag);
 
             /****************
             *   Research    *
@@ -250,18 +251,18 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             this.player.Details.Team.Value                          = Int32.Parse(this.textBoxTeam.Text);
             this.player.Details.IdealSuit.Value                     = Single.Parse(this.textBoxIdealSuit.Text);
             this.player.Details.SuitTolerance.Value                 = Single.Parse(this.textBoxSuitTol.Text);
-            this.player.Details.Sav.Value                           = Int32.Parse(this.textBoxSav.Text);
-            this.player.Details.IncMod.Value                        = Single.Parse(this.textBoxIncMod.Text);
             this.player.Details.PopMod.Value                        = Single.Parse(this.textBoxPopMod.Text);
             this.player.Details.TerraMod.Value                      = Single.Parse(this.textBoxTerrMod.Text);
             this.player.Details.Npc.BooleanValue                    = this.checkBoxNpc.Checked;
             this.player.Details.RebAi.BooleanValue                  = this.checkBoxRebAi.Checked;
             this.player.Details.HasVac.Value                        = Int32.Parse(this.textBoxHasVac.Text);
             this.player.Details.HasImm.Value                        = Int32.Parse(this.textBoxHasImm.Text);
-            this.player.Details.CnTrd.BooleanValue                  = this.checkBoxCnTrd.Checked;
-            this.player.Details.CnRad.BooleanValue                  = this.checkBoxCnRad.Checked;
             this.player.Details.HasAiRebellion.BooleanValue         = this.checkBoxHasAiRebellion.Checked;
-            this.player.Details.PvSav.Value                         = Int32.Parse(this.textBoxPvSav.Text);
+
+            /****************
+            *   Economy     *
+            ****************/
+            playerEconomy.UpdateStruct(player.Details);
 
             /****************
             *   Research    *

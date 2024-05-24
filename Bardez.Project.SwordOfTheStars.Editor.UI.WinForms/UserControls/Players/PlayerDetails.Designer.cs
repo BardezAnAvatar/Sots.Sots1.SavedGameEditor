@@ -67,14 +67,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             textBoxIdealSuit = new System.Windows.Forms.TextBox();
             labelIdealSuit = new System.Windows.Forms.Label();
             tabPageEconomy = new System.Windows.Forms.TabPage();
-            textBoxPvSav = new System.Windows.Forms.TextBox();
-            labelPvSav = new System.Windows.Forms.Label();
-            textBoxSav = new System.Windows.Forms.TextBox();
-            labelSav = new System.Windows.Forms.Label();
-            checkBoxCnRad = new System.Windows.Forms.CheckBox();
-            checkBoxCnTrd = new System.Windows.Forms.CheckBox();
-            textBoxIncMod = new System.Windows.Forms.TextBox();
-            labelIncMod = new System.Windows.Forms.Label();
             tabPageResearch = new System.Windows.Forms.TabPage();
             playerResearch = new PlayerResearch();
             tabPageIndustry = new System.Windows.Forms.TabPage();
@@ -82,6 +74,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPageUnknowns = new System.Windows.Forms.TabPage();
             playerUnknowns = new PlayerUnknowns();
             colorDialogColor = new System.Windows.Forms.ColorDialog();
+            playerEconomy = new PlayerEconomy();
             tabControlPlayer.SuspendLayout();
             tabPagePlayerDetails.SuspendLayout();
             tabPageHabitability.SuspendLayout();
@@ -494,98 +487,12 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // tabPageEconomy
             // 
             tabPageEconomy.BackColor = System.Drawing.SystemColors.Control;
-            tabPageEconomy.Controls.Add(textBoxPvSav);
-            tabPageEconomy.Controls.Add(labelPvSav);
-            tabPageEconomy.Controls.Add(textBoxSav);
-            tabPageEconomy.Controls.Add(labelSav);
-            tabPageEconomy.Controls.Add(checkBoxCnRad);
-            tabPageEconomy.Controls.Add(checkBoxCnTrd);
-            tabPageEconomy.Controls.Add(textBoxIncMod);
-            tabPageEconomy.Controls.Add(labelIncMod);
+            tabPageEconomy.Controls.Add(playerEconomy);
             tabPageEconomy.Location = new System.Drawing.Point(4, 24);
             tabPageEconomy.Name = "tabPageEconomy";
             tabPageEconomy.Size = new System.Drawing.Size(764, 344);
             tabPageEconomy.TabIndex = 2;
             tabPageEconomy.Text = "Economy";
-            // 
-            // textBoxPvSav
-            // 
-            textBoxPvSav.Enabled = false;
-            textBoxPvSav.Location = new System.Drawing.Point(433, 7);
-            textBoxPvSav.Margin = new System.Windows.Forms.Padding(4);
-            textBoxPvSav.Name = "textBoxPvSav";
-            textBoxPvSav.Size = new System.Drawing.Size(116, 23);
-            textBoxPvSav.TabIndex = 2050;
-            // 
-            // labelPvSav
-            // 
-            labelPvSav.AutoSize = true;
-            labelPvSav.Location = new System.Drawing.Point(334, 11);
-            labelPvSav.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            labelPvSav.Name = "labelPvSav";
-            labelPvSav.Size = new System.Drawing.Size(95, 15);
-            labelPvSav.TabIndex = 2045;
-            labelPvSav.Text = "Previous Savings";
-            // 
-            // textBoxSav
-            // 
-            textBoxSav.Location = new System.Drawing.Point(202, 7);
-            textBoxSav.Margin = new System.Windows.Forms.Padding(4);
-            textBoxSav.Name = "textBoxSav";
-            textBoxSav.Size = new System.Drawing.Size(116, 23);
-            textBoxSav.TabIndex = 2030;
-            // 
-            // labelSav
-            // 
-            labelSav.AutoSize = true;
-            labelSav.Location = new System.Drawing.Point(105, 11);
-            labelSav.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            labelSav.Name = "labelSav";
-            labelSav.Size = new System.Drawing.Size(93, 15);
-            labelSav.TabIndex = 2025;
-            labelSav.Text = "Imperial Savings";
-            // 
-            // checkBoxCnRad
-            // 
-            checkBoxCnRad.AutoSize = true;
-            checkBoxCnRad.Location = new System.Drawing.Point(9, 40);
-            checkBoxCnRad.Margin = new System.Windows.Forms.Padding(4);
-            checkBoxCnRad.Name = "checkBoxCnRad";
-            checkBoxCnRad.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            checkBoxCnRad.Size = new System.Drawing.Size(73, 19);
-            checkBoxCnRad.TabIndex = 2020;
-            checkBoxCnRad.Text = "Can Raid";
-            checkBoxCnRad.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCnTrd
-            // 
-            checkBoxCnTrd.AutoSize = true;
-            checkBoxCnTrd.Location = new System.Drawing.Point(4, 9);
-            checkBoxCnTrd.Margin = new System.Windows.Forms.Padding(4);
-            checkBoxCnTrd.Name = "checkBoxCnTrd";
-            checkBoxCnTrd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            checkBoxCnTrd.Size = new System.Drawing.Size(78, 19);
-            checkBoxCnTrd.TabIndex = 2010;
-            checkBoxCnTrd.Text = "Can Trade";
-            checkBoxCnTrd.UseVisualStyleBackColor = true;
-            // 
-            // textBoxIncMod
-            // 
-            textBoxIncMod.Location = new System.Drawing.Point(202, 38);
-            textBoxIncMod.Margin = new System.Windows.Forms.Padding(4);
-            textBoxIncMod.Name = "textBoxIncMod";
-            textBoxIncMod.Size = new System.Drawing.Size(116, 23);
-            textBoxIncMod.TabIndex = 2040;
-            // 
-            // labelIncMod
-            // 
-            labelIncMod.AutoSize = true;
-            labelIncMod.Location = new System.Drawing.Point(103, 42);
-            labelIncMod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            labelIncMod.Name = "labelIncMod";
-            labelIncMod.Size = new System.Drawing.Size(95, 15);
-            labelIncMod.TabIndex = 2035;
-            labelIncMod.Text = "Income Modifier";
             // 
             // tabPageResearch
             // 
@@ -649,6 +556,17 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             colorDialogColor.FullOpen = true;
             // 
+            // playerEconomy
+            // 
+            playerEconomy.Dock = System.Windows.Forms.DockStyle.Fill;
+            playerEconomy.Location = new System.Drawing.Point(0, 0);
+            playerEconomy.Margin = new System.Windows.Forms.Padding(4);
+            playerEconomy.MinimumSize = new System.Drawing.Size(552, 60);
+            playerEconomy.Name = "playerEconomy";
+            playerEconomy.ReadOnly = false;
+            playerEconomy.Size = new System.Drawing.Size(764, 344);
+            playerEconomy.TabIndex = 0;
+            // 
             // PlayerDetails
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -664,7 +582,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPageHabitability.ResumeLayout(false);
             tabPageHabitability.PerformLayout();
             tabPageEconomy.ResumeLayout(false);
-            tabPageEconomy.PerformLayout();
             tabPageResearch.ResumeLayout(false);
             tabPageIndustry.ResumeLayout(false);
             tabPageUnknowns.ResumeLayout(false);
@@ -697,16 +614,12 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
         private System.Windows.Forms.Label labelAvatar;
         private System.Windows.Forms.TextBox textBoxAvatar;
         private System.Windows.Forms.GroupBox groupBoxUnknowns;
-        private System.Windows.Forms.TextBox textBoxSav;
-        private System.Windows.Forms.Label labelSav;
         private System.Windows.Forms.Label labelTeam;
         private System.Windows.Forms.TextBox textBoxTeam;
         private System.Windows.Forms.Label labelIdealSuit;
         private System.Windows.Forms.TextBox textBoxIdealSuit;
         private System.Windows.Forms.TextBox textBoxSuitTol;
         private System.Windows.Forms.Label labelSuitTol;
-        private System.Windows.Forms.Label labelIncMod;
-        private System.Windows.Forms.TextBox textBoxIncMod;
         private System.Windows.Forms.Label labelPopMod;
         private System.Windows.Forms.TextBox textBoxPopMod;
         private System.Windows.Forms.Label labelTerrMod;
@@ -717,10 +630,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
         private System.Windows.Forms.TextBox textBoxHasVac;
         private System.Windows.Forms.Label labelHasImm;
         private System.Windows.Forms.TextBox textBoxHasImm;
-        private System.Windows.Forms.Label labelPvSav;
-        private System.Windows.Forms.TextBox textBoxPvSav;
-        private System.Windows.Forms.CheckBox checkBoxCnTrd;
-        private System.Windows.Forms.CheckBox checkBoxCnRad;
         private System.Windows.Forms.CheckBox checkBoxHasAiRebellion;
         private System.Windows.Forms.ColorDialog colorDialogColor;
         private System.Windows.Forms.TextBox textBoxPswd;
@@ -728,5 +637,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
         private PlayerUnknowns playerUnknowns;
         private PlayerIndustry playerIndustry;
         private PlayerResearch playerResearch;
+        private PlayerEconomy playerEconomy;
     }
 }
