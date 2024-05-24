@@ -123,6 +123,8 @@
             Controls.Add(labelResRate);
             Controls.Add(textBoxNextPrjId);
             Controls.Add(labelNextPrjId);
+            Margin = new System.Windows.Forms.Padding(4);
+            MinimumSize = new System.Drawing.Size(224, 120);
             Name = "PlayerResearch";
             Size = new System.Drawing.Size(224, 120);
             ResumeLayout(false);

@@ -67,6 +67,7 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             textBoxIdealSuit = new System.Windows.Forms.TextBox();
             labelIdealSuit = new System.Windows.Forms.Label();
             tabPageEconomy = new System.Windows.Forms.TabPage();
+            playerEconomy = new PlayerEconomy();
             tabPageResearch = new System.Windows.Forms.TabPage();
             playerResearch = new PlayerResearch();
             tabPageIndustry = new System.Windows.Forms.TabPage();
@@ -74,7 +75,6 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPageUnknowns = new System.Windows.Forms.TabPage();
             playerUnknowns = new PlayerUnknowns();
             colorDialogColor = new System.Windows.Forms.ColorDialog();
-            playerEconomy = new PlayerEconomy();
             tabControlPlayer.SuspendLayout();
             tabPagePlayerDetails.SuspendLayout();
             tabPageHabitability.SuspendLayout();
@@ -494,6 +494,17 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             tabPageEconomy.TabIndex = 2;
             tabPageEconomy.Text = "Economy";
             // 
+            // playerEconomy
+            // 
+            playerEconomy.Dock = System.Windows.Forms.DockStyle.Fill;
+            playerEconomy.Location = new System.Drawing.Point(0, 0);
+            playerEconomy.Margin = new System.Windows.Forms.Padding(4);
+            playerEconomy.MinimumSize = new System.Drawing.Size(552, 60);
+            playerEconomy.Name = "playerEconomy";
+            playerEconomy.ReadOnly = false;
+            playerEconomy.Size = new System.Drawing.Size(764, 344);
+            playerEconomy.TabIndex = 0;
+            // 
             // tabPageResearch
             // 
             tabPageResearch.BackColor = System.Drawing.SystemColors.Control;
@@ -508,6 +519,8 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             // 
             playerResearch.Dock = System.Windows.Forms.DockStyle.Fill;
             playerResearch.Location = new System.Drawing.Point(0, 0);
+            playerResearch.Margin = new System.Windows.Forms.Padding(4);
+            playerResearch.MinimumSize = new System.Drawing.Size(224, 120);
             playerResearch.Name = "playerResearch";
             playerResearch.ReadOnly = false;
             playerResearch.Size = new System.Drawing.Size(764, 344);
@@ -547,25 +560,15 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Players
             playerUnknowns.Dock = System.Windows.Forms.DockStyle.Fill;
             playerUnknowns.Location = new System.Drawing.Point(0, 0);
             playerUnknowns.Margin = new System.Windows.Forms.Padding(4);
+            playerUnknowns.MinimumSize = new System.Drawing.Size(766, 346);
             playerUnknowns.Name = "playerUnknowns";
             playerUnknowns.ReadOnly = false;
-            playerUnknowns.Size = new System.Drawing.Size(764, 344);
+            playerUnknowns.Size = new System.Drawing.Size(766, 346);
             playerUnknowns.TabIndex = 0;
             // 
             // colorDialogColor
             // 
             colorDialogColor.FullOpen = true;
-            // 
-            // playerEconomy
-            // 
-            playerEconomy.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerEconomy.Location = new System.Drawing.Point(0, 0);
-            playerEconomy.Margin = new System.Windows.Forms.Padding(4);
-            playerEconomy.MinimumSize = new System.Drawing.Size(552, 60);
-            playerEconomy.Name = "playerEconomy";
-            playerEconomy.ReadOnly = false;
-            playerEconomy.Size = new System.Drawing.Size(764, 344);
-            playerEconomy.TabIndex = 0;
             // 
             // PlayerDetails
             // 

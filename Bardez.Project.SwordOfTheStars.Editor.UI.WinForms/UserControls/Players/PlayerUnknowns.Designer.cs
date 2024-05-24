@@ -1151,6 +1151,7 @@
             Controls.Add(labelTra);
             Controls.Add(labelTrm);
             Margin = new System.Windows.Forms.Padding(4);
+            MinimumSize = new System.Drawing.Size(766, 346);
             Name = "PlayerUnknowns";
             Size = new System.Drawing.Size(766, 346);
             ResumeLayout(false);
