@@ -94,8 +94,8 @@
             // 
             // speciesDetails
             // 
-            speciesDetails.Location = new System.Drawing.Point(4, 4);
-            speciesDetails.Margin = new System.Windows.Forms.Padding(4);
+            speciesDetails.Location = new System.Drawing.Point(8, 8);
+            speciesDetails.Margin = new System.Windows.Forms.Padding(8);
             speciesDetails.Name = "speciesDetails";
             speciesDetails.ReadOnly = false;
             speciesDetails.Size = new System.Drawing.Size(442, 258);
@@ -130,7 +130,7 @@
             tabPageSystems.Location = new System.Drawing.Point(4, 24);
             tabPageSystems.Margin = new System.Windows.Forms.Padding(4);
             tabPageSystems.Name = "tabPageSystems";
-            tabPageSystems.Size = new System.Drawing.Size(1188, 584);
+            tabPageSystems.Size = new System.Drawing.Size(192, 72);
             tabPageSystems.TabIndex = 0;
             tabPageSystems.Text = "Systems";
             // 
@@ -141,7 +141,7 @@
             systemsControl.Margin = new System.Windows.Forms.Padding(0);
             systemsControl.Name = "systemsControl";
             systemsControl.ReadOnly = true;
-            systemsControl.Size = new System.Drawing.Size(1188, 584);
+            systemsControl.Size = new System.Drawing.Size(192, 72);
             systemsControl.TabIndex = 4;
             // 
             // tabPageNodeLines

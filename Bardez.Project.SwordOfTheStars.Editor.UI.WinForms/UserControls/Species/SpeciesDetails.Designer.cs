@@ -28,24 +28,9 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Species
         /// </summary>
         private void InitializeComponent()
         {
-            groupBoxSpecies = new System.Windows.Forms.GroupBox();
             dataGridViewSpecies = new System.Windows.Forms.DataGridView();
-            groupBoxSpecies.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewSpecies).BeginInit();
             SuspendLayout();
-            // 
-            // groupBoxSpecies
-            // 
-            groupBoxSpecies.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            groupBoxSpecies.Controls.Add(dataGridViewSpecies);
-            groupBoxSpecies.Location = new System.Drawing.Point(0, 0);
-            groupBoxSpecies.Margin = new System.Windows.Forms.Padding(4);
-            groupBoxSpecies.Name = "groupBoxSpecies";
-            groupBoxSpecies.Padding = new System.Windows.Forms.Padding(4);
-            groupBoxSpecies.Size = new System.Drawing.Size(337, 216);
-            groupBoxSpecies.TabIndex = 0;
-            groupBoxSpecies.TabStop = false;
-            groupBoxSpecies.Text = "Species";
             // 
             // dataGridViewSpecies
             // 
@@ -55,30 +40,27 @@ namespace Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.Species
             dataGridViewSpecies.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             dataGridViewSpecies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewSpecies.Dock = System.Windows.Forms.DockStyle.Fill;
-            dataGridViewSpecies.Location = new System.Drawing.Point(4, 20);
-            dataGridViewSpecies.Margin = new System.Windows.Forms.Padding(4);
+            dataGridViewSpecies.Location = new System.Drawing.Point(0, 0);
+            dataGridViewSpecies.Margin = new System.Windows.Forms.Padding(8);
             dataGridViewSpecies.Name = "dataGridViewSpecies";
             dataGridViewSpecies.ReadOnly = true;
-            dataGridViewSpecies.Size = new System.Drawing.Size(329, 192);
-            dataGridViewSpecies.TabIndex = 0;
-            dataGridViewSpecies.CellEndEdit += dataGridViewSpecies_CellEndEdit;
+            dataGridViewSpecies.Size = new System.Drawing.Size(341, 219);
+            dataGridViewSpecies.TabIndex = 1;
             // 
             // Species_Details
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            Controls.Add(groupBoxSpecies);
+            Controls.Add(dataGridViewSpecies);
             Margin = new System.Windows.Forms.Padding(4);
             Name = "Species_Details";
             Size = new System.Drawing.Size(341, 219);
-            groupBoxSpecies.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewSpecies).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBoxSpecies;
         private System.Windows.Forms.DataGridView dataGridViewSpecies;
     }
 }
