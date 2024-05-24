@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using Bardez.Project.SwordOfTheStars.DataStructures;
 using Bardez.Project.SwordOfTheStars.Editor.UI.WinForms.UserControls.UserControl;
