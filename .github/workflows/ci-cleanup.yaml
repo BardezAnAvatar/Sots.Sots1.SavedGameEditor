@@ -13,7 +13,7 @@ on:
       delete_run_by_conclusion_pattern:
         description: 'Remove workflow by conclusion: action_required, cancelled, failure, skipped, success'
         required: true
-        default: "All"
+        default: "skipped"
         type: choice
         options:
           - cancelled
@@ -21,10 +21,16 @@ on:
           - skipped
       dry_run:
         description: 'Only log actions, do not perform any delete operations.'
-        required: false
+        required: true
+        type: choice
+        default: "true"
+        options:
+          - "true"
+          - "false"
 
 jobs:
   del_runs:
+    name: Delete Undesirable Runs
     runs-on: ubuntu-latest
     steps:
       - name: Delete workflow runs
