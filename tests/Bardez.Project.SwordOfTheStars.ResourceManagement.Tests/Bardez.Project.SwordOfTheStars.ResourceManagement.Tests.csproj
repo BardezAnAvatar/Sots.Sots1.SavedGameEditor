@@ -19,7 +19,7 @@
     <PackageReference Include="Microsoft.TestPlatform.ObjectModel" Version="17.10.0" />
     <PackageReference Include="MSTest.TestAdapter" Version="3.4.1" />
     <PackageReference Include="MSTest.TestFramework" Version="3.4.1" />
-    <PackageReference Include="NuGet.Frameworks" Version="6.10.0" />
+    <PackageReference Include="NuGet.Frameworks" Version="6.10.1" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="System.Collections.Immutable" Version="8.0.0" />
     <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="8.0.1" />
